@@ -41,7 +41,7 @@ onEvent('block.registry', (event) => {
         .model('minecraft:block/blast_furnace')
         .displayName(`Blast Furnace`)
 
-    const elements = ['Água', 'Ar', 'Fogo', 'Terra']
+    const elements = ['water', 'air', 'fire', 'earth']
     elements.forEach((element) => {
         event
             .create(`ftbai:${element}stone`)
