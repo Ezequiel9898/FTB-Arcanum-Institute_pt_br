@@ -1,0 +1,1375 @@
+{
+	id: "2D203BFFF0EB7337"
+	group: "0960D5B8A7FB00EA"
+	order_index: 5
+	filename: "natures_blessing"
+	title: "Nature's Blessing"
+	icon: {
+		id: "patchouli:guide_book"
+		Count: 1b
+		tag: {
+			"patchouli:book": "naturesaura:book"
+		}
+	}
+	subtitle: ["Nature's Aura and Roots"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "Obtaining a Golden Leaf"
+			x: 1.0d
+			y: -5.0d
+			description: [
+				"In our magical studies with the &eNature's Aura&r, we have a fascinating task ahead. "
+				""
+				"You must use the &bBrilliant Fiber&r. With this material, you can perform a special conversion on leaves. The result will be a coveted &6Gold Leaf&r."
+				""
+				"Once you've successfully crafted the &6Gold Leaf&r, bring it back for further inspection."
+				""
+				"Embrace this enchanting challenge, and let the magic of &eNature's Aura&r guide you on your quest for knowledge!"
+			]
+			dependencies: ["00894E8821E62449"]
+			min_width: 300
+			hide_details_until_startable: true
+			id: "51F6ACC0A8B4CFA9"
+			tasks: [{
+				id: "548AFA1A41E4E705"
+				type: "item"
+				item: "naturesaura:gold_leaf"
+			}]
+			rewards: [
+				{
+					id: "236E2EFFFABFD12A"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 16
+				}
+				{
+					id: "28B31CF5F5A7B330"
+					type: "item"
+					item: "naturesaura:bottle_two_the_rebottling"
+					count: 8
+				}
+				{
+					id: "399E4F8C259CB68A"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_fiber"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			description: [
+				"In our exploration of the enchanting world of &eNature's Aura&r, we have a captivating task ahead."
+				""
+				"I encourage each of you to read about &6The Ritual of the Forest&r. To aid you in this endeavor, you can consult your trusty &6Book of Natural Aura&r, which I previously handed out."
+				""
+				"Next, we shall delve into the realm of &bAncient Trees&r. Your mission is to procure a precious Sapling from one of these &bAncient Trees.&r"
+				""
+				"Bring the Sapling to me, and together, we shall continue our magical journey in the next class."
+				""
+				"Study diligently, and may the wisdom of Nature's Aura be your guide. I look forward to witnessing your growth and discoveries in our next gathering."
+			]
+			hide_dependency_lines: true
+			dependencies: ["439711A12F1593A7"]
+			size: 0.5d
+			min_width: 300
+			id: "44679457F7B25CCB"
+			tasks: [{
+				id: "63FBBECDCFA6B4E1"
+				type: "item"
+				item: "naturesaura:ancient_sapling"
+			}]
+			rewards: [{
+				id: "75A850E43F7F0DE7"
+				type: "item"
+				item: "naturesaura:ancient_sapling"
+				count: 4
+			}]
+		}
+		{
+			icon: "naturesaura:nature_altar"
+			x: 4.5d
+			y: -5.0d
+			subtitle: "Make the Natural Altar"
+			description: [
+				"Our next enchanting task is the creation of a magnificent &bNatural Altar&r — an essential cornerstone of our magical practice."
+				""
+				"To embark on this endeavor, I urge you to consult your &6Book of Natural Aura&r once more."
+				""
+				"Additionally, our journey to the &bNatural Altar&r involves the crafting of &bInfused Rock&r."
+				""
+				"Once you have prepared both the &bNatural Altar&r and the &bInfused Rock,&r come back to me for the next Class."
+				""
+				"I am eager to witness your progress in this magical pursuit. Remember, the key to success lies in patience, practice, and reverence for the natural world."
+				""
+				"I would like to remind you, the Catalysts we use in &eNature's Aura&r belong on the lower &bGolden Stone Bricks&r, not under the Altar. This is not &eBotania&r you know."
+			]
+			dependencies: [
+				"3B29B9822D5248BD"
+				"439711A12F1593A7"
+				"593F27D3FF233B37"
+			]
+			min_width: 300
+			id: "282B976F2593CEC6"
+			tasks: [
+				{
+					id: "49AD2A70394415FE"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "53FE011CF3190453"
+					type: "item"
+					item: "naturesaura:gold_brick"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "3F7F583F599F7EE1"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8
+				}
+				{
+					id: "7C932BE017E68163"
+					type: "item"
+					item: "naturesaura:infused_stone"
+					count: 16
+				}
+				{
+					id: "65C134C4F3E27D3C"
+					type: "item"
+					item: {
+						id: "naturesaura:conversion_catalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.75d
+			y: -5.75d
+			description: [
+				"The &bRitual of the Forest&r uses placed &bWooden Stands&r, &6Gold Powder&r, and a &6Sapling&r to craft certain items."
+				""
+				"Place the above blocks as the &6Book of Natural Aura&r tells you to. You don't need all 8 Wooden Stands, but the ones you do have must be placed correctly."
+				""
+				"Insert ingredients onto the Stands. Once the Sapling in the center grows, both it and the Powder will disappear, and the item will be crafted."
+				""
+				"Rituals &cneed a specific Sapling&r to work. If it calls for an Oak Sapling, you can't use Birch, etc."
+			]
+			dependencies: ["51F6ACC0A8B4CFA9"]
+			min_width: 250
+			id: "439711A12F1593A7"
+			tasks: [{
+				id: "791503E7AAE63FC3"
+				type: "item"
+				item: "naturesaura:wood_stand"
+			}]
+			rewards: [{
+				id: "022E31463EBF8EFC"
+				type: "item"
+				item: "naturesaura:wood_stand"
+				count: 3
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			description: ["While the &bEnvironmental Eye&r is in your inventory, you will be able to &6see the Aura in your surroundings&r in a gauge at the top left of your screen."]
+			hide_dependency_lines: true
+			dependencies: ["439711A12F1593A7"]
+			size: 0.5d
+			id: "4FE66D3A254387F2"
+			tasks: [{
+				id: "5CEE33F05582983E"
+				type: "item"
+				item: "naturesaura:eye"
+			}]
+			rewards: [{
+				id: "70CA92A533755599"
+				type: "item"
+				item: "botania:third_eye"
+			}]
+		}
+		{
+			x: 2.75d
+			y: -4.0d
+			description: [
+				"&6Aura&r is a resource present in the atmosphere, depending on where you are. Some places have more Aura; some places have less."
+				""
+				"Some things will &6generate Aura&r, adding it to the local environment. Some things will &cuse it&r, draining it from the surroundings."
+				""
+				"Aura will naturally spread itself out. Places with high Aura will slowly bleed into places with low Aura, evening out between them."
+				""
+				"There are &cconsequences&r to having too much or too little Aura in an area. See the &6Aura Imbalance&r chapter of the book to see what can happen."
+				""
+				"Aura can be bottled using a &bBottle and Cork&r, for use in recipes."
+			]
+			dependencies: ["51F6ACC0A8B4CFA9"]
+			min_width: 250
+			id: "593F27D3FF233B37"
+			tasks: [{
+				id: "5E0D4662C4FD9F4C"
+				type: "item"
+				item: "naturesaura:bottle_two_the_rebottling"
+			}]
+			rewards: [
+				{
+					id: "3A9A8D5B8EB0573A"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:overworld"
+						}
+					}
+				}
+				{
+					id: "7D89E7E4E839D37F"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:nether"
+						}
+					}
+				}
+				{
+					id: "03359184A4D7AFE6"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:end"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Effect Powder"
+			icon: {
+				id: "naturesaura:effect_powder"
+				Count: 1b
+				tag: {
+					effect: "naturesaura:cache_recharge"
+				}
+			}
+			x: 3.0d
+			y: -3.25d
+			subtitle: "Make some Effect Powder"
+			description: [
+				"&bEffect Powder&r is required to enable certain Aura Imbalance effects and is capable of disabling others."
+				""
+				"Right-clicking will place the entire stack down. Its radius of effect is half the size of the placed stack."
+			]
+			hide_dependency_lines: true
+			dependencies: ["593F27D3FF233B37"]
+			size: 0.5d
+			id: "6CC5DE2EE4CDC051"
+			tasks: [{
+				id: "4FECA1B416782F78"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:ore_spawn"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:plant_boost"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:animal"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:cache_recharge"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:nether_grass"
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "68C05CA4E2BECA3C"
+				type: "item"
+				item: {
+					id: "naturesaura:effect_powder"
+					Count: 1b
+					tag: {
+						effect: "naturesaura:ore_spawn"
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Aura Generators"
+			icon: "naturesaura:firework_generator"
+			x: 2.5d
+			y: -3.25d
+			subtitle: "Make any Aura Generator"
+			description: ["All of the blocks here &6generate Aura&r. Most have their own quest as well, but you can use this to see them all together."]
+			hide_dependency_lines: true
+			dependencies: ["593F27D3FF233B37"]
+			size: 0.5d
+			id: "143FBED2C13732F3"
+			tasks: [{
+				id: "16212DB821960A2B"
+				type: "item"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "natures.*generator"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			description: [
+				"The &bAura Detector&r, used with a Comparator, allows you to &6detect the level of Aura around it&r."
+				""
+				"This signal could be used to trigger something that generates Aura."
+			]
+			size: 0.5d
+			id: "3D5C5360C905D441"
+			tasks: [{
+				id: "260119F7DE101AAC"
+				type: "item"
+				item: "naturesaura:aura_detector"
+			}]
+			rewards: [{
+				id: "2E0FC1DBC41DB0DC"
+				type: "item"
+				item: "minecraft:comparator"
+				count: 8
+			}]
+		}
+		{
+			icon: "naturesaura:infused_iron"
+			x: 6.25d
+			y: -5.0d
+			description: ["&bInfused Iron&r and &bTainted Gold&r are used in several recipes."]
+			dependencies: ["282B976F2593CEC6"]
+			id: "095D23F1BCE5FE6F"
+			tasks: [
+				{
+					id: "61EB1AA9D723D541"
+					type: "item"
+					item: "naturesaura:infused_iron"
+				}
+				{
+					id: "6ACB2E1B94308AEA"
+					type: "item"
+					item: "naturesaura:tainted_gold"
+				}
+			]
+			rewards: [{
+				id: "473AC8EBC0BBEF74"
+				type: "random"
+				icon: {
+					id: "naturesaura:infused_iron"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				table_id: 379608785577865937L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.0d
+			subtitle: "Make a Shooting Mark"
+			description: [
+				"The &bShooting Mark&r generates Aura when &6hit by a projectile&r. Certain projectiles produce more Aura than others."
+				""
+				"You &ccan't just keep hitting the same side&r, however. Each side will have to be hit once before the first can be hit again."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "17E32EFCB4D4B3E2"
+			tasks: [{
+				id: "06D4DC8618AF4011"
+				type: "item"
+				item: "naturesaura:projectile_generator"
+			}]
+			rewards: [{
+				id: "4584A1367D68D00D"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 8
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.5d
+			description: ["The &bSwamp Homi&r makes Aura by &6removing Moss from nearby blocks&r."]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "78C251C71067E62E"
+			tasks: [{
+				id: "282B15B6F72231CD"
+				type: "item"
+				item: "naturesaura:moss_generator"
+			}]
+			rewards: [{
+				id: "16A1CFCA770116BE"
+				type: "item"
+				item: "minecraft:mossy_cobblestone"
+				count: 32
+			}]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			description: [
+				"The &bOffshoot Observer&r generates Aura &6when Slimes or Magma Cubes split&r nearby."
+				""
+				"Larger ones produce more Aura, and Magma Cubes produce more than Slimes."
+				""
+				"The Offshoot Observer &cmust discharge&r before it will produce more Aura. Any more splits during this time will be wasted."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "1A5F84867B633977"
+			tasks: [{
+				id: "75F00160B9392D8D"
+				type: "item"
+				item: "naturesaura:slime_split_generator"
+			}]
+			rewards: [{
+				id: "3267269D401A2ED7"
+				type: "item"
+				item: {
+					id: "minecraft:magma_cube_spawn_egg"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							CustomName: "[{\"text\":\"Big Boy\"}]"
+							Size: 40
+							Attributes: [
+								{
+									Base: 2048.0f
+									Name: "generic.follow_range"
+								}
+								{
+									Name: "generic.armor"
+								}
+							]
+							PersistenceRequired: 1b
+							Glowing: 1b
+							CustomNameVisible: 1b
+						}
+						display: {
+							Name: "[{\"text\":\"Big Boy Spawn Egg\",\"italic\":false}]"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			description: [
+				"The &bDisentangler of Mortals&r will &6generate Aura when an animal dies nearby&r."
+				""
+				"A mob killed in this way &cwill not drop blocks&r. Additionally, the Disentangler &6takes some time to discharge&r, and killing more animals during this time will waste both the Aura and the drops."
+				""
+				"Animals that were &6alive longer&r generate more Aura, maxing out at around an hour and a half."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "1FBD495B61FCBAE5"
+			tasks: [{
+				id: "42FCC6C262448F0C"
+				type: "item"
+				item: "naturesaura:animal_generator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			description: ["The &bCanopy Diminisher&r &6prevents Oak Saplings from growing into the larger trees&r, and &6generates Aura&r as a byproduct."]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "7069A79BB0ED1EF4"
+			tasks: [{
+				id: "7629F99FE29169AE"
+				type: "item"
+				item: "naturesaura:oak_generator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.0d
+			description: [
+				"The &bHerbivorous Absorber&r &6generates Aura&r by consuming nearby Overworld flowers."
+				""
+				"The more of a single flower it consumes, the &cless Aura is created&r. To fully cycle, it has to consume 6 different flower types."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "759E9028D5EB9E1D"
+			tasks: [{
+				id: "3399619AC3FC5B77"
+				type: "item"
+				item: "naturesaura:flower_generator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			description: ["Using a &bMystical Magnifier&r on a machine will &6show its work-area&r. Use it again to hide it."]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "65CEFC530B3F4B99"
+			tasks: [{
+				id: "0450DFFF210E8FBE"
+				type: "item"
+				item: "naturesaura:range_visualizer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			description: [
+				"The &bImperceptible Builder&r can &6place blocks up to 5 blocks away from itself&r. It will place blocks from the inventory above itself."
+				""
+				"To choose where they're placed, &6attach an Item Frame&r with the block you want them to be placed on."
+				""
+				"That is, to place blocks on nearby Cobblestone, place Cobblestone in an Item Frame on the Builder."
+				""
+				"A &6Farming Stencil&r in an Item Frame will place it on nearby Farmland. The Builder can be disabled with a Redstone signal."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			min_width: 250
+			id: "7A711574CDB7324C"
+			tasks: [{
+				id: "7A159DCA4AC629A0"
+				type: "item"
+				item: "naturesaura:placer"
+			}]
+			rewards: [{
+				id: "4F98AF03B0FC7F93"
+				type: "item"
+				item: "naturesaura:farming_stencil"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			description: [
+				"When near an &bItem Grounder&r, players cannot pick up items unless they are sneaking."
+				""
+				"Its effective range is dependent on the strength of the Redstone signal it is given."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "318547E3EF58E1FE"
+			tasks: [{
+				id: "6AB1A43E0108B6D1"
+				type: "item"
+				item: "naturesaura:pickup_stopper"
+			}]
+		}
+		{
+			icon: "naturesaura:grated_chute"
+			x: 6.0d
+			y: -3.5d
+			description: [
+				"The &bAdept Hopper&r is a bit faster than the normal one, and can be &6filtered&r by attaching Item Frames with the items you want in them."
+				""
+				"Sneak right-clicking it will turn its filtering into a &6blacklist&r rather than a whitelist, refusing the items in its Frames."
+				""
+				"The &bHopper Enhancement&r, if placed atop a Hopper (either a normal one or an Adept one), will allow it to pick up items from 7 blocks away. This costs a bit of Aura."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "320809F2791572DA"
+			tasks: [
+				{
+					id: "4F8997897C7844DD"
+					type: "item"
+					item: "naturesaura:grated_chute"
+				}
+				{
+					id: "512E79ABCE3ECD8D"
+					type: "item"
+					item: "naturesaura:hopper_upgrade"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "naturesaura:infused_iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -3.0d
+			description: [
+				"&bTools&r and &bArmor&r made of &bInfused Iron&r have several special functions."
+				""
+				"For instance, the Pickaxe can make blocks Mossy, and the Axe can quickly break Leaves."
+				""
+				"When wearing the full set of armor, anything that attacks you will receive Withering."
+				""
+				"While standing still and sneaking, these items will &6repair themselves&r from Aura in any Aura Cache in your inventory."
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "707F2C1FD2AE7109"
+			tasks: [
+				{
+					id: "3FC58A8032F8E2E8"
+					type: "item"
+					title: "Botanist Tools"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "266510B80D489475"
+					type: "item"
+					title: "Botanist Armor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4EE6C56F35EFAC37"
+				type: "item"
+				item: "naturesaura:break_prevention"
+			}]
+		}
+		{
+			icon: {
+				id: "naturesaura:aura_cache"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 6.5d
+			y: -3.0d
+			subtitle: "Make an Aura Cache"
+			description: ["The &bAura Cache&r &6stores Aura&r so items can use it. It is charged in the Natural Altar."]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "3D005CC0A0278835"
+			tasks: [{
+				id: "555D0AB6A8AC25C5"
+				type: "item"
+				title: "Aura Cache"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:aura_cache"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:aura_trove"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Safety &mTorch&r Lantern"
+			x: 8.25d
+			y: -3.0d
+			description: [
+				"When provided a redstone signal, the &bLamp of Sanctuary&r &6prevents monsters from spawning&r."
+				""
+				"The range depends on the strength of the signal, maxing out at &648 blocks away&r."
+				""
+				"Each time it prevents a spawn, it &6uses a bit of Aura&r."
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "351828FC305F1DD7"
+			tasks: [{
+				id: "3B708DD7F68275A8"
+				type: "item"
+				item: "naturesaura:spawn_lamp"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.5d
+			description: [
+				"The &bStaff of Shadows&r will allow you to &6see dark spots&r where monsters can spawn, even &6through walls&r."
+				""
+				"It has a range of about 30 blocks, lasts 30 seconds, and requires Aura from a Cache."
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "5A2CBFE73198155B"
+			tasks: [{
+				id: "2A1D97E862658EE8"
+				type: "item"
+				item: "naturesaura:cave_finder"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			description: ["The &bStaff of Riches&r will use a bit of Aura from your Cache to &6highlight the location of nearby Chests&r."]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "2E361070F1ABEB51"
+			tasks: [{
+				id: "270241D779CDE2B9"
+				type: "item"
+				item: "naturesaura:loot_finder"
+			}]
+		}
+		{
+			title: "Celestial Manipulator"
+			icon: "naturesaura:time_changer"
+			x: 8.0d
+			y: -4.0d
+			description: [
+				"The &bShifting Sundial&r allows you to &6change the time of day&r at a rather significant cost of Aura, depending on the amount skipped."
+				""
+				"To choose the time of day, place a &bHand of Time&r into an Item Frame on the Sundial and rotate it. The default position is midnight."
+				""
+				"To trigger it to start, drop a Clock nearby."
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "7AFC6579BBF55FC3"
+			tasks: [
+				{
+					id: "0F1D070AE9B6F23C"
+					type: "item"
+					item: "naturesaura:time_changer"
+				}
+				{
+					id: "4A937D973B9FED4B"
+					type: "item"
+					item: "naturesaura:clock_hand"
+				}
+			]
+			rewards: [{
+				id: "67BD27E861F5DDA4"
+				type: "item"
+				item: "minecraft:clock"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			description: [
+				"The &bCloudshifter&r uses Aura to &6change the weather&r, depending on an item dropped nearby."
+				""
+				"&6Sunflowers&r make it sunny, &6Dark Prismarine&r makes it rainy, and &6Fire Charges&r make it storm."
+				""
+				"The more dropped, the longer the weather will last, but also increases the Aura cost."
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "2C8CE13A203A94EE"
+			tasks: [{
+				id: "7BB284638BF2DB42"
+				type: "item"
+				item: "naturesaura:weather_changer"
+			}]
+			rewards: [
+				{
+					id: "587B8E7D7C206296"
+					type: "item"
+					item: {
+						id: "minecraft:sunflower"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "18EA8BF418A7614F"
+					type: "item"
+					item: {
+						id: "minecraft:dark_prismarine"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "52F56D88D086CE97"
+					type: "item"
+					item: {
+						id: "minecraft:fire_charge"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.25d
+			y: -5.0d
+			description: [
+				"The &bOffering Table&r is the focus of another multiblock, which is used to craft new items."
+				""
+				"See the Book on how it is constructed."
+				""
+				"To use the Offering Table, &6insert any amount of the main ingredient&r and then throw a &bSpirit of Calling&r on or near it."
+				""
+				"It costs the same to craft 64 of an item as it does 1, so it is recommended to craft in bulk."
+			]
+			dependencies: ["095D23F1BCE5FE6F"]
+			id: "54191E5A6BFAD3A1"
+			tasks: [{
+				id: "5CE4B57A3AA6F576"
+				type: "item"
+				item: "naturesaura:offering_table"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -6.0d
+			description: [
+				"The &bReaper of Ender Heights&r generates Aura by &6harvesting Chorus Flowers&r nearby."
+				""
+				"Place the Chorus Flower about 2 blocks away and let it grow. Once it's grown, trigger the Reaper with Redstone."
+				""
+				"The bigger the tree, the more Aura is generated."
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "011EA4069D4BA3D5"
+			tasks: [{
+				id: "102FE2542ECD5699"
+				type: "item"
+				item: "naturesaura:chorus_generator"
+			}]
+			rewards: [{
+				id: "72AEB974D7B12A8D"
+				type: "item"
+				item: "minecraft:chorus_flower"
+				count: 4
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.0d
+			description: ["Most Aura generators cannot produce Aura past a certain point. With a &bCreational Catalyst&r placed below, this limit is removed."]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "568D8AB05C89F0E4"
+			tasks: [{
+				id: "502C48AE0BD2D475"
+				type: "item"
+				item: "naturesaura:generator_limit_remover"
+			}]
+		}
+		{
+			x: 9.75d
+			y: -6.0d
+			description: [
+				"The &bAltar of Birthing&r can be used to &6spawn certain mobs&r. It requires a multiblock structure and requires a variable amount of Aura."
+				""
+				"To do so, &6throw all the ingredients on the ground nearby&r."
+				""
+				"We've &6added recipes&r to summon several additional mobs. See the Altar's uses in JEI for more info."
+			]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.75d
+			id: "47114EF7A11EE288"
+			tasks: [{
+				id: "356F3EABE8A74C10"
+				type: "item"
+				item: "naturesaura:animal_spawner"
+			}]
+			rewards: [{
+				id: "27E1681ABAFB49E2"
+				type: "item"
+				item: "naturesaura:birth_spirit"
+				count: 4
+			}]
+		}
+		{
+			x: 9.75d
+			y: -5.0d
+			description: ["&bIngots of the Skies&r are used in several of the more advanced recipes."]
+			dependencies: ["54191E5A6BFAD3A1"]
+			id: "63A00BAF318851F9"
+			tasks: [{
+				id: "04D65B60C1726EA6"
+				type: "item"
+				item: "naturesaura:sky_ingot"
+			}]
+			rewards: [
+				{
+					id: "55360FD5E39D54F5"
+					type: "item"
+					item: "naturesaura:sky_ingot"
+					count: 6
+				}
+				{
+					id: "44B12DF5519C872B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_ender_inventory"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -4.25d
+			description: ["The &bRing of Last Chance&r is effectively a &6Totem of Undying&r that works while &6anywhere in your inventory&r."]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "3A451CE74947B1DF"
+			tasks: [{
+				id: "41A40203A186338C"
+				type: "item"
+				item: "naturesaura:death_ring"
+			}]
+		}
+		{
+			title: "Skyseeker Items"
+			icon: {
+				id: "naturesaura:sky_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: -3.75d
+			description: ["Like the Botanist's items, &bSkyseeker&r items have special abilities and repair themselves with Aura from your inventory."]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "65290B57700526E1"
+			tasks: [
+				{
+					id: "0DA19A8403D5693B"
+					type: "item"
+					title: "Skyseeker Tools"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "013B01E60DBD27A6"
+					type: "item"
+					title: "Skyseeker Armor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.25d
+			description: [
+				"After passing over a powered &6Activator Rail&r, the &bAura Attraction Cart&r will &6pull Aura towards itself&r."
+				""
+				"After passing over an &ounpowered&r Activator Rail, this Aura will be released."
+				""
+				"Effectively, this allows you to move Aura from one location to another. Some is lost in the process, however."
+			]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "63BA09BD4C5D4E1A"
+			tasks: [{
+				id: "55DC219522D573D7"
+				type: "item"
+				item: "naturesaura:mover_cart"
+			}]
+			rewards: [{
+				id: "34C43FC7E23C98D9"
+				type: "item"
+				item: "minecraft:rail"
+				count: 32
+			}]
+		}
+		{
+			title: "Nature is Beautiful"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "naturesaura:book"
+				}
+			}
+			x: -1.0d
+			y: -5.0d
+			shape: "pentagon"
+			subtitle: "Find Prof. Loneztar"
+			dependencies: ["63368A007664E4B5"]
+			id: "00894E8821E62449"
+			tasks: [{
+				id: "2B379EBE1D1DF541"
+				type: "location"
+				title: "Meet Loneztar"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "e9077b62-9a68-4dcb-0fac-85c546f0ac5c"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U5MDc3YjYyOWE2ODRkY2IwZmFjODVjNTQ2ZjBhYzVjNzI2MDQ5MzBjOTM2M2Y0YTAzNzUyN2FiNWNmYmVhZjMifX19"
+								}]
+							}
+							Name: "Loneztar"
+						}
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-334
+					-55
+					-324
+				]
+				size: [I;
+					10
+					11
+					10
+				]
+			}]
+			rewards: [
+				{
+					id: "7CCA9B6625D16A2F"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
+					}
+				}
+				{
+					id: "391E6CB564FB4BAD"
+					type: "item"
+					item: "rootsclassic:runic_tablet"
+				}
+				{
+					id: "679F6E4C636CE4A8"
+					type: "item"
+					item: "naturesaura:gold_fiber"
+					count: 4
+				}
+				{
+					id: "6A669D766FADD463"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"Welcome to Malum\", \"color\":\"purple\"}"
+					silent: true
+				}
+			]
+		}
+		{
+			icon: {
+				id: "naturesaura:gold_fiber"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -1.0d
+			y: -4.0d
+			subtitle: "Don't be like Ren!"
+			description: [
+				"So it seems you used up all your &bBrilliant Fiber&r? Here grab some more!"
+				""
+				"Be sure to not use it all up tho!"
+			]
+			dependencies: ["00894E8821E62449"]
+			hide: true
+			size: 0.5d
+			id: "58C439D69B9417AB"
+			tasks: [{
+				id: "3E656E17A80CABD0"
+				type: "checkmark"
+				title: "Miss! I Lost me' Fiber!"
+			}]
+			rewards: [{
+				id: "21BE9EB889B8D8E4"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			icon: "naturesaura:gold_fiber"
+			x: -1.0d
+			y: -3.0d
+			subtitle: "Don't be like Ren!"
+			description: [
+				"This is getting quite ridiculous. This will be the final &bBrilliant Fiber&r i'll be giving out!"
+				""
+				"If you still manage to lose all of them, i have heard that &6Ibsaeng&r has been selling these lately."
+			]
+			dependencies: ["58C439D69B9417AB"]
+			hide: true
+			size: 0.5d
+			id: "784F3508AD70DEEF"
+			tasks: [{
+				id: "680C296AF598D2E1"
+				type: "checkmark"
+				title: "Miss! I Lost me' Fiber! *Again*"
+			}]
+			rewards: [{
+				id: "7AD59E112785826B"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+	]
+	quest_links: [ ]
+}

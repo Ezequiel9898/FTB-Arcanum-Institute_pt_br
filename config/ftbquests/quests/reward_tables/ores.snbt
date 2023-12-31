@@ -1,0 +1,11 @@
+{
+	id: "32347558FA79F5E9"
+	order_index: 11
+	title: "Ores"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "minecraft:raw_copper_block" }
+		{ item: "occultism:raw_silver", count: 9 }
+	]
+}

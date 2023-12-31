@@ -1,0 +1,1681 @@
+{
+	id: "5DD2F65DABF3914C"
+	group: "0960D5B8A7FB00EA"
+	order_index: 4
+	filename: "ars_neauvou"
+	title: "Fabrication Magique"
+	icon: "ars_nouveau:creative_spell_book"
+	subtitle: ["Ars Nouveau"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "Your First Spellbook"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -0.5d
+			y: -5.5d
+			subtitle: "Turn in Elemental Logs"
+			description: [
+				"Good job with your first task. These logs are perfect."
+				""
+				"As a token of appreciation, I am pleased to present you with this &6Novice Spellbook&r and some fundamental spells to aid your magical pursuits."
+				""
+				"I recommend that you &6cultivate these Source Berries&r in your Dorm, as they are a good source of Mana."
+			]
+			dependencies: ["0CF0DB4C6B3419C2"]
+			id: "54D7F5310E879150"
+			tasks: [{
+				id: "489ABE4026E0C8E1"
+				type: "item"
+				title: "Elemental Logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "0FBB5D00044F6F42"
+					type: "item"
+					item: "ars_nouveau:novice_spell_book"
+				}
+				{
+					id: "6D758F9158A32658"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_craft"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0CA970053267C330"
+					type: "item"
+					item: "ars_nouveau:source_berry"
+					count: 4
+				}
+				{
+					id: "4428FAA4208D27AC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "Mage's Spell Book"
+			icon: "ars_nouveau:apprentice_spell_book"
+			x: 11.5d
+			y: -4.0d
+			subtitle: "Craft a Ring of Lesser Discount"
+			description: [
+				"Good day, my esteemed students!"
+				""
+				"I wanted to take a moment to &6acknowledge the excellent progress&r each and every one of you has made in our classes. Your dedication, enthusiasm, and hard work have truly paid off, and I'm thrilled to witness the growth in your magical abilities."
+				""
+				"To further assess the remarkable progress you have made, I have a &6special challenge&r for you. I would like each of you to create a &bRing of Lesser Discount&r."
+				""
+				"As a reward for your achievement, I will provide you with a &6Mage's Spell Book&r, one that will expand your knowledge and enhance your spellcasting abilities."
+			]
+			dependencies: [
+				"3693F0A7021419E6"
+				"5683C9DEBD9A30E6"
+				"31A754EB419CD398"
+			]
+			min_width: 300
+			id: "612BC02EEA4C9BBA"
+			tasks: [{
+				id: "1CB15D16BE8F3824"
+				type: "item"
+				item: "ars_nouveau:ring_of_lesser_discount"
+			}]
+			rewards: [
+				{
+					id: "5F267EA948669878"
+					type: "item"
+					item: "ars_nouveau:apprentice_spell_book"
+				}
+				{
+					id: "026B95DF194F5DBF"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ars_gate"
+						}
+					}
+				}
+				{
+					id: "40539E877195353F"
+					type: "item"
+					item: "ars_nouveau:glyph_exchange"
+				}
+				{
+					id: "4A565F0E01CC5B54"
+					type: "item"
+					item: "ars_nouveau:glyph_transmute"
+				}
+			]
+		}
+		{
+			title: "Ferrous Wroughtnaut's Dungeon"
+			icon: "ars_nouveau:archmage_spell_book"
+			x: 11.5d
+			y: -1.0d
+			description: [
+				"A report of an alarming nature has reached us. Agents of the Evil Witch Lady Lexxie are stirring outside the school. While it doesn't appear to be a serious threat yet, it does create an extraordinary opportunity to expand upon your education! Deep within the Mountains lies a secret Dungeon, guarded by the powerful &bFerrous Wroughtnaut&r."
+				""
+				"Your mission is to venture forth and retrieve the legendary &bAxe of a Thousand Metals&r—a magical artifact of immense power."
+				""
+				"Once you face the &bFerrous Wroughtnaut&r, use your knowledge of the arcane to overcome its defenses."
+				""
+				"This mighty foe guards the precious Axe, which has unique &6magical properties&r waiting to be explored."
+				""
+				"Return safely to the &dArcanum Institute&r, and with the guidance of your instuctors, study the secrets of the Axe and your efforts will be rewarded with your next &dSpellbook&r."
+			]
+			dependencies: ["252E046EBDB11FB1"]
+			min_width: 300
+			id: "183BE6BBAF4FADA7"
+			tasks: [
+				{
+					id: "5B67BD5A2C5EA8A0"
+					type: "dimension"
+					dimension: "ftbdungeons:dungeon_dim"
+				}
+				{
+					id: "6E583F695A5894A0"
+					type: "kill"
+					icon: "mowziesmobs:wrought_axe"
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					value: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "34BDDFE6D092E866"
+					type: "item"
+					item: {
+						id: "arsomega:arcane_book"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0C9F6A892D90B97D"
+					type: "gamestage"
+					title: "Ars Elemental Unlock"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "ars_elemental_unlock"
+				}
+			]
+		}
+		{
+			title: "Spell Creation"
+			icon: "ars_nouveau:glyph_projectile"
+			x: 1.5d
+			y: -5.5d
+			subtitle: "Learn how to custom-craft spells"
+			description: [
+				"After you've acquired and learned from a &6Spell Glyph&r, you are able to begin &6using it in spells&r!"
+				""
+				"To craft a spell, &6hold your Spell Book and press 'C'&r, and choose one of the slots on the right. Spells have &6three major components&r:"
+				""
+				"&l1. Form:&r "
+				"  - The &6method of delivery&r for the spell. How it decides its target. A spell can only have one form."
+				""
+				"&l2. Effect:&r "
+				"  - &6What the spell does&r to its target. A spell can have multiple effects."
+				""
+				"&l3. Augment:&r"
+				"  - &6Modifies another glyph&r in some way. These are &6optional&r, you can make a spell without any augments."
+				""
+				"Finally, name the spell and click &6Create&r! Select a spell slot with 'V', and then use the Spell Book to cast!"
+			]
+			dependencies: ["54D7F5310E879150"]
+			min_width: 300
+			id: "666A026D77AEEAA4"
+			tasks: [{
+				id: "2A35BE239EC0BF9C"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "413583D464E964A5"
+				type: "item"
+				item: {
+					id: "ftbai:source_coal"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Janitorial Efforts"
+			x: 3.5d
+			y: -5.5d
+			subtitle: "Kill a Zombie"
+			description: [
+				"&bUndead monsters&r have been sighted lurking &6in the valleys surrounding the school&r, especially near boulders that line the coast to the northeast of the Ars classrooms. They're over by the sandy shore line and you will notice many covered in the heads of slain undead."
+				""
+				"They are more of a nuisance than an actual danger, so we like to leave them to the students. It helps you hone skills you will need. To ensure the safety of the school, as well as to aid experimentation, I kindly request that you &6create a Harm spell&r to &brepel these creatures&r."
+				""
+				"Once this has been done, I'd be delighted to reward you with a well-earned spell, as well as a special gift."
+			]
+			dependencies: ["666A026D77AEEAA4"]
+			id: "029EBED0E1801FBC"
+			tasks: [{
+				id: "3B202DD640DDE7BF"
+				type: "kill"
+				title: "Kill a Zombie"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "ftbchunks:textures/faces/minecraft/zombie.png"
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "61FFBD06E8C1940C"
+					type: "item"
+					item: "ars_nouveau:glyph_harvest"
+				}
+				{
+					id: "2B62C72C2F14C6EE"
+					type: "item"
+					item: "ars_nouveau:magebloom_crop"
+					count: 4
+				}
+				{
+					id: "0ACE2038F6D2D24C"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_small"
+						}
+					}
+				}
+				{
+					id: "05634852BE63B33B"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:edelwood_water_bucket"
+						Count: 1b
+						tag: {
+							Fullness: 1
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1292B73CDEBDA234"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			subtitle: "Craft the Scribe's Table"
+			description: [
+				"Welcome, students. Today's topic is the &bScribe's Table&r."
+				""
+				"The Scribe's Table is how you &6craft new Glyphs for your spells&r! Each Glyph has a &6tier&r. Your Spell Book &cmust reach that tier&r for the glyph to function."
+				""
+				"Craft a Glyph by placing some &6Blank Parchment&r on, then &6use a Spell Book on the Table&r. Here, choose the Glyph you wish to craft."
+				""
+				"&6Throw the Glyph's ingredients&r atop the Table. So long as you have the &6experience required&r, the Table will write down the Glyph for you!"
+			]
+			dependencies: [
+				"029EBED0E1801FBC"
+				"18B32901E5D2C5BA"
+			]
+			min_width: 300
+			id: "2F8A51FEB237D9EA"
+			tasks: [{
+				id: "2CCDE50BB16860E9"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+			rewards: [
+				{
+					id: "739A4B3891238A1D"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+				}
+				{
+					id: "022CC6C7421361E2"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+					count: 4
+				}
+				{
+					id: "016F4585AC27A4A9"
+					type: "item"
+					item: {
+						id: "minecraft:lantern"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -5.5d
+			subtitle: "Acquire a Source Gem"
+			description: [
+				"Listen up, everyone. In a previous lesson, you've each received a special gift - a &6Budding Amethyst&r."
+				""
+				"It holds incredible magical properties, especially for crafting &bSource Gems&r, crucial in &dArs Nouveau&r."
+				""
+				"Grow your &6Amethyst&r quickly; time is precious. Its potential will shape your magical journey."
+				""
+				"&bSource Gems&r are unique in that they &6do not require jarred Source&r; they can absorb it from the atmosphere instead."
+				""
+				"Use &bSource Gems&r for potent spells and artifacts."
+				""
+				"Now, get to work!"
+			]
+			dependencies: ["16728DA8E476FEE4"]
+			id: "5862BCF8C9D8866E"
+			tasks: [{
+				id: "2A06EC0CAC37A76E"
+				type: "item"
+				item: "ars_nouveau:source_gem"
+			}]
+			rewards: [{
+				id: "64A8D5A3799AC459"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "ars_nouveau:source_gem"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Breathing Life"
+			x: 9.5d
+			y: -2.5d
+			subtitle: "Get a Tablet of Awakening"
+			description: [
+				"The &bRitual of Awakening&r is a special ritual that &6gives life to nearby Archwood Trees and Budding Amethyst&r."
+				""
+				"Archwood Trees produce one of four &6Weald Walkers&r, depending on the tree's element. These can be set to &6guard an area&r against enemies."
+				""
+				"Budding Amethyst produces an &6Amethyst Golem Charm&r, necessary for spawning Amethyst Golems."
+			]
+			dependencies: ["23F6282DF69B8625"]
+			id: "5F9524BE2EE74E15"
+			tasks: [{
+				id: "784C43A03478710D"
+				type: "item"
+				item: "ars_nouveau:ritual_awakening"
+			}]
+			rewards: [{
+				id: "52A15B9C1A79E5C4"
+				type: "item"
+				item: "minecraft:budding_amethyst"
+			}]
+		}
+		{
+			icon: "ars_nouveau:enchanting_apparatus"
+			x: 11.5d
+			y: -5.5d
+			subtitle: "Make an Enchanting Apparatus"
+			description: [
+				"The &bEnchanting Apparatus&r works similarly to the Imbuement Chamber! It &6combines items&r using Source!"
+				""
+				"Place any amount of &6Arcane Pedestals&r within 3 blocks of the Apparatus, and ensure an &bArcane Core&r is placed directly below."
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			id: "31A754EB419CD398"
+			tasks: [
+				{
+					id: "68E0ADE79A6873A9"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "6C08F1F488F82299"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
+			rewards: [
+				{
+					id: "310707F92FC0D97D"
+					type: "item"
+					item: {
+						id: "quark:gunpowder_sack"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "098A9DD2EDCBE11C"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:blank_parchment"
+			x: 5.5d
+			y: -7.0d
+			subtitle: "Get some Blank Parchment"
+			description: [
+				"Acquiring &bBlank Parchment&r will require advancement in some other forms of magic. Namely, &dBotania&r."
+				""
+				"Parchment needs Paper, Paper needs Sugar Cane, and Sugar Cane has to be created using a &6Mana Pool&r!"
+				""
+				"[\"\",\"Make sure to pay \",{\"text\":\"Lady Maehem\",\"color\":\"gold\"},\"'s classes a visit! Especially her class on the \",{\"text\":\"[ Mana Pool ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4169963D23A8F9FF\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}},\".\"]"
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "57EAE710537B248D"
+			tasks: [{
+				id: "04DE3068397B24B4"
+				type: "item"
+				item: {
+					id: "ars_nouveau:blank_parchment"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "67E08F0AA71F529D"
+				type: "item"
+				item: {
+					id: "botania:black_lotus"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "064EC66D9E6749A4"
+			tasks: [{
+				id: "4BA8EF287B3FC098"
+				type: "item"
+				item: "ars_nouveau:glyph_crush"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "56AB14FB5D9FC303"
+			tasks: [{
+				id: "09A0E5718F3E9AD2"
+				type: "item"
+				item: "ars_nouveau:glyph_fell"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "3C60F002ACBF1B8F"
+			tasks: [{
+				id: "33D43D79927BCF2F"
+				type: "item"
+				item: "ars_nouveau:glyph_smelt"
+			}]
+			rewards: [{
+				id: "680A39ECBDA53F75"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "learned_to_smelt"
+			}]
+		}
+		{
+			title: "T2 Glyphs"
+			icon: "ars_nouveau:blank_parchment"
+			x: 13.5d
+			y: -4.0d
+			description: ["The &6Mage's Spell Book&r allows access to &6Tier 2 Glyphs&r, which were previously unusable."]
+			dependencies: ["612BC02EEA4C9BBA"]
+			id: "38A919DBFA0FAB21"
+			tasks: [{
+				id: "280E7205D205E5A9"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "ars_nouveau:amethyst_golem_charm"
+			x: 9.5d
+			y: -1.0d
+			subtitle: "Make a Dominion Wand"
+			description: [
+				"&bAmethyst Golems&r are magical automata that &6harvest and store grown Amethyst Clusters&r. Summon the Golem by using the &bCharm&r on any block. "
+				""
+				"Golems can move anywhere within 10 meters of their home. Set its home by using a &bDominion Wand&r first on the Golem, and then on the location you want."
+				""
+				"Amethyst Golems will &6automatically harvest grown Amethyst&r. If its home is an inventory, it will also store the Amethyst there."
+			]
+			dependencies: ["5F9524BE2EE74E15"]
+			id: "5322AEA19A4C73A1"
+			tasks: [
+				{
+					id: "76CEA8F0C6C5C5D8"
+					type: "item"
+					item: {
+						id: "ars_nouveau:dominion_wand"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "021DB292FD301C0B"
+					type: "observation"
+					title: "Observe Amethyst Golem"
+					icon: {
+						id: "ars_nouveau:amethyst_golem_charm"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					timer: 0L
+					observe_type: 5
+					to_observe: "ars_nouveau:amethyst_golem"
+				}
+			]
+		}
+		{
+			title: "Till the Earth"
+			x: 3.5d
+			y: -4.0d
+			subtitle: "Get Magebloom Flower"
+			description: [
+				"Some of you may have noticed a problem when trying to grow &bMagebloom&r. That is, &cno mortal methods to till the dirt can be found&r!"
+				""
+				"However, this is by design. Professor &6LadyMaehem&r, our resident botanical expert, has successfully bound the capabilities of a hoe to the &6Wand of the Forest&r."
+				""
+				"While this solves the problem of tilling, you are still without means to hydrate your crops. For now, &6use the Water Bucket given&r previously, until you have the means to conjure water yourself."
+			]
+			dependencies: ["029EBED0E1801FBC"]
+			id: "5ECD0E0C81090B43"
+			tasks: [{
+				id: "339A6DBA046FBE27"
+				type: "item"
+				item: "ars_nouveau:magebloom_fiber"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4A5409C669182184"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+				count: 4
+			}]
+		}
+		{
+			title: "Alchemical Reconstitution"
+			x: 7.5d
+			y: -5.5d
+			subtitle: "Make an Imbuement Chamber"
+			description: [
+				"The &bImbuement Chamber&r is a special device that &6combines items&r into something new."
+				""
+				"Place the main item in the Chamber, and then place any additional items in &6Arcane Pedestals&r within 1 meter. Items in Pedestals are not lost upon use."
+				""
+				"The majority of recipes will require &6Source&r from a &6Source Jar&r placed within 2 meters. We will go over this later."
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "16728DA8E476FEE4"
+			tasks: [{
+				id: "12B7CCC5B1DCF553"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+			rewards: [
+				{
+					id: "6E8024F4E769217A"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+					count: 8
+				}
+				{
+					id: "184FDAC7E5697171"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Sources of Source"
+			icon: "ars_nouveau:agronomic_sourcelink"
+			x: 9.5d
+			y: -7.0d
+			subtitle: "Get the machines necessary to make and store Source"
+			description: [
+				"&6Source&r is the name for the &6magical energy used by devices&r."
+				""
+				"Source is generated by &bSourcelinks&r by a variety of ways."
+				""
+				"For example, the &bAgronomic Sourcelink&r generates Source from &6nearby natural plant growth&r. That means no fertilizers allowed! Magical plants, like &6Mageblooms&r, produce more Source."
+				""
+				"When Source is gathered, it is &6automatically sent to any nearby&r &bSource Jars&r, within about 5 meters."
+				""
+				"When Source is required by a device, it will &6automatically be pulled&r from nearby Source Jars as well!"
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			min_width: 300
+			id: "2D945108E5A67869"
+			tasks: [
+				{
+					id: "7D00EBD76CA36670"
+					type: "item"
+					title: "Sourcelinks"
+					item: {
+						id: "itemfilters:id_regex"
+						Count: 1b
+						tag: {
+							value: "sourcelink"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0EB7ED27C3959B69"
+					type: "item"
+					item: "ars_nouveau:source_jar"
+				}
+			]
+			rewards: [
+				{
+					id: "56D27B424DAFF36F"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+				}
+				{
+					id: "000872CD664CD26D"
+					type: "item"
+					item: "ars_nouveau:volcanic_sourcelink"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			subtitle: "Acquire Blaze Fiber"
+			description: [
+				"Alright, my skilled pupils, you've successfully obtained the &6Magebloom Fiber&r. Now, it's time for the next challenge - crafting the &bBlaze Fiber&r."
+				""
+				"To make Blaze Fiber&r, you have two options. First, you can use the &6Transmute Glyph&r to transform certain materials into &6Blaze Powder&r, which is a key ingredient for &bBlaze Fiber&r. "
+				""
+				"Alternatively, you can obtain &6Blaze Powder&r by bravely facing and defeating &6Blazes&r, but be warned, it won't be an easy task."
+				""
+				"To reach &6Blazes&r and obtain their precious &6Blaze Powder&r, you'll need a &6Blaze Gateway Pearl&r. "
+				""
+				"This magical pearl will open a gateway to the &6Blazes&r' domain, allowing you to confront them. Only then will you be able to gather the essential materials for the &bBlaze Fiber&r."
+			]
+			dependencies: ["5ECD0E0C81090B43"]
+			id: "75C8C7BFC2C7358B"
+			tasks: [{
+				id: "4A31F40CE02D6278"
+				type: "item"
+				item: "ars_nouveau:blaze_fiber"
+			}]
+			rewards: [{
+				id: "55677E2CCBF4E90D"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			subtitle: "Acquire End Fiber"
+			description: [
+				"&bEnd Fiber&r is a unique material, combining the auras of two opposite dimensions."
+				""
+				"With the End Fiber in hand, you are one step closer to mastering the arcane arts."
+				""
+				"Your dedication and skill will be rewarded as you delve into the mysteries of the End Fiber and all the wonders it holds."
+				""
+				"Good luck, young mages, as you venture further into the realm of powerful enchantments and extraordinary craftsmanship!"
+			]
+			dependencies: ["75C8C7BFC2C7358B"]
+			id: "1E049792E5C4A1B7"
+			tasks: [{
+				id: "5AD9875D72397451"
+				type: "item"
+				item: "ars_nouveau:end_fiber"
+			}]
+			rewards: [{
+				id: "2DD0D436EE0113D7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "botania:mana_pearl"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Starting Mage Garments"
+			icon: {
+				id: "ars_nouveau:novice_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -2.5d
+			subtitle: "Make a set of Novice Robes"
+			description: [
+				"Dear students, congratulations on harvesting Magebloom!"
+				""
+				"With this precious material, you have the opportunity to craft your very own &6mage robes&r!"
+				""
+				"The &bNovice Robe set&r is not just for show, it has a practical purpose. When worn, it will &6enhance your mana-wielding abilities&r, increasing the amount of mana you have access to, and increasing its regeneration rate."
+				""
+				"So, gather your focus and start the crafting process. Remember, the Novice Robes represent the beginning of your path to mastery. As you progress, you'll unlock even greater potential. "
+			]
+			dependencies: ["5ECD0E0C81090B43"]
+			id: "2197492499A65E45"
+			tasks: [
+				{
+					id: "7F5991F9C49D4BFC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "33E609941313E9C6"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "181F0AEDF90DCB53"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "67816ACC5DDED5C4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "24787CF837854413"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+				count: 2
+			}]
+		}
+		{
+			title: "Distinguished Draperies"
+			icon: {
+				id: "ars_nouveau:apprentice_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -2.5d
+			subtitle: "Get a set of Mage Robes"
+			description: [
+				"Well done, my aspiring mages!"
+				""
+				"Now that you've mastered the Novice Garment, it's time for &6the next level&r - the &bMage&r variant. This gown is even more potent and will &6significantly boost your Mana capacity&r."
+				""
+				"Embrace this opportunity, my pupils, and continue your journey to become formidable mages."
+				""
+				"Keep pushing your limits, and remember that knowledge and practice are the keys to unlocking your true magical potential. Now, go forth and embark on this magical endeavor!"
+			]
+			dependencies: ["75C8C7BFC2C7358B"]
+			id: "0E0820EEAA29DEAE"
+			tasks: [
+				{
+					id: "4D2924A890178834"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "125692C726A769AA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E7473998D23A145"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0CB829F993566467"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Zenith"
+			icon: {
+				id: "ars_nouveau:archmage_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -2.5d
+			subtitle: "Get a set of Archmage Robes"
+			description: [
+				"In a true expression of work being its own reward, I am tasking you with the creation of your very own set of &bArchmage Robes&r, the pinnacle of &dArs Nouveau&r garments. Its power surpasses all others of its type."
+				""
+				"Once you don this extraordinary attire, you'll experience an unparalleled enhancement to your &6Mana Capacity&r."
+				""
+				"The &bArchmage Robes&r will unlock new depths of magical potential within you, allowing you to weave spells of immense potency."
+				""
+				"With every fiber of this legendary garment interwoven with enchantment, you'll stand as a paragon of magical prowess."
+				""
+				"Embrace its might and let it elevate you to the ranks of true masters of the arcane."
+			]
+			dependencies: ["1E049792E5C4A1B7"]
+			id: "3427DAA629E49EE0"
+			tasks: [
+				{
+					id: "7FDD876F58C9F0F4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68F07FDDF1949EFE"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "799475A4B56219CB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "277DD95B983F5E31"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["38A919DBFA0FAB21"]
+			hide: true
+			id: "0240E4D8C833E273"
+			tasks: [{
+				id: "76A74849BCD93A56"
+				type: "item"
+				item: "ars_nouveau:glyph_extract"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["38A919DBFA0FAB21"]
+			hide: true
+			id: "25B97433CFB6B07E"
+			tasks: [{
+				id: "0EEABFB92C8C0178"
+				type: "item"
+				item: "ars_nouveau:glyph_fortune"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -4.0d
+			subtitle: "Make a Ritual Brazier"
+			description: [
+				"&6Rituals&r are a specific branch of magic that is anchored to the &bRitual Brazier&r, and the area around it."
+				""
+				"To cast a ritual, insert the appropriate &6Ritual Tablet&r into the Brazier. Some rites allow you to &6throw certain items in&r to modify their behavior."
+				""
+				"Once you are ready, lay an empty hand upon the Brazier. This will drain some nearby Source, and the ritual will be cast."
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			id: "23F6282DF69B8625"
+			tasks: [{
+				id: "06DA238AB048417F"
+				type: "item"
+				item: "ars_nouveau:ritual_brazier"
+			}]
+			rewards: [{
+				id: "7C526138492AD3D7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:ritualstone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			subtitle: "Make a Tablet of Wilden Summoning"
+			description: [
+				"The &bTablet of Summon Wilden&r is one of the few instances of an appropriately-named magic. It &6summons Wilden&r."
+				""
+				"Wilden are &6rabid beastmen&r that attack on sight. While rarely encountered on campus (if at all), they are a much larger nuisance in the greater world."
+				""
+				"This ritual is &6the best way to encounter Wilden&r for the duration of your studies."
+				""
+				"The ritual can be augmented with a &6Wilden Spike, Horn, and Wing&r to instead summon the mighty &cWilden Chimera&r, a fearsome foe."
+			]
+			dependencies: ["23F6282DF69B8625"]
+			id: "4950C09D65D7AFF5"
+			tasks: [{
+				id: "75429985FAB4C476"
+				type: "item"
+				item: "ars_nouveau:ritual_wilden_summon"
+			}]
+			rewards: [{
+				id: "271AE6450FDB56E6"
+				type: "item"
+				item: {
+					id: "ars_nouveau:ritual_restoration"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: "minecraft:lava_bucket"
+			x: 11.5d
+			y: -7.0d
+			subtitle: "Collect Lava"
+			description: [
+				"Listen closely, my adept apprentices."
+				""
+				"The &6Volcanic Sourcelink&r is an extraordinary method to create &6Source&r using burnable fuel sources. For instance, the magical &6Archwood&r will yield even more Source."
+				""
+				"But there's more to it! When using this Sourcelink, nearby Stone will undergo a transformation."
+				""
+				"It'll turn into Magma blocks and eventually into &bLava&r. This presents a unique opportunity for you to harness this potent form of &6Source&r."
+			]
+			dependencies: ["2D945108E5A67869"]
+			id: "097138E6117FC9A2"
+			tasks: [{
+				id: "6A56CD48BD14C14A"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "195F34D9633F1D4F"
+				type: "item"
+				item: "ars_nouveau:lava_lily"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			subtitle: "Make a Source Berry Roll"
+			description: [
+				"I bet you didn't think you'd start off your journey into spellcasting by baking did you?"
+				""
+				"&bSource Berry Rolls&r are a very tasty snack, but also &6provide a substantial increase to mana regeneration&r!"
+				""
+				"It would be a good idea for any exploring sorcerer to carry some around for this reason."
+			]
+			dependencies: ["54D7F5310E879150"]
+			id: "4ED3DD00B8B5C2A7"
+			tasks: [{
+				id: "672E913277A98E77"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+			}]
+			rewards: [{
+				id: "3C69A95C319D491D"
+				type: "item"
+				item: "ars_nouveau:source_berry_pie"
+			}]
+		}
+		{
+			title: "Intro to Spellcrafting"
+			icon: "arsomega:arcane_book"
+			x: -2.5d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "Find Prof. Regen"
+			description: [
+				"Welcome, students, to &6Intro to Spellcrafting with Ars Nouveau&r."
+				""
+				"In this class you will master the arcane arts of enchanting and spell casting. "
+				""
+				"Before we begin, please &bcultivate and nurture a few trees within your dorms&r, as &6their logs are required&r for our practical studies."
+			]
+			dependencies: ["63368A007664E4B5"]
+			min_width: 300
+			id: "0CF0DB4C6B3419C2"
+			tasks: [{
+				id: "59221FE23ACE6C2C"
+				type: "location"
+				title: "Meet R3GEN"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "6881a2b4-0e6e-f3c1-7387-b6f6b42b1f2a"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ODFhMmI0MGU2ZWYzYzE3Mzg3YjZmNmI0MmIxZjJhMjI2NTUzYTQxYWM4N2NlMWIxN2ZiZGM1Zjc5N2FhMmQifX19"
+								}]
+							}
+							Name: "R3GEN"
+						}
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-138
+					-51
+					-113
+				]
+				size: [I;
+					10
+					15
+					10
+				]
+			}]
+			rewards: [
+				{
+					id: "5262771C03F406B9"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+				}
+				{
+					id: "1197AB1B5F603408"
+					type: "custom"
+					title: "Elemental Sapling"
+					icon: "ars_nouveau:green_archwood_sapling"
+				}
+				{
+					id: "2BFF7181B540B92B"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"Welcome to Ars Nouveau\", \"color\":\"yellow\"}"
+					silent: true
+				}
+				{
+					id: "18D5957BF5BBEEF2"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Start Dungeon"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/block/dimensional_mineshaft_portal.png"
+				}
+			}
+			x: 12.5d
+			y: -2.5d
+			description: [
+				"We do not typically encourage our Students to put themselves in harms way, but with the real threat eliminated, we have created a magical simulation dungeon that you can do as often as you like. "
+				""
+				"This will let you get extra practice, and we've made sure to include plenty of rewards for industrious students. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["612BC02EEA4C9BBA"]
+			hide: true
+			can_repeat: true
+			id: "0E17E544806CB933"
+			tasks: [{
+				id: "16BDE2C91D56C25F"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6CFDFFDBC3FD7CC1"
+				type: "command"
+				auto: "invisible"
+				command: "/execute as @p run ftbdungeons create ftbdungeons:elemental"
+				silent: true
+			}]
+		}
+		{
+			title: "Complete the Elemental Dungeon"
+			icon: "arsomega:infinity_crystal"
+			x: 11.5d
+			y: -2.5d
+			description: [
+				"I'm sure you've heard the rumors of monsters attacking our school. I regret to say they are true. However, we have decided to take advantage of the unique opportunity this presents to continue your training, and to obtain a valuable artifact."
+				""
+				"We would like you to venture into the Elemental Dungeons of Ars to acquire the &6Archmage Spell Book&r "
+				""
+				"Defeating the formidable Wilden Guardian within these dungeons is the key to obtaining this prestigious spellbook. We also believe it will stop the attacks on the school. "
+				""
+				"Prepare yourselves for a daunting yet rewarding endeavor as you face the trials within the Elemental Dungeons to claim this powerful book."
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			id: "252E046EBDB11FB1"
+			tasks: [
+				{
+					id: "118DFD3E17113BB4"
+					type: "dimension"
+					dimension: "ftbdungeons:dungeon_dim"
+				}
+				{
+					id: "0A00010517814C16"
+					type: "custom"
+					title: "Kill the Wilden Guardian"
+					icon: {
+						id: "ars_nouveau:wilden_spike"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "564C5F79D086B9B8"
+				type: "item"
+				item: {
+					id: "ars_nouveau:archmage_spell_book"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Start Dungeon"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/block/dimensional_mineshaft_portal.png"
+				}
+			}
+			x: 12.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["252E046EBDB11FB1"]
+			hide: true
+			can_repeat: true
+			id: "6C621064A1ED181B"
+			tasks: [{
+				id: "25A3C4A52A6E8D65"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5F9120C33EC3A82F"
+				type: "command"
+				auto: "invisible"
+				command: "/execute as @p run ftbdungeons create ftbdungeons:stone"
+				silent: true
+			}]
+		}
+		{
+			title: "Luminos!"
+			x: 5.5d
+			y: -4.0d
+			description: [
+				"As an exercise in creating your own glyphs you are instructed to create a basic mage light spell."
+				""
+				"You should be able to find some campfires to destroy for some charcoal to make torches. Combine this with the lantern we provided for you to craft your glyph and add it to your spellbook."
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "394321C01C7A718A"
+			tasks: [{
+				id: "388651330350D82D"
+				type: "item"
+				item: {
+					id: "ars_nouveau:glyph_light"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6EFB242C000D35BE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "7AD3070719F484EE"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "ars_nouveau:mana_regen_potion"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -7.0d
+			subtitle: "Getting more Bang for your Buck!"
+			description: [
+				"If you want to get more power out of the Fossile Fuels you have been gathering, you can try and imbue it with some &5Source&r."
+				""
+				"If placed inside the &6Imbuement Chamber&r, your Coal and/or Charcoal will be slowly turned into &bSource Coal&r."
+				""
+				"This Fuel has a three times longer burn time compared to their non-magic counterpart."
+			]
+			dependencies: ["16728DA8E476FEE4"]
+			id: "537D2FF232549EE5"
+			tasks: [{
+				id: "0271ED1C4ADA08D4"
+				type: "item"
+				item: {
+					id: "ftbai:source_coal"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2AFEDD9983AF777C"
+					type: "item"
+					item: {
+						id: "minecraft:budding_amethyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4407D5DBA6D5C482"
+					type: "item"
+					item: {
+						id: "ars_nouveau:starbuncle_se"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -9.0d
+			description: [
+				"The &bSpell Turrets&r serve as instruments to cast predefined spells sourced from a &6Spell Parchment&r. Activation requires both a redstone signal and a nearby container filled with &5Source&r."
+				""
+				"[\"\",\"For more detailed guidance, refer to the \",{\"text\":\"[ Notebook ]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:automation/spell_turret 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Spell Turret Book Entry\"]}},\". It contains comprehensive information elucidating the operational intricacies and capabilities of these turrets.\"]"
+			]
+			dependencies: [
+				"5862BCF8C9D8866E"
+				"4B1C6C5EB09436E7"
+			]
+			id: "1AC427EBA1B16219"
+			tasks: [{
+				id: "18550E50CD3B2959"
+				type: "item"
+				item: {
+					id: "ars_nouveau:basic_spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: -11.0d
+			description: [
+				"The &bEnchanted Turrets&r possess the capability to be infused with the power of an elemental focus, granting them a fraction of its abilities. Spells fired by these turrets will activate the combos associated with the corresponding focus."
+				""
+				"Additionally, if the spell contains a glyph of the matching elemental school, it will be discounted by &665 percent&r."
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "4B542B591111DE7B"
+			tasks: [{
+				id: "23D3EADF3F778678"
+				type: "item"
+				title: "Elemental Turrets"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:earth_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:air_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:water_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:fire_turret"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: -9.0d
+			description: [
+				"The &bEnchanted Spell Turrets&r bear similarity to regular Spell Turrets, differing in their usage of only half the usual &5Source&r cost. This efficiency renders them notably more effective in their functionality."
+				""
+				"Comprehend the significance of these enhancements, as they augment our enchanting instruments significantly."
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "405C265371AF9B0D"
+			tasks: [{
+				id: "11AC634A78C0A75B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Tick, Tock, around the Clock"
+			x: 11.5d
+			y: -11.0d
+			description: [
+				"The &bTimer Spell Turrets&r share resemblance to regular Spell Turrets, but with an intriguing difference — they operate without the need for a redstone signal. Interaction increases the delay by one second, while punching decreases it by one second."
+				""
+				"Remember to apply a spell to these turrets, as previously discussed. Comprehend the nuances of their functionality, as they form a distinctive addition to our magical instruments."
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "5E23F9EDB34F1A19"
+			tasks: [{
+				id: "1C433D7617480003"
+				type: "item"
+				item: {
+					id: "ars_nouveau:timer_spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -9.0d
+			description: [
+				"The combination of a &6Blank Parchment&r with several &6Source Gems&r yields the creation of &bSpell Parchments&r."
+				""
+				"These parchments possess the ability to apply spells onto various entities such as &5Turrets&r or &5Bookwyrms&r, among others."
+				""
+				"Simply place the &bSpell Parchment&r onto the &5Scribe's Table&r and interact with the table while crouching while holding your spellbook in your active hand."
+			]
+			dependencies: ["57EAE710537B248D"]
+			id: "4B1C6C5EB09436E7"
+			tasks: [{
+				id: "5231D8FC113FADDF"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_parchment"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Enchanter's Tools"
+			icon: {
+				id: "ars_nouveau:enchanters_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 13.5d
+			y: -5.5d
+			description: [
+				"The &bEnchanter's Tools&r stand as potent instruments designed to accommodate a single spell. Place the tool onto your &6Scribe's Table&r and apply the active spell from your Spellbook."
+				""
+				"Types of Tools:"
+				""
+				"{\"text\":\"[ Casting Wand ]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/wand 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Casting Wand Entry\"]}}"
+				"Wands accept one spell inscribed at the Scribe's Table, beginning with Projectile -> accelerate, and requiring a unique spell without another method."
+				""
+				"{\"text\":\"[ Enchanter's Bow ]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/spell_bow 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Enchanter's Bow Entry\"]}}"
+				"transforms arrows to Spell Arrows applying spells on targets; lacking arrows casts a damaging spell arrow, while insufficient mana fires regular arrows, and special Augment Arrows empower the spell."
+				""
+				"{\"text\":\"[ Enchanter's Sword ]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/enchanters_sword 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Enchanter's Sword Entry\"]}}"
+				"Applies a Touch spell before entity damage, adds an extra amplifier to all spells' last Effect, requiring a non-form spell for inscription at the Scribe's Table (e.g., Ignite Extend Time)."
+				""
+				"{\"text\":\"[ Enchanter's Mirror ]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/enchanters_mirror 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Enchanter's Mirror Entry\"]}}"
+				"Applies a self spell to the user, granting discounted spells with extended duration for all glyphs cast using the mirror, requiring a non-form spell (e.g., Strength Heal)."
+			]
+			dependencies: ["31A754EB419CD398"]
+			id: "2D57D4469411F8FD"
+			tasks: [{
+				id: "4840DE0BE034CE29"
+				type: "item"
+				title: "Enchanter's Tools"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:enchanters_mirror"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:enchanters_sword"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:spell_bow"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:wand"
+								Count: 1b
+								tag: {
+									ars_nouveau_spellCaster: {
+										flavor: ""
+										spell_name_0: ""
+										spell_0: "[]"
+										spell_name_1: ""
+										spell_1: "[projectile, accelerate, harm]"
+										current_slot: 1
+										spell_sound_1: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: {
+												id: "ars_nouveau:fire_family"
+											}
+										}
+										spell_sound_0: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: {
+												id: "ars_nouveau:fire_family"
+											}
+										}
+										spell_color_0: "255,25,180"
+										spell_color_1: "255,25,180"
+									}
+								}
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

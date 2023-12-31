@@ -1,0 +1,81 @@
+{
+	id: "448590FDDADF9EDD"
+	group: "2BF58BA9C4117D6D"
+	order_index: 0
+	filename: "info"
+	title: "    >> INFO <<"
+	default_quest_shape: "gear"
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "Goblin Shops at School"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "botania:textures/item/cosmetic_questgiver_mark.png"
+				}
+			}
+			x: -2.0d
+			y: -3.5d
+			description: [
+				"Attention, students! "
+				""
+				"I have some exciting news for all of you. There are four Goblin Shops located around our campus, and they offer a unique opportunity for you to trade your monster drops for magical items."
+				""
+				"These Goblin Shops are renowned for their extensive selection of enchanted artifacts, potions, and other mystical goods."
+				""
+				"Now, students, remember to consult your Journal once you're near any of these Goblin Shops. "
+				""
+				"Your Journal will guide you on the specific monster drops each shop is interested in, as well as the magical items they offer in exchange."
+				""
+				" Keep an eye out for new opportunities to upgrade your equipment and expand your magical repertoire."
+				""
+				"Happy adventuring and may your trades with the goblins be prosperous!"
+			]
+			min_width: 350
+			id: "34CEE1916FB0B6B5"
+			tasks: [{
+				id: "0F8BB36756CA12BA"
+				type: "checkmark"
+				title: "This is Temporary"
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "botania:textures/item/cosmetic_questgiver_mark.png"
+				}
+			}
+			x: -2.0d
+			y: -2.0d
+			description: [
+				"&lGreetings, my dear students&r,"
+				""
+				"Exciting news awaits you!"
+				""
+				"Our spectral friend, the local ghost, &bGhostipedia&r, residing in the Dining Hall, has taken on a culinary venture."
+				""
+				"They now offer a delightful array of magical foods, lovingly crafted to satisfy all your cravings."
+				"Whether you seek scrumptious snacks, savory delights, or sweet treats, their shop, aptly named &l&4Foods 'N Munchies&r, has it all!"
+				""
+				"To discover the magical wonders of Foods 'N Munchies, simply approach the friendly ghost and strike up a conversation."
+				""
+				"They will be delighted to share their magical menu and assist you in choosing the perfect treats to suit your tastes."
+				""
+				""
+				"Bon appétit and happy munching, my curious and adventurous students! May Foods 'N Munchies become your go-to destination for delightful culinary discoveries. Enjoy!"
+			]
+			id: "1AA0BD0C407DD260"
+			tasks: [{
+				id: "1356D4F63005DBC9"
+				type: "checkmark"
+				title: "Food 'N Munchies!"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

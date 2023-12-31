@@ -1,0 +1,253 @@
+{
+	id: "6E27D913C7AAC94C"
+	group: "125708BF22E6ABEE"
+	order_index: 3
+	filename: "loneztar"
+	title: "Professor Loneztar"
+	icon: "ftbai:codex_malum"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 5.0d
+			y: -5.0d
+			description: [
+				"Dear Student, "
+				""
+				"You are ready for your first trial and I'll make this one relatively straightforward. Bring me &b 64 Spirits&r"
+				""
+				"You can use the surplus materials from your subjects for other classes if you wish. "
+				""
+				"Good luck."
+			]
+			dependencies: ["2CBECFD7042E416F"]
+			id: "1FA40843A3CBE07F"
+			tasks: [{
+				id: "45CB787D4F05E273"
+				type: "item"
+				title: "64x Spirits"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "^malum:.*_spirit$"
+					}
+				}
+				count: 64L
+				consume_items: true
+			}]
+		}
+		{
+			icon: "ftbai:codex_malum"
+			x: 5.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"Dear Student"
+				""
+				"You have done well, and have risen to every challenge I have issued you. There is one final test, and then I will grant you my Codex. "
+				""
+				"I want you to obtain a &bBelt of the Magebane&r. I honestly don't need any further evidence of you mastery of my class, but I have a feeling this belt will serve you well very soon. "
+				""
+				"Good luck."
+			]
+			dependencies: [
+				"5EF227EC5FB3EE70"
+				"418871AEEAAB853A"
+			]
+			size: 3.0d
+			id: "36BBC4A0F6055437"
+			tasks: [{
+				id: "35CC9D19ECFAADE3"
+				type: "item"
+				item: "malum:belt_of_the_magebane"
+			}]
+			rewards: [
+				{
+					id: "72024489DC583F2F"
+					type: "item"
+					item: {
+						id: "ftbai:codex_malum"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "50FCF759F7A6AD26"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_malum"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -3.5d
+			description: [
+				"Dear Student, "
+				""
+				"You are ready for your second trial, and I think also ready to take the next step in your studies of the spirit arts. You'll need some tools for this. "
+				"Make yourself a &6Crude Scythe&r. You can worry about a better one later, but for now you just need a working scythe to better harvest the spirits you need to proceed. "
+			]
+			dependencies: [
+				"1FA40843A3CBE07F"
+				"2CBECFD7042E416F"
+			]
+			id: "4DEB64DB8B987B54"
+			tasks: [{
+				id: "7684DD2BD52257A0"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			description: [
+				"Dear Student,"
+				""
+				"A &6 Hallowed Spirit Resonator&r allows you to manipulate the spirits you will encounter in this class. For your next trial, make one."
+			]
+			dependencies: [
+				"4DEB64DB8B987B54"
+				"2CBECFD7042E416F"
+			]
+			id: "5E85D47E3B22ED49"
+			tasks: [{
+				id: "6B5F16F453911890"
+				type: "item"
+				item: "malum:hallowed_spirit_resonator"
+				consume_items: true
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: [
+				"Dear Student"
+				""
+				"For your fourth trial I am going to test your mastery of &eNature's Aura&r thus far. "
+				""
+				"Let's discuss the Token of &6Undying Friendship&r. When you tame an animal, you get to keep them forever. Anytime they *would* die, they instead teleport to your bed.  "
+				""
+				"Your task is to make one of these. "
+				"Get to it. "
+			]
+			dependencies: [
+				"5E85D47E3B22ED49"
+				"2CBECFD7042E416F"
+			]
+			id: "0AC562887EA2FC81"
+			tasks: [{
+				id: "4678CD5AAD7D8023"
+				type: "item"
+				item: "naturesaura:pet_reviver"
+				consume_items: true
+			}]
+		}
+		{
+			title: "Dreaded Lich's Dungeon"
+			icon: "iceandfire:dread_queen_staff"
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"Dear Student,"
+				""
+				"In lieu of your fifth trial, I have something far more important to task you with. We have received reports of a powerful Litch allied to the &eDark Witch&r. We need you to enter his lair, and vanquish him, and any minions he may have. "
+				""
+				"In the great war, he was a close ally of the Dark Witch Lady Lexxie, and he must not be allowed to get to her. "
+				""
+				"Good luck"
+			]
+			dependencies: ["0AC562887EA2FC81"]
+			id: "3FA0233D495E1338"
+			tasks: [
+				{
+					id: "339B16F0A39500E7"
+					type: "dimension"
+					title: "Enter Dungeon"
+					dimension: "ftbdungeons:dungeon_dim"
+				}
+				{
+					id: "5F85306B432554E9"
+					type: "custom"
+					title: "Kill the Dread Lich"
+					icon: {
+						id: "iceandfire:lich_staff"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: [
+				"Dear Student,"
+				""
+				"For your sixth trial, we would like you to craft a &b Ring of Last Chance&r. With this ring if you are fatally injured, instead of dying, the ring completely heals you. This does consume the ring, however. "
+				""
+				"In retrospect, we probably should have given this trial to you before you faced that Litch. "
+			]
+			dependencies: [
+				"3FA0233D495E1338"
+				"418871AEEAAB853A"
+			]
+			id: "5EF227EC5FB3EE70"
+			tasks: [{
+				id: "6E9B51CA4708E0C6"
+				type: "item"
+				item: "naturesaura:death_ring"
+				consume_items: true
+			}]
+		}
+		{
+			title: "Start Dungeon"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/block/dimensional_mineshaft_portal.png"
+				}
+			}
+			x: 1.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["0AC562887EA2FC81"]
+			hide: true
+			can_repeat: true
+			id: "6218C76D68BB90A5"
+			tasks: [{
+				id: "23C464CB9A7DB7DA"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "2AFEFCCBF2C81469"
+				type: "command"
+				auto: "invisible"
+				command: "/execute as @p run ftbdungeons create ftbdungeons:occultism"
+				silent: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,19 @@
+{
+	id: "4203CC33F54D9C45"
+	order_index: 12
+	title: "WoF_reward"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "botania:dreamwood_wand"
+				Count: 1b
+				tag: {
+					color1: 0
+					color2: 0
+				}
+			}
+		}
+		{ item: "botania:endoflame", count: 4 }
+	]
+}

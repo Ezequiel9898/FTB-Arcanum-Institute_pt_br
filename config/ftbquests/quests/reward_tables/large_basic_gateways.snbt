@@ -1,0 +1,44 @@
+{
+	id: "4358B8715A997CB6"
+	order_index: 10
+	title: "Large Basic Gateways"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate_large"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:skeleton_gate_large"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:creeper_gate_large"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:spider_gate_large"
+				}
+			}
+		}
+	]
+}

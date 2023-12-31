@@ -1,0 +1,140 @@
+{
+	id: "7C7A2F98CE93F80D"
+	group: "125708BF22E6ABEE"
+	order_index: 6
+	filename: "sunekaer"
+	title: "Sunekaer - INVISIBLE"
+	icon: "ftbai:codex_hexcasting"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "ftbai:codex_hexcasting"
+			x: 0.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["7F2DC1764D4FAEFA"]
+			size: 3.0d
+			id: "6B2B43A2971654A6"
+			tasks: [{
+				id: "3DDDE795BB186D0B"
+				type: "item"
+				item: "hexcasting:artifact"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6233C11A7D63C0F8"
+				type: "item"
+				item: "ftbai:codex_hexcasting"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			id: "538BB6C34FED8002"
+			tasks: [{
+				id: "43DF36AC4D6B1675"
+				type: "item"
+				title: "Lost Wand"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "hexcasting:wands"
+					}
+				}
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["538BB6C34FED8002"]
+			id: "234E439A44948D9D"
+			tasks: [{
+				id: "69AD6D34EAE1C84A"
+				type: "item"
+				item: "hexcasting:akashic_log"
+				count: 25L
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["234E439A44948D9D"]
+			id: "4BD92DBD7426AE8D"
+			tasks: [{
+				id: "4BF32F4D84664FFB"
+				type: "item"
+				item: "hexcasting:sub_sandwich"
+				count: 8L
+				consume_items: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["4BD92DBD7426AE8D"]
+			id: "096AB6D090EEF996"
+			tasks: [{
+				id: "3894A553C7FC0458"
+				type: "item"
+				item: {
+					id: "hexcasting:battery"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: true
+				match_nbt: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["096AB6D090EEF996"]
+			id: "79EB051CAADB6A06"
+			tasks: [{
+				id: "56F5F74B20C2756F"
+				type: "item"
+				item: "hexcasting:slate"
+				count: 16L
+				consume_items: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["79EB051CAADB6A06"]
+			id: "7F2DC1764D4FAEFA"
+			tasks: [{
+				id: "708C7A80FFB312CD"
+				type: "item"
+				title: "Get an Impetus"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexcasting:impetus_rightclick"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:impetus_look"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:impetus_storedplayer"
+							}
+						]
+					}
+				}
+				consume_items: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

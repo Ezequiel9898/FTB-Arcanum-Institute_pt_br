@@ -1,0 +1,2065 @@
+{
+	id: "34DA314E3ADF44AE"
+	group: "0960D5B8A7FB00EA"
+	order_index: 1
+	filename: "botanical_gardens"
+	title: "Botanical Gardens"
+	icon: "botania:natura_pylon"
+	subtitle: ["Botania"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			x: 3.0d
+			y: -5.5d
+			subtitle: "Make a Petal Apothecary"
+			description: [
+				"Using the Petal Apothecary, your first task is to craft a &bPure Daisy&r."
+				""
+				"The previous lesson gifted you all the ingredients for making one. All you have to do now is &6throw the petals into the water&r, and finish it off with some &6seeds&r!"
+				""
+				"The Pure Daisy freely transmutes adjacent Stone into &6Livingrock&r and Logs into &6Livingwood&r. Make use of this magical flower in your dorms!"
+			]
+			dependencies: ["005DDE56C5926F5D"]
+			id: "3E19F49E1CA299A6"
+			tasks: [{
+				id: "1CBD0F875BEC25DC"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [
+				{
+					id: "13EDED86EF878B9D"
+					type: "item"
+					item: "botania:endoflame"
+					count: 4
+				}
+				{
+					id: "28FA603C3DEC04FE"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3165714084436691901L
+				}
+				{
+					id: "50E3F6B96381D6E2"
+					type: "item"
+					item: {
+						id: "botania:overgrowth_seed"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Birdbath"
+			x: 1.5d
+			y: -5.5d
+			subtitle: "The Petal Apothecary"
+			description: [
+				"Okay, class, time for your first lesson!"
+				""
+				"To begin, &blocate the Petal Apothecary&r nearby. If there is no water inside, simply &6lay your hands on it&r to fill it! Keep in mind that this water trick only works in this classroom! "
+				""
+				"For those of you who want to study on your own, feel free to make your very own Petal Apothecary &6in your dorm&r!"
+			]
+			dependencies: ["4339E4F7236D2091"]
+			id: "005DDE56C5926F5D"
+			tasks: [{
+				id: "12D7754608950E46"
+				type: "observation"
+				title: "Observe the Petal Apothecary"
+				icon: "botania:apothecary_default"
+				timer: 0L
+				observe_type: 0
+				to_observe: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "31EE02B2A686A14C"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 16
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.0d
+			subtitle: "Make a Mana Pool"
+			description: [
+				"Typically, to craft &6Livingrock&r, you would require regular Stone. But since &cStone is harder to come by&r, &6we can use Cobblestone in a pinch&r."
+				""
+				"Use this Livingrock to craft a &bMana Pool&r which &6holds Mana&r. Sometimes you can make completely new things by &6throwing a base item into the Mana Pool&r. We'll be learning how to do this later. "
+				""
+				"Now that you have somewhere to store Mana, we can start producing it!"
+			]
+			dependencies: [
+				"3E19F49E1CA299A6"
+				"18B32901E5D2C5BA"
+				"16E3903518FEC30E"
+			]
+			min_width: 300
+			id: "4169963D23A8F9FF"
+			tasks: [{
+				id: "2871ACBB92337F1A"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "72A5954C4E4F1A31"
+				type: "item"
+				item: "botania:floating_jaded_amaranthus"
+			}]
+		}
+		{
+			title: "Making Runes"
+			x: 6.0d
+			y: -4.0d
+			subtitle: "Make a Runic Altar"
+			description: [
+				"The venerable &bRunic Altar&r, a cornerstone of crafting and enchantment in the world of &dBotania&r!"
+				""
+				"To harness its arcane power, follow these steps:"
+				""
+				" - Carefully &6lay out the ingredients&r for the Rune you desire upon the Runic Altar."
+				""
+				" - &6Feed it Mana&r via a Mana Spreader, allowing the Altar to awaken and begin its magical work."
+				""
+				" - When it's finished, &6throw some Livingrock upon it and gently touch it with a Wand of the Forest&r, sealing the enchantment and completing the crafting process."
+				""
+				""
+				"With the Runic Altar, you wield the power to craft the Runes of enchantment, unlocking the secrets of &dBotania&r, one magical symbol at a time!"
+			]
+			dependencies: ["405BE5DC5EE184AA"]
+			id: "467B9515336B7593"
+			tasks: [{
+				id: "65BADCFEEF24AB81"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [
+				{
+					id: "6243A5A260B47956"
+					type: "item"
+					item: {
+						id: "botania:floating_orechid"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "55E9AB772207944C"
+					type: "item"
+					item: {
+						id: "botania:overgrowth_seed"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7CDD2E94A3D77D64"
+					type: "item"
+					item: {
+						id: "botania:redstone_root"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			subtitle: "Make a Mana Spreader"
+			description: [
+				"The &bMana Spreader&r is the the conduit of Mana's flow in the realm of &dBotania&r!"
+				""
+				"It serves as the &6gateway for Mana transmission&r. Mana-generating flowers have an inherent affinity for these Spreaders and will &6automatically connect to the nearest one&r when first planted."
+				""
+				"However, a Mana Spreader won't just send its Mana into the aether all higgledy piggledy — it &6requires a valid destination&r. Think of it as a mail courier waiting for a specific address before delivering its cargo."
+				""
+				"When a Mana Spreader cozies up to a Mana Pool, it takes advantage of the Pool's storage, using it as a reservoir. It can then &6shoot the Pool's Mana&r to its destination, facilitating the flow of energy."
+			]
+			dependencies: ["4169963D23A8F9FF"]
+			id: "405BE5DC5EE184AA"
+			tasks: [{
+				id: "50CEC46FD458DD21"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [
+				{
+					id: "3BF7B596EFC45577"
+					type: "item"
+					item: "botania:rune_gluttony"
+				}
+				{
+					id: "57FB13CF9C4DA6F4"
+					type: "item"
+					item: {
+						id: "botania:black_lotus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6F1E3DBE597D9071"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -5.0d
+			description: [
+				"In order to construct the elemental runes, you have to get in touch with each element. "
+				""
+				"To make the Water Rune, think of ingredients that really embody the spirit of Water."
+			]
+			dependencies: ["467B9515336B7593"]
+			id: "13A2ECBC9257AA37"
+			tasks: [{
+				id: "6E41583A4545FB10"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+			rewards: [
+				{
+					id: "2ED0D629DA9F8553"
+					type: "item"
+					item: "botania:redstone_root"
+					count: 8
+				}
+				{
+					id: "64B6C7EF6B047998"
+					type: "item"
+					item: {
+						id: "botania:rune_water"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			description: [
+				"In order to construct the elemental runes, you have to get in touch with each element. "
+				""
+				"To make the Fire Rune, think of ingredients that really embody the spirit of Fire"
+			]
+			dependencies: ["467B9515336B7593"]
+			id: "1479FDCF6A82DB19"
+			tasks: [{
+				id: "55A94EFFF4646184"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+			rewards: [
+				{
+					id: "43E67CF521C334AF"
+					type: "item"
+					item: "botania:redstone_root"
+					count: 8
+				}
+				{
+					id: "04D29BF5FA61F4E6"
+					type: "item"
+					item: {
+						id: "botania:rune_fire"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -5.5d
+			description: [
+				"In order to construct the elemental runes, you have to get in touch with each element. "
+				""
+				"To make the Earth Rune, think of ingredients that really embody the spirit of Earth."
+			]
+			dependencies: ["467B9515336B7593"]
+			id: "41388E45DE5370B9"
+			tasks: [{
+				id: "67B9D8665B6C638B"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+			rewards: [
+				{
+					id: "73FC312CE99B4435"
+					type: "item"
+					item: "botania:redstone_root"
+					count: 8
+				}
+				{
+					id: "02FB7FA79EA2920E"
+					type: "item"
+					item: {
+						id: "botania:rune_earth"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			description: [
+				"In order to construct the elemental runes, you have to get in touch with each element. "
+				""
+				"To make the Air Rune, think of ingredients that really embody the spirit of Air."
+			]
+			dependencies: ["467B9515336B7593"]
+			id: "40019CD47DB70511"
+			tasks: [{
+				id: "7093101755E45C4B"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+			rewards: [
+				{
+					id: "6AB73179B67EAEF4"
+					type: "item"
+					item: "botania:redstone_root"
+					count: 8
+				}
+				{
+					id: "6F3537DBC722C499"
+					type: "item"
+					item: {
+						id: "botania:rune_air"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			description: [
+				"In order to construct the elemental runes, you have to get in touch with each element. "
+				""
+				"In most of your education you will be dealing with the four primary elements; &2Earth&r, &eAir&r, &4Fire&r and &9Water&r. But there is a fifth element. It is usually called Spirit or &bMana&r. In this class we refer to it as Mana. You've already worked with Mana it its raw form, so to make the &bMana Rune&r, consider using some of the things you've made already."
+			]
+			dependencies: ["467B9515336B7593"]
+			id: "12BD2923CBB7E58C"
+			tasks: [{
+				id: "7F72B904EBC081D8"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+			rewards: [{
+				id: "0C2827607FFC7F7A"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: [
+				"The &bportal to Alfheim&r,  is not so much a conventional portal as a mystical crafting mechanism. Our friends on the other side are happy to help us by passing items back and forth, but no magic yet exists that can transport a living person."
+				""
+				"[\"\",\"To harness its magical abilities, follow these steps as outlined in \",{\"text\":\"[ Lexica Botania ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book botania:lexicon botania:alfhomancy/intro 4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Lexica Botania\"]}}]"
+				""
+				"The portal to Alfheim is not about physical travel but rather a gateway to craft and transform items with the help of botanical magic. We do not know why no person who has attempted to cross over has returned, but maybe one of you will one day unlock the secrets, and be the first to travel to Alfheim and live to tell the tale!"
+			]
+			dependencies: ["5B4E965DF13B3FA9"]
+			id: "72DE30FD5ACACD14"
+			tasks: [{
+				id: "74D16711740C8A79"
+				type: "item"
+				item: "botania:alfheim_portal"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			description: ["Mana Pearls are valuable ingredients in magic, and our friends in Alfheim think so too. We trade them for batches of Pixie Dust! Be careful with the dust though. It can have unintended side effects if consumed. Definitely do not put it in coffee."]
+			dependencies: ["72DE30FD5ACACD14"]
+			id: "45150E572576A136"
+			tasks: [{
+				id: "20D79BD9D07BC22B"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+			rewards: [
+				{
+					id: "50944A32134C4EDE"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "61787F27CA792502"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: ["The beings on the other side love our Mana Diamonds as much as we love their Dragonstone."]
+			dependencies: ["72DE30FD5ACACD14"]
+			id: "081F0BB2BA499206"
+			tasks: [{
+				id: "33C4BCC3F7760901"
+				type: "item"
+				item: "botania:dragonstone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			description: ["Our friends on the other side of the Elven Gateway are happy to give us these in exchange for our Manasteel. We do not know what they do with Manasteel, but we do know Elementium is a powerful substance vital to the higher magics."]
+			dependencies: ["72DE30FD5ACACD14"]
+			id: "2BC91F7AB1738A43"
+			tasks: [{
+				id: "49025EED979B1DFF"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"The &bTerrasteel Ingot&r, is brought to life by the &6Terrestrial Agglomeration Plate&r, and is a pivotal milestone in the enchanting journey of &bBotania&r!"
+				""
+				"This ingot serves as the gateway to the next tier of botanical magic. "
+				""
+				"With the Terrasteel Ingot in hand, you gain access to enchanting creations like the &6Mana Mirror&r, a mystical device for swift transportation, and the &6Elven Gateway Core&r, a key to unlocking the secrets of the elven realm."
+				""
+				"Embrace the power of Terrasteel, my aspiring botanists, for it is the bridge to even greater enchantments and discoveries in the enchanting world of &bBotania&r!"
+			]
+			dependencies: ["57CD9448DC7AC231"]
+			id: "5B4E965DF13B3FA9"
+			tasks: [{
+				id: "7BA14D578BF168B1"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			description: [
+				"You have triumphed over the corrupted spirit, but the real battle is ahead of you. Another spirit threatens us, and I am counting on you to defeat it. The &bharder Guardian of Gaia&r, a true test of mettle, and will take all of your skills to defeat."
+				""
+				""
+				"To unlock this more challenging battle and earn even greater rewards, you must first prove your worthiness. Present the &6Gaia Ingot&r, forged from the precious &6Gaia Spirits&r you've obtained, as a testament to your mastery of botanical magic."
+				""
+				"Once you've shown your worth, you'll be granted access to the harder Battleground of Gaia. Here, you'll face a significantly tougher battle, but the rewards will be even more bountiful. Among these treasures is the coveted &6Dice of Fate&r, a magical item that can spawn one of six unique and incredibly useful items."
+				""
+				"So, prepare, my dear student, for the ultimate challenge and face the harder Guardian of Gaia to unlock the mysteries and treasures that await you in the world of &bBotania&r! Your school is counting on you!"
+			]
+			dependencies: ["032BB1B4B023D26F"]
+			id: "0D5FF5BBE6EC9681"
+			tasks: [{
+				id: "21C9ED0AB0321A1D"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+		}
+		{
+			title: "You Must Construct Additional Flowers"
+			x: 0.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Flower acquisition"
+			description: [
+				"If you require additional flowers, you have &6four options&r:"
+				""
+				"• You can &6purchase them from the Iron Goblin Shop&r."
+				"• You can &6plant Mystical Petals&r and grow them with Bone Meal."
+				"• You can use the &6Jaded Amaranthus&r given as reward for the Mana Pool, with a small mana cost."
+				"• You can &6trade some Livingwood or Livingrock&r using the repeatable quests above."
+				""
+				"Good luck with your flower collection!"
+			]
+			hide_dependency_lines: true
+			min_required_dependencies: 1
+			dependencies: ["0459E7180318826B"]
+			hide: true
+			size: 0.75d
+			id: "42B4A10E4021DAB1"
+			tasks: [{
+				id: "3E01D39CE833925D"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -6.0d
+			description: [
+				"Ah, the delightful &bClayconia&r, a true marvel of nature's balance!"
+				""
+				"This remarkable flower possesses the innate ability to perform a magical transformation, turning the ubiquitous Sand into the invaluable Clay."
+				""
+				"You see, my dear students,\\nClay is the embodiment of balance,\\nas it is the key to crafting many wondrous things in our world."
+				""
+				"With the &bClayconia&r by your side,\\nyou'll find the perfect equilibrium, just as everything should be."
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "158A8C9166CB6B5E"
+			tasks: [{
+				id: "7F8E0A0165C032BB"
+				type: "item"
+				item: "botania:clayconia"
+			}]
+		}
+		{
+			title: "Wand of the Forest"
+			x: 3.0d
+			y: -7.0d
+			subtitle: "Make a Wand of the Forest"
+			description: [
+				"The versatile &bWand of the Forest&r, a magical multitool in the world of &dBotania&r!"
+				""
+				"This enchanting wand boasts two distinct modes:"
+				""
+				"- In &6Bind&r mode, you can sneak and right-click one block,\\n  then right-click another to create a mystical connection,\\n  binding the first block to the second.\\n  It's like weaving a web of enchantment."
+				""
+				"- In &6Function&r mode, the wand takes on various functions\\n  depending on the block you use it on.\\n  The intricacies of these functions can be found in\\n  the Lexica Botania."
+				""
+				""
+				"There are even applications outside of &dBotania&r I encourage you to explore in your dorms!"
+				""
+				"The &bWand of the Forest&r can also &6mimic the function of a hoe&r, making gardening a breeze. And for those who aspire to be true horticulturalists, the &bWand of Elven Forest&r can even till a substantial &63x3 area&r!"
+			]
+			dependencies: ["3E19F49E1CA299A6"]
+			id: "5445BA03DB8C903C"
+			tasks: [{
+				id: "198974B6880C73BB"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "31B7404333013562"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 4756870154964278341L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			hide_dependency_lines: false
+			dependencies: ["3CA5E2472E0B4E70"]
+			hide: true
+			can_repeat: true
+			id: "231CD228FBC6FC88"
+			tasks: [{
+				id: "07C8D7A7FFF7F092"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0044B24E88018F45"
+					type: "command"
+					auto: "invisible"
+					command: "/execute as @p run ftbdungeons create ftbdungeons:arena"
+					silent: true
+				}
+				{
+					id: "1D8A090529AA9451"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "botania:terrasteel_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			description: [
+				"Oh, my dear pupils, prepare to be enchanted once more by the mystical &bCorporea Retainer&r! "
+				""
+				"Now, for a captivating demonstration, imagine placing the &6Retainer&r right beside the Interceptor from our previous enchanting tale.\\n\\nNearby, introduce a Corporea Crystal Cube, attentively monitoring a Button's presence.\\nWith a Comparator gracefully extending from the Crystal Cube to the Retainer, the intricate dance begins."
+				""
+				"So, my bright scholars, when a longing for a Button arises, but none can be found, the Interceptor shall sing its signal, setting forth the chain of events.\\nThrough an elegant sequence, the Button will be crafted, find its place within the network, and send word to the Crystal Cube, which, in turn, shall whisper its wisdom to the &6Retainer&r."
+				""
+				"In this magnificent orchestration, the &6Retainer&r shall reunite the freshly crafted Button with the entity that yearned for it, completing the circle of enchantment once more. "
+			]
+			dependencies: ["5A08EC44C68F9788"]
+			min_width: 300
+			id: "6ACC2FE546094F0B"
+			tasks: [{
+				id: "4303D50DE1B2D2DF"
+				type: "item"
+				item: "botania:corporea_retainer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			description: [
+				"Oh, my dear scholars, let me weave a tale of pure &bBotanical&r brilliance for you!"
+				""
+				"Behold the &bCorporea Interceptor&r, a marvel of redstone and mana! When the Item Frame atop it yearns for an item it cannot find, it emits a dazzling redstone pulse, like a beacon of magical yearning."
+				""
+				"Now, picture this enchanting scene: a 1x1 &6Crafty Crate&r, a &6Hopper&r guiding its way, a &6Corporea Funnel&r adorned with a Spark and an Item Frame graced with Stone, and an ever-watchful &6Corporea Interceptor&r, also adorned with a Spark and an Item Frame bearing a Button."
+				""
+				"When the call for a Button resounds but none can be found, the Interceptor dances with energy, sending forth its crimson pulse. This awakens the Funnel, which lovingly guides the Stone to the Crafty Crate, like an artisan crafting a masterpiece."
+				""
+				"May your Botanical adventures be ever filled with wonder, my blossoming magicians!"
+			]
+			dependencies: ["592EE99E209184B7"]
+			min_width: 300
+			id: "5A08EC44C68F9788"
+			tasks: [{
+				id: "6A36D3E2ED22421A"
+				type: "item"
+				item: "botania:corporea_interceptor"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			description: [
+				"Ah, the ingenious &bCorporea Funnel&r!\\n\\nWhen graced with a &6redstone signal&r, it springs to life, summoning items from its Corporea network. These items find their new home either &1one or two blocks below&r or gracefully settle onto the ground."
+				""
+				"Now, to specify the requested item, simply place a &6filled Item Frame&r upon it. A single rotation sets the pace: one spin for &82&r, another for &84&r, and so forth, all the way up to &864&r."
+				""
+				"And if you're feeling particularly creative, you can add multiple Item Frames. The Corporea Funnel will select a random one to make the request, adding a touch of whimsy to your magical creations! "
+			]
+			dependencies: ["43BD4BB1CEFB356D"]
+			id: "592EE99E209184B7"
+			tasks: [{
+				id: "548D401CEA015A24"
+				type: "item"
+				item: "botania:corporea_funnel"
+			}]
+		}
+		{
+			title: "Corperea Spark Networks"
+			icon: "botania:corporea_spark_master"
+			x: 8.5d
+			y: 3.5d
+			description: [
+				"Ah, the magical &bCorporea Sparks&r, the core of our wondrous &6Corporea networks&r!\\n\\nThey empower you to &6request items from connected inventories&r, but remember, it's all about &6active requests&r – no passive magic here!"
+				""
+				"These sparks also have a social side, &6connecting with others of the same color&r, easily customized with dyes. And don't forget the esteemed &bMaster Corporea Spark&r at the network's center."
+				""
+				"One nifty trick: Corporea Sparks can grab items from the inventory below, except for the enigmatic &cMaster Corporea Spark&r, which guards its secrets without access. Magic, I suppose! "
+			]
+			hide_dependency_lines: true
+			dependencies: ["72DE30FD5ACACD14"]
+			hide: true
+			min_width: 275
+			id: "43BD4BB1CEFB356D"
+			tasks: [
+				{
+					id: "24655613BA9904D2"
+					type: "item"
+					item: "botania:corporea_spark"
+				}
+				{
+					id: "2BA99A820BD7EAFC"
+					type: "item"
+					item: "botania:corporea_spark_master"
+				}
+			]
+		}
+		{
+			title: "Corperea Index"
+			x: 8.0d
+			y: 2.5d
+			description: [
+				"Near the marvelous &bCorporea Index&r, a simple message is all you need to &6request items&r from connected inventories via the Corporea Spark above it.\\nWhether you ask for \"&632 Stone&r\" or \"&6half a stack of stone&r,\" the magic works!"
+				""
+				""
+				"And here's the intriguing twist:\\ndespite the Index's lack of a physical inventory, you can safely place the Master Corporea Spark upon it without any loss of function.\\n\\nMagic, my dear students, knows no bounds! "
+			]
+			dependencies: ["43BD4BB1CEFB356D"]
+			id: "63FD14AE7EDA04CA"
+			tasks: [{
+				id: "5FDF879EADF9CA14"
+				type: "item"
+				item: "botania:corporea_index"
+			}]
+		}
+		{
+			title: "Corperea Crystal Cube"
+			x: 8.0d
+			y: 4.5d
+			description: [
+				"Ah, my delightful apprentices, the &bCorporea Crystal Cube&r is a true marvel of our Botanical world!"
+				""
+				"With a simple right-click, it reveals the mystical secrets of the network, graciously &6displaying the quantity of a chosen item&r."
+				""
+				"And what's more, my dear scholars, the magic doesn't end there! The humble &6Comparator&r becomes a conduit of knowledge,\\nemitting a signal that waxes and wanes in harmony with the abundance of that chosen item within our enchanted network."
+			]
+			dependencies: ["43BD4BB1CEFB356D"]
+			id: "7FB8C3A920B36A6A"
+			tasks: [{
+				id: "0FCA0B6EB0C9A535"
+				type: "item"
+				item: "botania:corporea_crystal_cube"
+			}]
+		}
+		{
+			icon: "botania:spark_upgrade_dispersive"
+			x: 3.5d
+			y: 1.0d
+			description: [
+				""
+				"{image:ftbai:textures/quests/botania/spark_augments.png width:150 height:105 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72DE30FD5ACACD14"]
+			size: 0.5d
+			min_width: 300
+			id: "5877C3EB23063F05"
+			tasks: [{
+				id: "7365C1D52E5A45BC"
+				type: "item"
+				title: "Sparks"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "spark_upgrade"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.0d
+			description: [
+				"The splendid &bFlügel Tiara&r, a crown of magical flight and grace in the world of &bBotania&r!"
+				""
+				"With this enchanting accessory adorning your head, you gain the power of &630 seconds of creative flight&r, granting you the freedom to soar through the skies.\\nAnd fear not, for even when your wings tire, a brief cooldown ensures you're ready to take flight once more."
+				""
+				""
+				"But that's not all! The Flügel Tiara offers even more maneuvers:"
+				""
+				"- When you find yourself in need of speed, simply sprint,\\n  and you'll execute a quick &6dash&r forward,\\n  making your flight even more exhilarating."
+				""
+				"- When it's time to descend gracefully from the heavens,\\n  just sneak while falling, and you'll begin to &6glide&r down,\\n  defying gravity and making a grand entrance or exit."
+				""
+				""
+				"So, my dear aviators, let the Flügel Tiara be your ticket to the skies, where creativity and grace converge in the enchanting world of &bBotania&r!"
+			]
+			dependencies: ["0D5FF5BBE6EC9681"]
+			size: 0.5d
+			id: "64AE8FF9B5D2AE5B"
+			tasks: [{
+				id: "2C9B062393EBE358"
+				type: "item"
+				title: "Flügel Tiara"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 1
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 3
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 4
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 5
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 6
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 7
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 8
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 9
+									gliding: 0b
+									RepairCost: 0
+									flying: 0b
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: [
+				""
+				""
+				""
+			]
+			hide_dependency_lines: true
+			dependencies: ["5B4E965DF13B3FA9"]
+			size: 0.5d
+			id: "7127B549CA61AC28"
+			tasks: [{
+				id: "5E9EE39502DB6AAF"
+				type: "item"
+				item: {
+					id: "botania:mana_mirror"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.0d
+			description: [
+				"Ah, the mysterious &bLoonium&r, a flower not for the faint of heart!"
+				""
+				"This enchanting blossom, while consuming a substantial amount of mana,\\npossesses the astonishing ability to &6summon formidable monsters&r from the depths of the unknown."
+				""
+				"But here's the thrilling twist:\\n\\nthese summoned creatures are no ordinary foes;\\nthey are known to &6drop valuable dungeon loot&r, treasures of great significance!"
+				""
+				"So, my brave students, if you dare to harness the power of the &bLoonium&r, be prepared for a challenge that promises rich rewards.\\nMay your wits and magic guide you through this adventurous endeavor!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "6C753F0DC6ED98F1"
+			tasks: [{
+				id: "625E7EC4FD4F0056"
+				type: "item"
+				item: "botania:loonium"
+			}]
+		}
+		{
+			title: "Speeding up Cropgrowth"
+			x: 12.0d
+			y: -5.0d
+			description: [
+				"Ah, dear students,"
+				""
+				"Let me share the wonders of the &bAgricarnation&r with you!"
+				"This enchanting flower will joyfully harness Mana to accelerate the growth of nearby plants."
+				""
+				"Isn't nature's magic simply marvelous?"
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "6EC5ADC9B6B3FB14"
+			tasks: [{
+				id: "40DA2572EB5B43DC"
+				type: "item"
+				item: "botania:agricarnation"
+			}]
+			rewards: [{
+				id: "22A4CCA9C64D3AD3"
+				type: "item"
+				item: {
+					id: "hexerei:flowering_lily_pad"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Everhealing Flower"
+			x: 12.0d
+			y: -3.0d
+			description: [
+				"Oh, the &bFallen Kanade&r, a true testament to the harmonious magic of Botania!"
+				""
+				"This magnificent flower, my dear students, possesses the remarkable ability to harness the mana's essence,\\nusing it to bestow the gift of regeneration upon those fortunate enough to stand nearby. "
+				""
+				"It's as if the gentle embrace of nature itself is caressing and healing the very souls of players in its presence."
+				""
+				"With the &bFallen Kanade&r, we not only witness the beauty of our magical arts but also experience the benevolence they can bring to our world. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "0301125E31E427C1"
+			tasks: [{
+				id: "3F33505795181888"
+				type: "item"
+				item: "botania:fallen_kanade"
+			}]
+		}
+		{
+			title: "Sticky Hands"
+			x: 12.0d
+			y: -2.0d
+			description: [
+				"Ah, the enchanting &bRannuncarpus&r! "
+				""
+				"This wondrous flower is quite the diligent helper.\\nYou see, it possesses the marvelous ability to &6place nearby dropped blocks&r with grace and precision.\\nIt's like having a diligent gardener at your side!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			min_width: 250
+			id: "674240A81091E369"
+			tasks: [{
+				id: "5B90152834D5BE90"
+				type: "item"
+				item: "botania:rannuncarpus"
+			}]
+		}
+		{
+			x: 0.25d
+			y: 3.5d
+			description: [
+				"Ah, the enchanting &bLuminizers&r, my magical marvels!"
+				""
+				"With a gentle interaction with a &bLuminizer&r,\\nyou'll be whisked away to a special place, a &6bound Luminizer&r, carefully linked to your heart's desires.\\nImagine the possibilities!\\nYou can connect them in a series, creating a magical path that weaves through the very essence of the world, helping you traverse great distances and even take whimsical turns."
+			]
+			hide_dependency_lines: true
+			dependencies: ["081F0BB2BA499206"]
+			hide: true
+			id: "38FD3CD0CE2A3E1E"
+			tasks: [{
+				id: "7FA8D5FD8D296A7F"
+				type: "item"
+				item: "botania:light_relay"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.25d
+			description: [
+				"Oh, the delightful &bDetector Luminizer&r, a touch of magic with a twist!"
+				""
+				"Much like its enchanting siblings, a &bDetector Luminizer&r carries the power to transport you to far-off places.\\n\\nBut here's the twist – it's a clever one!\\nWhen you activate it, it's not just about the journey;\\nit also &6lights up with a vibrant redstone signal&r, like a beacon of discovery!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["38FD3CD0CE2A3E1E"]
+			size: 0.5d
+			id: "7DD85C13D28FFA36"
+			tasks: [{
+				id: "300CDA44760501FE"
+				type: "item"
+				item: "botania:detector_light_relay"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.75d
+			description: [
+				"Ah, the whimsical &bFork Luminizer&r, where choices bloom like petals on a flower!"
+				""
+				"This unique Luminizer doesn't follow the conventional path.\\nInstead, it offers two distinct directions, determined by an &6Animated Torch&r hovering up to 2 blocks above or below it.\\nIt's like having a magical crossroad in the sky!"
+				""
+				"The Fork Luminizer doesn't bind itself to any specific destination. Instead, it watches the direction in which the Animated Torch points, and when you take the leap, it'll carry you to the Luminizer that shares that direction. It's like a journey guided by the dance of animated light!"
+				""
+				"{image:ftbai:textures/quests/botania/fork_luminizer.png width:150 height:75 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["38FD3CD0CE2A3E1E"]
+			size: 0.5d
+			min_width: 300
+			id: "08F8ED36302E40F9"
+			tasks: [{
+				id: "1AB9C06B20AE2545"
+				type: "item"
+				item: "botania:fork_light_relay"
+			}]
+			rewards: [{
+				id: "7FE547C484661BA8"
+				type: "item"
+				item: "botania:animated_torch"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.75d
+			description: [
+				"Oh, the fantastic &bLuminizer Launcher&r, a true marvel of magical transportation!"
+				""
+				"Imagine this, dear students: with a simple touch of a redstone signal, the Luminizer Launcher springs to life.\\nIt becomes a beacon of transportation, inviting nearby entities – be they players, curious mobs, or even precious items – to embark on an enchanting journey!"
+				""
+				"Once the signal is given, these lucky travelers will find themselves riding an adjacent Luminizer, carried away to mysterious and exciting destinations.\\nIt's like a grand invitation to explore the hidden wonders of the world of &bBotania&r!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["38FD3CD0CE2A3E1E"]
+			size: 0.5d
+			id: "275BE6206860272B"
+			tasks: [{
+				id: "69D0A3FFDDFC70C6"
+				type: "item"
+				item: "botania:light_launcher"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.25d
+			description: [
+				"Ah, the enchanting &bToggle Luminizer&r, a twist of magic that adds a dash of surprise!"
+				""
+				"Just like its Luminizer cousins, the &bToggle Luminizer&r will transport you to wondrous places with a interaction.\\n\\nBut here's where it gets intriguing – when it senses a &6redstone signal&r, it becomes mischievous and playfully drops any riders it may have, just like a magician revealing a hidden trick!"
+				""
+				""
+				"So, be prepared for a journey full of surprises, my dear students.\\n\\nAs you ride the Toggle Luminizer, keep an eye out for redstone signals that might lead to unexpected adventures. It's like a dance of enchantment and intrigue in the world of &bBotania&r!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["38FD3CD0CE2A3E1E"]
+			size: 0.5d
+			id: "7A2C1F4CD4791057"
+			tasks: [{
+				id: "54C04B89D7FBA49F"
+				type: "item"
+				item: "botania:toggle_light_relay"
+			}]
+		}
+		{
+			title: "Burning Love"
+			x: 5.0d
+			y: -5.5d
+			subtitle: "Get 8 Endoflames"
+			description: [
+				"Ah, the &bEndoflame&r; a fun and flamey curiosity!"
+				""
+				"This fascinating botanical marvel &6harnesses the power of combustion to create Mana&r. It eagerly consumes &6any burnable item&r. The hotter the fuel burns, the more satisfied the Endoflame is, and the more Mana it releases."
+				""
+				"It's like a hungry flame that dances with increasing intensity as it feasts on the offerings of the world."
+				""
+				"Fun Fact: I always keep one in my bag. You never know when you'll need to roast marshmallows on the fly."
+				""
+				"{image:ftbai:textures/quests/botania/endo_auto.png width:100 height:117 align:1}"
+			]
+			dependencies: ["405BE5DC5EE184AA"]
+			hide: true
+			id: "0FA334A068350140"
+			tasks: [{
+				id: "0BCDD4DD47A5384E"
+				type: "item"
+				item: "botania:endoflame"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "2C153160635604AF"
+					type: "item"
+					item: "minecraft:coal_ore"
+					count: 8
+				}
+				{
+					id: "60860279779DE412"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: -5.0d
+			description: [
+				"Ah, the enchanting &bRosa Arcana&r, a mystical rose that thrives on the essence of experience in the world of &bBotania&r!"
+				""
+				"This magical flower is truly unique, as it generates Mana not from the ordinary, but from the &6experience of nearby players&r. It's as if the very knowledge and wisdom of adventurers feed its petals with the energy of growth."
+				""
+				"Additionally, it has a keen affinity for the essence of wisdom, drawing energy from the nearby &6experience orbs&r as well. It's a beautiful dance of learning and growth, where the Rosa Arcana transforms knowledge into the life force of Mana, creating a harmonious balance in the world of &bBotania&r!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "4B0C79A1DC71AE45"
+			tasks: [{
+				id: "05E66350BA098E6C"
+				type: "item"
+				item: "botania:rosa_arcana"
+			}]
+			rewards: [{
+				id: "542E89E94B6D7A0A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.5d
+			y: -4.0d
+			description: [
+				"Ah, the tongue-twisting &bRafflowsia&r, a magical marvel with a peculiar appetite for other flowers in the enchanting world of &bBotania&r!"
+				""
+				"This intriguing plant generates its Mana by engaging in an unusual practice—it delights in &6destroying nearby placed magical flowers&r. \\nHowever, here's the twist: the more frequently the Rafflowsia breaks the same flower, \\nthe less Mana it generates from its botanical buffet."
+				""
+				""
+				"So, my dear students, while this peculiar flower can be a boon for Mana production, you must exercise caution and not place it near any precious flowers you don't want to see disappear. The Rafflowsia dances to the rhythm of its own unique magic in the grand tapestry of &bBotania&r!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "55F585C4FAE83664"
+			tasks: [{
+				id: "7CCEB379FB50686F"
+				type: "item"
+				item: "botania:rafflowsia"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			description: [
+				"Ah, the mystical &bSpectrolus&r, a guardian of color and Mana in the world of &bBotania&r!"
+				""
+				"This enchanting creature has a unique appetite for Wool, but it's quite particular about its tastes. It will only accept Wool in a &6specific order of colors&r, and it's like a symphony of hues that it desires:"
+				""
+				"This order is: \\n  White, Orange, Magenta, \\n  Light Blue, Yellow, \\n  Lime, Pink, Grey, \\n  Light Grey, Cyan, Purple, \\n  Blue, Brown, Green, \\n  Red, Black."
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			id: "42CA0B58F0C48607"
+			tasks: [{
+				id: "7EC8339FE9E504DD"
+				type: "item"
+				item: "botania:spectrolus"
+			}]
+			rewards: [{
+				id: "474CA8C0C2ED0D12"
+				type: "item"
+				item: {
+					id: "minecraft:bundle"
+					Count: 1b
+					tag: {
+						Items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:black_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:red_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:green_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:brown_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:blue_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:purple_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:cyan_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:light_gray_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:gray_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:pink_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:lime_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:yellow_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:light_blue_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:magenta_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:orange_wool"
+								Count: 4b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:white_wool"
+								Count: 4b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: "botania:dandelifeon"
+			x: 10.5d
+			y: -6.0d
+			description: [
+				"The &bDandelifeon&r generates Mana by simulating &6Conway's Game of Life&r, a cellular automaton with simple rules. It works in a 25x25 area centered on itself."
+				""
+				"While powered by redstone, the simulation runs twice a second, using &bCellular Blocks&r. Each step changes a cell (aka block space) based on its neighbors (the 8 blocks around it). Here are the rules:"
+				""
+				"When a populated cell has 2 or 3 neighbors, it lives. Otherwise, it dies."
+				""
+				"When an unpopulated cell has 3 neighbors, it becomes populated."
+				""
+				"When any Cellular Blocks becomes a neighbor of the Dandelifeon, the simulation is ended. It creates an amount of Mana &6based on the number of steps it took to get there&r. The more steps, the more Mana. If it reaches 100 steps, it dies."
+			]
+			hide_dependency_lines: true
+			dependencies: ["467B9515336B7593"]
+			hide: true
+			min_width: 300
+			id: "4B1463339F850F2C"
+			tasks: [
+				{
+					id: "04208E7DF24793BB"
+					type: "item"
+					item: "botania:dandelifeon"
+				}
+				{
+					id: "3DB0629C257A2689"
+					type: "item"
+					item: "botania:cell_block"
+				}
+			]
+		}
+		{
+			icon: "botania:brewery"
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"You have learned the basics of Botania, and now you're ready for the next level; &bBotanical Brewery&r, where the essence of Mana meets the art of brewing!"
+				""
+				"Here we harness the power of Mana to craft brews that transcend the ordinary. These brews take on various forms, each with its own unique charm and utility:"
+				""
+				"&bVials&r:\\n - The most basic brews with 4 uses, like the heartbeat of nature."
+				""
+				"&bFlasks&r:\\n - Versatile brews with 6 uses, a touch more potent than vials."
+				""
+				"&bIncense Sticks&r:\\n - Ethereal creations burned on &6Incense Plates&r, radiating enchantment."
+				""
+				"&bTainted Blood Pendants&r:\\n - Mysterious curios that slowly degrade, like fading secrets of the forest."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12BD2923CBB7E58C"]
+			id: "4A9FA7262B0794F9"
+			tasks: [
+				{
+					id: "7598DBCB6F21EE31"
+					type: "item"
+					item: "botania:brewery"
+				}
+				{
+					id: "7186A66F9D8CA222"
+					type: "item"
+					title: "Any Brew in any form"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "botania:brew_vial"
+									tag: {
+										brewKey: "botania:speed"
+									}
+								}
+								{
+									Count: 1b
+									id: "botania:brew_flask"
+									tag: {
+										brewKey: "botania:speed"
+									}
+								}
+								{
+									Count: 1b
+									id: "botania:incense_stick"
+									tag: {
+										brewKey: "botania:speed"
+									}
+								}
+								{
+									Count: 1b
+									id: "botania:blood_pendant"
+									tag: {
+										brewKey: "botania:speed"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "botania:red_string_container"
+			x: -1.0d
+			y: -1.0d
+			description: [
+				"In the old stories, the &bRed String&r bound together the fates of lovers. In &eBotania&r it weaves together threads of enchantment."
+				""
+				"These mystical threads &6bind to certain blocks&r, forming connections up to a distance of 8 blocks.\\nThey possess the ability to weave through obstacles, creating magical links between distant points.\\nWhen properly bound, you'll even see the Red String when holding a Wand of the Forest, like a glowing thread of connection."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4169963D23A8F9FF"
+				"12BD2923CBB7E58C"
+			]
+			min_width: 300
+			id: "76BE032AC883B943"
+			tasks: [{
+				id: "008967C84AF50B00"
+				type: "item"
+				title: "Red String blocks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:red_string_container"
+							}
+							{
+								Count: 1b
+								id: "botania:red_string_dispenser"
+							}
+							{
+								Count: 1b
+								id: "botania:red_string_fertilizer"
+							}
+							{
+								Count: 1b
+								id: "botania:red_string_comparator"
+							}
+							{
+								Count: 1b
+								id: "botania:red_string_relay"
+							}
+							{
+								Count: 1b
+								id: "botania:red_string_interceptor"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: "botania:crafty_crate"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"The next thing we'll be learning about is indispensable to the student of botanical magic. The &bCrafty Crate&r."
+				""
+				"Here's how this marvel of crafting operates:"
+				"- As items are piped into it,\\n  they'll be arranged neatly,\\n  with the first item occupying the top left slot,\\n  the second in the top middle,\\n  and so forth, until all slots are full."
+				""
+				"- The true magic happens when all the slots are occupied,\\n  for that's when the crafting begins.\\n  It will perform a crafting operation, but by &6default&r,\\n  it will attempt a &63x3 crafting recipe&r."
+				""
+				"- However, here's where it gets even more enchanting:\\n  you can use special &bCrafting Patterns&r to modify\\n  the shape it tries to craft.\\n  For instance, a &61x1&r pattern will make it focus\\n  on just the top left slot, and so on."
+			]
+			hide_dependency_lines: true
+			dependencies: ["72DE30FD5ACACD14"]
+			id: "7CBE29587DE2120D"
+			tasks: [
+				{
+					id: "0E7D9AFED80C747A"
+					type: "item"
+					item: "botania:crafty_crate"
+				}
+				{
+					id: "11B8FE50991510B6"
+					type: "item"
+					title: "Any Crafting Pattern"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "botania:pattern"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "framed"
+											}
+										}]
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Make a Terrestrial Agglomeration Plate"
+			description: [
+				"The &bTerrestrial Agglomeration Plate&r is truly a profound alchemical instrument in the world of &dBotania&r!"
+				""
+				"This remarkable plate, fueled by half the essence of a Mana Pool, undertakes the sacred task of transforming three magical ingredients—&6Mana Pearls, Manasteel Ingots, and a Mana Diamond—into the coveted &bTerrasteel Ingot&r."
+				""
+				"To feed this wondrous plate with the life force it requires, you'll need to utilize the enchanting &6Sparks&r.\\nThese Sparks serve as conduits for Mana, and some special blocks can use Sparks to request Mana from nearby Pools.\\nThe more Pools adorned with Sparks, the quicker the Terrestrial Agglomeration Plate works its alchemical magic."
+				""
+				"So, my diligent students, as you gather these precious materials and set up your Mana infrastructure with Sparks, let the Terrestrial Agglomeration Plate be a beacon of your alchemical mastery in the enchanted world of &bBotania&r!"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"40019CD47DB70511"
+				"12BD2923CBB7E58C"
+				"41388E45DE5370B9"
+				"1479FDCF6A82DB19"
+				"13A2ECBC9257AA37"
+			]
+			size: 1.5d
+			id: "57CD9448DC7AC231"
+			tasks: [{
+				id: "42DB198DB98324BA"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+			rewards: [{
+				id: "61D414EFEAFDFA68"
+				type: "item"
+				item: "botania:spark"
+				count: 2
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: [
+				"45150E572576A136"
+				"2BC91F7AB1738A43"
+			]
+			id: "3CA5E2472E0B4E70"
+			tasks: [{
+				id: "74DAE62EAB1D4E94"
+				type: "item"
+				item: "botania:gaia_pylon"
+				count: 4L
+			}]
+		}
+		{
+			title: "Kill The Gaia in the Dungeon"
+			icon: "botania:gaia_head"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"You have done very well in this class, but I'm afraid I must ask more of you. I am sure you have heard the stories of the Evil Sorceress Lady Lexxie. Long ago she was guided by a powerful spirit, and from time to time that spirit sends its minions to try to free her. One such spirit threatens us now. Please defeat the &bGuardian of Gaia&r, "
+				""
+				"To challenge this mighty foe, I can grant you access to a special Dungeon. This will lead you up to the Battleground of Gaia. For reasons I cannot discuss yet, I am unable to go myself. But you are one of the most talented students I have ever taught, and I have absolute faith in you."
+				""
+				"But heed this warning: the Guardian of Gaia is no pushover. It's a formidable foe, and you'll want to prepare accordingly. Enchanted gear and potions, including powerful &6brews&r, will be your allies in this epic battle."
+				""
+				"Remember that teamwork can be both a blessing and a curse; while having more players will make the fight harder, it also increases the rewards. So gather your comrades, prepare for the challenge, and face the Guardian of Gaia with bravery and determination in the magical realm of &bBotania&r!"
+			]
+			dependencies: ["3CA5E2472E0B4E70"]
+			id: "032BB1B4B023D26F"
+			tasks: [{
+				id: "49F369000CECD65E"
+				type: "kill"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+			rewards: [{
+				id: "4177ACA2F65172FB"
+				type: "item"
+				item: "botania:life_essence"
+				count: 4
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			hide_dependency_lines: false
+			dependencies: ["0D5FF5BBE6EC9681"]
+			hide: true
+			can_repeat: true
+			id: "70CE5578C6ABE696"
+			tasks: [{
+				id: "45BBA53A0DA08D73"
+				type: "item"
+				item: "botania:gaia_ingot"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "1534305BB7C4190C"
+					type: "command"
+					auto: "invisible"
+					command: "/execute as @p run ftbdungeons create ftbdungeons:arena"
+					silent: true
+				}
+				{
+					id: "6403D871F0C8C857"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "botania:gaia_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "botania:orechid"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 4.0d
+			y: -5.5d
+			description: [
+				"Allow me to enlighten you about the remarkable capabilities of the &bOrechid&r. This enchanting device has the extraordinary power to transmute various stones into valuable ores, a truly invaluable asset in our enchanting endeavors."
+				""
+				"To obtain an &bOrechid&r, you'll first need a &eRune of Mana&r. Fear not! As a stroke of luck, when you craft your very first &eRunic Altar&r, you'll receive an &bOrechid&r as a rewarding boon."
+				""
+				"The Orechid's ability to transform &6Stone and Livingrock&r into ores will greatly aid us in acquiring essential materials for our magical pursuits. It's a crucial addition to our enchanting arsenal!"
+			]
+			dependencies: ["405BE5DC5EE184AA"]
+			hide: true
+			id: "7C1D0AA6AB9EAF95"
+			tasks: [{
+				id: "4CBDE51085DAABAD"
+				type: "item"
+				item: {
+					id: "botania:floating_orechid"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "3E835A4341545A39"
+				type: "item"
+				item: {
+					id: "botania:livingrock"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			icon: "ftbai:botania_smelter"
+			x: 3.75d
+			y: -2.25d
+			shape: "hexagon"
+			subtitle: "Construct the Botanic Smelter"
+			description: [
+				"You may have noticed that the Furnace (as well as similar blocks) are &cnot able to be placed&r."
+				""
+				"There are a number of &6magical alternatives&r, namely the &bBotanic Smelter&r multiblock structure."
+				""
+				"This magical machine will &6smelt items in the Pedestals&r when the center Mana Pool has Mana!"
+				""
+				"Note that the &bBotanic Smelter&r block is directional. It is advised to first place it and then build the corresponding multiblock around it."
+				""
+				"Hint: If you haven't found Glowstone yet, you may need to progress to the Runic Altar for the Orechid reward, it can make Glowstone from Livingrock."
+			]
+			dependencies: [
+				"4169963D23A8F9FF"
+				"405BE5DC5EE184AA"
+			]
+			hide: true
+			size: 1.5d
+			min_width: 300
+			id: "30F12709B6842237"
+			tasks: [
+				{
+					id: "79F9D12FD45F74DB"
+					type: "item"
+					item: "ftbai:botania_smelter"
+				}
+				{
+					id: "0A969C540597D606"
+					type: "item"
+					item: "multiblocked:pedestal"
+					count: 2L
+				}
+				{
+					id: "2DD89DE186116F59"
+					type: "item"
+					item: "botania:livingrock_bricks"
+					count: 5L
+				}
+				{
+					id: "401B32B14C979948"
+					type: "item"
+					item: "botania:livingwood"
+					count: 3L
+				}
+				{
+					id: "35B3B89BE6FEA559"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+			]
+			rewards: [
+				{
+					id: "4882BD64C2F36F6C"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "5681CCB66A5BF184"
+					type: "item"
+					item: "botania:black_lotus"
+				}
+				{
+					id: "5BAF29FDF39F69E1"
+					type: "item"
+					item: {
+						id: "botania:floating_exoflame"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "182774B645CD6292"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "learned_to_smelt"
+				}
+				{
+					id: "5C9EF07ED311AB7D"
+					type: "item"
+					item: {
+						id: "botania:spark"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "6931BD0760D5EF73"
+					type: "item"
+					item: {
+						id: "botania:spark_upgrade_dominant"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Magical Flowers"
+			icon: "botania:lexicon"
+			x: 0.0d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "Find Miss LadyMaehem"
+			description: [
+				"Good morning, students! I am &bProfessor Nikki&r, your teacher for &dBotania&r."
+				""
+				"Welcome to our first class! Together, we will explore the &6magical properties of plants&r and their connection to the mystical realm. "
+				""
+				"Get ready for hands-on experiments, interactive discussions, and captivating lectures. Let's embark on this enchanting journey together!"
+			]
+			dependencies: ["63368A007664E4B5"]
+			hide_text_until_complete: true
+			id: "4339E4F7236D2091"
+			tasks: [{
+				id: "44E502107570341D"
+				type: "location"
+				title: "Meet Miss LadyMayhaem"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "57e08f1d-f7aa-a00c-82bd-212a78cbbb5b"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3ZTA4ZjFkZjdhYWEwMGM4MmJkMjEyYTc4Y2JiYjViZDUwYzMxNjMzYjk1ODBhYzExMjU3YjU4NmIwMDQ2OWQifX19"
+								}]
+							}
+							Name: "LadyMaehem"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-487
+					-32
+					-32
+				]
+				size: [I;
+					16
+					10
+					16
+				]
+			}]
+			rewards: [
+				{
+					id: "501862F8A32038EA"
+					type: "item"
+					item: "botania:white_mystical_flower"
+					count: 4
+				}
+				{
+					id: "47E1E5DE4538195A"
+					type: "item"
+					item: "botania:lexicon"
+				}
+				{
+					id: "750AC7AA7E6892D2"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "1E92C27E5A66EE7F"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"Welcome to Botania\", \"color\":\"green}"
+					silent: true
+				}
+			]
+		}
+		{
+			title: "Storing All the Flowers"
+			x: 0.0d
+			y: -3.5d
+			subtitle: "Make a Flower Pouch"
+			description: [
+				"In &dBotania&r, we will be working with a very diverse variety of flowers."
+				""
+				"As you gather flowers for the various tasks I will assign you,  you may notice &cstoring them directly in your inventory can quickly clutter it up&r."
+				""
+				"However, fear not! A true botanist always carries a &bFlower Pouch&r."
+				""
+				"A Flower Pouch allows you to store multiple flowers without taking up too much space in your inventory. It acts as a special container &6just for Botania class' Mystical Flowers&r."
+			]
+			dependencies: ["4339E4F7236D2091"]
+			hide: true
+			id: "0459E7180318826B"
+			tasks: [{
+				id: "612C04C24B97F2C0"
+				type: "item"
+				item: "botania:flower_bag"
+			}]
+		}
+		{
+			title: "Trade in Livingrock"
+			x: 1.0d
+			y: -3.5d
+			description: ["I also use quite a bit of &bLivingrock&r in my experiments. If you craft it for me, I'm willing to trade some for a reward, and a small boost to your grades."]
+			dependencies: ["0459E7180318826B"]
+			optional: true
+			can_repeat: true
+			id: "0EC644D6AB69DB01"
+			tasks: [{
+				id: "13CD8F41FFAFF0A1"
+				type: "item"
+				item: {
+					id: "botania:livingrock"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ECA77E526128C2B"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5523390340744685339L
+			}]
+		}
+		{
+			title: "Trade in Livingwood"
+			x: -1.0d
+			y: -3.5d
+			description: [
+				"If you are looking for extra credit, I am happy too oblige. I need a steady supply of &bLivingwood&r for my various experiments. "
+				""
+				"I could make it myself, of course, but allowing students to bring it to me gives you extra practice, and me a little extra time to work on other things."
+			]
+			dependencies: ["0459E7180318826B"]
+			optional: true
+			can_repeat: true
+			id: "4C6FA66A9BD6B27C"
+			tasks: [{
+				id: "72452AB151E4C065"
+				type: "item"
+				item: {
+					id: "botania:livingwood"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4523281D63D75AC0"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 3633421167418211291L
+			}]
+		}
+		{
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 2.5d
+			y: -2.25d
+			description: [
+				"Did you know? By default, the &bBotanic Smelter&r accepts items on both sides. If you open the Controller, you can set specific Pedestals to either IN or OUT"
+				""
+				"&cNOTE&r: Due to a bug in the mod, If you're playing on a server, this function will need you to load up a Singleplayer world once (to load the files correctly). Afterwards this works on Multiplayer aswell."
+				""
+				"{image:ftbai:textures/quests/botania/botanic_smelter.png width:125 height:170 align:1}"
+			]
+			dependencies: ["30F12709B6842237"]
+			size: 0.5d
+			id: "49F821077E3ADCF4"
+			tasks: [{
+				id: "2FD11848AEFD81BC"
+				type: "checkmark"
+				title: "Configuring the Botanic Smelter"
+			}]
+			rewards: [{
+				id: "2CB3484CE3113C8C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 5.0d
+			y: -2.25d
+			description: [
+				"Did you know? The Botanic Smelter accepts a few additional blocks in the multiblock."
+				""
+				""
+				"&lFor example&r:"
+				""
+				"Hoppers underneath the Pedestals"
+				""
+				"All Manapools are acceptable"
+				""
+				"Catalysts underneath Manapool"
+			]
+			dependencies: ["30F12709B6842237"]
+			size: 0.5d
+			id: "4E7504C528A1F665"
+			tasks: [{
+				id: "3FB1BECF79728D66"
+				type: "checkmark"
+				title: "Additional Blocks"
+			}]
+			rewards: [{
+				id: "495B0EE8BB162CD6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+	]
+	quest_links: [{
+		linked_quest: "18B32901E5D2C5BA"
+		x: 2.0d
+		y: -4.0d
+		size: 0.5d
+		id: "79FF829CC2BB7522"
+	}]
+}

@@ -1,0 +1,422 @@
+{
+	id: "5DC8843A038909D7"
+	group: "2BF58BA9C4117D6D"
+	order_index: 6
+	filename: "the_magic_mischief_emporium"
+	title: "The Magic Mischief Emporium"
+	icon: "minecraft:firework_rocket"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mystical Dagger"
+			icon: {
+				id: "forbidden_arcanus:mystical_dagger"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "10825A1365C774C1"
+			tasks: [{
+				id: "75E872AAAD120CEF"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "234F5DD7773E9397"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:mystical_dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hexerei Plants"
+			icon: "hexerei:mandrake_flower"
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "42BC487BFE91BA25"
+			tasks: [{
+				id: "2FBDEC3ECC8E0958"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "11E981E39D4F0CFE"
+				type: "choice"
+				title: "Hexerei Plants"
+				exclude_from_claim_all: true
+				table_id: 2254786184245774689L
+			}]
+		}
+		{
+			title: "Soul Extractor"
+			icon: {
+				id: "forbidden_arcanus:soul_extractor"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.0d
+			y: -0.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "4AEA33991A64942F"
+			tasks: [{
+				id: "3C5BF5D4F9AE3381"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "55BBD55F9BA5DA27"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:soul_extractor"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Test Tubes"
+			icon: "forbidden_arcanus:test_tube"
+			x: -5.0d
+			y: 1.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "6B70FCAE8D9EC1C9"
+			tasks: [{
+				id: "49BA2349B1098EB8"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7ADE762A522B25E9"
+				type: "item"
+				item: "forbidden_arcanus:test_tube"
+				count: 2
+			}]
+		}
+		{
+			title: "Get some \"Buds\""
+			icon: "minecraft:budding_amethyst"
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "7EFEF4B43E78E788"
+			tasks: [{
+				id: "47BFCC3A025D1869"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "13F500F3F00D7AA6"
+				type: "item"
+				item: "minecraft:budding_amethyst"
+			}]
+		}
+		{
+			title: "Stellarite"
+			icon: "forbidden_arcanus:stellarite_block"
+			x: -7.0d
+			y: 1.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "20264140A0E6B127"
+			tasks: [{
+				id: "3EA358FB6ABE8A58"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5773B2AEFE7F38E3"
+				type: "item"
+				item: "forbidden_arcanus:stellarite_block"
+			}]
+		}
+		{
+			title: "Wonder Thingy Majig That Flies"
+			icon: {
+				id: "hexerei:willow_broom"
+				Count: 1b
+				tag: {
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"Wonder Thingy Majig That Flies\"}"
+					}
+				}
+			}
+			x: -5.0d
+			y: 3.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "7258A60CECCA45F6"
+			tasks: [{
+				id: "55F2558893EAD141"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "38176A2536D5C0BD"
+				type: "item"
+				item: {
+					id: "hexerei:mahogany_broom"
+					Count: 1b
+					tag: {
+						floatMode: 0b
+						Inventory: {
+							Size: 30
+							Items: [{
+								Slot: 2
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "hexerei:herb_enhanced_broom_brush"
+								Count: 1b
+								tag: {
+									Damage: 0
+									Enchantments: [
+										{
+											lvl: 1s
+											id: "minecraft:mending"
+										}
+										{
+											lvl: 5s
+											id: "minecraft:unbreaking"
+										}
+									]
+								}
+							}]
+						}
+						display: {
+							Name: "{\"text\":\"Wonder Thingy Majig That Flies\"}"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Ender Air"
+			icon: "botania:ender_air_bottle"
+			x: -3.0d
+			y: 3.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "380FD7EF86CC5E73"
+			tasks: [{
+				id: "48DC88E2C6BDCCEA"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1D75FD1FEB764275"
+				type: "item"
+				item: {
+					id: "botania:ender_air_bottle"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Shulker Pearl"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:shulker_gate"
+				}
+			}
+			x: -1.0d
+			y: 3.5d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "06AC1D8E463CC9B4"
+			tasks: [{
+				id: "55FD2ACBF732EFA7"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "31C9B32679C46B03"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:shulker_gate"
+					}
+				}
+			}]
+		}
+		{
+			title: "Petrified Orb"
+			icon: "forbidden_arcanus:xpetrified_orb"
+			x: -7.0d
+			y: 3.5d
+			dependencies: [
+				"38466472D199F498"
+				"62CC7E5BCD6EDC67"
+			]
+			hide: true
+			can_repeat: true
+			id: "62AB5F5E0430FD64"
+			tasks: [{
+				id: "6F7224A6375B4703"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2E69000547AA1706"
+				type: "item"
+				item: "forbidden_arcanus:xpetrified_orb"
+			}]
+		}
+		{
+			icon: "arsomega:arcane_book"
+			x: -1.0d
+			y: 1.5d
+			dependencies: [
+				"183BE6BBAF4FADA7"
+				"62CC7E5BCD6EDC67"
+			]
+			hide: true
+			can_repeat: true
+			id: "0F7AE48BC06704CB"
+			tasks: [{
+				id: "354FC7B278E799D7"
+				type: "item"
+				item: {
+					id: "mowziesmobs:wrought_axe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0DC3237D5D189378"
+				type: "item"
+				item: {
+					id: "arsomega:arcane_book"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Archmage Spellbook"
+			icon: "arsomega:arcane_book"
+			x: -1.0d
+			y: -0.5d
+			dependencies: [
+				"252E046EBDB11FB1"
+				"62CC7E5BCD6EDC67"
+			]
+			hide: true
+			can_repeat: true
+			id: "74C45F7E200349F6"
+			tasks: [{
+				id: "5B0403907B6A41CC"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "724C112003D061A4"
+				type: "item"
+				item: {
+					id: "ars_nouveau:archmage_spell_book"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Foreman's Key"
+			icon: {
+				id: "bloodmagic:mineentrancekey"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 1.0d
+			y: -0.5d
+			dependencies: [
+				"252E046EBDB11FB1"
+				"62CC7E5BCD6EDC67"
+			]
+			hide: true
+			can_repeat: true
+			id: "16CA09678EC4B876"
+			tasks: [{
+				id: "6078ED83A0A34D7A"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7EF3B7FC35BDDF38"
+				type: "item"
+				item: {
+					id: "bloodmagic:mineentrancekey"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

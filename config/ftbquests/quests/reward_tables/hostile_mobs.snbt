@@ -1,0 +1,16 @@
+{
+	id: "369282C4B8FBA7F4"
+	order_index: 13
+	title: "Hostile Spawn Eggs"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:blaze_spawn_egg" }
+		{ item: "minecraft:enderman_spawn_egg" }
+		{ item: "minecraft:endermite_spawn_egg" }
+		{ item: "minecraft:evoker_spawn_egg" }
+		{ item: "minecraft:ghast_spawn_egg" }
+		{ item: "minecraft:guardian_spawn_egg" }
+		{ item: "minecraft:phantom_spawn_egg" }
+		{ item: "minecraft:ravager_spawn_egg" }
+	]
+}

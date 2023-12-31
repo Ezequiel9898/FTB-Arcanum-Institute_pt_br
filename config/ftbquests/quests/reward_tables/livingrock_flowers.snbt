@@ -1,0 +1,80 @@
+{
+	id: "4CA706402FE9271B"
+	order_index: 16
+	title: "Livingrock Flowers"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "botania:light_gray_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:cyan_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:purple_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:blue_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:brown_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:green_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:red_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:black_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

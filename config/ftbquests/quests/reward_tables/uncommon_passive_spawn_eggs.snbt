@@ -1,0 +1,16 @@
+{
+	id: "77C5038892F0DFF3"
+	order_index: 6
+	title: "Uncommon Passive Spawn Eggs"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:donkey_spawn_egg" }
+		{ item: "minecraft:fox_spawn_egg" }
+		{ item: "minecraft:goat_spawn_egg" }
+		{ item: "minecraft:horse_spawn_egg" }
+		{ item: "minecraft:llama_spawn_egg" }
+		{ item: "minecraft:parrot_spawn_egg" }
+		{ item: "minecraft:rabbit_spawn_egg" }
+		{ item: "minecraft:wolf_spawn_egg" }
+	]
+}

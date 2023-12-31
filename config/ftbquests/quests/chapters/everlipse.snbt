@@ -1,0 +1,232 @@
+{
+	id: "528EF3B6CA6E8F34"
+	group: "125708BF22E6ABEE"
+	order_index: 4
+	filename: "everlipse"
+	title: "Professor Everlipse"
+	icon: "ftbai:codex_occultism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "ftbai:codex_occultism"
+			x: 0.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Dear Student,"
+				""
+				"One final test stands between you and completion of this class. I would like you to obtain a &bBlock of Iesnium&r. "
+				""
+				"Once you have done this, I will give you the highest honor I can bestow upon a student; a copy of my personal Codex. I think the spells within it will be very important in your upcoming endeavors, so I recommend getting this done as soon as you can. "
+				""
+				"Thank you, and good luck."
+			]
+			dependencies: [
+				"2CBECFD7042E416F"
+				"0B95B7049812D4FB"
+			]
+			size: 3.0d
+			id: "6474FDE9222671FE"
+			tasks: [{
+				id: "5C70FF736D2260E5"
+				type: "item"
+				item: {
+					id: "occultism:iesnium_block"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "49A1754DEF6F5C40"
+					type: "item"
+					item: "ftbai:codex_occultism"
+				}
+				{
+					id: "29B4D673C86F0BFA"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_occultism"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: [
+				"I find myself in a bit of a situation where I require a particular resource for a task that, unfortunately, I can't delve into details about at the moment."
+				""
+				"If you're up for it, I could use your assistance in obtaining 25 Otherstone. I understand this might seem a bit mysterious, but I assure you, it's for a purpose that aligns with the greater good. Your help in this matter would be greatly appreciated, and I trust in your discretion."
+			]
+			dependencies: ["2CBECFD7042E416F"]
+			id: "56FE4836424F2B2F"
+			tasks: [{
+				id: "3E382767D9D23B57"
+				type: "item"
+				item: "occultism:otherstone"
+				count: 25L
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			description: [
+				"I have a fascinating task for you that involves harnessing the mystical energies of Spiritfire."
+				""
+				"I'd like you to create 10 Spirited Attuned Gems by carefully tossing diamonds into the Spiritfire. These gems, infused with the essence of Spiritfire, will prove crucial in our explorations into Occultism."
+			]
+			dependencies: [
+				"56FE4836424F2B2F"
+				"2CBECFD7042E416F"
+			]
+			id: "3A711CDE0DABD3DC"
+			tasks: [{
+				id: "587338EB02352640"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+				count: 10L
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			description: [
+				"Hello, Student"
+				""
+				"We're going to need some chalk, and you're just the one to get it. "
+				""
+				"Let me know once you have it."
+			]
+			dependencies: [
+				"3A711CDE0DABD3DC"
+				"2CBECFD7042E416F"
+			]
+			id: "274C8BFC5759FC9D"
+			tasks: [
+				{
+					id: "56F47485FEC02A64"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "50DF57C45AA191F4"
+					type: "item"
+					item: {
+						id: "occultism:chalk_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "13AC12C6EC5DD336"
+					type: "item"
+					item: {
+						id: "occultism:chalk_purple"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "09B59F654C2799B5"
+				type: "item"
+				item: "occultism:brush"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: [
+				"I would like you to deliver me a &bDimensional Crystal Matrix&r. "
+				""
+				"We know, we have given you one before, but that one was given to me by another Student. Your's will be given to the next Students who starts this class"
+			]
+			dependencies: [
+				"2CBECFD7042E416F"
+				"30F7EF48E7762829"
+			]
+			id: "0ED583E806BB17CF"
+			tasks: [{
+				id: "4CED978C5490BDBC"
+				type: "item"
+				item: {
+					id: "occultism:dimensional_matrix"
+					Count: 1b
+					tag: {
+						spiritName: "Zedkorncred"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			description: [
+				"Dear student,"
+				""
+				"I'd like you, four your next trial to obtain a &bSurprisingly Substantial Satchel&r. "
+				""
+				"It is my hope that you do not find it surprisingly difficult. "
+			]
+			dependencies: [
+				"2CBECFD7042E416F"
+				"0ED583E806BB17CF"
+			]
+			id: "0B95B7049812D4FB"
+			tasks: [{
+				id: "24199D4A550F3D75"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Azakjorsyr"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["For your sixth trial, you're going to need a &bDimensional Storage Stablizer&r. This is a good test of your skills and will be very usefull to you as well."]
+			dependencies: [
+				"2CBECFD7042E416F"
+				"274C8BFC5759FC9D"
+			]
+			id: "30F7EF48E7762829"
+			tasks: [{
+				id: "78C93752183BDC80"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+				count: 2L
+				consume_items: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

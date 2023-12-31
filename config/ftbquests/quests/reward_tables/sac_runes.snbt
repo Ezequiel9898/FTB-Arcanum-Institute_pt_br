@@ -1,0 +1,10 @@
+{
+	id: "4BBCDBC33AE3D0CE"
+	order_index: 1
+	title: "Sac Runes"
+	loot_size: 1
+	rewards: [
+		{ item: "bloodmagic:sacrificerune2", count: 2 }
+		{ item: "bloodmagic:selfsacrificerune2", count: 2 }
+	]
+}

@@ -1,0 +1,668 @@
+{
+	id: "053881C42EF34D11"
+	order_index: 22
+	title: "Great Scrolls"
+	icon: {
+		id: "hexcasting:scroll"
+		Count: 1b
+		tag: {
+			pattern: {
+				angles: [B;
+					2b
+					4b
+					1b
+					1b
+					2b
+					0b
+					0b
+					5b
+					4b
+					4b
+					0b
+					2b
+					5b
+					1b
+					0b
+					1b
+					1b
+					0b
+					1b
+					1b
+					4b
+					5b
+					5b
+					0b
+					5b
+					0b
+					0b
+					4b
+					4b
+					2b
+					4b
+					5b
+					4b
+				]
+				start_dir: 3b
+			}
+			op_id: "hexcasting:craft/battery"
+		}
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": { }
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			title: "Craft Phial"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							2b
+							4b
+							1b
+							1b
+							2b
+							0b
+							0b
+							5b
+							4b
+							4b
+							0b
+							2b
+							5b
+							1b
+							0b
+							1b
+							1b
+							0b
+							1b
+							1b
+							4b
+							5b
+							5b
+							0b
+							5b
+							0b
+							0b
+							4b
+							4b
+							2b
+							4b
+							5b
+							4b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:craft/battery"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Create Lava"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							4b
+							5b
+							4b
+							2b
+							1b
+							2b
+							4b
+							2b
+							1b
+							4b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:create_lava"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "White Sun's Zenith"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							1b
+							1b
+							1b
+							1b
+							5b
+							2b
+							0b
+							2b
+							0b
+							2b
+							5b
+							4b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:potion/regeneration"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Red Sun's Zenith"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							0b
+							1b
+							4b
+							0b
+							4b
+							0b
+							4b
+							4b
+							5b
+							5b
+							5b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:potion/haste"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Dispel Rain"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							0b
+							4b
+							4b
+							0b
+							4b
+							0b
+							4b
+							2b
+							2b
+							4b
+							1b
+							1b
+							1b
+							0b
+							0b
+							0b
+							1b
+							1b
+						]
+						start_dir: 1b
+					}
+					op_id: "hexcasting:dispel_rain"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Greater Teleport"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							0b
+							0b
+							2b
+							1b
+							1b
+							0b
+							5b
+							5b
+							5b
+							5b
+							5b
+							0b
+							1b
+							1b
+							4b
+							5b
+							5b
+							0b
+							0b
+							0b
+							5b
+							5b
+							1b
+							5b
+							5b
+							0b
+							0b
+							0b
+							5b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:teleport"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Black Sun's Zenith"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							2b
+							4b
+							4b
+							1b
+							2b
+							0b
+							2b
+							5b
+							1b
+							1b
+							4b
+							4b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:potion/absorption"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Bind Wisp"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							1b
+							1b
+							2b
+							0b
+							5b
+							1b
+							2b
+							5b
+							2b
+							1b
+							0b
+							5b
+							5b
+							0b
+							1b
+							2b
+							5b
+							2b
+							1b
+							2b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexal:wisp/seon/set"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Flight"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							4b
+							0b
+							4b
+							0b
+							5b
+							4b
+							4b
+							1b
+							0b
+							2b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:flight"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Blue Sun's Zenith"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							2b
+							0b
+							2b
+							1b
+							4b
+							4b
+							2b
+							1b
+							1b
+							1b
+							4b
+							4b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:potion/night_vision"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Consume Wisp"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							2b
+							0b
+							1b
+							0b
+							2b
+							0b
+							5b
+							5b
+							2b
+							0b
+							5b
+							5b
+							1b
+							2b
+							2b
+							0b
+							5b
+							5b
+							1b
+							4b
+							4b
+							1b
+							0b
+							5b
+							2b
+							5b
+							4b
+							0b
+							5b
+							0b
+							0b
+							0b
+							5b
+							0b
+							5b
+							0b
+							5b
+							0b
+							0b
+							0b
+							5b
+							0b
+							0b
+							0b
+							2b
+							0b
+							1b
+							0b
+							2b
+							0b
+						]
+						start_dir: 0b
+					}
+					op_id: "hexal:wisp/consume"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Summon Rain"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							0b
+							4b
+							0b
+							2b
+							4b
+							4b
+							0b
+							0b
+							0b
+							1b
+							1b
+							1b
+							0b
+							0b
+							0b
+							1b
+							1b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:summon_rain"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Summon Greater Sentinel"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							0b
+							5b
+							4b
+							5b
+							2b
+							0b
+							2b
+							5b
+							1b
+							1b
+							1b
+							2b
+							0b
+							5b
+							5b
+							0b
+						]
+						start_dir: 1b
+					}
+					op_id: "hexcasting:sentinel/create/great"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Flay Mind"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							2b
+							1b
+							0b
+							2b
+							5b
+							0b
+							2b
+							1b
+							2b
+							5b
+							5b
+							1b
+							1b
+							1b
+							0b
+							1b
+							0b
+							1b
+							2b
+							5b
+							1b
+							5b
+							5b
+							5b
+							0b
+							5b
+							2b
+							1b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:brainsweep"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Green Sun's Zenith"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							4b
+							0b
+							4b
+							5b
+							2b
+							2b
+							4b
+							5b
+							5b
+							5b
+							5b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:potion/strength"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Summon Lightning"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							0b
+							5b
+							5b
+							0b
+							2b
+							2b
+							4b
+							0b
+							2b
+							0b
+							5b
+							4b
+							4b
+							1b
+						]
+						start_dir: 5b
+					}
+					op_id: "hexcasting:lightning"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,464 @@
+{
+	id: "512C6E629FD19B23"
+	group: "2BF58BA9C4117D6D"
+	order_index: 2
+	filename: "beggers_and_bargains_2"
+	title: "Ibseang's Itamz"
+	icon: "minecraft:gold_ingot"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Fairy in a Bottle"
+			icon: "minecraft:totem_of_undying"
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "3A95D803386FCC0E"
+			tasks: [{
+				id: "67FE60268983640D"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2DD4B884E498350B"
+				type: "item"
+				item: "minecraft:totem_of_undying"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "6B5CA0920BFBDD49"
+			tasks: [{
+				id: "360F9D0B61C1244E"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0D150C6BC3AD5DE1"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "5E3DAD7028A7B6C7"
+			tasks: [{
+				id: "13E34FC329210013"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4B145D1A19C6BBFC"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "3B3AF389223F3F6C"
+			tasks: [{
+				id: "64F72BA93EDB2C84"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "13626DFAA3DB69B7"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "6C30B98564663D24"
+			tasks: [{
+				id: "2E2F58AF4018C7E2"
+				type: "item"
+				item: "minecraft:bone"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4E1D8B6EBD7A6DBE"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "614B9F40102A9BB3"
+			tasks: [{
+				id: "3FBDA0A236772A0A"
+				type: "item"
+				item: "minecraft:bone"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "22F65F804CBBEABD"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "08CC91E543E58B85"
+			tasks: [{
+				id: "632249962A827164"
+				type: "item"
+				item: "minecraft:bone"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6AE6367BE06AF4E6"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "3107BAD193F43BEB"
+			tasks: [{
+				id: "2E882EA2ABDE75FE"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7AF267C59A9DA1E4"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "7CFF777AFD84C825"
+			tasks: [{
+				id: "2D549BD6E82DB843"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3A078E16925622B3"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "2DBA9FA97B47E0B8"
+			tasks: [{
+				id: "6B4356A0F3CDC72D"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "51701A0C6F96434B"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			title: "Budding Amethyst"
+			icon: "minecraft:budding_amethyst"
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			hide_details_until_startable: false
+			id: "6EA2F0FB8B94FDAE"
+			tasks: [{
+				id: "2C95C608B8F4B1E7"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "180E1D5E9AD882FA"
+				type: "item"
+				item: "minecraft:budding_amethyst"
+			}]
+		}
+		{
+			title: "Bottle and Cork"
+			icon: "naturesaura:bottle_two_the_rebottling"
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "5F04349E10B455C3"
+			tasks: [{
+				id: "4FD981AD0B42B31F"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "25F4CA1024ADA108"
+				type: "item"
+				item: "naturesaura:bottle_two_the_rebottling"
+				count: 4
+			}]
+		}
+		{
+			title: "Sacrificial Knife"
+			icon: {
+				id: "bloodmagic:sacrificialdagger"
+				Count: 1b
+				tag: { }
+			}
+			x: 8.0d
+			y: 2.0d
+			dependencies: [
+				"60A43619EE2B4D97"
+				"0C4E29151952206E"
+			]
+			can_repeat: true
+			id: "05FA0507FC70ADED"
+			tasks: [{
+				id: "627954521F823BDC"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6A73E14BA9117670"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Dagger of Sacrifice"
+			icon: "bloodmagic:daggerofsacrifice"
+			disable_toast: true
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"2C5BE4C092BE0F2D"
+				"0C4E29151952206E"
+			]
+			hide_text_until_complete: false
+			can_repeat: true
+			id: "6ED5799E3ADDDF71"
+			tasks: [{
+				id: "65D4EF32B007C3E3"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "311869B548604F29"
+				type: "item"
+				item: "bloodmagic:daggerofsacrifice"
+			}]
+		}
+		{
+			title: "Book and Quill"
+			icon: "minecraft:writable_book"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "2B9AD01C6342A857"
+			tasks: [{
+				id: "600DC0CB07157F0A"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2D6FCA3722640DE5"
+				type: "item"
+				item: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "Drawers"
+			icon: {
+				id: "framedcompactdrawers:framed_full_one"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+			}
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "7242B585390301BB"
+			tasks: [{
+				id: "242B757D903060F7"
+				type: "item"
+				item: {
+					id: "ftbai:silver_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "183D326AC148A970"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 4670457739454047697L
+			}]
+		}
+		{
+			title: "Half Drawers"
+			icon: {
+				id: "framedcompactdrawers:framed_half_one"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+			}
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "4CF8F34C0491BB0F"
+			tasks: [{
+				id: "35EF5FEC85FDC43A"
+				type: "item"
+				item: {
+					id: "ftbai:silver_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "129FB5EDD116E886"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8415094760061871099L
+			}]
+		}
+		{
+			title: "Brilliant Fiber"
+			icon: "naturesaura:gold_fiber"
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["0C4E29151952206E"]
+			can_repeat: true
+			id: "41C9911770731A1D"
+			tasks: [{
+				id: "31C1DC30DA705875"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2457BA26A5E366C8"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+	]
+	quest_links: [ ]
+}

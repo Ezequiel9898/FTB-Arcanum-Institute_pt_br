@@ -1,0 +1,914 @@
+{
+	id: "30B1C2E28BD6FFAD"
+	group: ""
+	order_index: 2
+	filename: "progression"
+	title: "Progression"
+	icon: "minecraft:crafting_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 250
+	quests: [
+		{
+			title: "Crafting"
+			x: -2.642857142857146d
+			y: -5.482142857142861d
+			shape: "hexagon"
+			subtitle: "Receive the Glyph of Craft"
+			description: [
+				"Remember that every journey begins with the power to create."
+				""
+				"You may have noticed that you &ccannot place or use Crafting Tables&r. Due to this limitation, your first class should almost certainly be the introductory quests in your &eFabrication Magique&r class."
+				""
+				"[\"\",\"Instead, your first step in harnessing this creative potential is through \",{\"text\":\"[ Your First Spellbook ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"54D7F5310E879150\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}},\" which will \",{\"text\":\"grant you access to the crafting grid\",\"color\":\"gold\"},\"!\"]"
+				""
+				"Embrace this magical tool, and let it be the cornerstone of your endeavors in our enchanted realm. With it, you'll weave wonders and unlock the mysteries of our craft. May your crafting adventures be filled with discovery and innovation."
+			]
+			dependencies: ["4F0DD323FB26A2AD"]
+			size: 1.5d
+			min_width: 300
+			id: "16E3903518FEC30E"
+			tasks: [{
+				id: "366866B7006FCC56"
+				type: "item"
+				item: "ars_nouveau:glyph_craft"
+			}]
+			rewards: [{
+				id: "14FD772EF57899E7"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+				count: 4
+			}]
+		}
+		{
+			title: "Your First Cobblestone"
+			icon: "minecraft:cobblestone"
+			x: -1.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "Get Cobblestone"
+			description: [
+				"For those of you eager to embark on your crafting journeys, here's a simple way to obtain &bCobblestone&r right in the comfort of your dorm rooms. "
+				""
+				"Begin by &6searching through the dirt&r in your living spaces by shift+right clicking on the grass with an open hand; you'll find plenty of small &bPebbles&r hidden beneath the surface."
+				""
+				"With patience and diligence, you can collect these Pebbles and turn them into valuable &bCobblestone&r."
+			]
+			min_width: 300
+			id: "18B32901E5D2C5BA"
+			tasks: [
+				{
+					id: "634511F235AB7757"
+					type: "item"
+					item: {
+						id: "botania:pebble"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4F71056AF3559FC3"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6E675FC1DDCAF043"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 8
+			}]
+		}
+		{
+			title: "Your First Logs"
+			icon: "minecraft:oak_log"
+			x: -4.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "Get any Logs"
+			description: [
+				"&bWood&r is an &6essential crafting component&r, used in all forms by all manners of things. "
+				""
+				"Upon completion of certain classes, your &6instructor will provide you with Saplings&r. These can be &6grown and harvested in your dorms&r."
+				""
+				"&lBotania&r"
+				"[\"\",{\"text\":\"[ Birdbath ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"005DDE56C5926F5D\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}},\"\"]"
+				""
+				"&lArs Nouveau&r"
+				"[\"\",{\"text\":\"[ Beginner Magic Spells ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0CF0DB4C6B3419C2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}},\"\"]"
+				""
+				"&lOccultism&r"
+				"[\"\",{\"text\":\"[ Spiritfire Observations ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CA20C350E71D2C3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}},\"\"]"
+				""
+				"&lNature's Aura&r"
+				"[\"\",{\"text\":\"[ Obtaining a golden Leaf ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"51F6ACC0A8B4CFA9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}},\"\"]"
+			]
+			dependency_requirement: "one_started"
+			min_width: 300
+			id: "4F0DD323FB26A2AD"
+			tasks: [{
+				id: "5FAEBCDF7507BA35"
+				type: "item"
+				title: "Logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [{
+				id: "56FEB14AAC23852B"
+				type: "item"
+				item: "minecraft:oak_sapling"
+				count: 16
+			}]
+		}
+		{
+			title: "Unbreakable"
+			x: 3.0d
+			y: -7.5d
+			shape: "hexagon"
+			subtitle: "Get a Diamond"
+			description: [
+				"Dear inquisitive scholars,"
+				""
+				"One fascinating discovery awaits you—the ability to &6remove mana imbuement from Mana Diamonds&r."
+				""
+				"This is done by &6baptising the Mana Diamond in Spiritfire&r. The fire's necromantic energies will chase out the Diamond's life-energy, leaving only the untouched gem."
+			]
+			dependencies: ["456860FA6F0C1B0B"]
+			min_width: 300
+			id: "5683C9DEBD9A30E6"
+			tasks: [{
+				id: "4668C0C63A75CF92"
+				type: "item"
+				item: {
+					id: "arsomega:alchemical_diamond"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "73BB87C43805821A"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			shape: "hexagon"
+			subtitle: "Get a Mana Diamond"
+			description: [
+				"Dear aspiring mana manipulators,"
+				""
+				"&bMana Diamonds&r are a wondrous resource, capable of great power. They can be acquired through two ways:"
+				""
+				"They are commonly crafted by &6soaking Diamonds in Mana&r. Diamonds, however, are fairly hard to come by."
+				""
+				"If you do not have access to Diamonds, &6Source Gems&r can be used in their stead. Due to the conflicting magical channels, this is much &cless efficient&r however."
+			]
+			dependencies: ["4169963D23A8F9FF"]
+			min_width: 300
+			id: "456860FA6F0C1B0B"
+			tasks: [{
+				id: "465E7DE53C50F54E"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+			rewards: [
+				{
+					id: "2592EB294B69705C"
+					type: "item"
+					item: "botania:mana_pearl"
+					count: 4
+				}
+				{
+					id: "2527E9EE183866BA"
+					type: "item"
+					item: {
+						id: "ftbai:gold_coin"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Now Vanilla!"
+			x: -1.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Acquire Copper"
+			description: [
+				"Dear students,"
+				""
+				"When first starting, your main source of Copper will be through the &6Goblin Shop&r (specifically, the one &6behind the Botanic Gardens&r). There, you'll be able to &6buy Raw Copper&r!"
+				""
+				"Later on, you can use one of the following to generate ores of all types:"
+				""
+				"&lBotania's Orechid&r:"
+				"[\"  \",\"\",{\"text\":\"[ Making Runes ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lOccultism's Dimensional Mineshaft&r:"
+				"[\"  \",\"\",{\"text\":\"[ Mining in other Dimensions ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lBlood Magic's Meteor Ritual&r:"
+				"[\"\",\"  \",{\"text\":\"[ Giant Meteor ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+			]
+			dependencies: ["4CCB6C082F5C0622"]
+			min_width: 300
+			id: "47674D4034004B1C"
+			tasks: [{
+				id: "70CFFD825AA1D738"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+			rewards: [{
+				id: "663293947CCD134C"
+				type: "item"
+				item: "minecraft:raw_copper_block"
+			}]
+		}
+		{
+			title: "Getting Iron"
+			x: 1.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "Acquire Iron"
+			description: [
+				"Dear students,"
+				""
+				"When it comes to obtaining the valuable resource of &bIron&r within our mystical campus early on, there are &6two distinct paths&r you can follow:"
+				""
+				"&l&6Zombie Hunting&r:"
+				""
+				"Sometimes, luck favors the brave. Engaging in &6battles with the undead&r can yield the precious metal. Keep a keen eye out for this stroke of fortune when you encounter zombies during your quests. Zombie Gate Pearls guarantee some iron will drop after each wave is completed."
+				""
+				"&l&6Goblin Shop&r:"
+				""
+				"Alternatively, you have the option to acquire iron through the enigmatic &6Goblin Shop&r. Here, the goblins offer a variety of &6rare and useful items&r in exchange for your treasures and magical currency. The Goblin Shop &6near the Beast Master class&r sells Raw Iron! You'll need a method to smelt it though, such as Hex casting's smelt spell."
+				""
+				"Later on, you can use one of the following to generate ores of all types:"
+				""
+				"&lBotania's Orechid&r:"
+				"[\"  \",\"\",{\"text\":\"[ Making Runes ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lOccultism's Dimensional Mineshaft&r:"
+				"[\"  \",\"\",{\"text\":\"[ Mining in other Dimensions ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lBlood Magic's Meteor Ritual&r:"
+				"[\"\",\"  \",{\"text\":\"[ Giant Meteor ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+			]
+			min_width: 375
+			id: "3693F0A7021419E6"
+			tasks: [{
+				id: "376FDE4D1D807797"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "1BB9CE50C10D82D2"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:enderman_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			title: "Of \"and Gold\" Fame"
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Acquire Silver"
+			description: [
+				"Dear students,"
+				""
+				"&bSilver&r is an intensely &6spiritually pure&r metal, and is used in many magics."
+				""
+				"When first starting, your main source of Silver will be through the &6Goblin Shop&r (specifically, the one &3behind the Botanic Gardens&r. There, you'll be able to &6buy Raw Silver&r!"
+				""
+				"Later on, you can use one of the following to generate ores of all types:"
+				""
+				"&lBotania's Orechid&r:"
+				"[\"  \",\"\",{\"text\":\"[ Making Runes ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lOccultism's Dimensional Mineshaft&r:"
+				"[\"  \",\"\",{\"text\":\"[ Mining in other Dimensions ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				""
+				"&lBlood Magic's Mark of the Fallen Tower&r:"
+				"[\"\",\"  \",{\"text\":\"[ Giant Meteor ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+			]
+			dependencies: ["4CCB6C082F5C0622"]
+			min_width: 300
+			id: "5003C95508902DED"
+			tasks: [{
+				id: "2BEAE1ABD1773505"
+				type: "item"
+				item: {
+					id: "occultism:silver_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "7702ECE2D52A766F"
+				type: "item"
+				item: "occultism:raw_silver"
+				count: 9
+			}]
+		}
+		{
+			title: "Disregard Personal Relationships"
+			icon: "minecraft:gold_ingot"
+			x: 1.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Acquire Gold"
+			description: ["&bGold&r can be acquired through &6transmutating Iron&r. With the use the &dAlchemy Array&r and &dGolden Powder&r you can easily achieve this."]
+			dependencies: ["3693F0A7021419E6"]
+			min_width: 300
+			id: "3B29B9822D5248BD"
+			tasks: [{
+				id: "3B0FC454EFC77F7E"
+				type: "item"
+				title: "Gold"
+				item: {
+					id: "minecraft:gold_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "4DEFDFCA6EA4A589"
+				type: "item"
+				item: "naturesaura:token_joy"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "Get Dragon's Eye"
+			description: [
+				"&bDragon's Eye&r is a rare reagent that has but a &6one in ten chance of dropping from Chorus Flowers&r."
+				""
+				"Consuming it will act similarly to Chorus Fruit, &6teleporting the consumer&r up to 32 meters in a random direction."
+				""
+				"More importantly, however: Dragon's Eye can be &6smelted to create Ender Pearls&r, an incredibly rare and valuable resource."
+				""
+				"Additionally, they can be used to create an &6Enderman Gate Pearl&r, which will summon forth a horde for you to fight!"
+				""
+				"The Dragon's Eyes are a testament to your journey into the heart of arcane mysteries. "
+			]
+			dependencies: ["3EFFC3A8B075061A"]
+			min_width: 300
+			id: "322870F322A43E51"
+			tasks: [{
+				id: "2D2A58D392D84BA7"
+				type: "item"
+				item: "rootsclassic:dragons_eye"
+			}]
+			rewards: [{
+				id: "4EF7679F71BC5DBD"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "circle"
+			description: [
+				"Our skilled horticulturalists understand the importance of nurturing &6Netherwart&r with care, as it often provides an extra hint of &bInfernal Bulb&r as a byproduct."
+				""
+				"They'll prove quite handy in our magical endeavors, whether for fueling our activities or crafting Small Blaze Gateways."
+			]
+			dependencies: ["3F0CE4D0B1C005F3"]
+			min_width: 300
+			id: "03C2D00542B4965D"
+			tasks: [{
+				id: "7D298B498CBAE0F2"
+				type: "item"
+				item: "rootsclassic:infernal_bulb"
+			}]
+			rewards: [{
+				id: "36532862C33CFB90"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "Get an Ender Pearl"
+			description: [
+				"Dear curious minds,"
+				""
+				"&bEnder pearls&r hold a multitude of magical applications within the realm of crafting. "
+				""
+				"Two of the most important uses are:"
+				""
+				"• The ability to craft &6special Mob Gates&r, like those for Blazes and Endermen."
+				""
+				"[\"\",\"• The ability to craft the \",{\"text\":\"[ Ring of Lesser Discount ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"612BC02EEA4C9BBA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}},\", a requirement in your Ars Nouveau lessons to unlock the \",{\"text\":\"second tier of Spell Book\",\"color\":\"gold\"},\".\"]"
+			]
+			dependencies: ["322870F322A43E51"]
+			min_width: 300
+			id: "4BB704F6736A8D18"
+			tasks: [{
+				id: "298D81DC18181296"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+			rewards: [{
+				id: "64D10A62096E5568"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 4
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			description: [
+				"Defeating a &6Blaze Gateway&r can be a perilous task, but the bountiful &bBlaze Rods&r obtained thereafter will greatly aid us in advancing our enchanting studies."
+				""
+				"These rods hold significant value in our enchanting pursuits. They are essential for brewing, crafting special enchanting tomes, and numerous other enchanting recipes. Their versatility makes them a crucial resource in our magical endeavors."
+			]
+			dependencies: ["03C2D00542B4965D"]
+			min_width: 300
+			id: "55B2DBF8D7A35B25"
+			tasks: [{
+				id: "2FB102FBB65827FB"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+			rewards: [{
+				id: "60D2EC23EEE13669"
+				type: "item"
+				item: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "Growing Chorus"
+			x: 5.0d
+			y: -1.5d
+			subtitle: "Plant a Chorus Flower"
+			description: [
+				"Dear dedicated scholars,"
+				""
+				"The path to obtaining the coveted Chorus Flowers is indeed a lengthy one, but it promises great rewards for your unwavering commitment to the magical arts."
+				""
+				"[\"\",\"\",{\"text\":\"[ Pure Daisy ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3E19F49E1CA299A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				"Begin by using a &6Pure Daisy&r to perform a mystical transformation. &6Convert your Purpur Blocks into Chorus Weed&r, a crucial intermediate stage in the process."
+				""
+				"[\"\",\"\",{\"text\":\"[ Spirit Infusion ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"50B9F03C73F0A696\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to Quest\"]}}]"
+				"Next, harness the power of Malum's &6Spirit Infusion&r to infuse the Chorus Weed with the essence it requires."
+			]
+			dependencies: ["52CE1B114CB8605F"]
+			min_width: 300
+			id: "3EFFC3A8B075061A"
+			tasks: [{
+				id: "2299186AE32F855A"
+				type: "observation"
+				title: "Observe a Chorus Flower"
+				icon: "minecraft:chorus_flower"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:chorus_flower"
+			}]
+			rewards: [{
+				id: "40BCFD849A9C9C01"
+				type: "item"
+				item: "minecraft:chorus_flower"
+				count: 4
+			}]
+		}
+		{
+			title: "Kitchen Impossible"
+			x: 5.0d
+			y: 0.0d
+			shape: "circle"
+			description: [
+				"Did you know our ghostly friend &6Ghostipedia&r in the dining hall offers various foods for a few coins? Well, guess what? They also have Nether Wart!"
+				""
+				"If you're looking for Nether Wart, try asking our friendly poltergeist in the dining hall. They've got lots of goodies, including the useful &bNether Wart&r, for our magical activities."
+			]
+			min_width: 300
+			id: "3F0CE4D0B1C005F3"
+			tasks: [{
+				id: "347581EA1DE9D00A"
+				type: "item"
+				item: {
+					id: "minecraft:nether_wart"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BA318BC5E33748D"
+				type: "item"
+				item: {
+					id: "minecraft:soul_sand"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			subtitle: "Get Purpur"
+			description: [
+				"Dear aspiring alchemists,"
+				""
+				"Your journey towards the mystical &6Chorus Flowers&r remains several steps away, though you continue ever forward."
+				""
+				"Utilize the &6Imbuement Chamber&r to create End Stone, then infuse it into &bPurpur&r in the &6Natural Altar&r."
+				""
+				"Continue your diligent studies and alchemical experiments. With each step, you draw nearer to unlocking the secrets of our enchanted world and the wonders it holds."
+			]
+			dependencies: [
+				"282B976F2593CEC6"
+				"7AD6F8246B30DF9B"
+			]
+			min_width: 300
+			id: "52CE1B114CB8605F"
+			tasks: [{
+				id: "5ED783E3EE86D7F6"
+				type: "item"
+				item: "minecraft:purpur_block"
+			}]
+		}
+		{
+			title: "Mastered Smelting"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "Complete any course that unlocks smelting"
+			description: [
+				"Like the Crafting Table, &cuse of non-magical Furnaces is prohibited&r. However, we host several courses on smelting &oproperly&r, like &owizards&r."
+				""
+				"&lBotania&r"
+				"{\"text\":\"[ Botanic Smelter ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30F12709B6842237\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}}"
+				""
+				"&lArs Nouveau&r"
+				"{\"text\":\"[ Glyph of Smelt ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C60F002ACBF1B8F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}}"
+				""
+				"&lHex Casting&r"
+				"{\"text\":\"[ Learning to Smelt ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"38A3B49A5D413BBF\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}}"
+			]
+			dependencies: [
+				"18B32901E5D2C5BA"
+				"16E3903518FEC30E"
+			]
+			id: "4CCB6C082F5C0622"
+			tasks: [{
+				id: "4B81E5BFA4C83612"
+				type: "gamestage"
+				icon: {
+					id: "minecraft:furnace"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				stage: "learned_to_smelt"
+			}]
+			rewards: [
+				{
+					id: "2AA1794D44F33A9A"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "51F6189E1C7BC3BB"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "6C802EE29CA92ACC"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_axe"
+						Count: 1b
+						tag: {
+							RepairCost: 15
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 1s
+									id: "minecraft:mending"
+								}
+								{
+									lvl: 3s
+									id: "minecraft:unbreaking"
+								}
+								{
+									lvl: 1s
+									id: "ensorcellation:curse_mercy"
+								}
+								{
+									lvl: 1s
+									id: "ensorcellation:curse_fool"
+								}
+							]
+							display: {
+								Name: "{\"text\":\"Branch of Mercy\"}"
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:glyph_transmute"
+			x: 3.0d
+			y: -4.0d
+			subtitle: "Get Ender Pearls, Redstone, or Emeralds"
+			description: [
+				"Through the use of the &6Transmute Glyph&r, you now have the ability to &6convert certain materials into certain others&r."
+				""
+				"Unaided, the spell can &conly convert between roughly equivalent resources&r, like Iron and Gold."
+				""
+				"The more profitable transmutations, like &bEnder Pearls&r and &bEmeralds&r require some boosts to power."
+				""
+				"This is done by applying the &6Glyph of Amplify&r the appropriate amount. If that is not enough, you may also be required to wear a &6Focus of Alchemy&r."
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			min_width: 275
+			id: "5B267C791D966C41"
+			tasks: [{
+				id: "14C9B192C92C0985"
+				type: "item"
+				title: "Transmuted Materials"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:ender_pearl"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:redstone"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:emerald_block"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Alchemical Reconstitution"
+			disable_toast: true
+			x: 2.5d
+			y: -0.5d
+			subtitle: "Make an Imbuement Chamber"
+			description: [
+				"The &bImbuement Chamber&r is a special device that &6combines items&r into something new."
+				""
+				"Place the main item in the Chamber, and then place any additional items in &6Arcane Pedestals&r within 1 meter. Items in Pedestals are not lost upon use."
+				""
+				"The majority of recipes will require &6Source&r from a &6Source Jar&r placed within 2 meters. We will go over this later."
+			]
+			dependencies: ["3B29B9822D5248BD"]
+			id: "7AD6F8246B30DF9B"
+			tasks: [{
+				id: "4AA0581FDB86A74E"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+		}
+		{
+			title: "Obtaining Water"
+			x: -2.642857142857146d
+			y: -7.5d
+			dependencies: ["4169963D23A8F9FF"]
+			id: "0830120BFCCC270B"
+			tasks: [{
+				id: "0108C8A77D634627"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:edelwood_water_bucket"
+					Count: 1b
+					tag: {
+						Fullness: 1
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "70DF8058F2DFC20F"
+				type: "item"
+				item: {
+					id: "cnb:pink_waterlily"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: "ftbai:codex_final"
+			x: 7.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"Dear students,"
+				""
+				"It brings me great joy to witness your remarkable progress in obtaining most of the items needed for our enchanting pursuits. Your dedication and efforts are truly commendable!"
+				""
+				"Now that you've mastered acquiring these items, I encourage you to explore the favors requested by the teachers. Assisting them in their tasks will not only further enhance your knowledge but also contribute significantly to our collective efforts in mastering the arcane arts."
+				""
+				"Taking the time to aid our esteemed teachers in their quests will provide invaluable experience and deepen your understanding of the mystical realms."
+				""
+				"Your commitment to learning and growth is truly inspiring! May your endeavors continue to flourish as you delve deeper into the wonders of enchantment."
+				""
+				"-Headmaster Tazz"
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			size: 2.0d
+			min_width: 300
+			id: "5207857B81F59652"
+			tasks: [{
+				id: "69836238BDC4CB56"
+				type: "checkmark"
+				title: "Getting the Codexes"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["55B2DBF8D7A35B25"]
+			id: "4C6CDDC55DD577CD"
+			tasks: [{
+				id: "1B674D9BD16D3547"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["4BB704F6736A8D18"]
+			id: "28568994E1FA8207"
+			tasks: [{
+				id: "6C3A9144E5123F27"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:enderman_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Progression Chapter"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -6.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"Hello, aspiring enchanters!"
+				""
+				"This chapter is your starting point at &dArcanum Institute&r. It'll guide you on how to begin and gather essential materials."
+				""
+				"Try jumping between different classes! This approach will provide you with a well-rounded understanding of diverse enchanting practices and materials. It's beneficial to have a broader perspective on magical studies."
+				""
+				"Your hard work in class won't go unnoticed! After completing tasks, you'll receive a &6Mage's Spell Book&r and useful spells. These will assist you on your journey through &dArcanum Institute&r."
+				""
+				"It's vital to pay attention here as it sets the groundwork for your magical studies. The materials and knowledge will be crucial for your enchanting journey."
+				""
+				"Keep up the good work! The rewards and knowledge gained will help you grow as an enchanter!"
+			]
+			size: 2.0d
+			min_width: 300
+			id: "0B5523FD5FC1D471"
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "4169963D23A8F9FF"
+			x: -1.0d
+			y: -7.5d
+			id: "27EDC60414678125"
+		}
+		{
+			icon: "ars_nouveau:glyph_transmute"
+			linked_quest: "612BC02EEA4C9BBA"
+			x: 3.0d
+			y: -5.5d
+			shape: "hexagon"
+			size: 2.0d
+			id: "3521ED3D191D0103"
+		}
+		{
+			linked_quest: "282B976F2593CEC6"
+			x: 2.5d
+			y: -2.5d
+			id: "25D31184820E8E1D"
+		}
+	]
+}

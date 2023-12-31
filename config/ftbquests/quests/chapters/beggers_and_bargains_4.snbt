@@ -1,0 +1,556 @@
+{
+	id: "79BE594F4EAE956B"
+	group: "2BF58BA9C4117D6D"
+	order_index: 4
+	filename: "beggers_and_bargains_4"
+	title: "Zruzz's Pickles and stuff"
+	icon: "minecraft:emerald"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "68BF03DF87D4E1E5"
+			tasks: [{
+				id: "1457834C20B528B1"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "731B4749B4FA901E"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "2E0BC6EB2AB65DA7"
+			tasks: [{
+				id: "65E79493B294794A"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2B32468F6DFDB18C"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "3C25852D38DBCDE2"
+			tasks: [{
+				id: "304C839391D57605"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "49F206F39F02B5B6"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "2593ABF9335E271C"
+			tasks: [{
+				id: "471BD80ED87A76BF"
+				type: "item"
+				item: "minecraft:bone"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "73EBF01EC916F098"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "0730934B2782266E"
+			tasks: [{
+				id: "04CCCCB25A552987"
+				type: "item"
+				item: "minecraft:bone"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6F68631E6DC249D8"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "5BDC5906E8B77849"
+			tasks: [{
+				id: "0543884887F7BFA5"
+				type: "item"
+				item: "minecraft:bone"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "35FDA2A8A4016AF5"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "6539DC71ADB04A65"
+			tasks: [{
+				id: "60DA6831179C5347"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4F72F2E24227CBDA"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "4076AFF4A0ED47B3"
+			tasks: [{
+				id: "12CF0AB44CE2FB15"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "14D85C6F1DC2C4FB"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "1F462819637CFA8E"
+			tasks: [{
+				id: "7EDA9D6DE64C315C"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "08E6B8ADF997453D"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			title: "Goblin Codex"
+			icon: "ftbai:codex_goblin"
+			x: 6.0d
+			y: 0.0d
+			description: [
+				"Hey!"
+				""
+				"Didcha know, the Teachers are handing out their Codexes. But we Goblins have a &bCodex&r too."
+				""
+				"You know we like the gold, so if you're willing to \"donate\" some, I'll share you my Codex."
+				""
+				"I'm only going to give you one tho!"
+				""
+				""
+				"Psst... If you want, you can use this to skip one of the Teacher's Favor's, just turn this one in instead of the &6Teacher's Codex&r."
+			]
+			dependencies: ["21604C2C01E3AB4B"]
+			id: "32F05EEAB47406EB"
+			tasks: [{
+				id: "55B1CDF237E607E0"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "54291A024E7D7D58"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "ftbai:codex_goblin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Zombie Villager"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbchunks:textures/faces/minecraft/zombie_villager.png"
+				}
+			}
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "7F9C32BBEBE2EEE0"
+			tasks: [{
+				id: "047193D1B023FAB3"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0FE19D8B9BBB5B6F"
+					type: "item"
+					item: "minecraft:zombie_villager_spawn_egg"
+				}
+				{
+					id: "64E9918A32A1A853"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:weakness"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Compacting Drawers"
+			icon: {
+				id: "framedcompactdrawers:framed_compact_drawer"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "71DB0752A15F2275"
+			tasks: [{
+				id: "5884C9CA9E47C6E6"
+				type: "item"
+				icon: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "507505B38E80B082"
+				type: "item"
+				item: {
+					id: "framedcompactdrawers:framed_compact_drawer"
+					Count: 1b
+					tag: {
+						MatT: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "quark:golden_apple_crate"
+							Count: 1b
+						}
+						MatF: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "malum:block_of_cthonic_gold"
+							Count: 1b
+						}
+						MatS: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "minecraft:gilded_blackstone"
+							Count: 1b
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Mysterious Pickle"
+			icon: "minecraft:sea_pickle"
+			x: 6.0d
+			y: 4.0d
+			shape: "circle"
+			dependencies: [
+				"2ACCFC3BD37DBFDE"
+				"21604C2C01E3AB4B"
+			]
+			can_repeat: true
+			id: "55AACD3A5B1C7D20"
+			tasks: [{
+				id: "144160A6821E4B0F"
+				type: "item"
+				item: {
+					id: "ftbai:silver_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "10BE2732702ACED5"
+				type: "item"
+				item: {
+					id: "minecraft:sea_pickle"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Drawer Slaves"
+			icon: {
+				id: "framedcompactdrawers:framed_slave"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "0E0C124045F5347A"
+			tasks: [{
+				id: "5409527350D02C55"
+				type: "item"
+				icon: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "45C581108FC9FF3B"
+				type: "item"
+				item: {
+					id: "framedcompactdrawers:framed_slave"
+					Count: 1b
+					tag: {
+						MatT: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "quark:golden_apple_crate"
+							Count: 1b
+						}
+						MatF: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "malum:block_of_cthonic_gold"
+							Count: 1b
+						}
+						MatS: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "minecraft:gilded_blackstone"
+							Count: 1b
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Drawer Controller"
+			icon: {
+				id: "framedcompactdrawers:framed_compact_drawer"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+			}
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			can_repeat: true
+			id: "69E28BC7145695F0"
+			tasks: [{
+				id: "053ECEF3E9E4DEA9"
+				type: "item"
+				icon: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				item: "ftbai:gold_coin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "48B454F0F5D34B9E"
+				type: "item"
+				item: {
+					id: "framedcompactdrawers:framed_drawer_controller"
+					Count: 1b
+					tag: {
+						MatT: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "quark:golden_apple_crate"
+							Count: 1b
+						}
+						MatF: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "malum:block_of_cthonic_gold"
+							Count: 1b
+						}
+						MatS: {
+							ForgeCaps: {
+								"customnpcs:itemscripteddata": { }
+							}
+							id: "minecraft:gilded_blackstone"
+							Count: 1b
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

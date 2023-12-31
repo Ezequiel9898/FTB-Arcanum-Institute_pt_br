@@ -1,0 +1,11 @@
+{
+	id: "12C109760EBC6366"
+	order_index: 3
+	title: "T3 BloodMagic Caps"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:glowstone", count: 4 }
+		{ item: "minecraft:sea_lantern", count: 4 }
+		{ item: "minecraft:shroomlight", count: 4 }
+	]
+}

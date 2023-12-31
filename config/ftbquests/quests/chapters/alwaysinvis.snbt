@@ -1,0 +1,872 @@
+{
+	id: "43D8E212DDB15D88"
+	group: ""
+	order_index: 4
+	filename: "alwaysinvis"
+	title: "alwaysInvis"
+	icon: "minecraft:command_block"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Map Toggle"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/map.png"
+				}
+			}
+			x: -4.5d
+			y: -1.0d
+			dependencies: ["68F3DB988DCED32C"]
+			dependency_requirement: "one_completed"
+			can_repeat: true
+			id: "2AFEA361E308DCA6"
+			tasks: [{
+				id: "6B164B55A053FD8B"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			id: "2ACCFC3BD37DBFDE"
+			tasks: [{
+				id: "341945D740229A1D"
+				type: "location"
+				title: "Find the 4th Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					48
+					-36
+					-214
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [{
+				id: "61B8FFB2A87E0A1C"
+				type: "command"
+				auto: "invisible"
+				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			id: "5EDADBE58743C429"
+			tasks: [{
+				id: "44306BD07F5BE2BF"
+				type: "location"
+				title: "Find the 3rd Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-574
+					-46
+					-41
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [{
+				id: "1B649D67D5EF6F73"
+				type: "command"
+				auto: "invisible"
+				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			id: "0884ACAEAADE5153"
+			tasks: [{
+				id: "6CD7261468539D30"
+				type: "location"
+				title: "Find the 2nd Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-61
+					-24
+					-95
+				]
+				size: [I;
+					7
+					15
+					7
+				]
+			}]
+			rewards: [{
+				id: "56086789A8A2724E"
+				type: "command"
+				auto: "invisible"
+				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			id: "3334104FB3F58B8F"
+			tasks: [{
+				id: "01587FA00A6DF4C4"
+				type: "location"
+				title: "Find the 1st Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-210
+					-36
+					36
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [{
+				id: "15BD7BCACEA9ECF4"
+				type: "command"
+				auto: "invisible"
+				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+			}]
+		}
+		{
+			title: "Beastmaster Location Check"
+			icon: {
+				id: "iceandfire:amphithere_skull"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["beastmaster"]
+			x: -7.0d
+			y: -6.5d
+			id: "5817BE8CA48724DD"
+			tasks: [{
+				id: "1410C2E1C26EAB81"
+				type: "location"
+				title: "Elemental Class"
+				tags: ["elemental"]
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-139
+					-25
+					-1
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [{
+				id: "79BC942A9A5840EB"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Beastmaster"
+			}]
+		}
+		{
+			tags: ["goblin_shop"]
+			x: -7.5d
+			y: -2.5d
+			hide: false
+			id: "67701D81B8D97889"
+			tasks: [{
+				id: "769CA84788DC5E34"
+				type: "location"
+				title: "Find the 1st Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-210
+					-36
+					36
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [{
+				id: "2E6463492A2C8038"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "firstshop"
+			}]
+		}
+		{
+			tags: ["goblin_shop"]
+			x: -9.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			hide: true
+			id: "0C4E29151952206E"
+			tasks: [{
+				id: "7925D1214430AB8A"
+				type: "location"
+				title: "Find the 2nd Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-61
+					-24
+					-95
+				]
+				size: [I;
+					7
+					15
+					7
+				]
+			}]
+			rewards: [
+				{
+					id: "56C7B375B334B16A"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "secondShop"
+				}
+				{
+					id: "3CA05DEAAC65D6D3"
+					type: "toast"
+					team_reward: false
+					auto: "enabled"
+					description: "Shop Enabled"
+				}
+			]
+		}
+		{
+			tags: ["goblin_shop"]
+			x: -10.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			hide: true
+			id: "7AC8B285CA2D6E2F"
+			tasks: [{
+				id: "19EF2033A2FD9FA6"
+				type: "location"
+				title: "Find the 3rd Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-574
+					-46
+					-41
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [
+				{
+					id: "69EAC4313894E8F1"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "thirdShop"
+				}
+				{
+					id: "25CCD567A8104FD5"
+					type: "toast"
+					team_reward: false
+					auto: "enabled"
+					description: "Shop Enabled"
+				}
+			]
+		}
+		{
+			tags: ["goblin_shop"]
+			x: -12.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			hide: false
+			id: "21604C2C01E3AB4B"
+			tasks: [{
+				id: "40447CD3FB14A6D1"
+				type: "location"
+				title: "Find the 4th Goblin Shop"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					48
+					-36
+					-214
+				]
+				size: [I;
+					9
+					15
+					9
+				]
+			}]
+			rewards: [
+				{
+					id: "23409487EB376509"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "fourthShop"
+				}
+				{
+					id: "32600487153640DC"
+					type: "toast"
+					team_reward: false
+					auto: "enabled"
+					description: "Shop Enabled"
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -4.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			hide: true
+			can_repeat: true
+			id: "1CBEE93515AA1740"
+			tasks: [{
+				id: "33B048AAF13B1325"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+		}
+		{
+			x: -9.0d
+			y: -4.0d
+			dependencies: ["0C4E29151952206E"]
+			hide: true
+			can_repeat: true
+			id: "720CCC11E08EFB1A"
+			tasks: [{
+				id: "2D2371FC48DEFB72"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.0d
+			dependencies: ["67701D81B8D97889"]
+			hide: true
+			can_repeat: true
+			id: "457E693D62620D8E"
+			tasks: [{
+				id: "1FB01B62BD1DED3F"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+		}
+		{
+			x: -12.0d
+			y: -4.0d
+			dependencies: ["21604C2C01E3AB4B"]
+			hide: true
+			can_repeat: true
+			id: "59675F2D54C9727F"
+			tasks: [{
+				id: "3C364990CA121EB7"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+		}
+		{
+			title: "Bloodmagic Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "982d514c-a012-e470-d6cc-7f32e00e57a8"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4MmQ1MTRjYTAxMmU0NzBkNmNjN2YzMmUwMGU1N2E4MjNiMGQ4NDAyMzNlMDA5NGIyY2U5MmQxZmI0OTVlY2UifX19"
+							}]
+						}
+						Name: "Saereth"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["bloodmagic"]
+			x: -11.5d
+			y: -8.0d
+			hide_dependency_lines: true
+			id: "786E87AD25C9C9D6"
+			tasks: [{
+				id: "03AF2482F115D9AC"
+				type: "location"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-335
+					-23
+					-200
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [{
+				id: "01781D16703FA767"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "BloodMagic"
+			}]
+		}
+		{
+			title: "Botania Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "57e08f1d-f7aa-a00c-82bd-212a78cbbb5b"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3ZTA4ZjFkZjdhYWEwMGM4MmJkMjEyYTc4Y2JiYjViZDUwYzMxNjMzYjk1ODBhYzExMjU3YjU4NmIwMDQ2OWQifX19"
+							}]
+						}
+						Name: "LadyMaehem"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["botania"]
+			x: -10.0d
+			y: -8.0d
+			id: "016AE3BFE56E4C03"
+			tasks: [{
+				id: "0687C49B6D78A7A4"
+				type: "location"
+				title: "Botania Check"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-485
+					-31
+					-31
+				]
+				size: [I;
+					16
+					5
+					16
+				]
+			}]
+			rewards: [{
+				id: "4AD29C97BDB53884"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Botania"
+			}]
+		}
+		{
+			title: "Ars Nouveau Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "6881a2b4-0e6e-f3c1-7387-b6f6b42b1f2a"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ODFhMmI0MGU2ZWYzYzE3Mzg3YjZmNmI0MmIxZjJhMjI2NTUzYTQxYWM4N2NlMWIxN2ZiZGM1Zjc5N2FhMmQifX19"
+							}]
+						}
+						Name: "R3GEN"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["ars"]
+			x: -8.5d
+			y: -8.0d
+			id: "59EF764CCD1CAADD"
+			tasks: [{
+				id: "45D0D6C68D8D8282"
+				type: "location"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-139
+					-55
+					-114
+				]
+				size: [I;
+					11
+					11
+					11
+				]
+			}]
+			rewards: [{
+				id: "73C799098AABA62A"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Ars Nouveau"
+			}]
+		}
+		{
+			title: "Roots \\& Nature's Aura Location Check"
+			tags: ["roots"]
+			x: -7.0d
+			y: -8.0d
+			id: "418871AEEAAB853A"
+			tasks: [{
+				id: "579020867AEF8A03"
+				type: "location"
+				title: "Loneztar Location Check"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "e9077b62-9a68-4dcb-0fac-85c546f0ac5c"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U5MDc3YjYyOWE2ODRkY2IwZmFjODVjNTQ2ZjBhYzVjNzI2MDQ5MzBjOTM2M2Y0YTAzNzUyN2FiNWNmYmVhZjMifX19"
+								}]
+							}
+							Name: "Loneztar"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-335
+					-54
+					-326
+				]
+				size: [I;
+					16
+					5
+					16
+				]
+			}]
+			rewards: [{
+				id: "305290583E95C014"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Roots & Nature's Aura"
+			}]
+		}
+		{
+			title: "Hexerei Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "ac376b88-141f-d376-d5c9-03d57f88749f"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjMzc2Yjg4MTQxZmQzNzZkNWM5MDNkNTdmODg3NDlmNmIzNGQ3ZmNmYWUzMTRjZGVjOWVmYmMyNWY4ZjQzMmMifX19"
+							}]
+						}
+						Name: "1aaron5"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["hexerei"]
+			x: -11.5d
+			y: -6.5d
+			hide_dependency_lines: true
+			id: "2C443D0A7F527025"
+			tasks: [{
+				id: "0C10650DD1EC3289"
+				type: "location"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-333
+					-51
+					-64
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [{
+				id: "3E5DDE71CC9451C7"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Hexerei"
+			}]
+		}
+		{
+			title: "Occultism Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "1b3a13c3-11bd-8eb2-0283-8c32afa52b49"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiM2ExM2MzMTFiZDhlYjIwMjgzOGMzMmFmYTUyYjQ5MDlkODEwODU3OTU1NTEyYTVlNTA4ZTgwMzYwZmY1ZmIifX19"
+							}]
+						}
+						Name: "Everlipse"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["occultism"]
+			x: -10.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			id: "2CBECFD7042E416F"
+			tasks: [{
+				id: "4B0411FFED9FAA58"
+				type: "location"
+				icon: "occultism:spirit_fire"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-52
+					-202
+				]
+				size: [I;
+					31
+					15
+					31
+				]
+			}]
+			rewards: [{
+				id: "2819D67C3E7345F6"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Occultism"
+			}]
+		}
+		{
+			title: "Hexcasting Location Check"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: "ba1a27b2-f1fe-75c6-ae88-c0dec3598404"
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JhMWEyN2IyZjFmZTc1YzZhZTg4YzBkZWMzNTk4NDA0NGY1ZWQzNjdlODExMjVmOTllOTc0ZTVkNTZjZmJlZDIifX19"
+							}]
+						}
+						Name: "kSunekaer"
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: ["spellcasting"]
+			x: -8.5d
+			y: -6.5d
+			id: "7A8009D1B25A5A01"
+			tasks: [{
+				id: "08E4B569CD470221"
+				type: "location"
+				icon: "ars_nouveau:dominion_wand"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-249
+					-23
+					-154
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [{
+				id: "5BB0996DE12F60A9"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Spellcasting"
+			}]
+		}
+		{
+			tags: ["food_shop"]
+			x: -13.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			hide: true
+			invisible: true
+			id: "6E7F2C4124A69B6C"
+			tasks: [{
+				id: "29421008903B4F41"
+				type: "location"
+				title: "Inside the Dining Hall"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-433
+					-30
+					124
+				]
+				size: [I;
+					62
+					15
+					62
+				]
+			}]
+			rewards: [{
+				id: "7AC6AD445724D634"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "foodshop"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.5d
+			hide: false
+			id: "62CC7E5BCD6EDC67"
+			tasks: [{
+				id: "3537B487E30D230B"
+				type: "location"
+				title: "Find the MME"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-316
+					-50
+					-136
+				]
+				size: [I;
+					32
+					15
+					38
+				]
+			}]
+			rewards: [{
+				id: "5C14F32F73442AF5"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "mme"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			dependencies: ["62CC7E5BCD6EDC67"]
+			hide: true
+			can_repeat: true
+			id: "0E9B30DC8E1B6F67"
+			tasks: [{
+				id: "35EA3A7ED91B3574"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+		}
+		{
+			title: "How to use Luminizers"
+			x: -13.5d
+			y: -6.5d
+			id: "44251E42A1E650B8"
+			tasks: [{
+				id: "7AF1B556833A4BF1"
+				type: "observation"
+				icon: "botania:light_relay"
+				timer: 0L
+				observe_type: 0
+				to_observe: "botania:light_relay"
+			}]
+			rewards: [{
+				id: "18D3855FD9397774"
+				type: "command"
+				command: "/tellraw @p [\"\",\"[Modpack] You can find \",{\"text\":\"Luminizer Relays\",\"color\":\"aqua\"},\" scattered around campus! Right-click one, and it'll take you on a ride!\"]"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			hide: false
+			id: "08B62DE51ADF070A"
+			tasks: [{
+				id: "4B3B5FF0717123FE"
+				type: "location"
+				title: "Find the MME"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-316
+					-50
+					-136
+				]
+				size: [I;
+					32
+					15
+					38
+				]
+			}]
+			rewards: [{
+				id: "22C913B5AC1F448E"
+				type: "command"
+				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+			}]
+		}
+	]
+	quest_links: [{
+		linked_quest: "68F3DB988DCED32C"
+		x: -4.5d
+		y: -2.5d
+		id: "7DD043221A26E8C5"
+	}]
+}

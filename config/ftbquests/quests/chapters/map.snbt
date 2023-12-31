@@ -1,0 +1,668 @@
+{
+	id: "5F717A9CBD0A686A"
+	group: ""
+	order_index: 1
+	filename: "map"
+	title: "Enchanted Map"
+	icon: "minecraft:map"
+	disable_toast: true
+	default_quest_shape: "pentagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: 0.0d
+		width: 50.0d
+		height: 29.34782608695652d
+		rotation: 0.0d
+		image: "ftbquests:textures/map.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Blood Magic Class"
+			icon: "bloodmagic:altar"
+			tags: [
+				"closegui"
+				"bloodmagic_tp"
+			]
+			disable_toast: true
+			x: -1.9309523809523768d
+			y: -3.6095238095238074d
+			subtitle: "Prof. Saereth"
+			hide: true
+			can_repeat: true
+			id: "26B8691C09312942"
+			tasks: [{
+				id: "71B4AD15E1F40DB6"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "234DD2F2ED0DE4D0"
+				type: "custom"
+				title: "Teleport to Blood Magic Class"
+				icon: "bloodmagic:altar"
+				tags: ["bloodmagic"]
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Botania Class"
+			icon: "botania:mana_pool"
+			tags: [
+				"closegui"
+				"botania_tp"
+			]
+			disable_toast: true
+			x: -7.166666666666657d
+			y: 0.3154761904761969d
+			subtitle: "Miss LadyMaehem"
+			hide: true
+			can_repeat: true
+			id: "2ED82050D1E9FDAD"
+			tasks: [{
+				id: "71FB43330C734590"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "063439730A73836D"
+				type: "custom"
+				title: "Teleport to Botania Class"
+				icon: "botania:mana_pool"
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Ars Nouveau Class"
+			icon: "ars_nouveau:apprentice_spell_book"
+			tags: [
+				"closegui"
+				"ars_tp"
+			]
+			disable_toast: true
+			x: 0.9642857142857224d
+			y: -2.801020408163275d
+			subtitle: "Prof. Regen"
+			hide: true
+			can_repeat: true
+			id: "0A33C6071CBD15F9"
+			tasks: [{
+				id: "3429ADBC4D36B608"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "4E79652C4B6DECE3"
+				type: "custom"
+				title: "Teleport to Ars Nouveau Class"
+				icon: "ars_nouveau:archmage_spell_book"
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Occultism Class"
+			icon: "occultism:spirit_fire"
+			tags: [
+				"closegui"
+				"occultism_tp"
+			]
+			disable_toast: true
+			x: -2.988095238095241d
+			y: -3.6d
+			subtitle: "Prof. Everlipse"
+			hide: true
+			can_repeat: true
+			invisible_until_tasks: 1
+			id: "6862ECEB240AE9D2"
+			tasks: [{
+				id: "7A60F99536FB52F0"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "1DFC6702E5ACB0A0"
+				type: "custom"
+				title: "Teleport to Occultism Class"
+				icon: "occultism:spirit_fire"
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Hexerei Class"
+			icon: "hexerei:mixing_cauldron"
+			tags: [
+				"closegui"
+				"hexerei_tp"
+			]
+			disable_toast: true
+			x: -3.1309523809523796d
+			y: -0.37738095238094616d
+			subtitle: "Prof. Aaron"
+			hide: true
+			can_repeat: true
+			id: "2D0AA72C3C9ECDA8"
+			tasks: [{
+				id: "03501EDF518791C0"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "3C5F0C243A175FEE"
+				type: "custom"
+				title: "Teleport to Hexerei Class"
+				icon: "hexerei:mixing_cauldron"
+				auto: "invisible"
+			}]
+		}
+		{
+			title: "Dorms Portal"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbchunks:textures/waypoint_home.png"
+				}
+			}
+			tags: [
+				"closegui"
+				"dorms_tp"
+			]
+			disable_toast: true
+			x: -7.011904761904759d
+			y: 2.44047619047619d
+			hide: true
+			can_repeat: true
+			id: "2D93A4D7005087D2"
+			tasks: [{
+				id: "35C0322B4DFFAFFB"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "29E8BBE33D242C68"
+				type: "custom"
+				title: "Teleport to Dorms Portal"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "ftbchunks:textures/waypoint_home.png"
+					}
+				}
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Haaznek's Emporium"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/gui/book/cash.png"
+				}
+			}
+			tags: [
+				"closegui"
+				"shop_one_tp"
+			]
+			disable_toast: true
+			x: -0.3214285714285694d
+			y: 2.0535714285714164d
+			shape: "pentagon"
+			subtitle: "#1"
+			description: ["Haaznek's Emporium, visit to unlock fast travel."]
+			dependencies: ["3334104FB3F58B8F"]
+			hide: false
+			can_repeat: true
+			id: "1765816B0CF0C217"
+			tasks: [{
+				id: "0E99590D65F8DB7D"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "7499F1593CB70193"
+				type: "custom"
+				title: "Teleport to Goblin Shop"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "occultism:textures/gui/book/cash.png"
+					}
+				}
+				auto: "invisible"
+			}]
+		}
+		{
+			title: "Ibseang's Itamz"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/gui/book/cash.png"
+				}
+			}
+			tags: [
+				"closegui"
+				"shop_two_tp"
+			]
+			x: 3.9071428571428726d
+			y: -1.597619047619041d
+			subtitle: "#2"
+			dependencies: ["0884ACAEAADE5153"]
+			hide: false
+			can_repeat: true
+			id: "71AAE4D0FEFAD5A2"
+			tasks: [{
+				id: "064DFFCCC2BF58F7"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "2DC35C46D8018FF8"
+				type: "custom"
+				title: "Teleport to Goblin Shop"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "occultism:textures/gui/book/cash.png"
+					}
+				}
+				auto: "invisible"
+			}]
+		}
+		{
+			title: "Brobzagz Booties"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/gui/book/cash.png"
+				}
+			}
+			tags: [
+				"closegui"
+				"shop_three_tp"
+			]
+			disable_toast: true
+			x: -9.750000000000007d
+			y: 0.0988612836438918d
+			subtitle: "#3"
+			dependencies: ["5EDADBE58743C429"]
+			hide: false
+			can_repeat: true
+			id: "6958138A58490A12"
+			tasks: [{
+				id: "5571CDC3C769A1C4"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "68E7797EEB107FF8"
+				type: "custom"
+				title: "Teleport to Goblin Shop"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "occultism:textures/gui/book/cash.png"
+					}
+				}
+				auto: "invisible"
+			}]
+		}
+		{
+			title: "Zruzz's Pickles and stuff"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/gui/book/cash.png"
+				}
+			}
+			tags: ["shop_four_tp"]
+			disable_toast: true
+			x: 6.764285714285734d
+			y: -4.645238095238085d
+			subtitle: "#4"
+			dependencies: ["2ACCFC3BD37DBFDE"]
+			hide: false
+			can_repeat: true
+			id: "6B786277150F1A36"
+			tasks: [{
+				id: "0E9FF6DDB45BEB90"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "47B1FFE45699706E"
+				type: "custom"
+				title: "Teleport to Goblin Shop"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "occultism:textures/gui/book/cash.png"
+					}
+				}
+				auto: "invisible"
+			}]
+		}
+		{
+			icon: "minecraft:grass_block"
+			disable_toast: true
+			x: 5.0d
+			y: 7.0d
+			can_repeat: true
+			id: "48363AFAABBC4681"
+			tasks: [{
+				id: "4E787A7122CA6CDA"
+				type: "checkmark"
+				title: "Spawn"
+			}]
+			rewards: [
+				{
+					id: "13739636F2822938"
+					type: "command"
+					auto: "invisible"
+					command: "/spawn"
+					player_command: true
+				}
+				{
+					id: "7E959FB1BB78BFDA"
+					type: "custom"
+					title: "Go to Spawn"
+					icon: "minecraft:grass_block"
+					auto: "enabled"
+				}
+			]
+		}
+		{
+			title: "Ancient Runes Class"
+			icon: "hexcasting:artifact"
+			tags: [
+				"closegui"
+				"spellcasting_tp"
+			]
+			disable_toast: true
+			x: -0.8809523809523796d
+			y: -2.7345238095238074d
+			subtitle: "Prof. Sunekaer"
+			hide: true
+			can_repeat: true
+			id: "2065EC4A9929C700"
+			tasks: [{
+				id: "50D79362695F11D5"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "0B7D361AD5D0608A"
+				type: "custom"
+				title: "Teleport to Ancient Runes Class"
+				icon: {
+					id: "hexcasting:artifact"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Roots \\& Nature's Aura Class"
+			icon: "rootsclassic:runic_tablet"
+			tags: [
+				"closegui"
+				"roots_tp"
+			]
+			disable_toast: true
+			x: -3.107142857142847d
+			y: -6.841614906832305d
+			subtitle: "Prof. Loneztar"
+			hide: true
+			can_repeat: true
+			id: "75262D4FA3B40F1B"
+			tasks: [{
+				id: "038569A8B002264B"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "167199215C1DD543"
+				type: "custom"
+				title: "Teleport to Roots \\& Nature's Aura Class"
+				icon: "rootsclassic:runic_tablet"
+				auto: "enabled"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -10.0d
+			description: [
+				"Welcome to the interactive map of the Arcanum Institute, the renowned center of magical learning and discovery!"
+				""
+				"As you explore this wondrous institution, you will uncover its major key points and unlock hidden areas of knowledge."
+				""
+				"Please keep in mind that some locations may be currently unavailable or concealed until you fulfill certain conditions or progress further in your journey."
+				""
+				"Let's embark on this adventure together!"
+			]
+			size: 5.0d
+			min_width: 275
+			id: "5B4AE5B1EC1F9965"
+			tasks: [{
+				id: "7F9C4E990D72B913"
+				type: "checkmark"
+				title: "Map Information"
+			}]
+			rewards: [{
+				id: "0DC5787A5F710831"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Beast Masters"
+			icon: "iceandfire:amphithere_skull"
+			tags: [
+				"closegui"
+				"beastmaster_tp"
+			]
+			disable_toast: true
+			x: 2.2857142857142776d
+			y: 1.375d
+			subtitle: "Prof. Jake"
+			hide: true
+			can_repeat: true
+			id: "41F836BB02211828"
+			tasks: [{
+				id: "16636BD2BB7550FD"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "0A4B41FFFB3AAC60"
+				type: "custom"
+				title: "Teleport to Beast Masters"
+				icon: "iceandfire:amphithere_skull"
+				tags: [
+					"beastmaster"
+					"beastmaster_tp"
+				]
+				auto: "no_toast"
+			}]
+		}
+		{
+			title: "Dining Hall"
+			icon: "decorative_blocks:chandelier"
+			tags: [
+				"closegui"
+				"dininghall_tp"
+			]
+			disable_toast: true
+			x: -4.25d
+			y: 4.267857142857139d
+			hide: true
+			can_repeat: true
+			id: "5B565BF530AA8C7F"
+			tasks: [{
+				id: "512E705098490437"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "68B6988C73DB4C5D"
+				type: "custom"
+				title: "Teleport to Grand Hall"
+				icon: "decorative_blocks:chandelier"
+				auto: "enabled"
+			}]
+		}
+		{
+			title: "Magic Mischief Emporium"
+			icon: {
+				id: "minecraft:firework_rocket"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			tags: [
+				"closegui"
+				"mme_tp"
+			]
+			disable_toast: true
+			x: -2.5d
+			y: -2.0d
+			shape: "pentagon"
+			description: ["The Magic Mischief Emporium, visit to unlock fast travel."]
+			dependencies: ["08B62DE51ADF070A"]
+			hide: false
+			can_repeat: true
+			id: "4025207EA9DE4E4E"
+			tasks: [{
+				id: "2A914A274D7602D4"
+				type: "xp"
+				value: 2L
+				points: false
+			}]
+			rewards: [{
+				id: "168030B3750794A9"
+				type: "custom"
+				title: "Teleport to Magic Mischief Emporium"
+				icon: {
+					id: "minecraft:firework_rocket"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				auto: "invisible"
+			}]
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "2D93A4D7005087D2"
+			x: 13.0d
+			y: -10.5d
+			shape: "square"
+			size: 2.0d
+			id: "3DFDD5BBDA5277D7"
+		}
+		{
+			linked_quest: "5B565BF530AA8C7F"
+			x: 13.0d
+			y: -7.5d
+			shape: "square"
+			size: 2.0d
+			id: "78F8AB6DFF9122EB"
+		}
+		{
+			linked_quest: "2ED82050D1E9FDAD"
+			x: 17.0d
+			y: -10.5d
+			shape: "square"
+			size: 2.0d
+			id: "7A657831AB9F7C0B"
+		}
+		{
+			linked_quest: "6862ECEB240AE9D2"
+			x: 17.0d
+			y: -7.5d
+			shape: "square"
+			size: 2.0d
+			id: "26B6AEAF0F2444E9"
+		}
+		{
+			linked_quest: "26B8691C09312942"
+			x: 17.0d
+			y: -4.5d
+			shape: "square"
+			size: 2.0d
+			id: "666EB55D007A2283"
+		}
+		{
+			linked_quest: "2065EC4A9929C700"
+			x: 17.0d
+			y: -1.0d
+			shape: "square"
+			size: 2.0d
+			id: "22D2C73C96385E85"
+		}
+		{
+			linked_quest: "0A33C6071CBD15F9"
+			x: 17.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			id: "0F2C0CF0AFC40359"
+		}
+		{
+			linked_quest: "41F836BB02211828"
+			x: 17.0d
+			y: 10.0d
+			shape: "square"
+			size: 2.0d
+			id: "1E0E0D184546C180"
+		}
+		{
+			linked_quest: "48363AFAABBC4681"
+			x: 13.0d
+			y: -4.5d
+			shape: "square"
+			size: 2.0d
+			id: "6B6135821AA7F3EA"
+		}
+		{
+			linked_quest: "75262D4FA3B40F1B"
+			x: 17.0d
+			y: 6.5d
+			shape: "square"
+			size: 2.0d
+			id: "0E254A574AB99E55"
+		}
+	]
+}

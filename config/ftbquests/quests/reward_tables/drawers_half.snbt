@@ -1,0 +1,104 @@
+{
+	id: "74C86C1964BD23FB"
+	order_index: 18
+	title: "Drawers Half"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "framedcompactdrawers:framed_half_one"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "framedcompactdrawers:framed_half_two"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "framedcompactdrawers:framed_half_four"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

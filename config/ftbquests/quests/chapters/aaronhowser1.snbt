@@ -1,0 +1,324 @@
+{
+	id: "2EE8A39C445ECFBE"
+	group: "125708BF22E6ABEE"
+	order_index: 1
+	filename: "aaronhowser1"
+	title: "Professor Howser"
+	icon: "ftbai:codex_evilcraft"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Evilcraft's Codex"
+			icon: "ftbai:codex_evilcraft"
+			x: -0.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Dear Student"
+				""
+				"In recognition of your valor and dedication, I offer you a priceless artifact: my &eCodex&r. The &eCodex&r is an invaluable repository of incantations and incisive wisdom. "
+				""
+				"I entrust this artifact to you, believing in your capability to harness its arcane knowledge for the greater good. May it guide you along your path in times to come. "
+				""
+				"Congratulations again on the completion of my class. Seldom have I had the honor of instructing so bright and promising a pupil. "
+				""
+				"Sincerely,"
+				"Arron Howser"
+				"Professor of &bEvilcraft&r."
+			]
+			dependencies: [
+				"707B6E2F45255730"
+				"2C443D0A7F527025"
+			]
+			size: 3.0d
+			min_width: 350
+			id: "075F44C1D333F731"
+			tasks: [{
+				id: "7DDDAF7958BF4519"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1D6E355632FEF4AA"
+					type: "item"
+					item: "ftbai:codex_evilcraft"
+				}
+				{
+					id: "3B1640F92E91376C"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_evilcraft"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: [
+				"Greetings, Adept of the Dark Arts,"
+				""
+				"I humbly request your assistance obtaining Dark Gems. The purpose for this is twofold. First, I require them for my research. Second this will be the first of several tests to check your progress mastering  &bEvilcraft&r."
+				""
+				"Could you venture forth and procure for me a cache of &625 Dark Gems&r? "
+				""
+				"I eagerly await your triumphant return, laden with these elusive yet invaluable treasures."
+			]
+			dependencies: ["2C443D0A7F527025"]
+			min_width: 350
+			id: "053395783C6C0E3F"
+			tasks: [{
+				id: "01BD9606F97E3AC4"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_gem"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16L
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"My Dear Students,"
+				""
+				"Your task is to obtain a &6Wooden Exalted Crafter&r, an essential tool for crafting on the move within our mystical realm. Craft this invaluable device to enhance your magical prowess and efficiency."
+				""
+				"Once assembled, the Wooden Exalted Crafter will be at your disposal, allowing you to craft wherever your magical journey takes you."
+				""
+				"Best of luck in this endeavor."
+			]
+			dependencies: [
+				"053395783C6C0E3F"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "551C892155052857"
+			tasks: [{
+				id: "04020437AE8B3EDA"
+				type: "item"
+				item: {
+					id: "evilcraft:exalted_crafter_wooden"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"Esteemed apprentice,"
+				""
+				"Your exceptional progress in class calls for a challenging task - acquiring the &ePromise of Tenacity I&r artifact, a substantial augmentation for the Blood Infuser."
+				""
+				"If you succeed, you will be rewarded with a special artifact: the &bEffortless Ring&r. This ring possesses unique properties that streamline and enhance one's abilities in the arcane arts."
+				""
+				"Best of luck with your task."
+			]
+			dependencies: [
+				"551C892155052857"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "484AB9304C439CF2"
+			tasks: [{
+				id: "699E94E9638D5A39"
+				type: "item"
+				item: {
+					id: "evilcraft:promise_tier_1"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2F20BC87391FDA71"
+				type: "item"
+				item: {
+					id: "evilcraft:effortless_ring"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: [
+				""
+				"Well done. Your exemplary progress in class signifies your exceptional dedication. Your progress indicates that you are ready for the next test. For this test, you are to obtain the &6Blood Chest&r. This seemingly unassuming chest harbors a unique magical property—it possesses the extraordinary ability to restore items using the essence of blood."
+				""
+				"This marks the fourth of six tests within our curriculum. Successfully obtaining the Blood Chest will showcase your advancing expertise and edge you closer to earning one of the Codexes required for graduation."
+				""
+				"Wishing you success in this challenging yet rewarding pursuit."
+			]
+			dependencies: [
+				"484AB9304C439CF2"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "1A0B77451C56054A"
+			tasks: [{
+				id: "0F9F64252DB6FC90"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_chest"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 10000
+					}
+					ForgeCaps: {
+						Parent: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+							capacity: 10000
+						}
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "542961A94B2A8549"
+				type: "item"
+				item: {
+					id: "evilcraft:environmental_accumulation_core"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: [
+				"Dear Student,"
+				""
+				"You may have read about Vengeance Spirits in your studies of the great war. They were one of the &5Dark Witch&r's most feared soldiers. Reports have reached us that they have been spotted, confirming our worst fears that she or one of her agents is rising in power again. "
+				""
+				"They must not be allowed to reach her. To this end, your fifth trial is this: procure three essential artifacts: a &6Vengeance Focus&r, a &6Vengeance Ring&r, and a &6Box of Eternal Closure&r"
+				""
+				"By acquiring these artifacts, we shall deepen our understanding of the intricate and potent sorceries harnessed by the &5Dark Witch&r."
+				""
+				"I will not pretend this trial is not dangerous. Do be careful. "
+			]
+			dependencies: [
+				"1A0B77451C56054A"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "1077C773A2C628AE"
+			tasks: [
+				{
+					id: "78FEA38648FBBDBC"
+					type: "item"
+					item: {
+						id: "evilcraft:vengeance_focus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "16DE6B88E23BBB4F"
+					type: "item"
+					item: {
+						id: "evilcraft:vengeance_ring"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "52469A1097BF52F9"
+					type: "item"
+					item: {
+						id: "evilcraft:box_of_eternal_closure"
+						Count: 1b
+						tag: {
+							spiritTag: {
+								playerName: ""
+								remainingLife: 0
+								isSwarm: 1b
+								swarmTier: 4
+								buildupDuration: 0
+								frozenDuration: 0
+								playerId: ""
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: [
+				"Dear Student,"
+				""
+				"Now that you have successfully acquired the Box of Eternal CLosure, you will face your final test for this class. The box you now hold contains within it a Vengeance Spirit. Your task is to open the box, and defeat the spirit within. Once it is vanquished, you will bring me the &6Vengeance Essence&r it contains. "
+				""
+				"We will be able to obtain valuable information about the strength of the Dark Witch's allies if you succeed, and as a reward, you will receive not only the Codex for completion of this class, but a pair of &eSpectral Glasses&r. These enchanted glasses will aid you in navigating the ethereal planes."
+				""
+				"Good Luck"
+			]
+			dependencies: [
+				"1077C773A2C628AE"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "707B6E2F45255730"
+			tasks: [{
+				id: "2124B961D7606E99"
+				type: "item"
+				item: {
+					id: "evilcraft:vengeance_essence"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "76F9D70A87318921"
+				type: "item"
+				item: {
+					id: "evilcraft:spectral_glasses"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

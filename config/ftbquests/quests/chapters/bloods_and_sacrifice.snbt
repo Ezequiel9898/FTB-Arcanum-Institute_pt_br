@@ -1,0 +1,2371 @@
+{
+	id: "15CC48755860FDC3"
+	group: "0960D5B8A7FB00EA"
+	order_index: 2
+	filename: "bloods_and_sacrifice"
+	title: "Bloods and Sacrifice"
+	icon: "bloodmagic:altar"
+	subtitle: ["Blood Magic"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			x: 2.5d
+			y: 1.5d
+			description: [
+				"I have provided what you will need to craft your very first item. Don't get used to it. "
+				""
+				"Combine the &6Arcane Ashes&r with the &6Blank Slate&r to forge your very first Sigil: If you have followed directions, you now have a &bDivination Sigil&r."
+			]
+			dependencies: ["0E0C6473FEBC9E99"]
+			dependency_requirement: "one_completed"
+			hide_details_until_startable: true
+			id: "773AC3684A65800F"
+			tasks: [{
+				id: "17012F80BBD96E6B"
+				type: "item"
+				item: "bloodmagic:divinationsigil"
+			}]
+			rewards: [
+				{
+					id: "55ED43547B721584"
+					type: "item"
+					item: {
+						id: "bloodmagic:upgradetome"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Blood Magic Notes\"}"
+							}
+							livingStats: {
+								maxPoints: 0
+								upgrades: [{
+									exp: 100.0d
+									key: ""
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "60A794C17902EB6E"
+					type: "item"
+					item: "bloodmagic:experiencebook"
+				}
+			]
+		}
+		{
+			title: "Sacrificial Knife"
+			icon: {
+				id: "bloodmagic:sacrificialdagger"
+				Count: 1b
+				tag: {
+					sacrifice: 0b
+				}
+			}
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"There are two paths to harnass the power of &eBlood Magic&r:"
+				"The path of &aself-sacrifice&r and the path of &4sacrifice&r."
+				""
+				"The path of &aself-sacrifice&r revolves around utilizing your own life essence to fuel the arcane rituals and spells of &eBlood Magic&r."
+				""
+				"It requires a profound understanding of your own limits and the willingness to exchange your own vitality for magical energy."
+				""
+				"By willingly sacrificing your health and vitality, you can tap into immense power, enabling you to achieve extraordinary feats."
+			]
+			dependencies: ["773AC3684A65800F"]
+			invisible_until_tasks: 1
+			id: "60A43619EE2B4D97"
+			tasks: [{
+				id: "3EB708DC5805F28A"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Blood Magic Notes\"}"
+						}
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: ""
+							}]
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4A4AADF8B734F3D2"
+					type: "item"
+					item: {
+						id: "bloodmagic:sacrificialdagger"
+						Count: 1b
+						tag: {
+							sacrifice: 0b
+						}
+					}
+				}
+				{
+					id: "40C55D1E71EFB6BA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5EEA60FCEE1AAFB8"
+					type: "item"
+					item: {
+						id: "bloodmagic:incensealtar"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "64C2FEBE7F208083"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:selfsacrificerune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Dagger of Sacrifice"
+			icon: "bloodmagic:daggerofsacrifice"
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"There are two paths to harnass the power of &eBlood Magic&r:"
+				"the path of &4self-sacrifice&r and the path of &asacrifice&r."
+				""
+				"the path of &asacrifice&r involves gathering life essence from external sources, typically other creatures."
+				""
+				"It requires careful consideration of ethical implications and a responsible approach to ensure the balance and harmony of life."
+				""
+				"By sacrificing the life essence of willing or unwilling creatures, you can channel their energy to amplify your magical abilities."
+			]
+			dependencies: ["773AC3684A65800F"]
+			id: "2C5BE4C092BE0F2D"
+			tasks: [{
+				id: "7EFB788FAC78CCD8"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Blood Magic Notes\"}"
+						}
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: ""
+							}]
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "174ADED76B05411B"
+					type: "item"
+					item: "bloodmagic:daggerofsacrifice"
+				}
+				{
+					id: "21AD0E1AD58CE027"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "7094EF1FA0C6B0E1"
+					type: "item"
+					item: {
+						id: "iceandfire:deathworm_egg"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "414C93976AFE4E5A"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:sacrificerune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: [
+				"Today, you will take your first real step towards harnassing the power of &eBlood Magic&r"
+				""
+				"Your task is to craft your very own &5Blood Altar&r and demonstrate your competence by creating a &6Reinforced Slate&r."
+				""
+				"This will show if you possess the will and the ability to manipulate the forces of Blood Magic and mark your progress in mastering this arcane art."
+				""
+				"Let the creation of your &7Blood Altar&r commence, and let your skill and dedication shine through."
+				""
+				"For assistance in obtaining basic crafting materials check out the &eProgression Chapter&r"
+			]
+			min_required_dependencies: 1
+			dependencies: [
+				"60A43619EE2B4D97"
+				"2C5BE4C092BE0F2D"
+			]
+			dependency_requirement: "all_started"
+			id: "4903CEB8C47D208D"
+			tasks: [{
+				id: "7F767EBBFF7B2E90"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: [
+				"Having successfully crafted your own &5Blood Altar&r, the time has come to empower your individual &5Blood Network&r."
+				""
+				"Through the infusion of a diamond with an ample amount of blood, you will forge your very own &bBlood Orb&r."
+				""
+				"This significant achievement will solidify your connection to the mystical energies of &eBlood Magic&r, binding the orb to your essence."
+				""
+				"As the final outcome of this endeavor, you shall possess a potent tool, attuned to your being."
+				""
+				"Proceed with the ritual and claim your rightful place among the practitioners of &eBlood Magic&r."
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "701CC58B650FE3A1"
+			tasks: [{
+				id: "6F900DF96A030FB9"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+			rewards: [{
+				id: "1FB2023C875C6836"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:orbcapacityrune"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Upgrading your Blood Altar"
+			x: 9.5d
+			y: 1.5d
+			description: [
+				"It has come to my attention that it's time to advance your studies in &5Bloodmagic&r. To upgrade your &5Bloodmagic Altar&r, acquire &b8 Blank Runes&r. Positioning them strategically around your Altar shall enhance its potential, allowing the crafting of tier 2 items such as the &6Reinforced Slate&r."
+				""
+				"Do not underestimate the significance of this progression. Proper utilization of your Altar's improved capabilities will be pivotal in your further exploration of the arcane arts."
+				""
+				"Proceed with caution and ensure meticulous placement of the runes. They shall serve as the bedrock for your ascent in Bloodmagic."
+			]
+			dependencies: ["701CC58B650FE3A1"]
+			id: "387CE36B90720D95"
+			tasks: [{
+				id: "269BDD4B952D693D"
+				type: "item"
+				item: "bloodmagic:blankrune"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "03B4870137A2230B"
+					type: "item"
+					item: {
+						id: "bloodmagic:reinforcedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "151E04DA919FE242"
+					type: "choice"
+					team_reward: true
+					exclude_from_claim_all: true
+					table_id: 5457478480019312846L
+				}
+				{
+					id: "3BCE0BEAB043EC2B"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "2BC12CD923E5D963"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "0C7F0770DE512CE4"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "5923998145DEEB1D"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "4D3D4E384C4A2D80"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "2AD12A428A208419"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			description: [
+				"The alchemy table is a place for concentrating the life essence in your soul network into alchemical mixtures."
+				""
+				"The tier of recipes it can execute is determined by the blood orb you've slotted into it."
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "4D8EAAC6A2576BCD"
+			tasks: [{
+				id: "4C3B288E985A283D"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+			rewards: [
+				{
+					id: "651F5BAEE6FC1152"
+					type: "item"
+					item: {
+						id: "bloodmagic:plantoil"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "5B75B448D2F1C530"
+					type: "item"
+					item: {
+						id: "apotheosis:sigil_of_socketing"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 0.0d
+			description: [
+				"Today's lesson shall cover the utilization of runes to enhance &6Life Essence&r yield."
+				""
+				"Two tiers of sacrifice runes exist. As your mastery deepens, crafting reinforced runes becomes possible."
+				""
+				"In exchange for &b2 (self-)sacrifice runes&r, I offer you two reinforced runes, advancing your knowledge."
+			]
+			dependencies: ["65C2BC44E8065433"]
+			id: "49C7C1F481A78001"
+			tasks: [{
+				id: "12C28FABAC894C17"
+				type: "item"
+				title: "Sacrificial Runes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:selfsacrificerune"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:sacrificerune"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "50D5F614BDB18D39"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5457478480019312846L
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			description: [
+				"As your Altar upgrades, you'll soon create &bImbued Slates&r, the third tier in &5Blood Magic&r. These slates open up numerous possibilities within &6Blood Magic&r, a topic we'll cover in our upcoming classes."
+				""
+				"Creating these &bImbued Slates&r is a crucial step in your magical journey. We'll explore their potential in detail during our next sessions."
+				""
+				"Get ready to uncover the vast opportunities these slates offer as we delve deeper into &5Blood Magic&r."
+			]
+			dependencies: ["387CE36B90720D95"]
+			id: "65C2BC44E8065433"
+			tasks: [{
+				id: "01D74B8D85F11307"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+			rewards: [
+				{
+					id: "4BFAA6C745E98D0D"
+					type: "item"
+					item: {
+						id: "minecraft:warped_fungus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "47EA0520115B1FE2"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			description: [
+				"With our attainment of the 4th Tier of the &5Blood Altar&r, we now delve into acquiring the &bDemonic Slates&r. Remember, each higher tier necessitates more blood. Ensure a variety of &6Runes&r surrounding your &6Blood Altar&r to support its functions."
+				""
+				"Strive for a balanced arrangement of Runes to accommodate the escalating blood requirements as we explore the higher tiers."
+			]
+			dependencies: [
+				"65C2BC44E8065433"
+				"05CDF6A1583773BF"
+			]
+			id: "3D04A755B3FAFE95"
+			tasks: [{
+				id: "3B9F40891A39AD60"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+			rewards: [{
+				id: "21BD0E9C6D7D1EEB"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:infusedslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 15.5d
+			y: 1.5d
+			description: ["The 5th and final tier of blood altar is capable of producing the ethereal slates. They resonate with demon will on a multiplanar level and allow you to infuse raw life essence into the most powerful rituals and items."]
+			dependencies: [
+				"3D04A755B3FAFE95"
+				"138BD1F399AF5758"
+			]
+			id: "0E52379106270341"
+			tasks: [{
+				id: "5FD1FDD596F84895"
+				type: "item"
+				item: "bloodmagic:etherealslate"
+			}]
+			rewards: [{
+				id: "720F7518A42306F9"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:demonslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Will forged in Hellfire"
+			x: 6.5d
+			y: 0.0d
+			description: [
+				"It's easy to bleed for power, but that is merely an extension of the true essence of blood magic. "
+				""
+				"The truth of its power is in the will of the practicitioner. Raw will to control and bend the world to your desires is at the heart of this art. "
+				""
+				"To that end, you wil construct a hellfire forge. This will allow you to begin materializing and directly manipulating will into a physical form."
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "6495FB76535B1030"
+			tasks: [{
+				id: "696F5081FDF4F518"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [
+				{
+					id: "530837393832C26A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "121BD08A0034A4C3"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulsnare"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "4C2110430395FA6E"
+					type: "item"
+					item: {
+						id: "minecraft:crimson_nylium"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "2E7BE2BF8A89F1F1"
+					type: "item"
+					item: {
+						id: "minecraft:warped_nylium"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			description: [
+				"In order to contain some will to start the process you will need to find some hostile souls to ensnare."
+				"Throw the snare at them and hope it takes, some may resist the effects. You'll know its working if you see white particles on them."
+				"Once you've ensnared them, kill them and they should drop materialized demon essence for you to craft a tartaric gem with."
+			]
+			dependencies: ["6495FB76535B1030"]
+			id: "47525C1CDE2346F4"
+			tasks: [{
+				id: "11F62C87381F3CDE"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "6364385A9BA86DCC"
+					type: "item"
+					item: {
+						id: "bloodmagic:demonwillgauge"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "34BB19D33E2581FA"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "2C4399FF87810DF0"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulgempetty"
+						Count: 1b
+						tag: {
+							souls: 0.0d
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			description: ["You will need to continue enhancing and refining your containment methods. First start by upgrading to a lesser tartaric and then to a common. The common tartaric will enable you to create most of the mid teir blood magic components which including fully unlocking routing nodes for automation."]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "7B110F2E2E7002E6"
+			tasks: [{
+				id: "516D68687F1D7621"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "71C1529E1A3CF931"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulgemcommon"
+						Count: 1b
+						tag: {
+							souls: 1.0d
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7BBC5DBA6455CB1D"
+					type: "item"
+					item: {
+						id: "minecraft:crimson_fungus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			description: ["You'll need to obtain demon blood shards from the demon realm and at least a tier IV blood altar to create the master will catalyst. This greater tartaric will enable the highest flow rate of will into your fabrications."]
+			dependencies: ["7B110F2E2E7002E6"]
+			id: "04D54AF2ACBAF945"
+			tasks: [{
+				id: "74E7C80FD4D88AB2"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "5624FFBC2A3163E5"
+					type: "item"
+					item: {
+						id: "bloodmagic:corrosivecrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "12C06028C94F37B0"
+					type: "item"
+					item: {
+						id: "bloodmagic:vengefulcrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "1FB738807CFA5BEE"
+					type: "item"
+					item: {
+						id: "bloodmagic:destructivecrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "38979E230DE7EEC8"
+					type: "item"
+					item: {
+						id: "bloodmagic:steadfastcrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "1AE1158322C12D9C"
+					type: "item"
+					item: {
+						id: "bloodmagic:demonslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: [
+				"The sentient sword is a much more efficient way of collecting demonic will than snares. Any enemy you kill with the sentient sword will drop demonic will, which can automatically fill tartaric gems in your inventory."
+				""
+			]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "6B41D442A812FE48"
+			tasks: [{
+				id: "45789B9BAB25101C"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2F1F2787F95EE084"
+					type: "choice"
+					title: "Enchantment Choice"
+					icon: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:sharpness"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					exclude_from_claim_all: true
+					table_id: 7557558112735709859L
+				}
+				{
+					id: "1FBC5BD611A48D1A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 3.0d
+			description: [
+				"The &bAlchemical Reactor Chamber&r is a powerful tool with multiple functions. It acts as a magical furnace and excels in &6Refining Ores&r, offering a chance for better yields."
+				""
+				"However, its primary function lies in obtaining &6Weak Blood Shards&r, a crucial element in our study of the arcane arts."
+				""
+				"Understand its versatility as it holds the key to various enchanting pursuits."
+			]
+			dependencies: ["65C2BC44E8065433"]
+			id: "11CE06B33AA17486"
+			tasks: [{
+				id: "4B3C035A17B3EE61"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+			rewards: [{
+				id: "704C45E7681C8BFB"
+				type: "item"
+				item: {
+					id: "bloodmagic:simplekey"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "Edge of the hidden Realm"
+			icon: "bloodmagic:inversion_pillar"
+			x: 11.5d
+			y: 4.5d
+			description: [
+				"Allow me to introduce the &5Edge of the Hidden Realm&r. It's a significant test to assess your skills and strength. Crafting the &bInversion Pillar&r enables entry into this realm by interacting with it."
+				""
+				"By now, you should have acquired some &6Iron Keys&r. These keys serve as entry passes to unlock rooms within this hidden realm."
+			]
+			dependencies: ["11CE06B33AA17486"]
+			id: "39A8E6F8A70D56EA"
+			tasks: [
+				{
+					id: "43CD4D36921F0105"
+					type: "item"
+					item: "bloodmagic:ritualdiviner"
+				}
+				{
+					id: "59D65421DF44E779"
+					type: "observation"
+					title: "Look at an Inversion Pillar"
+					icon: "bloodmagic:dungeon_emitter"
+					timer: 0L
+					observe_type: 0
+					to_observe: "bloodmagic:inversion_pillar"
+				}
+			]
+			rewards: [{
+				id: "31387C62AAA4F951"
+				type: "item"
+				item: "bloodmagic:simplekey"
+				count: 4
+			}]
+		}
+		{
+			x: 13.5d
+			y: 4.5d
+			description: [
+				"The primary goal within the &5Edge of the Hidden Realm&r is to acquire &bTau Fruit&r, which can be discovered in loot chests."
+				""
+				"These fruits are challenging to cultivate as they require a unique process. Upon maturity, they need to leech onto a living being to satisfy their dark cravings and transform into a &bSaturated Tau&r."
+				""
+				"To aid in this growth, utilizing the &2Ritual of Green Grove&r will significantly assist in nurturing these unique fruits."
+			]
+			dependencies: ["39A8E6F8A70D56EA"]
+			id: "62D76E4208D8F78F"
+			tasks: [{
+				id: "1B2DD84A8E458526"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+		}
+		{
+			icon: "bloodmagic:weakbloodshard"
+			x: 13.5d
+			y: 3.0d
+			description: [
+				"We've gathered all the necessary elements to acquire the &bWeak Blood Shard&r and proceed towards the 4th Tier of the &5Blood Altar&r."
+				""
+				"Utilize the &6Alchemical Reaction Chamber&r alongside a &6Sanguine Reverter&r to obtain the shards. Once you acquire the &bBloodstone Bricks&r, we'll continue our exploration in the next class."
+				""
+				"Prepare yourselves for the next phase in our journey through the arcane arts."
+			]
+			dependencies: ["62D76E4208D8F78F"]
+			id: "05CDF6A1583773BF"
+			tasks: [
+				{
+					id: "73226FA94112CD0E"
+					type: "item"
+					item: "bloodmagic:weakbloodshard"
+				}
+				{
+					id: "11425C8DEAE245A1"
+					type: "item"
+					item: "bloodmagic:largebloodstonebrick"
+				}
+			]
+			rewards: [
+				{
+					id: "70D7FBF62BB0CE25"
+					type: "item"
+					item: {
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1645C88EA661B752"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			description: ["Hellforged blocks, while shining with raw demon will, are more than just an attractive centerpiece. They will act as the capstone for your Tier 5 blood altar. "]
+			dependencies: ["3406F2D47C79C6E4"]
+			id: "138BD1F399AF5758"
+			tasks: [{
+				id: "3DBD8981E934DB6D"
+				type: "item"
+				item: "bloodmagic:dungeon_metal"
+			}]
+			rewards: [
+				{
+					id: "54B4A78FE48A0BA7"
+					type: "item"
+					item: {
+						id: "bloodmagic:dungeon_ore"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "053C4703E08589AB"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplekey"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			description: [
+				"Upgrading the &bRitual Diviner&r to its Dusk variant is a straightforward task. Begin by transmuting 2 &6Coal Blocks&r into the Inscription Tool: Dusk. Combine this tool with your old &bRitual Diviner&r and 2 Demonic Slates to complete the upgrade."
+				""
+				"This enhancement process should yield the improved &bRitual Diviner&r Dusk without much difficulty."
+				""
+				"Prepare yourselves for the upgraded capabilities this tool will offer in our future enchanting pursuits."
+			]
+			dependencies: ["3D04A755B3FAFE95"]
+			id: "49917727000AB63A"
+			tasks: [{
+				id: "3CD89017126DDFBD"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+			rewards: [{
+				id: "6B59E3F28FC28262"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:ritualstone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.5d
+			description: ["The basic alchemy flask is the start of aclhemical elixers. You should learn quickly to stockpile the ingredients for these as they will be called to use often."]
+			dependencies: ["4D8EAAC6A2576BCD"]
+			id: "7E2B7879C3C7FA47"
+			tasks: [{
+				id: "07DB0942B1EAF496"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6070AEA9318ED08F"
+					type: "item"
+					item: {
+						id: "minecraft:rabbit_spawn_egg"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "236C3B19EF3770B2"
+					type: "item"
+					item: {
+						id: "minecraft:rabbit_foot"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1C4A7C53348F74D0"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			description: ["The simple catalyst the primary binding agent for all advanced elixers. It is capable of binding mundane components to the life essence infused alchemical flasks to extract unique effects from them."]
+			dependencies: ["4D8EAAC6A2576BCD"]
+			id: "500CFBA806613E18"
+			tasks: [{
+				id: "010194406DBDF27A"
+				type: "item"
+				item: "bloodmagic:simplecatalyst"
+			}]
+			rewards: [
+				{
+					id: "447E4E76314DFC62"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplecatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "273050610B2AB3AB"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 7.5d
+			description: ["Strengthening the catalysts will require more rare components but can greatly increase the effectiveness of many types of potions. Consider using filling agents on these more expensive flasks after you've upgraded them."]
+			dependencies: ["500CFBA806613E18"]
+			id: "15FB4DF8E7671C6F"
+			tasks: [{
+				id: "4FEB666DC56CF2C1"
+				type: "item"
+				item: "bloodmagic:strengthenedcatalyst"
+			}]
+			rewards: [
+				{
+					id: "2B66456BDA030876"
+					type: "item"
+					item: {
+						id: "bloodmagic:standardfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "188CBC2B8646D0C4"
+					type: "item"
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			description: ["Small catalysts are similar to glowstone in standard potions. It will increase the effect of the topmost flask effect only."]
+			dependencies: ["500CFBA806613E18"]
+			id: "1BB440E428FACDA2"
+			tasks: [{
+				id: "0D82C1E6DF11A7FF"
+				type: "item"
+				item: "bloodmagic:mundanepowercatalyst"
+			}]
+			rewards: [
+				{
+					id: "7C78F3C32474BF43"
+					type: "item"
+					item: {
+						id: "bloodmagic:strong_tau"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "674253BC2C2A76A5"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			description: ["Lengthening catalyst will increase the duration of the top most effect in one of your flasks. Used in a single effect flask it will work similarly to extending standard potions. "]
+			dependencies: ["500CFBA806613E18"]
+			id: "33C35A4B86B1DF6B"
+			tasks: [{
+				id: "5A28CD9BB82453A2"
+				type: "item"
+				item: "bloodmagic:mundanelengtheningcatalyst"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.5d
+			description: ["The standard lengthening catalyst will increase the duration of all effects in your flask. "]
+			dependencies: ["15FB4DF8E7671C6F"]
+			id: "5F68B1F88627B7FA"
+			tasks: [{
+				id: "745C906B7C263BCA"
+				type: "item"
+				item: "bloodmagic:averagelengtheningcatalyst"
+			}]
+			rewards: [{
+				id: "28C9F2135043818F"
+				type: "item"
+				item: {
+					id: "bloodmagic:infusedslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			dependencies: ["15FB4DF8E7671C6F"]
+			id: "1A7CCA189F995CD8"
+			tasks: [{
+				id: "18733E1278963FE4"
+				type: "item"
+				item: "bloodmagic:averagepowercatalyst"
+			}]
+			rewards: [
+				{
+					id: "374D0A9D76C5615E"
+					type: "item"
+					item: {
+						id: "bloodmagic:standardfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "65F8CE5CAE7AF43E"
+					type: "item"
+					item: {
+						id: "bloodmagic:averagepowercatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "607ED9EFF16EE658"
+					type: "item"
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 3.0d
+			description: [
+				"Rituals stand as a fundamental aspect in the realm of &5Bloodmagic&r. To initiate a ritual, the minimum requirement consists of 1 &bMaster Ritual Stone&r complemented by several &bRitual Stones&r. Their proper arrangement is paramount for the successful execution of these rituals."
+				""
+				"Upon completing this task, each of you will be rewarded with a &6Ritual Diviner&r. This rod enables you to choose the ritual you wish to cast, a pivotal tool for your upcoming Bloodmagic endeavors."
+				""
+				"Understand the importance of these components and their arrangement. They form the cornerstone of your mastery in arcane rituals."
+			]
+			dependencies: ["387CE36B90720D95"]
+			id: "602284B29D99D2F4"
+			tasks: [
+				{
+					id: "1C68BC8AD8724171"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+				}
+				{
+					id: "0441974E9004ACD0"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+			]
+			rewards: [
+				{
+					id: "6E6C3E29081BE895"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 1351371765845877606L
+				}
+				{
+					id: "75B970013FED86AA"
+					type: "item"
+					item: {
+						id: "bloodmagic:ritualdiviner"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "47D9760304468DC9"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:ritualstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: -1.5d
+			description: [
+				"To access the Endless realm you must construct the ritual Pathway to the Endless Realm. Once activated you'll find yourself facing an inversion pillar and an endless series of dungeons and doorways with ever increasing challenges."
+				""
+				"Make sure you keep an eye out for rare challenges such as spatial distortions and rare keys like the foreman's key that will grant you access to deeper sections of the dungeon."
+			]
+			dependencies: ["49917727000AB63A"]
+			id: "38466472D199F498"
+			tasks: [{
+				id: "3E259E5DC903503C"
+				type: "dimension"
+				title: "Enter the Endless Realm"
+				dimension: "bloodmagic:dungeon"
+			}]
+			rewards: [
+				{
+					id: "71C29DEC6858FCA0"
+					type: "item"
+					item: {
+						id: "gag:energized_hearthstone"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "016C98CC1B606CF1"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			title: "Find some Demonite"
+			icon: "bloodmagic:dungeon_ore"
+			x: 15.5d
+			y: -1.5d
+			description: ["Demonite ore can only be found within the endless dungeons, specifically in the mines. The mines require a foreman's key to acess spatial distortions that are within the mazelike structures. "]
+			dependencies: ["38466472D199F498"]
+			id: "3406F2D47C79C6E4"
+			tasks: [{
+				id: "78CCECCFAD89ECBB"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:sand_hellforged"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:rawdemonite"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:dungeon_ore"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6990B24B890EDC2D"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "occultism:iesnium_ore"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "24E336DF31E84598"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:simplekey"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "4FF14CBAAD1A5C0F"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Blood and Sacrifice"
+			icon: {
+				id: "bloodmagic:experiencebook"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 1.0d
+			y: 1.5d
+			shape: "pentagon"
+			subtitle: "Find Saereth"
+			description: [
+				"Hello Students. "
+				""
+				"Blood and Sacrifice are the very heart of existance. I doubt many of you will have the stomach for what this class will require of you, but for those that do, power and knowledge unlike any you've experienced before."
+				""
+				"Everything has a cost, my students. This class will teach you how much you're willing to pay to get what you want. "
+			]
+			dependencies: ["63368A007664E4B5"]
+			hide_text_until_complete: true
+			id: "0E0C6473FEBC9E99"
+			tasks: [{
+				id: "5C68F181A1888D74"
+				type: "location"
+				title: "Find Saereth"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "982d514c-a012-e470-d6cc-7f32e00e57a8"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4MmQ1MTRjYTAxMmU0NzBkNmNjN2YzMmUwMGU1N2E4MjNiMGQ4NDAyMzNlMDA5NGIyY2U5MmQxZmI0OTVlY2UifX19"
+								}]
+							}
+							Name: "Saereth"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-22
+					-201
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [
+				{
+					id: "580CD98789AFE881"
+					type: "item"
+					item: "bloodmagic:blankslate"
+				}
+				{
+					id: "1D38965FD886E326"
+					type: "item"
+					item: {
+						id: "bloodmagic:arcaneashes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E3D2D822F60F53C"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "217269F5B333DFF6"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"Welcome to BloodMagic, \"color\":\"red\"}"
+					silent: true
+				}
+				{
+					id: "302E095C75858957"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			description: ["Now to something slightly more advanced, if you think yourself capable. Combine the rabbits foot and the simple catalyst to create your first advanced elixer."]
+			dependencies: [
+				"7E2B7879C3C7FA47"
+				"500CFBA806613E18"
+			]
+			id: "533B2E1315E2DC56"
+			tasks: [{
+				id: "658C40A0C7291A38"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "minecraft:jump_boost"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 3600
+							Id: 8b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 8
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				weak_nbt_match: true
+			}]
+			rewards: [
+				{
+					id: "79F6577C8D623387"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "239CC2B87D38BB37"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5CC4952ED63696F1"
+					type: "item"
+					item: {
+						id: "minecraft:cobweb"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 4.5d
+			description: [
+				"Well done, so far. Try to keep up though, we're moving onto more advanced topics. From the lower tier alchemical potions we can enhance them further with the lingering catalytic energies. Combine the jump boost potion you crafted with a cobweb to manufacture a grounded potion."
+				""
+			]
+			dependencies: ["533B2E1315E2DC56"]
+			id: "04F607E6633A19E7"
+			tasks: [{
+				id: "05ABEB6EB2C8DE60"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:grounded"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 90b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 90
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "1B0DDF8E9C7BE457"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplecatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "65429D551FDA9595"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Combination Elixers"
+			x: 9.5d
+			y: 6.0d
+			description: [
+				"The next phase, and this is getting more dangerous, is to combine elixers. You can create combination elixers by using an elixer you've already brewed to create a new potion instead of using a standard flask. "
+				""
+				"Take the previous potion you brewed and combine it with a phantom membrane and another simple catalyst to create a hybrid potion."
+			]
+			dependencies: ["04F607E6633A19E7"]
+			id: "477E63EFA40523B7"
+			tasks: [{
+				id: "43AF5FFEFE4BED97"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								"forge:id": "bloodmagic:grounded"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 90b
+								Amplifier: 0b
+							}
+							{
+								"forge:id": "minecraft:slow_falling"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 28b
+								Amplifier: 0b
+							}
+						]
+						effectholder: [
+							{
+								Duration: 1800
+								Id: 90
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+							{
+								Duration: 1800
+								Id: 28
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+						]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "78AAA0B51A05DC3F"
+					type: "item"
+					item: {
+						id: "bloodmagic:combinationalcatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1AD91907F27F43EC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "The gravity of experimentation"
+			x: 9.5d
+			y: 7.5d
+			description: [
+				"Next you can take some hybrid potions and insert a combinational catalyst to cause a synergetic reaction within. This often results in an entirely new potion with entirely different effects."
+				""
+				"Use the potion you've already brewed and combine it with the catalyst to create a gravity potion."
+				""
+			]
+			dependencies: ["477E63EFA40523B7"]
+			id: "7DFDB0FA8BB3ED57"
+			tasks: [{
+				id: "13CCB01FCF74D915"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:gravity"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 88b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 88
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "37B64BB30F324962"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_crush"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6560D5B1185012DA"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "71240ACD95ED1C67"
+					type: "item"
+					item: {
+						id: "bloodmagic:alchemy_flask"
+						Count: 1b
+						tag: {
+							CustomPotionEffects: [{
+								"forge:id": "minecraft:slow_falling"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 28b
+								Amplifier: 0b
+							}]
+							effectholder: [{
+								Duration: 1800
+								Id: 28
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}]
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Wingardium Lev... err Leviation Potions"
+			x: 11.5d
+			y: 6.0d
+			description: [
+				"By brewing a fermented spider eye into a slow fall potion you can create a levitation potion. These are mostly useful as splash variants or in hybrid potions."
+				""
+				"As we are aiming to make a combination potion you should use the suspended potion you just made along with a membrane and catalyst to create a hybrid slowfall and suspend potion. Finally you should use the resulting potion with another fermented spider eye (without a catalyst this time) to create a combination levitation and suspention potion."
+			]
+			dependencies: ["3630A055036FE55D"]
+			id: "799EF66469EB3233"
+			tasks: [{
+				id: "725E8D52BD219FA9"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								"forge:id": "bloodmagic:suspended"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 91b
+								Amplifier: 0b
+							}
+							{
+								"forge:id": "minecraft:levitation"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 3600
+								Id: 25b
+								Amplifier: 0b
+							}
+						]
+						effectholder: [
+							{
+								Duration: 1800
+								Id: 91
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+							{
+								Duration: 3600
+								Id: 25
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+						]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "4DBA595335809763"
+					type: "item"
+					item: {
+						id: "bloodmagic:tippedamethystthrowingdagger"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "7939E545F805BDAF"
+					type: "item"
+					item: {
+						id: "bloodmagic:combinationalcatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "7F901F7B578E6684"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Suspensions"
+			x: 11.5d
+			y: 7.5d
+			description: ["Now combine a fermented spider eye with the gravity potion to create a suspended potion."]
+			dependencies: ["7DFDB0FA8BB3ED57"]
+			id: "3630A055036FE55D"
+			tasks: [{
+				id: "122ABE6827DF0B56"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:suspended"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 91b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 91
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "6F2D039B6A37C162"
+					type: "item"
+					item: {
+						id: "minecraft:black_shulker_box"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3DE0A2360A25FDB1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Mastery takes Flight"
+			x: 13.5d
+			y: 6.0d
+			description: [
+				"By once again combining the hybrid potion with a combinational catalyst the resulant potion can grant perfected flight for a limited duration."
+				""
+				"You can further strengthen these potions using lengthening catalysts."
+				""
+			]
+			dependencies: ["799EF66469EB3233"]
+			id: "1890C2CCC5FA297F"
+			tasks: [{
+				id: "637E93C60BD96C86"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:flight"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 3600
+							Id: 86b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 86
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "0E9C822829DCE9F8"
+					type: "item"
+					item: {
+						id: "apotheosis:infused_hellshelf"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "46AE26CE120CD4A3"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:mending"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4BF57D56029D28DC"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			title: "Refilling simplified"
+			x: 5.0d
+			y: 4.5d
+			description: [
+				"Some of the potions you will learn to craft in this class can be highly complex and require many refinement steps to make."
+				""
+				"To that end, replenishing them is luckily much simpler. Create filling agents to combine with flasks that you've crafted and they will refill them at the cost of much more mundane elements."
+			]
+			dependencies: ["7E2B7879C3C7FA47"]
+			id: "52F59996FF884FE8"
+			tasks: [{
+				id: "0249D5A3EF4B7535"
+				type: "item"
+				item: {
+					id: "bloodmagic:weakfillingagent"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5442AE19FE101A14"
+					type: "item"
+					item: {
+						id: "bloodmagic:weakfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "7DE49BB87A6A7702"
+					type: "item"
+					item: {
+						id: "bloodmagic:reinforcedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Routing your Nodes"
+			x: 8.5d
+			y: -1.5d
+			description: [
+				"With access to &6Demonic Will&r, it's time to delve into the functionality of moving items using Routing Nodes."
+				""
+				"Setting up a Routing Node system necessitates at least one &bMaster Routing Node&r, serving as the \"Brain\" of our system."
+				""
+				"Using your &6Node Router&r to connect two &bRouting Nodes&r together is how you expand your Network."
+			]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "2C708A0A20040DF4"
+			tasks: [{
+				id: "646BCF58E5A5018D"
+				type: "item"
+				item: {
+					id: "bloodmagic:masterroutingnode"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1EBFDE0D1FCAFCD1"
+					type: "item"
+					item: {
+						id: "bloodmagic:noderouter"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0DCF7BE23D870B2E"
+					type: "item"
+					item: {
+						id: "bloodmagic:itemroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "IO Nodes"
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"In addition of the &6Master Routing Node&r, having a minimum of one &bInput Routing Node&r and one &bOutput Routing Node&r becomes imperative, handling the input and output of items within the system. "
+				""
+				"Moreover, an &6Item Filter&r is essential, allowing or denying specific items for movement. Several types of &6Item Filters&r are available, offering versatility in item management. These Routing nodes feature various channels, each capable of accepting a separate filter."
+				""
+				"Understanding this versatile tool will significantly simplify your endeavors as a Blood Magician."
+			]
+			dependencies: ["2C708A0A20040DF4"]
+			id: "230FC217A5BC41C1"
+			tasks: [
+				{
+					id: "04580BB9E67D1B99"
+					type: "item"
+					item: {
+						id: "bloodmagic:inputroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6DA5B0545D0E06FE"
+					type: "item"
+					item: {
+						id: "bloodmagic:outputroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61A200521A8D27B5"
+				type: "item"
+				item: {
+					id: "bloodmagic:itemrouterfilterexact"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "bloodmagic:textures/block/alchemyarray.png"
+				}
+			}
+			x: 13.5d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"So you are having trouble with the Mobs inside the Dungeon?"
+				""
+				"I'll make them easier for you, if you aren't capable of dealing with them. "
+			]
+			dependencies: ["38466472D199F498"]
+			hide: true
+			can_repeat: true
+			id: "50FF56AF28B3F3BF"
+			tasks: [{
+				id: "0B46A30EA2A2A963"
+				type: "checkmark"
+				title: "Dungeon Nerf"
+			}]
+			rewards: [{
+				id: "6D36AABFF74E02C3"
+				type: "custom"
+				title: "Toggle Mob Nerf"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "bloodmagic:textures/block/alchemyarray.png"
+					}
+				}
+				auto: "enabled"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

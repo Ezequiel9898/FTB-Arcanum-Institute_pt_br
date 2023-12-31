@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Ilhas Principais",
+      "author": "Equipe FTB",
+      "desc": "A equipe por trás de todos os packs?",
+      "islands": [
+        {
+          "name": "Zéfiro",
+          "desc": "Ar Elemental",
+          "structure": "air_dorm.nbt",
+          "image": "ftbai:textures/ftbteamislands/air.png"
+        },
+        {
+            "name": "Paraíso Aquático",
+            "desc": "Água Elemental",
+            "structure": "water_dorm.nbt",
+            "image": "ftbai:textures/ftbteamislands/water.png"
+        },
+        {
+            "name": "Pico Ignis",
+            "desc": "Fogo Elemental",
+            "structure": "fire_dorm.nbt",
+            "image": "ftbai:textures/ftbteamislands/fire.png"
+        },
+        {
+          "name": "Crista da Terra",
+          "desc": "Terra Elemental",
+          "structure": "earth_dorm.nbt",
+          "image": "ftbai:textures/ftbteamislands/earth.png"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,739 @@
+{
+	id: "04B70B12A90DE475"
+	group: "0960D5B8A7FB00EA"
+	order_index: 0
+	filename: "beasts"
+	title: "Beast Masters"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "iceandfire:textures/item/amphithere_skull.png"
+		}
+	}
+	subtitle: ["Beasts and familiars"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Common Passive Animals"
+			icon: "minecraft:pig_spawn_egg"
+			x: 1.0d
+			y: 9.0d
+			description: [
+				"I bet you didn't realize farming was part of the arcane arts. "
+				""
+				"A lot of student's don't. I once knew a Mage who absolutely hated farming, and would just buy ingredients. That's an option, but here we teach you to raise and care for even the most mundane creatures, because they all have a purpose. "
+			]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "4427A56F548EFD4F"
+			tasks: [{
+				id: "1FD6AAA6618EC001"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5CDF992F615EB119"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1699214223844610106L
+			}]
+		}
+		{
+			title: "Uncommon Spawn Eggs"
+			icon: "minecraft:parrot_spawn_egg"
+			x: 2.5d
+			y: 9.0d
+			description: ["We're moving up now to the less common creatures. They cost a little more, but by now you should have a steady supply of gold. It pays to be a wizard right?"]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0CA242FADD653495"
+			tasks: [{
+				id: "72B6627BDFA57950"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0CBF78F2510D9E86"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8630308146041118707L
+			}]
+		}
+		{
+			title: "Rare Spawn Eggs"
+			icon: "minecraft:axolotl_spawn_egg"
+			x: 4.0d
+			y: 9.0d
+			description: ["Now that you have the hang of the more mundane creatures, I think you're ready for some of the more exotic animals available. "]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "1572560FCCCFFBED"
+			tasks: [{
+				id: "42149066D2EB4489"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "444B5E0C8866ACC0"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 7933030901280256724L
+			}]
+		}
+		{
+			icon: "ars_nouveau:starbuncle_shards"
+			x: 8.0d
+			y: 6.5d
+			description: [
+				"Giving a &6Starbuncle&r a &bGolden Nugget&r will turn them into a Shard."
+				""
+				"This will make it able to make the actual Charm, which will allow you to have some sort of control over them."
+				""
+				"Remember, these are still living creatures, so handle them with care!"
+			]
+			id: "18471DB81EB29232"
+			tasks: [
+				{
+					id: "72C1817812CC511E"
+					type: "item"
+					item: "ars_nouveau:starbuncle_shards"
+				}
+				{
+					id: "198F9D584EDFD7FD"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:drygmy_shard"
+			x: 8.0d
+			y: 8.0d
+			description: [
+				"&6Drygmys&r occasionally appear within your dorm. To befriend them, drop a &bWilden's Horn&r in their vicinity and wait for them to pick it up."
+				""
+				"Drygmys possess the remarkable ability to produce items from nearby monsters and animals without causing them harm."
+			]
+			id: "79EAC89A14777746"
+			tasks: [
+				{
+					id: "6AFC51A530F68762"
+					type: "item"
+					item: "ars_nouveau:drygmy_shard"
+				}
+				{
+					id: "6C2AA01B5AD20E36"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_horn"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:whirlisprig_shards"
+			x: 8.0d
+			y: 9.5d
+			description: [
+				"The &6Whirlsprigs&r express their gratitude by dropping a &bWhirlsprig Shard&r as a token of appreciation when you grow Trees nearby. Their affinity for nature mirrors my appreciation for all these fauna creatures."
+				""
+				"Recognize this behavior of the Whirlsprigs, as it sheds light on their fondness for natural surroundings."
+			]
+			id: "7595EF13DCE33641"
+			tasks: [{
+				id: "25488A5235FCD3BB"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_shards"
+			}]
+		}
+		{
+			icon: "ars_nouveau:whirlisprig_charm"
+			x: 9.5d
+			y: 9.5d
+			description: [
+				"Utilizing the &6Enchanting Apparatus&r enables the creation of a &bWhirlsprig Charm&r. This charm serves the purpose of summoning a Whirlsprig when used on any &bFlower&r."
+				""
+				"The Whirlsprig designates an area of 10 blocks surrounding its Flower as its home. Within this area, it produces natural materials such as wood, crops, seeds, and flowers. It's important to note that Whirlsprigs require some &5Source&r in exchange for their services."
+			]
+			dependencies: [
+				"7595EF13DCE33641"
+				"31A754EB419CD398"
+			]
+			id: "4797C18E263A616E"
+			tasks: [
+				{
+					id: "772C4ABFD30EBE79"
+					type: "item"
+					item: "ars_nouveau:whirlisprig_charm"
+				}
+				{
+					id: "0296B6C769630E40"
+					type: "item"
+					title: "Any small Flower"
+					icon: "minecraft:poppy"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:small_flowers"
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:drygmy_charm"
+			x: 9.5d
+			y: 8.0d
+			description: [
+				"Utilizing the &6Enchanting Apparatus&r enables the crafting of a &bDrygmy Charm&r. This charm facilitates the summoning of a Drygmy by applying it on a &bMossy Cobblestone&r, causing it to swiftly transform into a Henge."
+				""
+				"Upon transformation, the Henge designates an area of 10 blocks around it as the Drygmy's home. These mystical creatures undertake the responsibility of tending to the animals and monsters within their designated territory. However, be mindful that Drygmys require some &5Source&r in exchange for their services."
+			]
+			dependencies: [
+				"79EAC89A14777746"
+				"31A754EB419CD398"
+			]
+			id: "2AA19DE451116157"
+			tasks: [
+				{
+					id: "4040B102242ECFF8"
+					type: "item"
+					item: "ars_nouveau:drygmy_charm"
+				}
+				{
+					id: "02B956A5C33FB4E8"
+					type: "item"
+					item: "minecraft:mossy_cobblestone"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 6.5d
+			description: [
+				"Utilizing the &6Enchanting Apparatus&r enables the creation of a &bStarbuncle Charm&r. This miniature charm bestows upon you the ability to summon a Starbuncle, which you can command using a &6Dominion Wand&r."
+				""
+				"To retrieve items from a Container, initiate interaction with the Container first, followed by interaction with the Starbuncle. Conversely, to store items, perform the opposite sequence."
+			]
+			dependencies: [
+				"18471DB81EB29232"
+				"31A754EB419CD398"
+			]
+			id: "05F3986B1E6B9F49"
+			tasks: [{
+				id: "74B5B7938CCD07F3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 11.0d
+			description: ["To acquire a &bWixie Shard&r, cast Dispel on a Witch when it is at half health or less."]
+			id: "1B92A2F7CE0677D1"
+			tasks: [{
+				id: "01E04E7AFCA4AAF3"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
+		}
+		{
+			icon: "ars_nouveau:wixie_charm"
+			x: 9.5d
+			y: 11.0d
+			description: [
+				"Crafting a &bWixie Charm&r with your &6Enchanting Apparatus&r shouldn't be an issue anymore. "
+				""
+				"Once you possess a &bWixie Charm&r, employ it on a Cauldron to summon your &6Wixie&r."
+				""
+				"The &6Wixie&r possesses an innate ability to select crafting recipes based on the inventories nearby, eliminating the necessity to specify exact materials. For instance, when crafting Sticks, the &6Wixie&r will creatively gather planks from nearby chests to fulfill the recipe."
+				""
+				"Each crafting session necessitates a small amount of source, automatically drawn from nearby Source Jars. It's important to note that providing a redstone signal on the cauldron will halt the crafting process."
+			]
+			dependencies: [
+				"1B92A2F7CE0677D1"
+				"31A754EB419CD398"
+			]
+			id: "703349839C15538E"
+			tasks: [
+				{
+					id: "3D1684F640869F2C"
+					type: "item"
+					item: "ars_nouveau:wixie_charm"
+				}
+				{
+					id: "3A56D8ECB9BF242D"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:bookwyrm_charm"
+			x: 9.5d
+			y: 5.0d
+			description: [
+				"The &6Bookwyrms&r are incredibly useful creatures proficient in casting spells by utilizing source from source jars. These creatures, when provided with a spell inscribed on Spell Parchment, will cast spells in the area surrounding their Lectern."
+				""
+				"To summon a &6Bookwyrm&r, employ a &bBookwyrm Charm&r on a Lectern. Additionally, these Bookwyrms can be dyed using white, black, blue, green, red, or purple dye."
+			]
+			dependencies: ["31A754EB419CD398"]
+			id: "0D58C224055A34B6"
+			tasks: [
+				{
+					id: "6738A52E8C470A2C"
+					type: "item"
+					item: "ars_nouveau:bookwyrm_charm"
+				}
+				{
+					id: "19A528DC5F7D5416"
+					type: "item"
+					item: "minecraft:lectern"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 5.0d
+			description: [
+				"A &bBookwyrm&r will reduce the cost of all spells cast, and increases any spell damage by one."
+				""
+				"Obtained by performing the &6Ritual of Binding&r near a &bBookwyrm&r."
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"0D58C224055A34B6"
+			]
+			id: "2A7C95A79E0499CB"
+			tasks: [{
+				id: "209ED2D3FB5191FF"
+				type: "item"
+				item: "ars_nouveau:familiar_bookwyrm"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 6.5d
+			description: [
+				"A &bStarbuncle&r familiar that will grant you Speed II."
+				""
+				"Obtained by performing the &6Ritual of Binding&r near a &bStarbuncle&r."
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"05F3986B1E6B9F49"
+			]
+			id: "0E74C0C0F39E1B03"
+			tasks: [{
+				id: "6B31CAF16D27BC94"
+				type: "item"
+				item: "ars_nouveau:familiar_starbuncle"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			description: [
+				"A &bDrygmy&r familiar will increase the damage of Earth spells by 2, and has a chance to increase the amount of looting when slaying enemies. "
+				""
+				"Obtained by performing the &6Ritual of Binding&r near a &bDrygmy&r."
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"2AA19DE451116157"
+			]
+			id: "5C3E734AB70E2F8B"
+			tasks: [{
+				id: "6267083ED0D1ECA6"
+				type: "item"
+				item: "ars_nouveau:familiar_drygmy"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 9.5d
+			description: [
+				"&bWhirlisprigs&r will reduce the cost of Elemental Earth glyphs by half, and grants bonus saturation when consuming food."
+				""
+				"Obtained by performing the &6Ritual of Binding&r near &bWhirlisprig&r."
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"4797C18E263A616E"
+			]
+			id: "091D8996591CA2B4"
+			tasks: [{
+				id: "25CC9DD823C333DA"
+				type: "item"
+				item: "ars_nouveau:familiar_whirlisprig"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 11.0d
+			description: [
+				"&bWixies&r will increases the duration of potions that you consume. Additionally, the &bWixie&r will apply harmful potions to enemies during combat."
+				""
+				"Obtained by performing the &6Ritual of Binding&r near a &bWixie&r."
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"703349839C15538E"
+			]
+			id: "59CFAF8BA8786CEF"
+			tasks: [{
+				id: "3E45B11B6D2F5614"
+				type: "item"
+				item: "ars_nouveau:familiar_wixie"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.5d
+			description: ["Commencing the summoning of familiars requires obtaining a &6Bound Script&r corresponding to the entity you seek to befriend. These scripts can be acquired by performing the &bRitual of Binding&r near a relevant entity. "]
+			dependencies: ["23F6282DF69B8625"]
+			id: "4517857C42B0F135"
+			tasks: [{
+				id: "5FBE1E20E7869B8D"
+				type: "item"
+				item: "ars_nouveau:ritual_binding"
+			}]
+		}
+		{
+			title: "Hostile Spawn Eggs"
+			icon: "minecraft:creeper_spawn_egg"
+			x: 2.5d
+			y: 5.0d
+			description: [
+				"One of the easiest way to get your hands on creatur eggs is to buy them outright. "
+				""
+				"To do that, you'll need some gold. Bring some and I'll give you an egg of your choice. "
+			]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0F8EF8519B6C4562"
+			tasks: [{
+				id: "04AD7151F3B65871"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "25D0963479351673"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+				{
+					id: "66A8D6BDD7718FA8"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+				{
+					id: "3BDB275CACBBC8F2"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+			]
+		}
+		{
+			icon: "iceandfire:amphithere_skull"
+			x: 2.5d
+			y: 7.0d
+			shape: "pentagon"
+			description: [
+				"Hey, Class. "
+				""
+				"I'm Jake, and this is my friend Bo. We're here to help you learn to obtain and care for the magical creatures of the world. "
+				""
+				"This won't be like a regular class. There is no homework, and really no formal lessons. "
+				""
+				"But there are a few creatures I think it would benefit you to find, and raise in your dorm. I'll be here if you need help."
+			]
+			hide_dependency_lines: true
+			dependencies: ["63368A007664E4B5"]
+			invisible_until_tasks: 1
+			id: "60CB78F73F0B9016"
+			tasks: [{
+				id: "4F5F5CAC4FA288BF"
+				type: "location"
+				title: "Find Jake and Bo"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-141
+					-25
+					-3
+				]
+				size: [I;
+					30
+					10
+					30
+				]
+			}]
+		}
+		{
+			title: "Small Mob Pearl"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate_small"
+				}
+			}
+			x: 0.5d
+			y: 3.5d
+			description: [
+				"Welcome, weary traveler!"
+				""
+				"Behold the mystical Small Gate Pearls, a rare artifact that grants the ability to summon various Mobs."
+				""
+				"The loot of those Mobs I'm willing to trade you for some more coins."
+				""
+				""
+				"Its power that can be yours for a mere gold coin, a worthy investment for your adventure."
+				""
+				"What say you, brave soul?"
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "017B67BF45FDAC09"
+			tasks: [{
+				id: "3A3A9377A3D56646"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "16FFEE5EFE72F700"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1525742000000944586L
+			}]
+		}
+		{
+			title: "Normal Mob Pearl"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate"
+				}
+			}
+			x: 2.5d
+			y: 2.5d
+			description: ["You've done well, and I think you're ready to something a bit harder. "]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "3D48A3F4CAFE9BA7"
+			tasks: [{
+				id: "470DF7FAD83DDF78"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "18EA5CD7AA002510"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 976161652597693395L
+			}]
+		}
+		{
+			title: "Large Mob Pearl"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate_large"
+				}
+			}
+			x: 4.5d
+			y: 3.5d
+			description: ["You're ready. It's time for the next level. Harder gates mean more drops. "]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0A388C5D46B9D824"
+			tasks: [{
+				id: "3BDBB3CCD8331AD2"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "23A55E55AD0D8086"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 4852831395482533046L
+			}]
+		}
+		{
+			title: "Ars Nouveau Mob Pearl"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:ars_gate"
+				}
+			}
+			x: 2.5d
+			y: 1.0d
+			description: [
+				"The Ars Nouveau gate will spawn waves of multiple enemies. This is the hardest task I've assigned to you yet, but I have faith in you. "
+				""
+				"The beings you will face in this gate are not only harder, with better loot you will need for crafting, but it's combat training essential to any aspiring student of the arcane. You will face dangers in your career, and you must be ready with the knowledge and skills to defeat any foes."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"612BC02EEA4C9BBA"
+				"60CB78F73F0B9016"
+			]
+			hide: true
+			can_repeat: true
+			id: "450912098F43A0A7"
+			tasks: [{
+				id: "2CBDFCD60805DD32"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "26DC346F8BFE4C2F"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:ars_gate"
+					}
+				}
+			}]
+		}
+		{
+			title: "Starbuncles"
+			icon: {
+				id: "ars_nouveau:starbuncle_se"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.0d
+			y: 6.5d
+			description: [
+				"Welcome!"
+				""
+				"&bStarbuncles&r are some very useful creatures from &5Ars Nouveau&r. "
+				""
+				"They can move items from one container to another."
+				""
+				"Also, they are very useful in gathering &6Source Berries&r. You should try them out one day!"
+				""
+				"Care to take some?"
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "3C01900C56808DE7"
+			tasks: [{
+				id: "37C664736AFAAC85"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4A6732AF2DBD2DE5"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_se"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "Whirlsprigs"
+			icon: {
+				id: "ars_nouveau:whirlisprig_se"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.0d
+			y: 9.5d
+			description: [
+				"Welcome!"
+				""
+				"&bWhirlsprigs&r are some very cute Creatures from &5Ars Nouveau&r. "
+				""
+				"It will produce plant-based resources if you provided with &6Source&r."
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "7B56AB4C87CAF321"
+			tasks: [{
+				id: "3FD7552DDFE00DA5"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6B7782D07CF22285"
+				type: "item"
+				item: {
+					id: "ars_nouveau:whirlisprig_se"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+	]
+	quest_links: [ ]
+}

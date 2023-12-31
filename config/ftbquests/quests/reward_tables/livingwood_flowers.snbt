@@ -1,0 +1,80 @@
+{
+	id: "326C814D1358FBDB"
+	order_index: 15
+	title: "Livingwood Flowers"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "botania:white_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:orange_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:magenta_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:light_blue_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:yellow_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:lime_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:pink_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:gray_mystical_flower"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

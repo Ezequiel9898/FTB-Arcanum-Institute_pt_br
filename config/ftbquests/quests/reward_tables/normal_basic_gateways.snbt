@@ -1,0 +1,44 @@
+{
+	id: "0D8C05D9E2719BD3"
+	order_index: 9
+	title: "Normal Basic Gateways"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:skeleton_gate"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:creeper_gate"
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:spider_gate"
+				}
+			}
+		}
+	]
+}

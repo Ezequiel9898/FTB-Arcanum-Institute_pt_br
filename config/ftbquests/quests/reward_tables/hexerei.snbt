@@ -1,0 +1,14 @@
+{
+	id: "1F4A9C16946D8961"
+	order_index: 14
+	title: "Hexerei"
+	loot_size: 1
+	rewards: [
+		{ item: "hexerei:willow_sapling", count: 4 }
+		{ item: "hexerei:mahogany_sapling", count: 4 }
+		{ item: "hexerei:mandrake_flower", count: 4 }
+		{ item: "hexerei:belladonna_flower", count: 4 }
+		{ item: "hexerei:mugwort_bush", count: 4 }
+		{ item: "hexerei:yellow_dock_bush", count: 4 }
+	]
+}

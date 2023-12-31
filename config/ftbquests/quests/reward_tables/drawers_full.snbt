@@ -1,0 +1,104 @@
+{
+	id: "40D0CC91A2A1E5D1"
+	order_index: 17
+	title: "Drawers Full"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "framedcompactdrawers:framed_full_one"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "framedcompactdrawers:framed_full_two"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "framedcompactdrawers:framed_full_four"
+				Count: 1b
+				tag: {
+					MatT: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "quark:golden_apple_crate"
+						Count: 1b
+					}
+					MatF: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "malum:block_of_cthonic_gold"
+						Count: 1b
+					}
+					MatS: {
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+						id: "minecraft:gilded_blackstone"
+						Count: 1b
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

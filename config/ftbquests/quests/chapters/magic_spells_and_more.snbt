@@ -1,0 +1,1314 @@
+{
+	id: "2E0B8A32B6D87ADA"
+	group: "0960D5B8A7FB00EA"
+	order_index: 6
+	filename: "magic_spells_and_more"
+	title: "Spellcaster's Dream"
+	icon: "hexcasting:artifact"
+	subtitle: ["Hex Casting"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 350
+	quests: [
+		{
+			x: 6.0d
+			y: -12.5d
+			subtitle: "Get Charged Amethyst"
+			description: [
+				"&dHex Casting&r's source of magic is the energy created by active thought, known as &6Media&r. Strangely, &bAmethyst&r is absolutely pungent with the stuff."
+				""
+				"Amethyst grows on &6Budding Amethyst&r. However, as you are &cnot legally allowed to dig up our glorious campus&r for any, you'll have to acquire it in a more civilized way."
+				""
+				"• Budding Amethyst can be &6purchased from a Goblin Shop&r, specifically the one just beyond the Library, as well as the &6Magic Mischief Emporium&r in the courtyard."
+				""
+				"[\"\",\"• A Budding Amethyst is \",{\"text\":\"given as a reward\",\"color\":\"gold\"},\" for completing the lesson on the \",{\"text\":\"[ Scribe's Table ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2F8A51FEB237D9EA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Go to quest\"]}},\".\"]"
+			]
+			dependencies: ["6347557FC6E5D7D1"]
+			id: "59D642C8883F74BA"
+			tasks: [{
+				id: "09BEB186D23DB867"
+				type: "item"
+				item: "hexcasting:charged_amethyst"
+			}]
+			rewards: [{
+				id: "102E7937B4E259C5"
+				type: "item"
+				item: {
+					id: "hexcasting:trinket"
+					Count: 1b
+					tag: {
+						"hexcasting:mana": 6400000
+						"hexcasting:start_mana": 6400000
+						patterns: [
+							{
+								pattern: {
+									angles: [B;
+										4b
+										5b
+										5b
+										5b
+										5b
+										5b
+									]
+									start_dir: 1b
+								}
+							}
+							{
+								pattern: {
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "&nI&rnvocation &nD&resign &nE&rssentials"
+			icon: "hexcasting:wand_oak"
+			x: 7.5d
+			y: -12.5d
+			subtitle: "Make a Staff"
+			description: [
+				"Your &bStaff&r is where you &6compile hex patterns into spells&r. Each Staff is identical, your choice is up to personal preference."
+				""
+				"Spell-crafting via hexes is an &cincredibly complex process&r, that requires quite a lot of terminology. While the &6Hex Notebook&r goes over it, we'll summarize here as well."
+				""
+				"A &6Pattern&r can be drawn onto the grid opened by using a Staff. Patterns perform some action, which manipulates &6the Stack&r in some way."
+				""
+				"We'll go over the Stack later. In short, it's basically a list of information, contained in &6iotas&r. An iota is just a unit of information (like a number, or an entity)."
+				""
+				"A &6hex&r is basically the final completed product that does something."
+			]
+			dependencies: ["59D642C8883F74BA"]
+			id: "7AD5DDD79020835A"
+			tasks: [{
+				id: "6EBF418C5B6694C6"
+				type: "item"
+				title: "Staves"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "hexcasting:wands"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "51CD48C0CB6C7CA7"
+					type: "item"
+					item: {
+						id: "minecraft:bundle"
+						Count: 1b
+						tag: {
+							Items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												4b
+												5b
+												4b
+												0b
+												5b
+												4b
+												2b
+												4b
+												5b
+											]
+											start_dir: 2b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops a location Vector, and\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"either places a water source or\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"fills a tank with up to 1000mb of water\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Cast Water Spell\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												0b
+												5b
+												5b
+												5b
+												0b
+												5b
+												5b
+												4b
+												2b
+												4b
+												2b
+											]
+											start_dir: 1b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops either a dropped item Entity, or\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"the location Vector of a block,\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"then smelts it\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Cast Smelt Spell\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												0b
+												5b
+												4b
+												5b
+												0b
+												2b
+											]
+											start_dir: 0b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops a location Vector and,\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"if there's a sapling there,\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"grows an Edified Tree\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Cast Edify Sapling Spell\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												5b
+												5b
+												5b
+												5b
+												5b
+												1b
+												0b
+											]
+											start_dir: 5b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pushes a Vector of [0,1,0].\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"For example, when used as a\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"look-direction Vector, this points up\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"[0,1,0] Vector\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												0b
+												1b
+												4b
+												5b
+												4b
+											]
+											start_dir: 1b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops a location Vector and\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"a look-direction Vector, and\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"pushes the Entity being looked at\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Scout's Distillation\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												0b
+												4b
+											]
+											start_dir: 0b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops an entity and pushes\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"the direction it's looking\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"as a Vector\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Alidade's Purification\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												0b
+												5b
+												4b
+												4b
+												0b
+												2b
+												2b
+											]
+											start_dir: 1b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops a location Vector and\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"a look-direction Vector, and\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"pushes the side of the block\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"that's being aimed at\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Architect's Distillation\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												4b
+												4b
+											]
+											start_dir: 1b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pops an Entity and pushes\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"a Vector of its coordinates\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Compass' Purification\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												5b
+												4b
+												5b
+											]
+											start_dir: 0b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pushes the caster as\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"an Entity to the Stack\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Mind's Reflection\"}"
+										}
+									}
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "hexcasting:scroll_small"
+									Count: 1b
+									tag: {
+										pattern: {
+											angles: [B;
+												4b
+												4b
+											]
+											start_dir: 1b
+										}
+										RepairCost: 0
+										display: {
+											Lore: [
+												"[{\"text\":\"\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"Pushes the caster as\",\"italic\":false,\"color\":\"gray\"}]"
+												"[{\"text\":\"an Entity to the Stack\",\"italic\":false,\"color\":\"gray\"}]"
+											]
+											Name: "{\"text\":\"Compass' Purification\"}"
+										}
+									}
+								}
+							]
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Hex Casting Notes\"}"
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "62EF8E846D08B52C"
+					type: "item"
+					item: "hexcasting:lens"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -15.0d
+			subtitle: "Edify a Sapling"
+			description: [
+				"Gather 'round, my nature-loving scholars, as I impart the wisdom of &bedifying a humble Sapling&r into a magically robust tree."
+				""
+				"{image:ftbai:textures/quests/hex/edify_sapling.png width:330 height:95 align:1}"
+				""
+				"Start by &6placing any arbitrary solid block&r of your choice. Let it stand as a beacon for your intention, a canvas upon which your magic shall take root."
+				""
+				"Next, extend your senses through a gentle &6raytrace&r, saving the block's location. With this done, &6replace the block with a planted Sapling&r of any type."
+				""
+				"[\"\",\"And now, as the final flourish, weave your intentions together and cast the \",{\"text\":\"[ Edify Sapling ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/spells/blockworks 7\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" Spell.\"]"
+				""
+				"Witness as the sapling embraces your gift, growing with newfound vigor and vitality."
+			]
+			dependencies: ["47F00FCAEE879ED3"]
+			id: "0F2FCDAF1F85854D"
+			tasks: [{
+				id: "47248E65A5903121"
+				type: "item"
+				item: "hexcasting:akashic_log"
+			}]
+			rewards: [{
+				id: "1D78F09009608F75"
+				type: "item"
+				item: "hexcasting:wand_akashic"
+			}]
+		}
+		{
+			title: "Learning to Smelt"
+			icon: "minecraft:furnace"
+			x: 7.5d
+			y: -14.0d
+			subtitle: "Smelt some Stone without a Furnace, then submit it"
+			description: [
+				"Gather around, my eager students, as I share a useful spell."
+				""
+				"The &bSmelt&r Spell is one of the few ways you are able to smelt things, given that &cFurnaces are banned&r due to being insufficiently wizardy."
+				""
+				"It pops either a block's location Vector or a dropped item Entity, and then &6smelts it&r, at a cost of ¾ of an Amethyst Dust per item smelted. The example below uses a dropped item."
+				""
+				"{image:ftbai:textures/quests/hex/smelt_entity.png width:320 height:50 align:1}"
+				""
+				"In order, from right to left:"
+				""
+				"[\"\",\"1. \",{\"text\":\"[ Mind's Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pushes you\"]"
+				""
+				"[\"\",\"2. \",{\"text\":\"[ Compass' Purification ] \",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\"pops it and pushes a vector of your coordinates\"]"
+				""
+				"[\"\",\"3. \",{\"text\":\"[ Mind's Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pushes you again\"]"
+				""
+				"[\"\",\"4. \",{\"text\":\"[ Alidade's Purification ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pops it and pushes a vector of the direction you're facing\"]"
+				""
+				"[\"\",\"5. \",{\"text\":\"[ Scout's Distillation ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pops the two vectors and pushes the entity being looked at. Write this only while looking at an entity (use F3+B to see an entity's bounding box).\"]"
+				""
+				"[\"\",\"6. \",{\"text\":\"[ Smelt ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexalbook:patterns/spells/hexal_spells 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show in the book\"]}},\" pops the item drop Entity and smelts it, ending the Hex.\"]"
+			]
+			dependencies: ["47F00FCAEE879ED3"]
+			min_width: 450
+			id: "38A3B49A5D413BBF"
+			tasks: [{
+				id: "77D4B3F09F2E6BFA"
+				type: "item"
+				item: {
+					id: "minecraft:stone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "02572DC57E202768"
+					type: "item"
+					item: {
+						id: "hexcasting:focus"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							data: {
+								list: [
+									{
+										pattern: {
+											angles: [B;
+												5b
+												4b
+												5b
+											]
+											start_dir: 3b
+										}
+									}
+									{
+										pattern: {
+											angles: [B;
+												4b
+												4b
+											]
+											start_dir: 3b
+										}
+									}
+									{
+										pattern: {
+											angles: [B;
+												5b
+												4b
+												5b
+											]
+											start_dir: 3b
+										}
+									}
+									{
+										pattern: {
+											angles: [B;
+												0b
+												4b
+											]
+											start_dir: 0b
+										}
+									}
+									{
+										pattern: {
+											angles: [B;
+												0b
+												1b
+												4b
+												5b
+												4b
+											]
+											start_dir: 1b
+										}
+									}
+									{
+										pattern: {
+											angles: [B;
+												0b
+												5b
+												5b
+												5b
+												0b
+												5b
+												5b
+												4b
+												2b
+												4b
+												2b
+											]
+											start_dir: 1b
+										}
+									}
+								]
+							}
+							sealed: 1b
+							display: {
+								Name: "{\"text\":\"Focus of Eternal Smelt\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "30C8EF48516AF782"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "learned_to_smelt"
+				}
+			]
+		}
+		{
+			title: "This is a Bucket. Of Water."
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "minecraft:textures/misc/underwater.png"
+				}
+			}
+			x: 10.5d
+			y: -14.0d
+			subtitle: "Get a Water Bucket"
+			description: [
+				"Listen closely, my dedicated apprentices, as I unveil the steps to &bconjure Water&r through Hex Casting."
+				""
+				"{image:ftbai:textures/quests/hex/create_water.png width:366 height:77 align:1 fit:true}"
+				""
+				"The first four symbols should be familiar: they &6get the block you are looking at&r."
+				""
+				"[\"\",\"After that is the \",{\"text\":\"[ Vector Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/consts 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" for the Vector \",{\"text\":\"[0,1,0]\",\"color\":\"gold\"},\". That is, a Vector that \",{\"text\":\"aims directly up\",\"color\":\"gold\"},\".\"]"
+				""
+				"[\"\",\"At this point, the Stack contains a \",{\"text\":\"block's location Vector\",\"color\":\"gold\"},\" at the bottom, with \",{\"text\":\"the Vector [0,1,0]\",\"color\":\"gold\"},\" directly above.\",\" The next Pattern, \",{\"text\":\"[ Additive Distillation ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/math 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the book\"]}},\", adds the two Vectors together, popping them and pushing a new Vector that represents \",{\"text\":\"the block location directly above the block aimed at\",\"color\":\"gold\"},\".\"]"
+				""
+				"[\"\",\"Finally, with concentration unwavering, cast forth the \",{\"text\":\"[ Create Water ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/spells/blockworks 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" Spell, channeling your accumulated energies into the incantation.\"]"
+				""
+				"Witness as the elements respond to your mastery, as water materializes before you, a testament to the harmony between your spirit and the universe."
+			]
+			dependencies: ["47F00FCAEE879ED3"]
+			id: "4B25CEC1C09A669F"
+			tasks: [{
+				id: "3CEFAB3A5C483222"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "School Notes"
+			icon: "hexcasting:scroll"
+			x: 7.5d
+			y: -9.5d
+			subtitle: "Patterns for reference"
+			description: [
+				"The previous lesson has given you a bag of &bScrolls&r!"
+				""
+				"Scrolls &6hold a single Pattern&r, stored as an iota. When &6placed like a Painting&r, you can see the Pattern's shape!"
+				""
+				"When some Amethyst Dust is applied, it'll even &6show the direction of movement required&r!"
+				""
+				"As a special treat for you, we've &6explained what each Pattern does&r in the respective Scroll's tooltip."
+				""
+				"{image:ftbai:textures/quests/hex/scroll_tooltips.png width:113 height:100 align:1}"
+			]
+			dependencies: ["7AD5DDD79020835A"]
+			hide: true
+			id: "1362ED1DC7B72A1A"
+			tasks: [{
+				id: "38133CDAD702F912"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "16BA68B30D6FFF3E"
+				type: "item"
+				item: {
+					id: "hexcasting:amethyst_dust"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 10
+			}]
+		}
+		{
+			title: "What Am I Looking At"
+			icon: "minecraft:arrow"
+			x: 9.0d
+			y: -14.5d
+			subtitle: "Introducing raycasting"
+			description: [
+				"Most spells &6do something to something&r. But nothing can be done without something to do it to."
+				""
+				"The most common way to choose a target is just by &6picking whatever's in front of you&r. This is done by a process called &braycasting&r."
+				""
+				"{image:ftbai:textures/quests/hex/raycast_block.png width:300 height:137 align:1}"
+				""
+				"From left to right:"
+				""
+				"[\"\",\"1. \",{\"text\":\"[ Mind's Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pushes you\"]"
+				""
+				"[\"\",\"2. \",{\"text\":\"[ Compass' Purification ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pops it and pushes a vector of your coordinates\"]"
+				""
+				"[\"\",\"3. \",{\"text\":\"[ Mind's Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" again\"]"
+				""
+				"[\"\",\"4. \",{\"text\":\"[ Alidade's Purification ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pops it and pushes a vector of the diretion you're facing\"]"
+				""
+				"[\"\",\"5. \",{\"text\":\"[ Archer's Distillation ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/basics 7\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the Book\"]}},\" pops the two vectors and pushes a vector location at the first block in the direction you're looking\"]"
+				""
+				"So, basically, writing these Patterns in order pushes a vector of &6the location of whatever block you're looking at&r. This is used in many, many spells."
+				""
+				"Do note that this &conly stops when it hits a &lsolid block&r. It will pass straight through blocks like Saplings, as well as fluids."
+				""
+				"As a side note: you can &conly interact with blocks at a reasonable distance&r. If a block is beyond &632 meters&r away, the Hex fails."
+			]
+			dependencies: ["3B8048B920E2C67E"]
+			id: "47F00FCAEE879ED3"
+			tasks: [{
+				id: "78CD9DE5856A465C"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "hexcasting:thehexbook"
+				}
+			}
+			x: 4.5d
+			y: -12.5d
+			subtitle: "Master of Hexcasting"
+			description: [
+				"Greetings, aspiring hexcasters,"
+				""
+				"Welcome to &dHex Casting&r, one of the &6most complex and deeply reaching arts&r you will learn here."
+				""
+				"The knowledge provided to you here is unlike any other. Unlike other branches of magic, which deal in energies from varying sources, the magic here &6stems from information in its purest form&r."
+				""
+				"Should you play in &6Large GUI Scale&r, you may find it necessary to &cscroll to see the entirety of each lesson&r, as they are long by nature."
+			]
+			hide_dependency_lines: true
+			dependencies: ["63368A007664E4B5"]
+			hide_text_until_complete: true
+			id: "6347557FC6E5D7D1"
+			tasks: [{
+				id: "015CFB4217E8A07B"
+				type: "location"
+				title: "Meet Professor Sunekaer"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "ba1a27b2-f1fe-75c6-ae88-c0dec3598404"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JhMWEyN2IyZjFmZTc1YzZhZTg4YzBkZWMzNTk4NDA0NGY1ZWQzNjdlODExMjVmOTllOTc0ZTVkNTZjZmJlZDIifX19"
+								}]
+							}
+							Name: "kSunekaer"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-251
+					-25
+					-156
+				]
+				size: [I;
+					30
+					10
+					30
+				]
+			}]
+			rewards: [
+				{
+					id: "54222446D7C16521"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "hexcasting:thehexbook"
+						}
+					}
+				}
+				{
+					id: "2EC514A2D03EECBB"
+					type: "item"
+					item: {
+						id: "hexcasting:jeweler_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12936FEE299E257F"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"Welcome to Hexcasting\", \"color\":\"yellow\"}"
+					silent: true
+				}
+			]
+		}
+		{
+			title: "Waste Not Want Not"
+			icon: {
+				id: "hexcasting:battery"
+				Count: 1b
+				tag: {
+					"hexcasting:mana": 640000
+					"hexcasting:start_mana": 640000
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 10.5d
+			y: -15.0d
+			subtitle: "Make a Phial of Mana"
+			description: [
+				"Media in its purest form (that is, Amethyst items) is rather &cwasteful&r. If you cast a spell that requires a single Amethyst Dust, &6it'll eat up an entire Charged Amethyst if that's all you have&r."
+				""
+				"Allow me to introduce the &bPhial of Media&r, a precious repository for thought-energies. These phials possess a grace that normal items lack, preserving your media with utmost precision. When you expend 5 media, it shall &6always spend exactly that quantity&r."
+				""
+				"[\"\",\"Crafting Phials of Mana is no simple task, however. You'll have to show mastery over the \",{\"text\":\"[ Craft Phial ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-book hexcasting:thehexbook hexcasting:patterns/great_spells/make_battery 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me in the book\"]}},\" Great Spell. However, do note that this \",{\"text\":\"is\",\"italic\":true},\" a \",{\"text\":\"[ Great Spell ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6DDA03D8EFDB18CA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Great Spells quest\"]}},\", which has its own special requirements.\"]"
+				""
+				"Furthermore, these phials boast the ability to cradle media in &6fractional&r harmony. In the face of hexes demanding &6decimal portions&r of power, fear not, for a &bPhial of Media&r shall measure with finesse, accepting 10.25 when others would squander 11. Such precision, my students, is the hallmark of a true hexcaster's skill."
+			]
+			dependencies: ["47F00FCAEE879ED3"]
+			min_width: 350
+			id: "2354A9817E829585"
+			tasks: [{
+				id: "5FD9F42DBCC26C68"
+				type: "item"
+				title: "Phials of Media"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "hexcasting:battery"
+								Count: 1b
+								tag: {
+									"hexcasting:mana": 640000
+									"hexcasting:start_mana": 640000
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "hexcasting:battery"
+								Count: 1b
+								tag: {
+									"hexcasting:mana": 3200000
+									"hexcasting:start_mana": 3200000
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "hexcasting:battery"
+								Count: 1b
+								tag: {
+									"hexcasting:mana": 6400000
+									"hexcasting:start_mana": 6400000
+								}
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B588E2DCD9F77CF"
+				type: "item"
+				item: "hexcasting:charged_amethyst"
+				count: 4
+			}]
+		}
+		{
+			title: "Saving Variables"
+			icon: "hexcasting:focus"
+			x: 10.5d
+			y: -12.5d
+			subtitle: "Make a Focus or Spellbook"
+			description: [
+				"Dear seekers of arcane wisdom,"
+				""
+				"Enter the realm of the &bFocus&r, as it emerges from the craftsman's hands, it cradles &6Null&r, the essence of nothingness. "
+				""
+				"However, with the guidance of the &6Scribe's Gambit&r pattern, while the Focus rests in your offhand, you shall see its form shift, capturing a single iota from the Stack."
+				"{image:ftbai:textures/quests/hex/scribe_gambit.png width:50 height:50 align:1}"
+				""
+				"To unlock the latent potential of this iota, invoke &6Scribe's Reflection&r while clenching the Focus in your grasp. With this act, you shall release its captive iota back into the realm of magic, ready for your conjurations."
+				"{image:ftbai:textures/quests/hex/scribe_reflect.png width:50 height:50 align:1}"
+				""
+				"And now, behold the &bSpellbook&r, akin to the Focus yet capable of harboring &6up to 100 iotas&r. Hold it in your hand and, with a sly touch of sneak, navigate its pages with a scroll."
+			]
+			dependencies: ["3B8048B920E2C67E"]
+			min_width: 300
+			id: "3CE0DDDD24DD734F"
+			tasks: [{
+				id: "1AEEF3EB3170E7AF"
+				type: "item"
+				title: "Iota storage items"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexcasting:focus"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:spellbook"
+								tag: {
+									page_idx: 0
+									page_names: { }
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5725E673278B49A5"
+				type: "item"
+				item: "hexcasting:abacus"
+			}]
+		}
+		{
+			title: "Casting Items Pt.1"
+			icon: "hexcasting:trinket"
+			x: 12.0d
+			y: -12.5d
+			description: [
+				"Ah, the pursuit of magic is indeed a noble endeavor, but the intricate dance of Hexcasting can be demanding. Fear not, for there is a solution to alleviate the burden of drawing Hexes each time."
+				""
+				"Behold, the art of saving Hexes onto a &6Casting Item&r. These items come in three distinct varieties:"
+				""
+				"&b&lCyphers&r, the most economical of choices, though they bear the caveat of shattering once their media is depleted, leaving them unrechargeable."
+				""
+				"&b&lTrinkets&r, resilient in nature, capable of enduring multiple uses, and conveniently rechargeable to extend their magical lifespan."
+				""
+				"&b&lArtifacts&r, the pinnacle of Hexcasting tools, not only resilient but able to tap into your very own Media should it run dry, ensuring uninterrupted enchantments."
+				""
+				"Furthermore, take heed, for all three types are adaptable, capable of handling Hexes with fractional Media costs. In the realm of Hexcasting, precision is paramount, and these versatile items shall accommodate your needs with grace."
+				""
+				"Choose wisely, dear students, for in your choice of Casting Item lies the essence of your magical journey."
+			]
+			dependencies: ["3CE0DDDD24DD734F"]
+			min_width: 450
+			id: "0BC532A01689AC31"
+			tasks: [{
+				id: "6BEFF5BB629DB650"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -11.0d
+			description: [
+				"Dear students of the arcane,"
+				""
+				"Let me elucidate the enigmatic &bSlate&r, a vessel akin to the humble &6Scrolls&r, but with a unique purpose—housing a single Pattern. Like the Scroll, it obeys the art of Consideration and Scribe's Gambit to capture the essence of a Pattern."
+				"{image:ftbai:textures/quests/hex/scout_distillation.png width:500 height:220 align:1 fit:true}"
+				"These Slates, however, bear an additional facet of their nature. They serve as more than mere functional tools; they can also adorn your surroundings when placed upon blocks, adding an aesthetic flourish to your magical sanctuaries."
+				"{image:ftbai:textures/quests/hex/smelt_cypher.png width:187 height:100 align:1 fit:true}"
+				"Yet, the true significance of the Slate remains veiled until the moment of &6Enlightenment&r, when its role in the intricate art of &6Spell Circles&r is unveiled. It is then that you shall come to appreciate the profound purpose hidden within these seemingly ordinary Slates."
+			]
+			dependencies: [
+				"3CE0DDDD24DD734F"
+				"6F1C2F3DE54102D3"
+			]
+			hide: true
+			min_width: 300
+			id: "49C3C59C27F506CF"
+			tasks: [{
+				id: "2712D5C6454F78EF"
+				type: "item"
+				item: "hexcasting:slate"
+			}]
+			rewards: [{
+				id: "3EB5C616AA6511B1"
+				type: "item"
+				item: "hexcasting:slate"
+				count: 32
+			}]
+		}
+		{
+			icon: "minecraft:ender_eye"
+			x: 9.0d
+			y: -11.0d
+			subtitle: "Get the progression Advancements"
+			description: [
+				"The &6Hex Notebook&r, a tome of arcane knowledge and power, &6unfolds its secrets in tandem with your journey&r. As you &oadvance&r, more of the book's pages appear."
+				""
+				"&bBlind Diversion&r is unlocked by attempting to &6cast from an Ancient Scroll&r using Scribe's Reflection and Hermes' Gambit."
+				""
+				"Doing so will unlock the entry \"A Frustration\" in the \"Getting Started\" category."
+				""
+				"&bOpened Eyes&r is unlocked by &6casting a spell with unsufficient media&r. This also unlocks the \"WHAT DID I SEE\" entry."
+				""
+				"Finally, &bAchieve Enlightenent&r by &6casting a spell that eats most of your health&r. A simple method would be to cast Destroy Liquid while holding only a single Amethyst Dust in your inventory. NOTE: &nMake sure you have at least 2 dust for this step or it may kill you.&r"
+				""
+				"This unlocks several entries:\\n\\n• &6Enlightened Mishaps&r in Hex Casting\\n• Several entries in Patterns\\n• The entire &6The Great Work&r category"
+				""
+				"Additionally, this will &6unlock the ability to cast Great Spells&r. "
+			]
+			dependencies: ["3B8048B920E2C67E"]
+			min_width: 300
+			id: "6F1C2F3DE54102D3"
+			tasks: [
+				{
+					id: "70F2DA169C613BF3"
+					type: "advancement"
+					advancement: "hexcasting:y_u_no_cast_angy"
+					criterion: ""
+				}
+				{
+					id: "297A3D85DB21F0B1"
+					type: "advancement"
+					advancement: "hexcasting:opened_eyes"
+					criterion: ""
+				}
+				{
+					id: "61404272212312B2"
+					type: "advancement"
+					advancement: "hexcasting:enlightenment"
+					criterion: ""
+				}
+			]
+		}
+		{
+			icon: "hexcasting:impetus_rightclick"
+			x: 9.0d
+			y: -9.5d
+			description: [
+				"Dear Students!"
+				""
+				"Alongside your enlightenment, you've unlocked the ability to cast &6Great Spells&r. That is, assuming you've found their Scrolls."
+				""
+				"The Great Spell &6Flay Mind&r is one of the more important ones, as it is required to craft several things."
+				""
+				"Flay Minds takes a Villager &6Entity&r and a block &6Position Vector&r. Once cast, it attempts to change the block."
+				""
+				"What happens to the block depends on the Villager's profession and level, as well as the actual block. If it fails for any reason, the Villager is &ckilled&r."
+				"{image:ftbai:textures/quests/hex/flay_minds.png width:1000 height:324 align:1 fit:true}"
+				"First, look at a Villager and add it to the Stack. Then, look at the block and add &oit&r to the Stack."
+				""
+				"Finally, hold the Flay Minds Scroll in your offhand, use Scribe's Reflection to add it to the Stack, then finalize it with &6Hermes' Gambit&r."
+			]
+			dependencies: ["6F1C2F3DE54102D3"]
+			hide: true
+			min_width: 300
+			id: "6E2A25621333D972"
+			tasks: [{
+				id: "51C521303D94D204"
+				type: "item"
+				title: "Get an Impetus"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexcasting:impetus_rightclick"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:impetus_look"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:impetus_storedplayer"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Spell Circles"
+			icon: "minecraft:lodestone"
+			x: 10.5d
+			y: -9.5d
+			description: [
+				"The art of &bSpell Circles&r, where the mystical meets the mechanical in a dance of potent Hexcasting. These magnificent structures are multiblocks of wonder, driven by the stored Patterns within their core."
+				""
+				"To craft one, you shall require an &bImpetus&r, the very heart of the Circle, and an array of &bSlates&r. These Slates are the canvases upon which your magical Patterns are etched."
+				""
+				"Here's where the magic diverges from tradition: Spell Circles do not draw Media from your personal inventory. Instead, they draw upon a reservoir of Media that's been thoughtfully &6piped into the Circle's Impetus&r. This grants them the power to weave far mightier spells than you could cast alone."
+				""
+				"When the Impetus is invoked, it triggers a cascade of Media, sending it coursing through the network of Slates forming the Circle. This torrent of energy serves to &6add them to the Stack&r, building up the foundation for the impending Hex."
+				""
+				"Check the next Quests to see some examples."
+			]
+			dependencies: [
+				"49C3C59C27F506CF"
+				"6E2A25621333D972"
+			]
+			min_width: 300
+			id: "0BF1D799F4299219"
+			tasks: [{
+				id: "6054975AEBF317A8"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -9.5d
+			description: [
+				"In the intricate design of Spell Circles, one must be mindful of the fact that, by default, they &6cannot accommodate branching paths&r. When confronted with a Slate that offers multiple potential routes, the Circle simply falters, unable to proceed."
+				""
+				"However, the ingenious &bMason Directrix&r emerges as a solution to this conundrum. Placed strategically at the juncture where one Slate path splits into two, this device holds the power to guide an incoming wave with its redstone signal."
+				"{image:ftbai:textures/quests/hex/circles/directrix.png width:1000 height:571 align:1 fit:true}"
+				"When imbued with power, the Mason Directrix will steer the wave in the direction indicated by the red arrow. Conversely, when its power is quelled, it alters the course to the opposite route. This fine-tuned control allows for the precise manipulation of the energy within the Spell Circle."
+				""
+				"As a curious aside, it's worth noting that &6Slates radiate a Comparator signal&r when a wave courses through them. This signal, however, disperses once the Hex is finalized, leaving no trace of its presence. Such subtleties are the hallmark of a true Hexcaster's understanding."
+			]
+			dependencies: ["0BF1D799F4299219"]
+			min_width: 300
+			id: "2233D3183D560AF4"
+			tasks: [{
+				id: "572AA4E0B8DF1B50"
+				type: "item"
+				item: "hexcasting:directrix_redstone"
+			}]
+		}
+		{
+			title: "Casting Items Pt.2"
+			icon: {
+				id: "hexcasting:artifact"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 13.5d
+			y: -12.5d
+			description: [
+				"Diving deeper into the art of Hexcasting, let me unveil the intricacies of saving a Hex to a Casting Item. This process requires meticulous precision:"
+				""
+				"The foundational step involves creating a stack with an Entity iota, symbolizing a &6dropped Media source&r."
+				""
+				"[\"\",\"To acquire this Entity, invoke the arcane incantation known as\\n\",{\"text\":\"[ Scout's Distilation ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 11\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Hexcasting Notebook\"]}},\", ensuring your aim is true by enabling entity hitboxes with \",{\"text\":\"F3+B\",\"color\":\"yellow\"}]"
+				""
+				"[\"\",\"Next, forge a List iota, a compilation of the Hex's patterns. To do this, wield a filled Focus and summon the power of \",\"\\n\",{\"text\":\"[ Scribe's Reflection ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Hexcasting Notebook\"]}}]"
+				""
+				"[\"\",\"With both components in place, it's time to inscribe the pattern for the Casting Item you desire: \\n\",{\"text\":\"[ Craft Cypher ] \",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"open-patchouli-book @s hexcasting:thehexbook hexcasting:spells/hexcasting 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Hexcasting Notebook\"]}},{\"text\":\"[ Craft Trinket ] \",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"open-patchouli-book @s hexcasting:thehexbook hexcasting:spells/hexcasting 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Hexcasting Notebook\"]}},{\"text\":\"[ Craft Artifact ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"open-patchouli-book @s hexcasting:thehexbook hexcasting:spells/hexcasting 4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open Hexcasting Notebook\"]}},\"\\n\\nPrecision is paramount, so it might be wise to have a trustworthy \",{\"text\":\"\\n[ Wiki ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://gamma-delta.github.io/HexMod/\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open HexMod Wiki\"]}},\" open in a separate window to verify the pattern's accuracy.\"]"
+				""
+				"This process, though intricate, will grant you the ability to store Hexes within your chosen Casting Item, making your Hexcasting endeavors far more efficient. Remember, dear students, that the path to true mastery is paved with patience and attention to detail."
+			]
+			dependencies: ["0BC532A01689AC31"]
+			hide: true
+			id: "752CB779137206F0"
+			tasks: [{
+				id: "5A5F98C9A43859FA"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexcasting:cypher"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:trinket"
+							}
+							{
+								Count: 1b
+								id: "hexcasting:artifact"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Spell Circle Examples"
+			icon: "minecraft:lodestone"
+			x: 10.5d
+			y: -8.0d
+			description: [
+				"Here's an empty Spell Circle with no actual Patterns. When the Toolsmith Impetus is activated, the wave of media travels clockwise through the Slates."
+				"{image:ftbai:textures/quests/hex/circles/empty_3d_circle.png width:145 height:100 align:1 fit:true}"
+				"You can see &6Empty Impetuses&r were used to transition between horizontal and vertical Slates."
+				""
+				"Because of this, this Circle has a size of 9x3x7. The Slates themselves count as inside the work area."
+			]
+			dependencies: ["0BF1D799F4299219"]
+			id: "79B0E54B38AC85C5"
+			tasks: [{
+				id: "3496D2D3794E75CF"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "minecraft:lodestone"
+			x: 12.0d
+			y: -8.0d
+			description: [
+				"This Circle here, when activated, launches the caster upwards with a speed of 5."
+				"{image:ftbai:textures/quests/hex/circles/circle_impulse.png width:100 height:100 align:1}"
+				"Here's a breakdown:\\n\\n• Push the caster\\n• Push the vector [0,1,0]\\n• Push the number 5\\n• Pop the vector and the number, and push their product\\n\\nAt this point, the stack has the caster at the bottom, then [0,5,0] above. Finally, &6Impulse&r combines the two, adding the vector to the caster's velocity."
+				""
+				""
+				"However, the Circle below &cwill not function&r."
+				"{image:ftbai:textures/quests/hex/circles/circle_blink.png width:100 height:100 align:1}"
+				"It tries to teleport the caster 5 blocks in the direction they're facing. However, this Circle is 2x1x2."
+				"The player and their destination cannot possibly be in the Circle simultaneously, so the Hex fails. If the Circle were at least 5 blocks wide, the Hex would be functional, albeit useless."
+				"A &6Scrying Lens&r can be used to see information about the Impetus, such as its stored media as well as &6any errors&r in the last cast spell."
+			]
+			dependencies: ["79B0E54B38AC85C5"]
+			id: "3598CC09CD291D85"
+			tasks: [{
+				id: "22F28ABFA1C819A6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Get an Impetus Pt.2"
+			icon: "hexcasting:impetus_rightclick"
+			x: 9.0d
+			y: -8.0d
+			description: [
+				"Mindflaying is how you craft an &bImpetus&r. Impetuses are what &6trigger Spell Circles&r."
+				""
+				"Each Impetus triggers from a different cause:\\n\\n• The &bToolsmith Impetus&r triggers when right-clicked.\\n\\n• The &bFletcher Impetus&r triggers when looked at for a moment.\\n\\n• The &bCleric Impetus&r is a bit complex"
+				""
+				"A &bCleric Impetus&r must be bound to a player, done so by &6using an item holding a reference to them&r on it, such as a Focus with the player's Entity iota."
+				""
+				"After that, it is triggered by a redstone signal."
+				"The other two Impetuses can only interact with whatever's inside the Spell Circle. This one, however, can &6always access the bound player&r, as well as a minimal radius around them."
+				""
+				""
+				"Whoever triggers the Impetus is considered the &6caster&r of the spell, as far as patterns like Mind's Reflection consider."
+			]
+			dependencies: ["6E2A25621333D972"]
+			id: "5D98524B2F08FF8D"
+			tasks: [{
+				id: "5930F9C3EB1D1621"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Stack Overflow"
+			icon: "minecraft:paper"
+			x: 9.0d
+			y: -12.5d
+			subtitle: "Learn about the Stack"
+			description: [
+				"&bThe Stack&r is what all hexes run on. As previously described, the Stack is a &6list of information&r, which is manipulated by the actions created by patterns."
+				""
+				"&cOnly the top of the Stack can be interacted with&r! Below is a simple tutorial showing a hex that &6teleports the caster&r a small distance forward."
+				""
+				"Each image shows &6the pattern&r, the Stack &obefore&r the pattern is drawn, and then the Stack &oafter&r."
+				""
+				"{image:ftbai:textures/quests/hex/stack/empty.png width:240 height:100 align:1 fit:true}"
+				"{image:ftbai:textures/quests/hex/stack/mind.png width:240 height:100 align:1 fit:true}"
+				"{image:ftbai:textures/quests/hex/stack/numerical.png width:240 height:100 align:1 fit:true}"
+				"{image:ftbai:textures/quests/hex/stack/blink.png width:240 height:100 align:1 fit:true}"
+			]
+			dependencies: ["7AD5DDD79020835A"]
+			id: "3B8048B920E2C67E"
+			tasks: [{
+				id: "6D1E6638FCF9AA1C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Drawing Patterns"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbai:textures/quests/hex/comparison2.png"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.5d
+			y: -11.0d
+			subtitle: "Learn how patterns work"
+			description: [
+				"&bPatterns&r can be placed anywhere on the grid. What's important is &6when&r they're drawn, not &6where&r."
+				""
+				"A Pattern is &cnot only its shape&r, the &6direction of movement matters&r. For example, a small triangle drawn counter-clockwise is the pattern &6Compass's Purification&r, while a small triangle drawn clockwise &cis invalid&r, as it matches no Pattern."
+				""
+				"There are two separate ways that these lessons will show the direction of movement. The two methods are interchangeable."
+				""
+				"{image:ftbai:textures/quests/hex/comparison.png width:183 height:100 align:1}"
+				""
+				"On the left is the method used by the &6Hex Notebook&r (especially when the &6control key&r is held). The red dot is the start, and the path gets lighter as it goes on."
+				""
+				"[\"\",\"On the right is the method used by the \",{\"text\":\"[ online wiki ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://object-object.github.io/HexMod/v/latest/1.18/en_us/\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"https://object-object.github.io/HexMod/v/latest/1.18/en_us/\",\"underlined\":true,\"color\":\"aqua\"}]}},\", a very useful resource! In fact, on the wiki, the images are \",{\"text\":\"animated\",\"color\":\"gold\"},\"!\"]"
+			]
+			dependencies: ["7AD5DDD79020835A"]
+			id: "323CBBCFCF3D1402"
+			tasks: [{
+				id: "0D5B942539B2AE40"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

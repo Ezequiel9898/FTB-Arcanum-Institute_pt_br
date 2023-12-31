@@ -1,0 +1,391 @@
+{
+	id: "619CD05EC09EC8B4"
+	group: "2BF58BA9C4117D6D"
+	order_index: 1
+	filename: "beggers_and_bargains"
+	title: "Haaznek's Emporium"
+	icon: "minecraft:iron_ingot"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "1D96A3EEFFDA470E"
+			tasks: [{
+				id: "498F210B28D4B911"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6D873CAEFCD1C99D"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "7BA15879F7E6AF31"
+			tasks: [{
+				id: "3872F16C9A5D4513"
+				type: "item"
+				item: "minecraft:bone"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "73D1BA4F492B6870"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "3236A8302C8B7961"
+			tasks: [{
+				id: "7C6B5C7DB6DF64C3"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "40CE9BD13E44E053"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "1147EB3C82B2C688"
+			tasks: [{
+				id: "4F547DA8781BA10F"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5E2CE3400FFA836A"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "0513CC22BFB2A3F6"
+			tasks: [{
+				id: "28C2F5D86929B57A"
+				type: "item"
+				item: "minecraft:bone"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1132A56CD01B1238"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "473E40C5FB723A3C"
+			tasks: [{
+				id: "1FCE94724E19557D"
+				type: "item"
+				item: "minecraft:bone"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "236A69108242D95E"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "46EE3F55846CD92B"
+			tasks: [{
+				id: "02D59E8CE3C7CFAA"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0DCC0156A61AAB72"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "70726D719874F4EF"
+			tasks: [{
+				id: "0131F70F099E4019"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2D13CEE64F56435B"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			title: "Botanical Flowers"
+			icon: "botania:red_mystical_flower"
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "5F360E892B47197D"
+			tasks: [{
+				id: "306AFA47838602C5"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "739A9827078F009F"
+				type: "choice"
+				title: "Botanical Flowers"
+				icon: "botania:red_mystical_flower"
+				exclude_from_claim_all: true
+				table_id: 3165714084436691901L
+			}]
+		}
+		{
+			title: "Blood Magic Notes"
+			icon: {
+				id: "bloodmagic:upgradetome"
+				Count: 1b
+				tag: {
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"Blood Magic Notes\"}"
+					}
+					livingStats: {
+						maxPoints: 0
+						upgrades: [{
+							exp: 100.0d
+							key: ""
+						}]
+					}
+				}
+			}
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Blood Magic Cheatsheet"
+			description: [
+				"So, you wanted to cheat your way through Blood Magic?"
+				""
+				"Prof Saereth won't be pleased, but i won't tell anyone if you don't tell anyone either"
+			]
+			dependencies: [
+				"4903CEB8C47D208D"
+				"67701D81B8D97889"
+			]
+			can_repeat: true
+			id: "28E1806F197C108E"
+			tasks: [{
+				id: "00AE706616625C68"
+				type: "item"
+				icon: "ftbai:silver_coin"
+				item: "ftbai:silver_coin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "38F7DB9D239868AF"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Blood Magic Notes\"}"
+						}
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: ""
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Novice Spell Book"
+			icon: "ars_nouveau:novice_spell_book"
+			x: 6.0d
+			y: 4.0d
+			dependencies: [
+				"54D7F5310E879150"
+				"67701D81B8D97889"
+			]
+			can_repeat: true
+			id: "12D20469BBC5454D"
+			tasks: [{
+				id: "6D09B058853D63DD"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4C00C3987C83F6F2"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			title: "Raw Iron"
+			icon: "minecraft:raw_iron_block"
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "0896B8D48C1BB915"
+			tasks: [{
+				id: "47ED45A562384744"
+				type: "item"
+				icon: "ftbai:gold_coin"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0DA67A4255F10FB7"
+				type: "item"
+				item: "minecraft:raw_iron_block"
+			}]
+		}
+		{
+			title: "Arcane Ash"
+			icon: {
+				id: "bloodmagic:arcaneashes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "4C71372F3411A945"
+			tasks: [{
+				id: "086B4C06423C10EC"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "304B0B85553395AB"
+				type: "item"
+				item: {
+					id: "bloodmagic:arcaneashes"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "7E34720A342BE23F"
+			tasks: [{
+				id: "48CA33400211FE78"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "058500341F50F624"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			title: "Saddle"
+			icon: {
+				id: "minecraft:saddle"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["67701D81B8D97889"]
+			can_repeat: true
+			id: "49881F5B2A152BF9"
+			tasks: [{
+				id: "599FC376F8A4EB02"
+				type: "item"
+				item: {
+					id: "ftbai:silver_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3819E3FF0E80D7C3"
+				type: "item"
+				item: {
+					id: "minecraft:saddle"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

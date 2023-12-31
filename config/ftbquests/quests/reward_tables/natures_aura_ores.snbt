@@ -1,0 +1,28 @@
+{
+	id: "0544A42DE1FC72D1"
+	order_index: 19
+	title: "Natures Aura Ores"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "naturesaura:infused_iron"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			count: 4
+		}
+		{
+			item: {
+				id: "naturesaura:tainted_gold"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			count: 2
+		}
+	]
+}

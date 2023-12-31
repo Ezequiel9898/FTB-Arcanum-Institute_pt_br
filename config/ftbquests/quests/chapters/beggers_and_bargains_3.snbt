@@ -1,0 +1,314 @@
+{
+	id: "1CBE9AA80BBD1066"
+	group: "2BF58BA9C4117D6D"
+	order_index: 3
+	filename: "beggers_and_bargains_3"
+	title: "Brobzagz Booties"
+	icon: "minecraft:diamond"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "784803AB44ABD5B0"
+			tasks: [{
+				id: "3594ECAC47789787"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6D5E669386FF1D4D"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "7999AB5C4A88C274"
+			tasks: [{
+				id: "67CB82809D005F90"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7E77EB264F7FF616"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "4514C08AB118D4C9"
+			tasks: [{
+				id: "7F509B95A92CCDE0"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6F72D78E5149CE40"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "17089A3A332CA6F8"
+			tasks: [{
+				id: "556064F2A8A125C4"
+				type: "item"
+				item: "minecraft:bone"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "62627CCE554126CE"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "237C74244F8748B8"
+			tasks: [{
+				id: "3334A060448F6775"
+				type: "item"
+				item: "minecraft:bone"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0E2305FB981A2624"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "77E01070B34FC30C"
+			tasks: [{
+				id: "1657A95CC5F2367C"
+				type: "item"
+				item: "minecraft:bone"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2B4CA85D9FFBE6F7"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "2A6FD99A00D255A7"
+			tasks: [{
+				id: "2350DF2B7433B43B"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7E66EA9D79951CA2"
+				type: "item"
+				item: "ftbai:silver_coin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "320AEC13A3E844A0"
+			tasks: [{
+				id: "7379B696AC5AC86E"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "51E8DDF145A23908"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "5185CFC016F26504"
+			tasks: [{
+				id: "7FE423ED8EF027DC"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7EF9B9AA18EDBFC5"
+				type: "item"
+				item: "ftbai:gold_coin"
+			}]
+		}
+		{
+			title: "Copper and Silver"
+			icon: "minecraft:raw_copper_block"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "340918212C6A3F08"
+			tasks: [{
+				id: "07CB95418210FFCC"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "417BFFEFD7B46CA0"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 3617645425705219561L
+			}]
+		}
+		{
+			title: "Dark Ore"
+			icon: "evilcraft:dark_ore"
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "44C746D42271701F"
+			tasks: [{
+				id: "7B6EE3596AC65034"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "29518C9B3646B10E"
+				type: "item"
+				item: "evilcraft:dark_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Iron Key"
+			icon: "bloodmagic:simplekey"
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["7AC8B285CA2D6E2F"]
+			can_repeat: true
+			id: "6B851071057487C6"
+			tasks: [{
+				id: "4EAF0FCD8B0E8F94"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6F5AF7BDD511EFB0"
+				type: "item"
+				item: "bloodmagic:simplekey"
+				count: 2
+			}]
+		}
+		{
+			title: "Book of Binding: Foliot"
+			icon: "occultism:book_of_binding_foliot"
+			x: 8.5d
+			y: 2.0d
+			dependencies: [
+				"1E02923806A707B0"
+				"7AC8B285CA2D6E2F"
+			]
+			hide: true
+			can_repeat: true
+			id: "342344EC436C818E"
+			tasks: [{
+				id: "36638A643C1E1FCB"
+				type: "item"
+				item: "ftbai:silver_coin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "603FA2F588309EFC"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+		}
+		{
+			title: "Membranes"
+			icon: { id: "minecraft:phantom_membrane", Count: 8b }
+			x: 8.5d
+			y: 0.0d
+			dependencies: [
+				"5EDADBE58743C429"
+				"7AC8B285CA2D6E2F"
+			]
+			can_repeat: true
+			id: "7DDCB6CCCF690D34"
+			tasks: [{
+				id: "0530DD51BBB59AA3"
+				type: "item"
+				item: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6631E5A4642AD091"
+				type: "item"
+				item: {
+					id: "minecraft:phantom_membrane"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+	]
+	quest_links: [ ]
+}

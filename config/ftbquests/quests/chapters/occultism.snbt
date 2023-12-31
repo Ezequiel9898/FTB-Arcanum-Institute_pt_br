@@ -1,0 +1,1959 @@
+{
+	id: "355D3C48AF6F1440"
+	group: "0960D5B8A7FB00EA"
+	order_index: 7
+	filename: "occultism"
+	title: "Spiritology"
+	icon: "occultism:ritual_dummy/custom_ritual"
+	subtitle: ["Occultism and Malum"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Spiritfire Observations"
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"Class, gather around the &5Spiritfire&r. Observe its captivating glow and its mystical essence."
+				""
+				"Take a moment to appreciate its enchanting beauty and contemplate the profound power it holds within the realm of &eOccultism&r."
+				""
+				"Our next lesson will delve deeper into its significance and applications. Stay curious and open-minded as we unravel its secrets together."
+			]
+			dependencies: ["5195093F6886F0F3"]
+			id: "2CA20C350E71D2C3"
+			tasks: [{
+				id: "7738A8EA69F026B2"
+				type: "observation"
+				icon: "occultism:spirit_fire"
+				timer: 0L
+				observe_type: 0
+				to_observe: "occultism:spirit_fire"
+			}]
+			rewards: [
+				{
+					id: "2229BA8E3A259934"
+					type: "item"
+					item: "occultism:datura_seeds"
+					count: 4
+				}
+				{
+					id: "5910A260114F9B16"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: [
+				"In our first task, we will embark on a transformative journey guided by the mesmerizing &5Spiritfire&r."
+				""
+				"Your objective is to carefully toss the assigned materials into the beckoning embrace of the &5Spiritfire&r."
+				""
+				"As the &6Oak Saplings&r touch the Spiritfire, they morph into &bOtherworld Saplings&r."
+				"&6Andesite&r transmutes into &bOtherstone&r, while &6Black Dyes&r are purified into &bPurified Ink&r."
+				"Lastly, &6Diamonds&r undergo a profound change, becoming &bSpirit Attuned Gems&r."
+				""
+				"Witness the remarkable transformations and embrace the magical potential that unfolds before us."
+			]
+			dependencies: ["2CA20C350E71D2C3"]
+			id: "4F4F86A19FD58A99"
+			tasks: [
+				{
+					id: "10923777316150B6"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling_natural"
+						Count: 1b
+						tag: {
+							isInventoryItem: 1b
+						}
+					}
+				}
+				{
+					id: "76D00504D5ECBCB6"
+					type: "item"
+					item: "occultism:otherstone"
+				}
+				{
+					id: "3AEE86206D24864D"
+					type: "item"
+					item: "occultism:purified_ink"
+				}
+			]
+			rewards: [
+				{
+					id: "143E0DB8D3C20D20"
+					type: "item"
+					item: {
+						id: "occultism:storage_controller_base"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5C2846C575FEB0F2"
+					type: "item"
+					item: {
+						id: "occultism:dimensional_matrix"
+						Count: 1b
+						tag: {
+							spiritName: "Desht"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			description: [
+				"By combining &6Burnt Otherstone&r and &6Otherworld Ashes&r, you can create &bImpure White Chalk&r. However, the journey doesn't end there."
+				""
+				"To unlock its full potential, we turn to the transformative power of the Spiritfire&r."
+				""
+				"When the &bImpure White Chalk&r is exposed to the radiant flames of the &5Spiritfire&r, its impurities are effortlessly removed. Through this purification process, the &bChalk&r becomes refined and attains its true magical essence."
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "14F8A018C345B67E"
+			tasks: [{
+				id: "117A4A1E57B20542"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5C8A59ECC9A16852"
+					type: "item"
+					item: "occultism:brush"
+				}
+				{
+					id: "6D9513DFFE74F19B"
+					type: "item"
+					item: "minecraft:writable_book"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"Once you have obtained the &bGold Dust&r, it can be combined with the &6Impure White Chalk&r and &6Glowstone&r to create &bImpure Golden Chalk&r. "
+				""
+				"By utilizing &5Golden Chalk Glyphs&r in our ceremonies, we tap into a greater wellspring of magical energy, enabling us to explore more profound depths of &bOccultism&r."
+				""
+				"Embrace the opportunity to expand your magical repertoire, my dear students. Continue to learn, grow, and master the secrets of &eOccultism&r, utilizing the &5Golden Chalk Glyphs&r to unlock new realms of mystical power and enlightenment."
+			]
+			dependencies: ["27B607C10DDF0580"]
+			id: "42E6B803DBB7E962"
+			tasks: [{
+				id: "13471EE4DE31DECC"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "occultism:chalk_purple"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.5d
+			y: -1.5d
+			description: [
+				"In addition to obtaining &6Gold Dust&r, the &5Foliot Crusher&r offers even more possibilities for our magical endeavors. By utilizing this Creature we can also extract &bCrushed Endstone&r and &bObsidian&r."
+				""
+				"Once we have obtained &bCrushed Endstone&r and &bCrushed Obsidian&r, we can combine them with the &6Impure White Chalk&r to create &bImpure Purple Chalk&r."
+				""
+				"The &bImpure Purple Chalk Glyphs&r expand our repertoire of magical symbols, granting us access to advanced rituals and incantations. These glyphs tap into the enigmatic powers of &6Endstone&r and &6Obsidian&r, enhancing our connection to the mystical energies that surround us."
+			]
+			dependencies: ["27B607C10DDF0580"]
+			id: "4E3AFD92714322F5"
+			tasks: [
+				{
+					id: "39C0D2EC5BDF49D5"
+					type: "item"
+					item: "occultism:obsidian_dust"
+					count: 2L
+				}
+				{
+					id: "358E3E785E8A987B"
+					type: "item"
+					item: "occultism:crushed_end_stone"
+				}
+				{
+					id: "26B5B1B38D5472DC"
+					type: "item"
+					item: {
+						id: "occultism:chalk_purple"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "occultism:chalk_red"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.5d
+			y: -4.5d
+			description: [
+				"To acquire Red Chalk, one must summon and defeat an Afrit. However, it's important to note that Afrits are aggressive creatures, and caution must be exercised when encountering them."
+				""
+				"Students should approach this task with utmost care and preparedness, ensuring they are equipped with proper defensive measures and strategies to safely engage with the Afrit and claim the Afrit Essence as their reward."
+				""
+				"Stay vigilant and be mindful of the risks involved in summoning and facing these formidable entities."
+			]
+			dependencies: ["236EB6393DE807D4"]
+			id: "207B0A3CEC6BD7BF"
+			tasks: [
+				{
+					id: "142490F9C60880BC"
+					type: "item"
+					item: "occultism:afrit_essence"
+				}
+				{
+					id: "15C88CE82E94CABB"
+					type: "item"
+					item: {
+						id: "occultism:chalk_red"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Your first Ritual"
+			x: 6.0d
+			y: -3.0d
+			description: [
+				"Before we can embark on the summoning of our &5Foliot&r, it is crucial to prepare a dedicated ritual area."
+				""
+				"Firstly, create intricate symbols and glyphs using the &6purified white chalk&r. These markings, known as &bWhite Chalk Glyphs&r, will act as channels for the summoning energies. Take your time to carefully craft these symbols, ensuring their accuracy and precision."
+				""
+				"Next, place a &bgolden sacrificial bowl&r at the center of the ritual area. "
+				""
+				"To create an ambient and mystical atmosphere, arrange several &bcandles&r around the ritual area."
+				""
+				"Additionally, position several &6sacrificial bowls&r near the ritual area. These &6bowls&r will play a vital role in various offerings and rituals involving the &5Foliot&r."
+			]
+			dependencies: ["1E02923806A707B0"]
+			id: "256A0BC4E1201753"
+			tasks: [
+				{
+					id: "14B14D1A3D7F7018"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "6947430D4BD4A2AF"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+				{
+					id: "0913B812C9538AB1"
+					type: "item"
+					item: "occultism:candle_white"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "500A1A0C88A6614B"
+				type: "item"
+				item: {
+					id: "minecraft:cow_spawn_egg"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			description: [
+				"To summon our first Foliot, you must obtain a Book of Binding."
+				""
+				"This book will hold the rituals and knowledge needed for summoning."
+				""
+				"Combine it with your Dictionary of Spirits to bind the book to one of your Spirits."
+				""
+				"Once you have the Book of Binding bound, you can proceed with the summoning process."
+			]
+			dependencies: ["14F8A018C345B67E"]
+			id: "1E02923806A707B0"
+			tasks: [{
+				id: "107FDBADA2E7F86B"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+			rewards: [
+				{
+					id: "1DB70E09B7B3F9D6"
+					type: "item"
+					item: {
+						id: "occultism:soul_gem"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4DB61FF4A4437F73"
+					type: "item"
+					item: {
+						id: "occultism:spawn_egg/familiar_beaver"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Ritual: Summon Foliot Crusher"
+			icon: {
+				id: "occultism:book_of_binding_bound_foliot"
+				Count: 1b
+				tag: {
+					spiritName: "Croloriaeus"
+				}
+			}
+			x: 6.0d
+			y: -1.5d
+			description: [
+				"Dear students, as we delve deeper into the realm of &eOccultism&r and seek to perform more potent rituals, it becomes crucial to acquire different types of &6Chalk Glyphs&r."
+				""
+				"To create &6Golden Chalk&r, we must first obtain an essential ingredient known as &6Gold Dust&r."
+				""
+				"This valuable substance can be acquired by using a &bFoliot Crusher&r."
+				""
+				"Please note that the &bFoliot Crusher&r should be handled with care and respect, as it is a creature of considerable significance in our magical endeavors."
+			]
+			dependencies: ["256A0BC4E1201753"]
+			id: "27B607C10DDF0580"
+			tasks: [
+				{
+					id: "2EE3440B894B8622"
+					type: "item"
+					item: "minecraft:raw_iron"
+				}
+				{
+					id: "75F875932CFEF85E"
+					type: "item"
+					item: "minecraft:raw_gold"
+				}
+				{
+					id: "6DBBBCF6471A17D1"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+				{
+					id: "07C658A14D6BFAB9"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_foliot"
+						Count: 1b
+						tag: {
+							spiritName: ""
+						}
+					}
+					weak_nbt_match: true
+				}
+				{
+					id: "5704A4095627BC38"
+					type: "item"
+					item: {
+						id: "occultism:raw_silver"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4DF56D632C6F7037"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: [
+				"The &bButcher Knife&r is vital for obtaining &bTallow&r from animals like &6cows&r, &6pigs&r, &6sheep&r, &6horses&r, and &6llamas&r. It serves as a crucial tool in our exploration of &eOccultism&r."
+				""
+				"&bTallow&r, derived from these creatures' fats, possesses unique properties used in candle making."
+				""
+				"Remember to approach the animals with respect and gratitude as you gather their essence. Wield the &bButcher Knife&r with care to unlock the full potential of &eOccultism&r's magical rituals."
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "7BFA2F0F5F7D10CE"
+			tasks: [
+				{
+					id: "68D9B8252C5700AD"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7EBA75C99B23446F"
+					type: "item"
+					item: "occultism:tallow"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: [
+				"Once an &bOtherworld Sapling&r is planted and grown, its appearance remains unchanged until the &6Third Eye&r effect is obtained."
+				""
+				"Consume a &6Demon Fruit&r to gain this effect temporarily. With the &6Third Eye&r, you can harvest &bOtherworld Wood&r from the fully grown sapling."
+				""
+				"This unique wood holds immense power and is crucial for crafting potent &eOccultism&r items."
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "36B99346DF1FE8E2"
+			tasks: [{
+				id: "6B73920E1F8A1B14"
+				type: "item"
+				item: "occultism:otherworld_log"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "034758BC873EEB09"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_ashes"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "15B2D3FF206FD116"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Unbound Afrit"
+			x: 6.0d
+			y: -4.5d
+			description: [
+				"In order to create the highest tier chalk you'll need to summon and destroy and unbound Afrit so that you may imbue its essence in to the chalk."
+				""
+				"Cast the ritual circle and markings for Abra's Open Conjure. This will require you to sacrifice a cow as part of the ritual."
+			]
+			dependencies: ["256A0BC4E1201753"]
+			id: "236EB6393DE807D4"
+			tasks: [{
+				id: "33221FD8F3C4A019"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_afrit"
+					Count: 1b
+					tag: {
+						spiritName: ""
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4C3641DA6035B76B"
+					type: "item"
+					item: {
+						id: "occultism:iesnium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4AFE56C1509BD81D"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			description: ["Djinns are the most commonly summoned class of spirit. They are the preferred workhorse offering both intelligence and power. They can be used for a variety of purposes from higher artifacts to possessing lesser life forms. You'll need a bound Djinn and the appropriate ritual for many of the more powerful occult rituals."]
+			dependencies: ["256A0BC4E1201753"]
+			id: "37C9BE1277FA87CD"
+			tasks: [{
+				id: "1147B2F9C8738CCA"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_djinni"
+					Count: 1b
+					tag: {
+						spiritName: ""
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7318DBC3B759355C"
+					type: "item"
+					item: {
+						id: "minecraft:end_stone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "08803C0D303A8997"
+					type: "item"
+					item: {
+						id: "apotheosis:mythic_material"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			description: [
+				"Dear students, I have an intriguing piece of information to share regarding the extraordinary &bIesnium Ingots&r."
+				""
+				"These ingots are a unique and precious metal required for the most intricate rituals and advanced tools of &eOccultism&r. However, they cannot be obtained through conventional means."
+				""
+				"&5Prof. Saereth&r possesses specialized knowledge and expertise in the realm of interdimensional exploration and occult materials."
+				""
+				"Seeking their guidance will provide you with valuable insights and potentially unlock the secrets surrounding the acquisition of &bIesnium Ingots&r."
+			]
+			id: "44C3AE74D03D1EA9"
+			tasks: [{
+				id: "6721797CFEEDB22D"
+				type: "item"
+				item: "occultism:iesnium_ingot"
+			}]
+			rewards: [{
+				id: "468429F1AD3A6B80"
+				type: "item"
+				item: "occultism:iesnium_ore"
+				count: 3
+			}]
+		}
+		{
+			title: "Dimensional Miner"
+			icon: {
+				id: "occultism:miner_foliot_unspecialized"
+				Count: 1b
+				tag: {
+					spiritName: "Thrgornryne"
+					Damage: 0
+				}
+			}
+			x: 11.5d
+			y: -3.0d
+			description: [
+				"By harnessing the power of Iesnium, we can venture into these mystical mineshafts, where precious resources and hidden treasures await."
+				""
+				"These mineshafts exist within otherworldly dimensions, brimming with mystic energy and untapped riches."
+				""
+				"With a ritual involving a bound book, an empty magic lamp, an Iesnium Pickaxe, and other materials, we can create the Miner in a Lamp."
+				""
+				"The Miner will be able to go to the Dimensional Mineshaft and yield us all sorts of valuable resources."
+			]
+			id: "44A634D9684DBBFF"
+			tasks: [
+				{
+					id: "5E3F0AEC900F2A71"
+					type: "item"
+					item: "occultism:magic_lamp_empty"
+				}
+				{
+					id: "31D2F93F6193296E"
+					type: "item"
+					item: "occultism:dimensional_mineshaft"
+				}
+			]
+			rewards: [
+				{
+					id: "36DEFF8FD3BB23C9"
+					type: "item"
+					item: {
+						id: "quark:ancient_tome"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 8s
+								id: "minecraft:unbreaking"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4705082CA3D2459A"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "naturesaura:aura_mending"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.5d
+			description: [
+				"Otherworldy goggles give the effect of eating the dream fruit by just wearing them. This provides a permanent Third Eye effect which allows you to see otherworldy blocks. "
+				""
+				"You'll still need an infused or Iesnium pick to harvest them however."
+			]
+			id: "35605C879A16392F"
+			tasks: [{
+				id: "3798F1EFD5156230"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0A61916D090DAB1E"
+					type: "item"
+					item: {
+						id: "hexerei:large_satchel"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "692CF87D4662E344"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "ensorcellation:exp_boost"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Creating your own Spirit Fire"
+			icon: {
+				id: "firesticks:fire_stick"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -4.5d
+			description: ["Be careful when igniting the demon dream fruit. You must first place it down and then ignite it with the fire sticks, firecharge or flint and steel. You need to aim for the actual fruit, if you simply set the block on fire you may risk burning it instead of transforming it."]
+			dependencies: ["2CA20C350E71D2C3"]
+			hide: true
+			id: "4D1EDF57F95F23E4"
+			tasks: [
+				{
+					id: "054567E91CBA3D55"
+					type: "item"
+					item: "occultism:datura"
+				}
+				{
+					id: "597E2E0843B370F9"
+					type: "item"
+					item: {
+						id: "firesticks:fire_stick"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1A17980E8AC344C6"
+					type: "item"
+					item: "minecraft:black_dye"
+					count: 8
+				}
+				{
+					id: "4AD79D31E6126501"
+					type: "item"
+					item: "minecraft:netherrack"
+					count: 4
+				}
+				{
+					id: "44FD37D318A61AD1"
+					type: "item"
+					item: {
+						id: "occultism:datura"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			description: [
+				"Streigor's higher binding ritual will allow you to bind a powerful Djin into specially prepared vessels. A Dimensional mineshaft and a deep ore miner Djin can provide an endless source of resources. Especially if combined with methods of reparing the lamp before it degrades completely."
+				""
+			]
+			dependencies: ["37C9BE1277FA87CD"]
+			id: "6925F8ED680D4A6B"
+			tasks: [{
+				id: "72B82920360A8DF0"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+			rewards: [
+				{
+					id: "12E7F59C894C94D1"
+					type: "item"
+					item: {
+						id: "occultism:spirit_attuned_gem"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "6573E352289CD776"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			icon: "occultism:storage_controller"
+			x: 1.5d
+			y: 1.5d
+			description: ["The storage actuator is a multiblock consisting of a Dimensional Matrix that is inhabited by a Djinni which creates and manages a storage dimension. The base is infused with a foliot to move items in and out of the dimension for you. This extra dimensional space is capable of storing vast amounts of items and can be upgraded many times. "]
+			hide_dependency_lines: true
+			dependencies: ["4F4F86A19FD58A99"]
+			hide: true
+			id: "0AC9F55FAB0A1C1A"
+			tasks: [{
+				id: "24178F79D59FF54D"
+				type: "item"
+				item: {
+					id: "occultism:storage_controller"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "33F61830662F714E"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 16
+				}
+				{
+					id: "23E8F643423F4173"
+					type: "item"
+					item: {
+						id: "enderstorage:ender_chest"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["The tier two stabilizer is bound in a higher binding ritual and requires ghast tiers. This upgraded version provides an additional 512 slots to the matrix."]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "740F611DCB42EBF2"
+			tasks: [{
+				id: "3B34EB5A2D069DBD"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+			rewards: [{
+				id: "7100375CACFF26B4"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:ghast_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			description: ["These enhanced stabilizers begin to get expensive. They require a netherstar and must be bound with an afrit in Sevira's Permanent Confinement ritual. Each of these provides an astonishing 1024 slots to the dimensional matrix."]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "3A8A41220AFA4534"
+			tasks: [{
+				id: "2E2CB6971BDE4248"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+			rewards: [{
+				id: "21BD2744D72D2B4B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:glyph_wither"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: [
+				"The ultimate tier of stabilizer requires a dragon's head and a deadly Marid is bound using the dangerously powerful Uphyxes Inverted Tower ritual. Each of these stabilizers provides the maximum possible storage increase of 2048 slots per stabilizer."
+				""
+			]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "70BCAC1AC9A2BE79"
+			tasks: [{
+				id: "7C0CA86A70D65D86"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+			rewards: [
+				{
+					id: "1D8756C6DF37D8B3"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "occultism:storage_stabilizer_tier4"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "73F42F031B8260CA"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0B51FF5CAC6BBC2A"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["The storage accessor can be linked to a Dimensional Storage by shift-clicking it. Once linked, the Djin inside will allow for a transdimensional access to all of our items stored within from anywhere you may be."]
+			hide_dependency_lines: true
+			dependencies: [
+				"256A0BC4E1201753"
+				"37C9BE1277FA87CD"
+			]
+			hide: true
+			id: "0F5BB5102B50889E"
+			tasks: [{
+				id: "34FF29B6F543068D"
+				type: "item"
+				item: {
+					id: "occultism:storage_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "41EA6A78ADA7F113"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "217D6CD2345B8317"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"A foliot bound to this otherwise mundane satchel is tasked with warping reality inside. This allows it to become much larger on the inside and capable of holding vast amounts of goods. "
+				""
+				"Utilize Eziveus' Spectral Compulsion ritual to bind the foliot to the satchel."
+			]
+			hide_dependency_lines: true
+			dependencies: ["256A0BC4E1201753"]
+			hide: true
+			id: "2D4E52F70DA383EB"
+			tasks: [{
+				id: "66D70432E9FF182F"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Niddornkyn"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				weak_nbt_match: true
+			}]
+			rewards: [
+				{
+					id: "022403D46240808A"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7CC0BEAA4891EB05"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "Occultism"
+			x: -2.5d
+			y: -3.0d
+			shape: "pentagon"
+			subtitle: "Find Professor Everlipse"
+			description: [
+				"Welcome, young wizards and witches, to the Class of &eOccultism&r! I am Prof. Everlipse, your guide into the mystical realms of magic."
+				""
+				"May your spirits be high and your wands at the ready as we embark on an extraordinary journey through the enchanting world of &eOccultism&r. "
+				""
+				"I'm thrilled to have each and every one of you here, ready to unlock the secrets of this ancient art. Let the magical adventures begin!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["63368A007664E4B5"]
+			dependency_requirement: "one_started"
+			hide_text_until_complete: true
+			id: "5195093F6886F0F3"
+			tasks: [{
+				id: "061C0F7DB5BD145C"
+				type: "location"
+				title: "Find Everlipse"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "1b3a13c3-11bd-8eb2-0283-8c32afa52b49"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiM2ExM2MzMTFiZDhlYjIwMjgzOGMzMmFmYTUyYjQ5MDlkODEwODU3OTU1NTEyYTVlNTA4ZTgwMzYwZmY1ZmIifX19"
+								}]
+							}
+							Name: "Everlipse"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-50
+					-200
+				]
+				size: [I;
+					30
+					10
+					30
+				]
+			}]
+			rewards: [{
+				id: "63FF91171E7DE6BB"
+				type: "item"
+				item: {
+					id: "occultism:dictionary_of_spirits"
+					Count: 1b
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			description: [
+				"within the arsenal of &5Malum&r lies a pivotal instrument — the &bScythe&r."
+				""
+				"Our journey commences with the creation of a fundamental implement: the &bCrude Scythe&r. "
+				""
+				"By using some &6Iron and Soulstone&r, crafting a &bCrude Scythe&r should be a breeze."
+				""
+				"With the &bScythe&r, we can reap the &6Spirits&r of living entities when they are killed. These &6Spirits&r are crucial if we want to dive deeper in the realm of &5Malum&r."
+			]
+			dependencies: ["0C8A7D05ABEBF23B"]
+			id: "470630A08B38DD98"
+			tasks: [{
+				id: "0BB26ECF9411BD47"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0958045F72108BB3"
+					type: "item"
+					item: "malum:runewood_sapling"
+					count: 4
+				}
+				{
+					id: "4B1EFFAF7809F1BC"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "spirit:soul_reaper"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -3.0d
+			description: [
+				"The saplings within your possession are no ordinary flora; they are the esteemed &6Runewood Saplings&r."
+				""
+				"These arboreal treasures hold within them latent magical energies that shall unfold their secrets in due time, promising wonders and revelations for any wizard venturing into the realm of &5Malum&r."
+				""
+				"Stay attuned, for their mystical powers will be unveiled in a forthcoming class subject, illuminating the path for your magical pursuits."
+			]
+			dependencies: ["470630A08B38DD98"]
+			id: "1DAF23FF00B2FA03"
+			tasks: [{
+				id: "4CBB032D38AE3BBD"
+				type: "item"
+				item: "malum:runewood_log"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.0d
+			description: [
+				"At last, the highlight of our class: the esteemed &bSpirit Altar&r."
+				""
+				"This mystical platform holds the key to crafting an array of magical tools and materials."
+				""
+				"Among these, a crucial component will be the &6Soulstained Steel Ingot&r, a potent and magically enhanced counterpart to the standard &6Iron Ingot&r. "
+				""
+				"This remarkable material will unlock new avenues for crafting powerful and enchanted tools, furthering your mastery in the realm of magic."
+			]
+			dependencies: ["1DAF23FF00B2FA03"]
+			id: "50B9F03C73F0A696"
+			tasks: [{
+				id: "2E201746395AD29D"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+			rewards: [
+				{
+					id: "3A67ADA07AA217AF"
+					type: "item"
+					item: {
+						id: "malum:runewood_item_pedestal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "24E6B426969D6094"
+					type: "item"
+					item: {
+						id: "botania:brew_vial"
+						Count: 1b
+						tag: {
+							brewKey: "botania:regen_weak"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -2.5d
+			description: [
+				"Ah, dear student, it's time for you to forge your own &bSoulstained Steel&r. "
+				""
+				"Gather all the necessary &6Spirits&r, and carefully position them on the Altar. Place the &6Processed Soulstone&r atop an Item Pedestal, and then seat the humble &6Iron Ingot&r upon the Altar."
+				""
+				""
+				"Observe with wonder as the magic unfurls before you. Witness the mystical transmutation that takes place as the altar channels its energies, melding the elements together. Embrace the birth of the &bSoulstained Steel&r, a fusion of raw magical power and mundane iron, a testament to your growing prowess in the arcane arts."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "312E05896ACFD061"
+			tasks: [{
+				id: "65EDD30B77C1B234"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "45C0A18B75B5FA6E"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			subtitle: "Infinite Slimeballs"
+			description: [
+				"Within some of these logs lie a rare and potent substance known as &bHoly Sap&r. "
+				""
+				"To procure this essence, the initial step is the removal of the bark from the logs. Then, utilizing a glass bottle, one can extract the sacred &bHoly Sap&r encapsulated within."
+				""
+				"When you combine this &bHoly Sap&r with the few &6Slimeballs&r I'm giving you, you'll be able to make a lot more &6Slimeballs&r. It's like mixing things together to create a magical recipe that gives you almost endless &6Slimeballs&r from the special sap."
+			]
+			dependencies: ["1DAF23FF00B2FA03"]
+			id: "38A76677C8D56F2C"
+			tasks: [{
+				id: "007AACCBFEF68FD4"
+				type: "item"
+				item: "malum:holy_sap"
+			}]
+			rewards: [{
+				id: "29B1409450F32A40"
+				type: "item"
+				item: "minecraft:slime_ball"
+				count: 4
+			}]
+		}
+		{
+			title: "Soulstone"
+			x: -4.5d
+			y: -3.0d
+			description: [
+				"To commence your journey into the realm of &5Malum&r, acquiring &bSoulstone&r marks a crucial initial step."
+				""
+				"As it manifests as an ore, seeking guidance from &eLadyMayhaem&r, our esteemed Botania Teacher, regarding the utilization of an &bOrechid&r would be most prudent."
+				""
+				"The &6Orechid&r, a mystical device, shall prove instrumental in the quest to locate and gather the elusive &bSoulstone ore,&r initiating your magical pursuits within the realm of &5Malum&r."
+			]
+			dependencies: ["5195093F6886F0F3"]
+			id: "0C8A7D05ABEBF23B"
+			tasks: [{
+				id: "2947EA26EDE22D9D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "malum:raw_soulstone"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "malum:soulstone_ore"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "32B454A7EF6A08F2"
+					type: "item"
+					item: {
+						id: "malum:raw_soulstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3
+				}
+				{
+					id: "7BD17F736BF02426"
+					type: "item"
+					item: {
+						id: "quark:soul_bead"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Spirit Pouch"
+			icon: {
+				id: "malum:spirit_pouch"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -10.5d
+			y: -5.0d
+			description: [
+				"To alleviate the burden of gathering Spirits, let us focus our attention on the &bSpirit Pouch&r. "
+				""
+				"Utilizing the capabilities of the &6Spirit Altar&r, we shall craft &bSpirit Fabric&r and intricately weave it into the creation of the Spirit Pouch."
+				""
+				"This wondrous creation possesses the remarkable capacity to contain as many &5Spirits&r as a chest could hold, all within the confines of your very own pockets. "
+				""
+				"Embrace this invention, as it shall revolutionize the way you manage and transport Spirits, easing the burden of clutter and ensuring your readiness for magical endeavors."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "5DD709EC2D67B018"
+			tasks: [
+				{
+					id: "70A4A395260AD16D"
+					type: "item"
+					item: {
+						id: "malum:spirit_fabric"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "225B34538624F8DB"
+					type: "item"
+					item: {
+						id: "malum:spirit_pouch"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			description: [
+				"Leveraging our freshly minted &6Spirit Altar&r, we're poised to infuse &6Gunpowder&r with the essence of an &dArcane Spirit&r, culminating in the creation of &bHex Ash&r. "
+				""
+				"This formidable component stands as an essential element coveted by Malum Wizards, a crucial ingredient for intricate and advanced crafts that lie ahead. Embrace this creation, for it shall serve as a pivotal tool in your magical pursuits within the realm of Malum."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "796B0F86D2F21A18"
+			tasks: [{
+				id: "3E481AD61070EA47"
+				type: "item"
+				item: "malum:hex_ash"
+			}]
+			rewards: [
+				{
+					id: "3DC8B1F27CDE1473"
+					type: "item"
+					item: {
+						id: "malum:hex_ash"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "08D1047406B1856D"
+					type: "item"
+					item: {
+						id: "hexcasting:amethyst_dust"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: 0.5d
+			description: [
+				"Carving &6Spirits&r into the Runewood Logs bestows upon them a pivotal role in &6Totem Magic&r."
+				""
+				"Through the infusion of 5 Arcane Spirits, the Totem undergoes a transformative process, succumbing to corruption and burning to transmute into &bSoulwood&r."
+				""
+				"This intricate ritual, known as the &bUnchained Rite&r, emanates a bleeding effect to adjacent blocks around the Totem. "
+				""
+				"For a comprehensive understanding of the diverse procedures for various blocks, it's advised to consult the Journal, which details the intricacies of this transformative alchemy within the mystical realm."
+			]
+			dependencies: ["349C018CCFD38608"]
+			id: "43002F405D573AA2"
+			tasks: [{
+				id: "42DC2DA530D2B392"
+				type: "item"
+				item: "malum:soulwood_log"
+			}]
+		}
+		{
+			title: "Totem Magic"
+			x: -12.5d
+			y: -1.0d
+			description: [
+				"In the realm of &5Malum&r, a new horizon beckons with the advent of &6Totem Magic&r."
+				""
+				"To commence this journey, craft a &bTotem Base&r upon the revered Spirit Altar, marking the inception of your foray into the realm of Totem crafting."
+				""
+				"Begin this endeavor by initiating your first Totem, and should you seek additional guidance, consult the &eEncyclopedia Arcana&r, a repository of knowledge to aid you on this mystical path."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "349C018CCFD38608"
+			tasks: [{
+				id: "245FACADE55E99EB"
+				type: "item"
+				item: "malum:runewood_totem_base"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -3.5d
+			description: [
+				"It's time, dear student, to forge your own &bHallowed Gold&r."
+				""
+				"Gather the required &6Spirits&r and carefully position them upon the Altar. Place the &6Quartz&r atop an Item Pedestal and seat the &6Gold Ingot&r onto the Altar's surface."
+				""
+				"Observe as the mystical dance unfolds, and witness the enchanting transformation that takes place, birthing the radiant &bHallowed Gold&r. Embrace this moment of magic and wield the newfound power of this extraordinary creation."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "69F2C8CA0DC0083F"
+			tasks: [{
+				id: "51F3049AC6539F75"
+				type: "item"
+				item: "malum:hallowed_gold_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "70E6C42E033AA630"
+				type: "item"
+				item: {
+					id: "malum:hallowed_gold_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Deep Storage Cells?"
+			x: -12.5d
+			y: -5.0d
+			description: [
+				"In times when a Magician accumulates an abundance of a specific Spirit, &5Malum&r presents the &bSpirit Jar&r as a solution."
+				""
+				"This extraordinary vessel possesses the capacity to contain an almost limitless quantity of a single type of Spirit, addressing the overflow of magical essences."
+				""
+				"However, it's important to note that each jar can accommodate only one type of Spirit, offering a practical solution for the meticulous organization and storage of excess magical energies."
+			]
+			dependencies: ["69F2C8CA0DC0083F"]
+			id: "3320A823D21106A1"
+			tasks: [{
+				id: "291391ECB5E96CAF"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -3.0d
+			description: [
+				"Certainly, in the realm of &5Malum&r, a plethora of &bNecklaces and Belts&r awaits, each offering unique advantages to aid you in your quest to become a formidable wizard. "
+				""
+				"Delve deeply into these offerings, for each holds its unique allure, catering to diverse aspects of a wizard's journey. Choose wisely, for these artifacts shall aid you significantly in your adventurous pursuits within the realm of magic and mysticism."
+			]
+			dependencies: [
+				"69F2C8CA0DC0083F"
+				"312E05896ACFD061"
+			]
+			id: "4890448829D47CFA"
+			tasks: [{
+				id: "44F3FF8A9CDE5049"
+				type: "item"
+				title: "Artifacs of Malum"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "malum:necklace_of_the_mystic_mirror"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_tidal_affinity"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_the_narrow_edge"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_the_hidden_blade"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_blissful_harmony"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_starved"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_prospector"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_magebane"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			description: [
+				"Ah, the evolution from the humble &6Crude Scythe&r culminates in the magnificence of the &bSoulstained Steel Scythe&r."
+				""
+				"With heightened magical prowess and superior effectiveness, this upgraded Scythe represents a remarkable advancement in your magical arsenal."
+				""
+				"Embrace its augmented magical power, as it shall prove to be a formidable tool, surpassing its predecessor in both potency and efficiency within the realm of enchantment and mystical endeavors."
+			]
+			dependencies: [
+				"470630A08B38DD98"
+				"796B0F86D2F21A18"
+			]
+			id: "63AD6A3ABE7C983A"
+			tasks: [{
+				id: "4662A2780252A046"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3CEF7AF1E1C0B353"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "apotheosis:life_mending"
+						}]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: ["The basic stabilizer uses a foliot bound with Eziveus' Spectral Compulsion. Each tier 1 stabilizer adds 256 slots to the dimensional storage. Each dimensional matrix can support a maximum of 6 stabilizers."]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "6A56F10A26573057"
+			tasks: [{
+				id: "4B1505495694E818"
+				type: "item"
+				item: {
+					id: "occultism:storage_stabilizer_tier1"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "356E56C1F34C1CA7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Smelting the Hell out of it"
+			icon: {
+				id: "malum:spirit_crucible"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -10.5d
+			y: 2.0d
+			description: [
+				"Behold the remarkable &bSpirit Crucible&r, a versatile marvel among machinery. Not merely confined to repairing your gear and tools, this ingenious device transcends conventional boundaries. "
+				""
+				"Through the utilization of Spirits in tandem with an Alchemical Impetus, it becomes a conduit for generating an array of diverse items. "
+				""
+				"Embrace the multifaceted capabilities of this Crucible, as it stands as a beacon of versatility and functionality, unlocking myriad possibilities for crafting and creation beyond mere repair work."
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "52331FAD092FE0F7"
+			tasks: [
+				{
+					id: "4FCA5C70D760A606"
+					type: "item"
+					item: {
+						id: "malum:spirit_crucible"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5F6D3E05BCBB730A"
+					type: "item"
+					item: {
+						id: "malum:alchemical_calx"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4B62C4E8A48E4CC6"
+				type: "item"
+				item: {
+					id: "malum:alchemical_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: 1.0d
+			description: [
+				"Through the infusion of &bAquous and Arcane Spirits&r, the humble &6Alchemical Impetus&r within the Crucible attains an unparalleled power, enabling the creation of Prismarine Shards."
+				""
+				"This exquisite crafting component holds significance across all classes within the esteemed &dArcanum Institute&r, serving as a pivotal ingredient in a myriad of enchanting and essential creations."
+				""
+				"Embrace the potential of this refined process, as Prismarine Shards stand as a testament to the convergence of elemental spirits, granting access to a diverse array of mystical endeavors within the Institute's teachings."
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "1AF6D31835DC5CC1"
+			tasks: [{
+				id: "446EA003E6090830"
+				type: "item"
+				item: {
+					id: "minecraft:prismarine_shard"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "6789DB4E09D1964C"
+				type: "item"
+				item: {
+					id: "minecraft:prismarine_shard"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			description: [
+				"When &6Infernal and Arcane Spirits&r converge within the Alchemical Impetus, the mighty &6Crucible&r births forth the coveted &bBlazing Quartz&r. "
+				""
+				"This mystical material holds the power to craft Netherrack and various arcane instruments within the realm of &5Malum&r."
+				""
+				"Embrace the significance of this process, as Blazing Quartz serves as a conduit for crafting a diverse array of magical implements, harnessing the fiery essence of the Infernal Spirits combined with the arcane potency of the Arcane Spirits."
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "0F55C6D7C806D3D5"
+			tasks: [{
+				id: "5E4199C1096F923E"
+				type: "item"
+				item: {
+					id: "malum:blazing_quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4L
+			}]
+			rewards: [{
+				id: "710F7D4F886ABD87"
+				type: "item"
+				item: {
+					id: "malum:blazing_quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			description: [
+				"The illustrious &bQuartz&r material emerges through the harmonious convergence of &6Earthen and Arcane Spirits&r, united within the confines of the &6Arcane Impetus&r within the venerable Crucible."
+				""
+				"Revered across realms, this renowned substance holds universal acclaim, sought after by Wizards, Magicians, and even the everyday Mundane Humans."
+				""
+				"Its versatile nature and wide application render it a staple material coveted by diverse practitioners, serving as a cornerstone for various mystical and practical endeavors."
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "3700683C087DFD46"
+			tasks: [{
+				id: "3F3FDA2361F1E914"
+				type: "item"
+				item: {
+					id: "minecraft:quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "6917B2BC7FCFAF79"
+				type: "item"
+				item: {
+					id: "minecraft:quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "malum:textures/block/runewood/totem_poles/eldritch_runewood_cutout.png"
+				}
+			}
+			x: -12.5d
+			y: 2.0d
+			description: [
+				"&6Totem Magic&r presents a realm of significant potency, offering diverse effects that influence both the flora and fauna, as well as the surrounding natural elements."
+				""
+				"To grasp the breadth of these mystical capabilities, it is highly recommended to peruse the comprehensive knowledge contained within your &eEncyclopedia Arcana&r. "
+				""
+				"Delve into its pages to uncover the myriad effects and influences that Totem Magic can wield upon the environment and its inhabitants, unlocking the profound depths of this powerful magical art."
+			]
+			dependencies: ["43002F405D573AA2"]
+			id: "4ED44B7168C3C84B"
+			tasks: [{
+				id: "3A41E17E59A1C4FB"
+				type: "checkmark"
+				title: "Rites and Wrong"
+			}]
+			rewards: [{
+				id: "38EA2E49B66C57C4"
+				type: "item"
+				item: {
+					id: "malum:soulwood_growth"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Where do i get more Black Ink?"
+			x: 0.75d
+			y: -2.25d
+			description: [
+				"So, you are wondering how to obtain more black dye. "
+				""
+				"One way would be to use &5Botania's&r Black Flowers. The other way would be to go to campus and take a dive. It is known that Squids will live in the hallowed grounds of Arcanum Institute."
+				""
+				"Go and grab some!"
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			size: 0.5d
+			id: "0286958581F5CDF4"
+			tasks: [{
+				id: "11950F89E819222D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:ink_sac"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_mystical_flower"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_double_flower"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_mushroom"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "1349E132819D0210"
+				type: "item"
+				item: {
+					id: "minecraft:black_dye"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+	]
+	quest_links: [ ]
+}

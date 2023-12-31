@@ -1,0 +1,16 @@
+{
+	id: "72D03A0CEA78D046"
+	order_index: 0
+	title: "Sac Daggers"
+	loot_size: 1
+	rewards: [
+		{ item: "bloodmagic:daggerofsacrifice" }
+		{
+			item: {
+				id: "bloodmagic:sacrificialdagger"
+				Count: 1b
+				tag: { }
+			}
+		}
+	]
+}

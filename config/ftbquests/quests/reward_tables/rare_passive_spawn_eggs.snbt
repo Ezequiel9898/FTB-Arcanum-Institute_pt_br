@@ -1,0 +1,14 @@
+{
+	id: "6E17C992DF01B2D4"
+	order_index: 7
+	title: "Rare Passive Spawn Eggs"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:axolotl_spawn_egg" }
+		{ item: "minecraft:dolphin_spawn_egg" }
+		{ item: "minecraft:glow_squid_spawn_egg" }
+		{ item: "minecraft:mooshroom_spawn_egg" }
+		{ item: "minecraft:panda_spawn_egg" }
+		{ item: "minecraft:polar_bear_spawn_egg" }
+	]
+}

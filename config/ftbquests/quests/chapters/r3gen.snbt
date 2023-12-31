@@ -1,0 +1,365 @@
+{
+	id: "3683E6FDEDF7D838"
+	group: "125708BF22E6ABEE"
+	order_index: 5
+	filename: "r3gen"
+	title: "Professor Regen"
+	icon: "ftbai:codex_arsnouveau"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "ftbai:codex_arsnouveau"
+			x: 0.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Dear Student,"
+				""
+				"I've noticed your dedication and willingness to assist not only me but also your fellow students. Your positive attitude and eagerness to help have made a significant impact, and I truly appreciate it."
+				""
+				"As a token of my appreciation, I would like to give you something special – my personal codex."
+				""
+				"Also, this set of enchanted wool armor could aid you in your future endevours"
+			]
+			dependencies: [
+				"72C83121896BBDB0"
+				"59EF764CCD1CAADD"
+			]
+			size: 3.0d
+			min_width: 300
+			id: "1851B31DC95CCC92"
+			tasks: [{
+				id: "127FFBEB339D9D70"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1DDDE0B3A1F039D7"
+					type: "item"
+					item: "ftbai:codex_arsnouveau"
+				}
+				{
+					id: "11F490F64BB29635"
+					type: "item"
+					item: {
+						id: "arsomega:defense_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3FAE2DF203234BCC"
+					type: "item"
+					item: {
+						id: "arsomega:defense_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "2FAA3FCC88309EF3"
+					type: "item"
+					item: {
+						id: "arsomega:defense_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0B83D6934C1F960B"
+					type: "item"
+					item: {
+						id: "arsomega:defense_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "31923EF7F2D498E5"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_arsnouveau"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: [
+				"I was just thinking about how much I enjoy snacking on &6Source Berry Rolls&r. They happen to be my absolute favorite, and I couldn't help but wonder if you might be able to help a hungry teacher out."
+				""
+				"If it's not too much trouble, could you perhaps grab a pack for me? I'm thinking around 32 rolls should do the trick."
+				""
+				"Oh, yeah, this is your first trial BTW. "
+			]
+			dependencies: ["59EF764CCD1CAADD"]
+			id: "5D443AAAB3C5278A"
+			tasks: [{
+				id: "1A7DF504E1F5A2A6"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+				count: 32L
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			description: [
+				"I'd like you to demonstrate your understanding of the process by gathering one of each Essence."
+				""
+				"We're talking about Fire Essence, Water Essence, Earth Essence, and so on. "
+				""
+				"It's a crucial step in my current project, and I'm confident that your expertise will make this a breeze."
+				""
+				"Bring them back to me and we can proceed through our Class."
+			]
+			dependencies: [
+				"5D443AAAB3C5278A"
+				"59EF764CCD1CAADD"
+			]
+			id: "198A2236ED944370"
+			tasks: [
+				{
+					id: "267500FFB6E54BB5"
+					type: "item"
+					item: "ars_nouveau:abjuration_essence"
+					consume_items: true
+				}
+				{
+					id: "2B12030C21183948"
+					type: "item"
+					item: "ars_nouveau:conjuration_essence"
+					consume_items: true
+				}
+				{
+					id: "63C4961C31D8F564"
+					type: "item"
+					item: "ars_nouveau:air_essence"
+					consume_items: true
+				}
+				{
+					id: "24F93F7286E2EF72"
+					type: "item"
+					item: "ars_nouveau:earth_essence"
+					consume_items: true
+				}
+				{
+					id: "099E49D57A2CD518"
+					type: "item"
+					item: "ars_nouveau:fire_essence"
+					consume_items: true
+				}
+				{
+					id: "4643B40991D93671"
+					type: "item"
+					item: "ars_nouveau:manipulation_essence"
+					consume_items: true
+				}
+				{
+					id: "34AB5E677932EC29"
+					type: "item"
+					item: "ars_nouveau:water_essence"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "48C6FBEE9D3420C8"
+				type: "item"
+				item: {
+					id: "ars_nouveau:amulet_of_mana_regen"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			description: [
+				"I wanted to share a fascinating discovery with you regarding a magical bow known as the \"Enchanter's Bow.\""
+				""
+				"This extraordinary bow has proven to be quite powerful and versatile in various magical endeavors."
+				""
+				"Now, here's the exciting part – I'd love to have one for myself, but unfortunately, time is not on my side at the moment."
+				""
+				"That's where your incredible skills come into play. I was wondering if you could take on the challenge of crafting an Enchanter's Bow for me."
+			]
+			dependencies: [
+				"198A2236ED944370"
+				"59EF764CCD1CAADD"
+			]
+			id: "3CE777D241E13155"
+			tasks: [{
+				id: "09D21D885005BFF6"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_bow"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "030228D22BC2B6D9"
+				type: "item"
+				item: {
+					id: "ars_nouveau:split_arrow"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			description: [
+				"I've got an interesting crafting project that involves creating an Infused Diamond – an intermediate crafting item. It requires a mix of different materials and a bit of skill."
+				""
+				"I was wondering if you could take on the challenge of crafting one for me. It's a great opportunity for you to enhance your crafting skills, and I could really use your expertise on this."
+			]
+			dependencies: [
+				"3CE777D241E13155"
+				"59EF764CCD1CAADD"
+			]
+			min_width: 300
+			id: "58B0813AD5CCC65E"
+			tasks: [{
+				id: "3AA70103283E875D"
+				type: "item"
+				item: "arsomega:infused_diamond"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3C359A879099C950"
+				type: "item"
+				item: {
+					id: "arsomega:enchanted_diamond_apple"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: [
+				"After your recent victory against the Wroughtnaut, I couldn't help but notice the magical properties emanating from its axe. It's a fascinating piece of weaponry, and I believe there's much to be learned from studying it."
+				""
+				"I'm eager to explore the magical properties of the axe and uncover the secrets it holds. Your contributions to this study could make a significant impact on our understanding of magical artifacts."
+				""
+				"Please hand it over whenever you are ready."
+			]
+			dependencies: [
+				"58B0813AD5CCC65E"
+				"183BE6BBAF4FADA7"
+				"59EF764CCD1CAADD"
+			]
+			min_width: 300
+			id: "5A5DD93FB86B22DE"
+			tasks: [{
+				id: "481D46A0E5E525A3"
+				type: "item"
+				item: {
+					id: "mowziesmobs:wrought_axe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			description: [
+				"For your last trial, I want you to create a special enchantment known as the &6Glyph of Homing Projectile&r. "
+				""
+				"The &6Glyph of Homing Projectile&r is a Glyph that holds the remarkable ability to home in on the nearest entity or behave normally in the absence of entities nearby. Its versatile nature makes it an invaluable asset."
+				""
+				"This is your final trial in this class, so I expect nothing less than your best. "
+			]
+			dependencies: [
+				"5A5DD93FB86B22DE"
+				"59EF764CCD1CAADD"
+			]
+			min_width: 300
+			id: "72C83121896BBDB0"
+			tasks: [{
+				id: "686AD8B894B15074"
+				type: "item"
+				item: {
+					id: "ars_nouveau:glyph_homing_projectile"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5867D29E87472233"
+				type: "item"
+				item: {
+					id: "arsomega:arcane_book"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							lvl: 1s
+							id: "ensorcellation:soulbound"
+						}]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

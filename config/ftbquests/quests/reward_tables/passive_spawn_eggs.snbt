@@ -1,0 +1,12 @@
+{
+	id: "1794D255718C903A"
+	order_index: 5
+	title: "Common Passive Spawn Eggs"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:chicken_spawn_egg" }
+		{ item: "minecraft:cow_spawn_egg" }
+		{ item: "minecraft:pig_spawn_egg" }
+		{ item: "minecraft:sheep_spawn_egg" }
+	]
+}

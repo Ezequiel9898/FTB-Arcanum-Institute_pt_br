@@ -1,0 +1,12 @@
+{
+	id: "63433A84515CF5E0"
+	order_index: 4
+	title: "Book of Bindings"
+	loot_size: 1
+	rewards: [
+		{ item: "occultism:book_of_binding_foliot" }
+		{ item: "occultism:book_of_binding_djinni" }
+		{ item: "occultism:book_of_binding_afrit" }
+		{ item: "occultism:book_of_binding_marid" }
+	]
+}

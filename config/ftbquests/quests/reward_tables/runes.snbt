@@ -1,0 +1,69 @@
+{
+	id: "4A0D72DD9B268010"
+	order_index: 20
+	title: "Runes"
+	icon: {
+		id: "bloodmagic:speedrune"
+		Count: 1b
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": { }
+		}
+	}
+	loot_size: 6
+	rewards: [
+		{
+			item: {
+				id: "bloodmagic:speedrune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "bloodmagic:sacrificerune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "bloodmagic:selfsacrificerune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "bloodmagic:blankrune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "bloodmagic:orbcapacityrune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "bloodmagic:blankrune"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

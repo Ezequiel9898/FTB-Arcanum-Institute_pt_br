@@ -1,0 +1,378 @@
+{
+	id: "40A008E69E281D64"
+	group: ""
+	order_index: 3
+	filename: "the_final_chapter"
+	title: "The Final Chapter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "The Final Codex"
+			icon: "ftbai:codex_final"
+			x: 2.0d
+			y: 2.0d
+			shape: "octagon"
+			description: [
+				"Esteemed student of the Arcanum Institute!"
+				""
+				"Your collection of Codexes is not a mere coincidence.\\n\\nEach Codex symbolizes the strengths and wisdom you've gained throughout your studies here.\\n\\nEach of them is a crucial piece of a much grander puzzle, known as \"&l&6The Final Codex&r\".\\n\\nThis powerful scroll is what you will need to graduate the Arcanum Institute and take your place in society as an elite Mage."
+				""
+				"In order to obtain this scroll, you must obtain the Codex awarded by each professor. Be warned that they will not hand it over lightly. You must demonstrate a complete mastery of the subject, and complete a final trial to be set by your professor. "
+				""
+				"Once you possess all 6 codexes, you will be awarded the Final Codex during your graduation ceremony. With hard work and determination, you have nothing to fear."
+			]
+			hide_dependency_lines: true
+			min_required_dependencies: 5
+			dependencies: [
+				"1851B31DC95CCC92"
+				"1FC930BD6B9A3A3B"
+				"6474FDE9222671FE"
+				"36BBC4A0F6055437"
+				"1398EE0EDE107238"
+				"075F44C1D333F731"
+			]
+			hide: true
+			size: 3.0d
+			min_width: 350
+			id: "597D7C1DC344DE1B"
+			tasks: [
+				{
+					id: "295D40F25C58B254"
+					type: "item"
+					title: "Bloodmagic's Codex"
+					icon: "ftbai:codex_bloodmagic"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_bloodmagic"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "4BC36FDFCAD5C89E"
+					type: "item"
+					title: "Ars Nouveau's Codex"
+					icon: "ftbai:codex_arsnouveau"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_arsnouveau"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "4EDDD458B620583C"
+					type: "item"
+					title: "Botania's Codex"
+					icon: "ftbai:codex_botania"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_botania"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "3EDB3DDCB32D5F2F"
+					type: "item"
+					title: "Evilcraft's Codex"
+					icon: "ftbai:codex_evilcraft"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_evilcraft"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "03168C803623B526"
+					type: "item"
+					title: "Malum's Codex"
+					icon: "ftbai:codex_malum"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_malum"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "0341AC20CCAB6690"
+					type: "item"
+					title: "Occultism's Codex"
+					icon: "ftbai:codex_occultism"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_goblin"
+									Count: 1b
+								}
+								{
+									ForgeCaps: {
+										"customnpcs:itemscripteddata": { }
+									}
+									id: "ftbai:codex_occultism"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "2D0287817D5565A2"
+					type: "item"
+					tags: ["final_codex"]
+					item: {
+						id: "ftbai:codex_final"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "251BDFE9BE1A68AC"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_final"
+				}
+			]
+		}
+		{
+			title: "The Dark Witch"
+			icon: {
+				id: "hexerei:witch_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 9.5d
+			y: 2.0d
+			shape: "octagon"
+			description: [
+				"We have a situation. The seal on the &5Celestial Colosseum&r, containing the &4Dark Witch&r, is weakening. We need someone brave to act fast."
+				""
+				"Go to the Colosseum and use the &bFinal Codex&r on the &6Twisted Tablet&r. But be careful! The witch's power is still strong."
+				""
+				"We need your courage to keep darkness from returning."
+			]
+			hide_dependency_lines: true
+			dependencies: ["597D7C1DC344DE1B"]
+			hide: true
+			size: 3.0d
+			min_width: 350
+			id: "342D29890E5E8DB9"
+			tasks: [
+				{
+					id: "580797D2B2A140C3"
+					type: "dimension"
+					title: "Enter the Colloseum"
+					disable_toast: true
+					dimension: "minecraft:the_end"
+				}
+				{
+					id: "7A184C44A0EA44E2"
+					type: "custom"
+					title: "Stop the Witch"
+					icon: {
+						id: "hexerei:witch_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4D78ED5729E2CA4B"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "beaten_witch"
+				}
+				{
+					id: "7D0E04EB5757EEA1"
+					type: "item"
+					item: {
+						id: "ftbai:codex_final"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Play me\"}"
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4FC20BE0DC76E593"
+					type: "item"
+					item: {
+						id: "minecraft:jukebox"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "322225231E6E5991"
+					type: "item"
+					item: {
+						id: "ftbai:lexxies_charm"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "1398EE0EDE107238"
+			x: 2.0d
+			y: -1.5d
+			id: "349B1E71B700C1E8"
+		}
+		{
+			linked_quest: "1FC930BD6B9A3A3B"
+			x: 5.0d
+			y: 0.0d
+			id: "058200ED4B8912E8"
+		}
+		{
+			linked_quest: "36BBC4A0F6055437"
+			x: 5.0d
+			y: 4.5d
+			id: "273EDAC194FA3A2C"
+		}
+		{
+			linked_quest: "6474FDE9222671FE"
+			x: 2.0d
+			y: 5.5d
+			id: "3B84BCF00E8FE515"
+		}
+		{
+			linked_quest: "1851B31DC95CCC92"
+			x: -1.0d
+			y: 0.0d
+			id: "12664DCC08A11ADB"
+		}
+		{
+			linked_quest: "075F44C1D333F731"
+			x: -1.0d
+			y: 4.5d
+			id: "75ABD0D94FFBCEB8"
+		}
+	]
+}

@@ -1,0 +1,737 @@
+{
+	id: "6346217FB6A40402"
+	group: "2BF58BA9C4117D6D"
+	order_index: 5
+	filename: "ghostis_food_shop"
+	title: "Ghost Kitchen"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Cookies"
+			icon: "minecraft:cookie"
+			x: -7.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "45CE5916E961BE78"
+			tasks: [{
+				id: "69CC206E7E5EE673"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5C10D3ACDD7B83D5"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 16
+			}]
+		}
+		{
+			title: "Cocoa Beans"
+			icon: "minecraft:cocoa_beans"
+			x: -7.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "781E81B8CFD7FB92"
+			tasks: [{
+				id: "178AA1348EBB20A7"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "3DA081E9EEA8987E"
+					type: "item"
+					item: "minecraft:cocoa_beans"
+					count: 3
+				}
+				{
+					id: "4D8B8D13A2DB8E8A"
+					type: "item"
+					item: "minecraft:jungle_sapling"
+				}
+			]
+		}
+		{
+			title: "Nether Wart"
+			icon: "minecraft:nether_wart"
+			x: -6.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "4D8F3E9E126108A9"
+			tasks: [{
+				id: "337452BE41A5412B"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5B74277B3F3995C5"
+				type: "item"
+				item: {
+					id: "minecraft:nether_wart"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Sweet Berries"
+			icon: "minecraft:sweet_berries"
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "0DF1D9023B963C9A"
+			tasks: [{
+				id: "447CB124705581D9"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1970B44C6860D6DE"
+				type: "item"
+				item: {
+					id: "minecraft:sweet_berries"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Glow Berries"
+			icon: "minecraft:glow_berries"
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "4ACE228F9196FEB6"
+			tasks: [{
+				id: "3D8129460691018F"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1C7AC91318436D43"
+				type: "item"
+				item: {
+					id: "minecraft:glow_berries"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Beetroot"
+			icon: "minecraft:beetroot"
+			x: -8.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "3F8BEF1734CD1D6A"
+			tasks: [{
+				id: "0B8E83C3A6459E34"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5C5AF1A6726D2F43"
+				type: "item"
+				item: {
+					id: "minecraft:beetroot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Carrots"
+			icon: "minecraft:carrot"
+			x: -9.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "4E79F98C55AB25EB"
+			tasks: [{
+				id: "4D2ABE9B4F4665B9"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "477B20140D4C7A71"
+				type: "item"
+				item: {
+					id: "minecraft:carrot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Potatoes"
+			icon: "minecraft:potato"
+			x: -10.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "02ABC389F891E53D"
+			tasks: [{
+				id: "0DD6F587FBD2F498"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "24D6007C6CE99F9A"
+				type: "item"
+				item: {
+					id: "minecraft:potato"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Apples"
+			icon: "minecraft:apple"
+			x: -11.0d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "0BC2B45BC64AC317"
+			tasks: [{
+				id: "1D8AE6C23A3748B8"
+				type: "item"
+				item: "ftbai:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "280928BD51AC9A18"
+				type: "item"
+				item: {
+					id: "minecraft:apple"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Beetroot Soup"
+			icon: "minecraft:beetroot_soup"
+			x: -8.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "75C9D6075F763936"
+			tasks: [{
+				id: "3FED9DDFA862DA8F"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "04DBE8CAB56DA75D"
+				type: "item"
+				item: {
+					id: "minecraft:beetroot_soup"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Golden Carrots"
+			icon: "minecraft:golden_carrot"
+			x: -9.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "5573B1C93F6EA82B"
+			tasks: [{
+				id: "345EEDA2D08EF9FF"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "12B7DE6FB5C2A0BF"
+				type: "item"
+				item: {
+					id: "minecraft:golden_carrot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Baked Potato"
+			icon: "minecraft:baked_potato"
+			x: -10.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "1BC2F9EA5BCD95EA"
+			tasks: [{
+				id: "71E3F158867721D8"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1B885B2BB2DD428B"
+				type: "item"
+				item: {
+					id: "minecraft:baked_potato"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Apple Slices"
+			icon: "cnb:apple_slice"
+			x: -11.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "327097DD94FBE926"
+			tasks: [{
+				id: "6C0F78E5FB00C882"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1E95A2C6AEA870D9"
+				type: "item"
+				item: {
+					id: "cnb:apple_slice"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Rabbit Stew"
+			icon: "minecraft:rabbit_stew"
+			x: -6.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "19B1524482A01E55"
+			tasks: [{
+				id: "1DCC34CC6566BEA7"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "25035A08FEAB7EDC"
+				type: "item"
+				item: {
+					id: "minecraft:rabbit_stew"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "Steak"
+			icon: "minecraft:cooked_beef"
+			x: -5.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "0CA413FFCC4F458C"
+			tasks: [{
+				id: "30A17C5EF53BC8FC"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6821FCBC75120E64"
+				type: "item"
+				item: "minecraft:cooked_beef"
+				count: 4
+			}]
+		}
+		{
+			title: "Submarine Sandwich"
+			icon: "hexcasting:sub_sandwich"
+			x: -4.0d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "0CFF2B51063197FA"
+			tasks: [{
+				id: "5ECF10CAC9A64478"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3B65204098B11D02"
+				type: "item"
+				item: {
+					id: "hexcasting:sub_sandwich"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "Apple Crate"
+			icon: "quark:apple_crate"
+			x: -11.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "69163748165EC781"
+			tasks: [{
+				id: "21D344E04FCD6C52"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5309AC3A05F48F72"
+				type: "item"
+				item: {
+					id: "quark:apple_crate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Potato Crate"
+			icon: "quark:potato_crate"
+			x: -10.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "4A392026534CC542"
+			tasks: [{
+				id: "3B09D914159E9DC3"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5BD0A986A2DFD5B8"
+				type: "item"
+				item: {
+					id: "quark:potato_crate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Carrot Cake"
+			icon: "quark:carrot_crate"
+			x: -9.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "4B9FC10C1604ADF7"
+			tasks: [{
+				id: "135EE4C0935A4B81"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0ADEECCBE16FC402"
+				type: "item"
+				item: {
+					id: "quark:carrot_crate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Beetroot Crate"
+			icon: "quark:beetroot_crate"
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "11F9D6D2C5C43E1B"
+			tasks: [{
+				id: "2DA346FF798C78C9"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4FEDDACC165417A8"
+				type: "item"
+				item: {
+					id: "quark:beetroot_crate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Cocoa Bean Sack"
+			icon: "quark:cocoa_beans_sack"
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "18B5C19232B93A18"
+			tasks: [{
+				id: "1DD9AFD3C0CF0A26"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "1F99E0E5225916E4"
+					type: "item"
+					item: "quark:cocoa_beans_sack"
+					count: 2
+				}
+				{
+					id: "06ED2D99C3E26D72"
+					type: "item"
+					item: "minecraft:jungle_sapling"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Nether Wart Sack"
+			icon: "quark:nether_wart_sack"
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "01C239FC09F41E30"
+			tasks: [{
+				id: "06956BEA429A16C1"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "263967AA4CBE9107"
+				type: "item"
+				item: {
+					id: "quark:nether_wart_sack"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Sweet Berry Sack"
+			icon: "quark:berry_sack"
+			x: -5.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "5AC39A3CE2EAD7BF"
+			tasks: [{
+				id: "7A7354D75513C3F5"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "39900D671F21263D"
+				type: "item"
+				item: {
+					id: "quark:berry_sack"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Glow Berry Sack"
+			icon: "quark:glowberry_sack"
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "1A1038894330B260"
+			tasks: [{
+				id: "78D71D12685C4FD3"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "346BD6481D0DC11A"
+				type: "item"
+				item: {
+					id: "quark:glowberry_sack"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Pumpkin Pie"
+			icon: "minecraft:pumpkin_pie"
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "3164655098C3DD92"
+			tasks: [{
+				id: "1421180F7FC75B7E"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "295B77C6B047E33A"
+				type: "item"
+				item: "minecraft:pumpkin_pie"
+			}]
+		}
+		{
+			title: "Source Berry Pie"
+			icon: "ars_nouveau:source_berry_pie"
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "22351CCA2339FEB7"
+			tasks: [{
+				id: "762EEFC06E7E3EA0"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "28DD9A9C6E77A58F"
+				type: "item"
+				item: {
+					id: "ars_nouveau:source_berry_pie"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "Cake! (totally not Pie)"
+			icon: "minecraft:cake"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "Alp's Favourite"
+			dependencies: ["6E7F2C4124A69B6C"]
+			can_repeat: true
+			id: "62B5559FCA9296F2"
+			tasks: [{
+				id: "0AFD5B898055817D"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5DC65B8D750F8C4F"
+				type: "item"
+				item: {
+					id: "minecraft:cake"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,328 @@
+{
+	id: "74714D8CAB4C2668"
+	group: "125708BF22E6ABEE"
+	order_index: 2
+	filename: "ladymayhaem"
+	title: "Professor LadyMaehem"
+	icon: "ftbai:codex_botania"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"My Dear Student, "
+				""
+				"You've done such an excellent job so far, I'm going ahead with your first trial. It shouldn't be too hard considering what you've accomplished so far. Just bring me  &625 Manasteel Ingots&r. We'll need them later anyway. "
+				""
+				"Okay, off you pop, good luck!"
+			]
+			dependencies: [
+				"4339E4F7236D2091"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 350
+			id: "40E4947E39C4CCD4"
+			tasks: [{
+				id: "0765189001E710B8"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 25L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			description: [
+				"My Dear Apprentice, "
+				""
+				"You're coming along so well, and it's already time for your third trial. "
+				""
+				"You never know what might happen so you should always make sure to have your mana reserves well stocked in case of an emergency. "
+				""
+				"Good luck. "
+			]
+			dependencies: [
+				"44311CF7C23D7FF3"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "3A259D7D5BE376DB"
+			tasks: [{
+				id: "6293890DA067E0AD"
+				type: "item"
+				item: "botania:mana_mirror"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5A5B35D64D036723"
+				type: "item"
+				item: {
+					id: "botania:blacker_lotus"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "Sparks"
+			x: 1.0d
+			y: 9.0d
+			description: [
+				"Dear Apprentice"
+				""
+				"I can't believe you're already over halfway through my class! You're ready for your fourth trial, and here it is. I need you to make me a set of Spark Augments. You can find more information about these in the Lexica Botania if you need. "
+				""
+				"I'd wish you luck, but I don't think you need it, so, have fun! "
+			]
+			dependencies: [
+				"3A259D7D5BE376DB"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "5E17CF538EFAE2A7"
+			tasks: [
+				{
+					id: "3AC66FF0A23564B2"
+					type: "item"
+					item: "botania:spark_upgrade_dispersive"
+					consume_items: true
+				}
+				{
+					id: "389BE7E3CF6631AD"
+					type: "item"
+					item: "botania:spark_upgrade_dominant"
+					consume_items: true
+				}
+				{
+					id: "6AFD4645E3E448FB"
+					type: "item"
+					item: "botania:spark_upgrade_recessive"
+					consume_items: true
+				}
+				{
+					id: "2B2AD80926D0B5B7"
+					type: "item"
+					item: "botania:spark_upgrade_isolated"
+					consume_items: true
+				}
+			]
+		}
+		{
+			icon: "botania:teru_teru_bozu"
+			x: 3.5d
+			y: 3.5d
+			description: [
+				"Hello, my dear apprentice!"
+				""
+				"For your next trial you're going to do something a little different. We're going to control the weather. Because a little rain is good for flowers, but they do need a lot of sunshine. I want you to bring me a &6Teru Teru Bozu&r. It's capable of dispelling bad weather and ushering in the sunshine! It's also a lot of fun to say!"
+				""
+				"Good luck and have fun!"
+				""
+				"Okay, go on, shoo!"
+			]
+			dependencies: [
+				"40E4947E39C4CCD4"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 350
+			id: "44311CF7C23D7FF3"
+			tasks: [{
+				id: "5494F7AF2F2CCFD7"
+				type: "item"
+				item: "botania:teru_teru_bozu"
+				consume_items: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"My Dear Apprentice,"
+				""
+				"Here's a nifty test of your skills. Go and make a Flugel Tiara. That'll show me how much you've learned!"
+				""
+				"I've heard some Pupils have been selling some &bEnder Air&r in the courtyard. You might want to give them a visit."
+				""
+				"It might seem easy compared to the fifth trial, but we can't risk your life at the end of EVERY term. "
+				""
+				"Unlike another magical school I could name. "
+			]
+			dependencies: [
+				"7FECB0E48BB4FC79"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "49778CCF0E0E01D9"
+			tasks: [{
+				id: "58E1C9EE42CA0F93"
+				type: "item"
+				title: "Flügel Tiara"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 1
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 3
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 4
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 5
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 6
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 7
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 8
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 9
+									gliding: 0b
+									RepairCost: 0
+									flying: 0b
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Gaia's Head"
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"Dear student,"
+				""
+				"It seems sometimes that our fight with The &5Evil Witch&r will never be over. Can I count on you once again? Please defeat the  - the &6Gaia Spirit&r, a divine entity with formidable strength. While I don't believe we are currently in any danger of her escaping, there have been too many attacks recently to dismiss as coincidence. The zombies outside the gates, the strange happenings..."
+				""
+				"This is not what I would wish for your fifth trial, but I believe in you."
+				""
+				"Good luck, and be careful."
+			]
+			dependencies: [
+				"5E17CF538EFAE2A7"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "7FECB0E48BB4FC79"
+			tasks: [{
+				id: "6B6C9F7DD0B2EF5B"
+				type: "item"
+				item: "botania:gaia_head"
+				consume_items: true
+			}]
+		}
+		{
+			icon: "ftbai:codex_botania"
+			x: 1.0d
+			y: 5.5d
+			shape: "hexagon"
+			description: [
+				"My Dear Apprentice,"
+				""
+				"Well, this is it. Your final Botania trial. You've come so far, and I'm so proud of you. "
+				""
+				"Here at the Arcanum Institute, we don't believe in written exams. No, you wouldn't have gotten this far if you didn't know how to study, so we prefer a more practical test of your mastery. "
+				""
+				"Craft a Black Hole Talisman, and I will know you have learned all I have to teach in this class. "
+				""
+				"Thank you for all of your hard work. It's been a pleasure to teach you. "
+				""
+				"Lady Maehem"
+			]
+			dependencies: [
+				"49778CCF0E0E01D9"
+				"016AE3BFE56E4C03"
+			]
+			size: 3.0d
+			id: "1FC930BD6B9A3A3B"
+			tasks: [{
+				id: "44F7DA04A948C2FC"
+				type: "item"
+				item: "botania:black_hole_talisman"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0990C2E526598C53"
+					type: "item"
+					item: {
+						id: "ftbai:codex_botania"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4B073DB0E370239C"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_botania"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

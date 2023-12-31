@@ -1,0 +1,53 @@
+{
+	id: "68E1D70FD6FBCAA3"
+	order_index: 21
+	title: "Sword Books"
+	icon: {
+		id: "minecraft:enchanted_book"
+		Count: 1b
+		tag: {
+			StoredEnchantments: [{
+				lvl: 4s
+				id: "minecraft:sharpness"
+			}]
+		}
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": { }
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			title: "Sharpness Book"
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s
+						id: "minecraft:sharpness"
+					}]
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "Scavenger Book"
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 2s
+						id: "apotheosis:scavenger"
+					}]
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1128 @@
+{
+	id: "1106221AC5CCC6C6"
+	group: "0960D5B8A7FB00EA"
+	order_index: 3
+	filename: "hexerei"
+	title: "The Dark Arts"
+	icon: {
+		id: "hexerei:mahogany_broom"
+		Count: 1b
+		tag: { }
+	}
+	subtitle: ["Evilcraft and Hexerei"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			x: 5.5d
+			y: -5.0d
+			description: [
+				"Create some hardened Blood by using the Blood Extractor and place down some blood to let it coagulate"
+				""
+			]
+			dependencies: ["64DB83486BDF41E0"]
+			id: "454EC060C16B7CE0"
+			tasks: [{
+				id: "1B89C1B827ECB566"
+				type: "observation"
+				title: "Observe some Hardened Blood"
+				icon: "evilcraft:hardened_blood"
+				timer: 0L
+				observe_type: 0
+				to_observe: "evilcraft:hardened_blood"
+			}]
+			rewards: [{
+				id: "28B938400A41DF7F"
+				type: "item"
+				item: "evilcraft:dark_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			description: [
+				"&bBlood Infusion Cores&r are the next crafting component we need if we want to progress through Evilcraft."
+				""
+				"Get somee &6Blood Shards&r and a &6Dark Power Gem&r and craft them together and you should be holding the Core in your hand in no-time."
+			]
+			dependencies: ["454EC060C16B7CE0"]
+			id: "05EA5E227FF0DE3D"
+			tasks: [{
+				id: "254FE64885B3CD01"
+				type: "item"
+				item: "evilcraft:blood_infusion_core"
+			}]
+		}
+		{
+			title: "Universal Donor"
+			x: 7.0d
+			y: -3.5d
+			subtitle: "Make a Blood Infuser"
+			description: [
+				"The &bBlood Infuser&r will &6use Blood to infuse items with power&r."
+				""
+				"Liquid Blood can be piped in, or a Tank can be inserted into the slot on the left."
+				""
+				"It also adds several cheaper recipes for things you've already crafted, like Dark Power Gems."
+			]
+			dependencies: ["05EA5E227FF0DE3D"]
+			min_width: 300
+			id: "00EE58E9E4455A79"
+			tasks: [{
+				id: "065CC1CE15179711"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_infuser"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+							capacity: 10000
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2838B9D662A0F5CA"
+				type: "item"
+				item: "minecraft:spider_eye"
+				count: 16
+			}]
+		}
+		{
+			x: 8.25d
+			y: -3.5d
+			description: ["While anywhere in your inventory (not just Curio slots!), the &bEffortless Ring&r will &6increase your walk speed, jump height, and allow you to walk up single blocks&r."]
+			dependencies: ["2B1FCEC117E6FF5E"]
+			size: 0.5d
+			id: "6F91F7EC725AF048"
+			tasks: [{
+				id: "72C927A1D606EAC9"
+				type: "item"
+				item: "evilcraft:effortless_ring"
+			}]
+			rewards: [{
+				id: "3FEE8047F1D97913"
+				type: "item"
+				item: "evilcraft:dull_dust"
+				count: 64
+			}]
+		}
+		{
+			title: "Empty Promises"
+			icon: "evilcraft:promise_tier_1"
+			x: 7.75d
+			y: -3.5d
+			subtitle: "Make a Promise"
+			description: [
+				"&bPromises&r are essentially &6upgrades&r for machines. There are three types."
+				""
+				"The three &bPromises of Tenacity&r &6increase the tier of a machine&r by the Promise's tier, unlocking new recipes."
+				""
+				"The &bPromise of Productivity&r makes machines use less blood, and the &bPromise of Velocity&r increases machine speed."
+				""
+				"Both of the final two can &6stack up to 4 times&r."
+			]
+			dependencies: ["00EE58E9E4455A79"]
+			size: 0.5d
+			min_width: 250
+			id: "2B1FCEC117E6FF5E"
+			tasks: [{
+				id: "5C1AAC3A5A9A4909"
+				type: "item"
+				title: "Promises"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "evilcraft:promise_speed_0"
+							}
+							{
+								Count: 1b
+								id: "evilcraft:promise_efficiency_0"
+							}
+							{
+								Count: 1b
+								id: "evilcraft:promise_tier_1"
+							}
+							{
+								Count: 1b
+								id: "evilcraft:promise_tier_2"
+							}
+							{
+								Count: 1b
+								id: "evilcraft:promise_tier_3"
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "074A526F469A227F"
+				type: "item"
+				item: "evilcraft:promise_speed_0"
+				count: 3
+			}]
+		}
+		{
+			title: "Like a Bloody Stone"
+			x: 5.5d
+			y: -6.5d
+			subtitle: "Get a Dark Power Gem"
+			description: [
+				"&bDark Power Gems&r provide access to &6more powerful items&r."
+				""
+				"To make them, &6throw Dark Gems&r into a pool of &6at least 5 buckets of Blood&r."
+				""
+				"Note that liquid Blood &6congeals&r with time, so be quick about it! Mining them with most items will return it to its fluid form."
+				""
+				"Mining the Hardened Blood holding a &6Flint and Steel&r however will drop &6Hardened Blood Shards&r!"
+			]
+			dependencies: ["454EC060C16B7CE0"]
+			min_width: 250
+			id: "658E637CC9A6E69F"
+			tasks: [{
+				id: "5A61B2D5941CC645"
+				type: "item"
+				item: "evilcraft:dark_power_gem"
+			}]
+			rewards: [{
+				id: "36CCFFFB27D59E47"
+				type: "item"
+				item: "evilcraft:dark_ore_deepslate"
+				count: 8
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.25d
+			description: ["While worn and full of Blood, the &bInvigorating Pendant&r will &6remove all negative potion effects&r!"]
+			dependencies: ["658E637CC9A6E69F"]
+			size: 0.5d
+			id: "7BB7F46FB805AC30"
+			tasks: [{
+				id: "56DC40BEAD8F0179"
+				type: "item"
+				item: {
+					id: "evilcraft:invigorating_pendant"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 5000
+					}
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 5000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			description: ["&bGem Torches&r &6prevent Vengeance Spirits from spawning&r in the area they light."]
+			dependencies: ["44C1876CB5D7E185"]
+			id: "4763E18ED3A2DFE5"
+			tasks: [{
+				id: "1B40B4B612CB030C"
+				type: "item"
+				item: "evilcraft:gem_stone_torch"
+			}]
+			rewards: [{
+				id: "66190CB43A9D3A67"
+				type: "item"
+				item: "evilcraft:gem_stone_torch"
+				count: 32
+			}]
+		}
+		{
+			title: "Blood Bank"
+			x: 2.5d
+			y: -6.5d
+			subtitle: "Make a Dark Tank"
+			description: [
+				"&bDark Tanks&r hold fluid. Though the default size is rather small, they can be &6crafted together to increase capacity&r!"
+				""
+				"Activating &6Auto-supply&r by clicking the placed Tank (or sneak clicking in hand) will &6automatically empty the Tank into the tank below&r, including tanks held by players!"
+			]
+			dependencies: ["44C1876CB5D7E185"]
+			hide: true
+			id: "073F5013843DC0DF"
+			tasks: [{
+				id: "3E9E99AE49FFC1D9"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_tank"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 16000
+					}
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 16000
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "64E00357F25A0B9F"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_tank"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 576000
+					}
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 576000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "That's Where the Blood's Supposed to Be!"
+			x: 7.0d
+			y: -6.5d
+			subtitle: "Make a Blood Chest"
+			description: [
+				"The &bBlood Chest&r &6repairs items placed inside it&r, using Blood from its own tank."
+				""
+				"However, this has a small chance of &ccursing the items&r with the Curse of Breaking. This can be removed with a &6Purifier&r."
+			]
+			dependencies: ["658E637CC9A6E69F"]
+			id: "00F05043F7B370D6"
+			tasks: [{
+				id: "08FD7C6592C49010"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_chest"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 10000
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3F896C2BA0672775"
+				type: "item"
+				item: "evilcraft:blook"
+			}]
+		}
+		{
+			title: "Bark from the Dead"
+			x: 7.0d
+			y: -5.0d
+			subtitle: "Get an Undead Tree"
+			description: ["&bUndead Trees&r &6bleed&r, leaving Blood Stains under its leaves. These can be collected by a &6Blood Extractor&r."]
+			dependencies: ["00EE58E9E4455A79"]
+			id: "0C3B90072606F36D"
+			tasks: [{
+				id: "251DD367B3DDD4EB"
+				type: "item"
+				item: "evilcraft:undead_sapling"
+			}]
+			rewards: [{
+				id: "4D21A5E83B75FA13"
+				type: "item"
+				item: "evilcraft:undead_sapling"
+				count: 6
+			}]
+		}
+		{
+			title: "&lBlood Chest&r"
+			icon: {
+				id: "evilcraft:colossal_blood_chest"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:empty"
+						Amount: 0
+					}
+					capacity: 10000
+				}
+			}
+			x: 7.0d
+			y: -5.75d
+			subtitle: "Make a Colossal Blood Chest"
+			description: [
+				"The &bColossal Blood Chest&r functions mostly the same as the smaller version, but &6holds more items&r and can be upgraded with &6Promises&r!"
+				""
+				"As a consequence though, it is &cmuch less efficient&r. However, the more items being repaired simultaneously, the &6more efficient&r it becomes!"
+				""
+				"To construct the Colossal Blood Chest, make a &6hollow 3x3x3&r of &bUndead Wood&r, replacing any of them with the main block."
+			]
+			dependencies: [
+				"00F05043F7B370D6"
+				"0C3B90072606F36D"
+			]
+			size: 0.5d
+			id: "4D2906B70A03EB38"
+			tasks: [
+				{
+					id: "1A617CCC6C539A31"
+					type: "item"
+					item: {
+						id: "evilcraft:colossal_blood_chest"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "minecraft:empty"
+								Amount: 0
+							}
+							capacity: 10000
+						}
+						ForgeCaps: {
+							Parent: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+								capacity: 10000
+							}
+						}
+					}
+				}
+				{
+					id: "190A3E31ADFE6EAD"
+					type: "item"
+					item: "evilcraft:reinforced_undead_planks"
+					count: 25L
+				}
+			]
+		}
+		{
+			x: 7.75d
+			y: -5.25d
+			description: ["The &bVengeance Pickaxe&r has &6Fortune V&r by default, but also &csummons Vengeance Spirits&r when used. It also has rather low durability."]
+			hide_dependency_lines: true
+			dependencies: ["0C3B90072606F36D"]
+			size: 0.5d
+			id: "7B6A64C766C3D7B5"
+			tasks: [{
+				id: "2BDF3B9095A80430"
+				type: "item"
+				item: {
+					id: "evilcraft:vengeance_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 5s
+							}
+							{
+								id: "evilcraft:vengeance"
+								lvl: 3s
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "evilcraft:broom"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "evilcraft:blood"
+						Amount: 10000
+					}
+					capacity: 10000
+				}
+				ForgeCaps: {
+					Parent: {
+						FluidName: "evilcraft:blood"
+						Amount: 10000
+						capacity: 10000
+					}
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.75d
+			y: -4.75d
+			description: [
+				"&bBrooms&r are &6modular flying vehicles&r that are powered by Blood. While riding or holding the Broom, you can see its fill level in the bottom right of your screen."
+				""
+				"Brooms are made by combining three broom parts: &bBrushes&r, &bRods&r, and &bCaps&r. The material they are made from affects the Broom's stats."
+				""
+				"Brooms can be further upgraded by &6crafting certain items into them&r. Check the Broom Modifiers chapter in the book to see a full list."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0C3B90072606F36D"]
+			size: 0.5d
+			min_width: 250
+			id: "2BED2D3EA0B5FD5D"
+			tasks: [
+				{
+					id: "1A06E525C84CE43F"
+					type: "custom"
+					title: "Broom Brushes"
+					icon: {
+						id: "evilcraft:broom_part"
+						Count: 1b
+						tag: {
+							broom_parts_tag: ["evilcraft:brush_wheat"]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "44529455C112A9A9"
+					type: "custom"
+					title: "Broom Rods"
+					icon: {
+						id: "evilcraft:broom_part"
+						Count: 1b
+						tag: {
+							broom_parts_tag: ["evilcraft:rod_wood"]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4A86A1768A1E7BA9"
+					type: "custom"
+					title: "Broom Caps"
+					icon: {
+						id: "evilcraft:broom_part"
+						Count: 1b
+						tag: {
+							broom_parts_tag: ["evilcraft:cap_head_player"]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2CB5FF097E144CFF"
+				type: "item"
+				item: {
+					id: "evilcraft:broom_part"
+					Count: 1b
+					tag: {
+						broom_parts_tag: ["evilcraft:cap_head_creeper"]
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "evilcraft:kineticator"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:empty"
+						Amount: 0
+					}
+					capacity: 1000
+				}
+				ForgeCaps: {
+					Parent: {
+						FluidName: "minecraft:empty"
+						Amount: 0
+						capacity: 1000
+					}
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 8.25d
+			y: -4.75d
+			description: [
+				"The &bKineticator&r &6attracts items/xp using Blood&r. Right-click to set the radius, and sneak right-click to toggle. Sneak to disable."
+				""
+				"The &bReverse Kineticator&r does the opposite, repelling items and xp."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0C3B90072606F36D"]
+			size: 0.5d
+			id: "4C74E5BB0B51A9D9"
+			tasks: [{
+				id: "130BAC6E7C59F169"
+				type: "item"
+				title: "Kineticators"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									Parent: {
+										FluidName: "minecraft:empty"
+										Amount: 0
+										capacity: 1000
+									}
+								}
+								Count: 1b
+								id: "evilcraft:kineticator"
+								tag: {
+									Fluid: {
+										FluidName: "minecraft:empty"
+										Amount: 0
+									}
+									capacity: 1000
+								}
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										FluidName: "minecraft:empty"
+										Amount: 0
+										capacity: 1000
+									}
+								}
+								Count: 1b
+								id: "evilcraft:kineticator_repelling"
+								tag: {
+									Fluid: {
+										FluidName: "minecraft:empty"
+										Amount: 0
+									}
+									capacity: 1000
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "539376096A4CFBE1"
+				type: "item"
+				item: "evilcraft:blood_potash"
+				count: 64
+			}]
+		}
+		{
+			x: 8.25d
+			y: -5.25d
+			description: ["The &bVein Sword&r boosts the Blood you get from killing and has Looting II by default."]
+			hide_dependency_lines: true
+			dependencies: ["0C3B90072606F36D"]
+			size: 0.5d
+			id: "12D9238A4A50A4C0"
+			tasks: [{
+				id: "1FF063A75E274BD4"
+				type: "item"
+				item: {
+					id: "evilcraft:vein_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:looting"
+							lvl: 2s
+						}]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0A1C5D4217572E6A"
+				type: "item"
+				item: "evilcraft:sceptre_of_thunder"
+				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "evilcraft:spirit_furnace"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:empty"
+						Amount: 0
+					}
+					capacity: 10000
+				}
+			}
+			x: 4.0d
+			y: -0.5d
+			description: [
+				"The &bSpirit Furnace&r is a multiblock that can &6generate mob drops&r, based on the mob in its &6Box of Eternal Closure&r."
+				""
+				"The multiblock must be made of &bDark Blood Brick&r, and it must be a hollow cuboid. The Spirit Furnace block can replace any of the Brick blocks."
+				""
+				"The interior of the multiblock &6must be big enough for the mob to stand in&r. So, a Zombie would need a 1x2x1 interior, so the whole thing must be 3x4x3, etc."
+			]
+			dependencies: ["231DCFF5B24A3476"]
+			min_width: 250
+			id: "623A4B81D3B503EC"
+			tasks: [
+				{
+					id: "0D0E2A24F88ED43E"
+					type: "item"
+					item: {
+						id: "evilcraft:spirit_furnace"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "minecraft:empty"
+								Amount: 0
+							}
+							capacity: 10000
+						}
+						ForgeCaps: {
+							Parent: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+								capacity: 10000
+							}
+						}
+					}
+				}
+				{
+					id: "7831788BC13B07A1"
+					type: "item"
+					item: "evilcraft:dark_blood_brick"
+				}
+			]
+			rewards: [{
+				id: "1B10852DAB01471F"
+				type: "item"
+				item: "evilcraft:promise_speed_0"
+			}]
+		}
+		{
+			icon: "evilcraft:box_of_eternal_closure"
+			x: 4.0d
+			y: -2.0d
+			description: [
+				"The &bBox of Eternal Closure&r can &6contain a Vengeance Spirit&r. These can be found full in Chests or crafted empty."
+				""
+				"Placing a full one down and right-clicking it will open it, &6releasing the Spirit&r."
+				""
+				"A &bVengeance Focus&r can be used to &6seal a Vengeance Spirit&r in the Box. While one is near an open Box, &6hold right-click to fire a beam&r that will suck the Spirit into the Box. From there, the Box can be safely mined or opened."
+			]
+			dependencies: ["2A012FAF8782046D"]
+			min_width: 250
+			id: "231DCFF5B24A3476"
+			tasks: [
+				{
+					id: "41B48035F1FA8E40"
+					type: "item"
+					item: "evilcraft:box_of_eternal_closure"
+				}
+				{
+					id: "02D8B875E804B7CC"
+					type: "item"
+					item: "evilcraft:vengeance_focus"
+				}
+			]
+			rewards: [{
+				id: "508D07FA72552B2D"
+				type: "item"
+				item: {
+					id: "evilcraft:box_of_eternal_closure"
+					Count: 1b
+					tag: {
+						spiritTag: {
+							playerName: ""
+							innerEntity: "minecraft:warden"
+							isSwarm: 0b
+							remainingLife: 625
+							buildupDuration: 0
+							swarmTier: 0
+							frozenDuration: 20
+							playerId: ""
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			description: [
+				"The &bSpirit Reanimator&r uses Blood to &6create Spawn Eggs&r, using and emptying the &6Box of Eternal Closure&r given."
+				""
+				"Don't tell anyone, but &eApotheosis&r allows you to &6set Spawners&r by using a Spawn Egg on them..."
+			]
+			dependencies: ["231DCFF5B24A3476"]
+			id: "1C15DA57FDB0C88B"
+			tasks: [{
+				id: "343BD978EDF2004A"
+				type: "item"
+				item: {
+					id: "evilcraft:spirit_reanimator"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 10000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			description: ["While wearing &bSpectral Glasses&r, you'll be able to see Vengeance Spirits, but &6they won't be able to see you&r!"]
+			dependencies: ["1C646399E62FB593"]
+			id: "7D47B3D4A8FAAC59"
+			tasks: [{
+				id: "32AA59F11DACD512"
+				type: "item"
+				item: {
+					id: "evilcraft:spectral_glasses"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			description: [""]
+			dependencies: ["2A012FAF8782046D"]
+			id: "1C646399E62FB593"
+			tasks: [{
+				id: "2999F6B5CE2F586D"
+				type: "item"
+				item: "evilcraft:piercing_vengeance_focus"
+			}]
+			rewards: [
+				{
+					id: "334404059680E40F"
+					type: "item"
+					item: "evilcraft:vengeance_essence"
+					count: 4
+				}
+				{
+					id: "62836839DF5FEFF0"
+					type: "item"
+					item: {
+						id: "evilcraft:environmental_accumulator"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "I See You!"
+			x: 2.5d
+			y: -3.5d
+			subtitle: "Make a Vengeance Ring"
+			description: [
+				"The &bVengeance Ring&r, when activated, &6makes Vengeance Spirits visible&r. However, you also become &cmore visible to them&r."
+				""
+				"Additionally, while activated, you are given &6several powerful buffs!&r However, it also &csummons and attracts Spirits to you&r, so it's a bit of a tradeoff."
+			]
+			dependencies: ["44C1876CB5D7E185"]
+			id: "2A012FAF8782046D"
+			tasks: [{
+				id: "5B789CB6C1BEEFB7"
+				type: "item"
+				item: "evilcraft:vengeance_ring"
+			}]
+		}
+		{
+			title: "From Beyond the Grave"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Get hit by a Vengeance Spirit"
+			description: [
+				"&bVengeance Spirits&r are invisible entities that can spawn &6after a mob dies&r."
+				""
+				"They usually aren't pleased with their state of affairs and will &cattack you if they touch you&r."
+				""
+				"At this point, there's nothing you can do to prevent them. Take your licks as you get them, save your revenge for later."
+			]
+			hide: true
+			id: "126BF300894CF43C"
+			tasks: [{
+				id: "07BC2A91C95DCEF3"
+				type: "custom"
+				icon: "minecraft:wither_rose"
+			}]
+			rewards: [{
+				id: "3D30DECEC6478DB1"
+				type: "item"
+				item: "evilcraft:condensed_blood"
+				count: 16
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			description: [
+				"Around the world, you can find &6Dark Temple&r structures. But you should be given one in a previous Class Task."
+				""
+				"If you place the &bEnvironmental Accumulator&r, it will start to emit a beam. The Beacon beam above can have certain items &6thrown inside&r to craft them into new items."
+				""
+				"Doing so will require a cooldown before it can be used again."
+				""
+				"Be warned: Using an Environmental Accumulator &cdegrades its biome&r, making it hostile to life."
+				""
+				"Also: If you break down the &bEnvironmental Accumulator&r, it will drop its core, which will be used to craft a &6Sanguinary Environmental Accumulator&r."
+			]
+			hide_dependency_lines: true
+			dependencies: ["458348F2C81B8D6B"]
+			hide: true
+			min_width: 250
+			id: "514A4BCD5EBCF794"
+			tasks: [{
+				id: "66E839F5E9F791E1"
+				type: "observation"
+				icon: "evilcraft:environmental_accumulator"
+				timer: 0L
+				observe_type: 0
+				to_observe: "evilcraft:environmental_accumulator"
+			}]
+		}
+		{
+			x: 1.75d
+			y: -1.25d
+			description: [
+				"The &bSanguinary Environmental Accumulator&r works much the same as the normal one, but &6requires Blood&r and &6doesn't degrade its biome&r."
+				""
+				"You will need to place &68 Tanks of Blood&r nearby, signaled by smoke particles."
+			]
+			dependencies: [
+				"1C646399E62FB593"
+				"514A4BCD5EBCF794"
+			]
+			size: 0.5d
+			id: "0177756F72DC38DE"
+			tasks: [{
+				id: "52E6E94B63ED9ABE"
+				type: "item"
+				item: "evilcraft:sanguinary_environmental_accumulator"
+			}]
+		}
+		{
+			icon: {
+				id: "evilcraft:weather_container"
+				Count: 1b
+				tag: {
+					weather: "RAIN"
+				}
+			}
+			x: 0.25d
+			y: -0.5d
+			description: [
+				"&bWeather Containers&r are crafted by throwing an empty Weather Container into the beam of an Environmental Accumulator."
+				""
+				"Doing so will &6store the current weather&r in trhe Container. Throwing the resulting item will &6force-change the weather to the Container's type&r, destroying the item."
+			]
+			dependencies: ["514A4BCD5EBCF794"]
+			size: 0.5d
+			id: "10E809CEC7E0DA28"
+			tasks: [{
+				id: "6009CBD55DEBDBD8"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "evilcraft:weather_container"
+								tag: {
+									weather: "CLEAR"
+								}
+							}
+							{
+								Count: 1b
+								id: "evilcraft:weather_container"
+								tag: {
+									weather: "RAIN"
+								}
+							}
+							{
+								Count: 1b
+								id: "evilcraft:weather_container"
+								tag: {
+									weather: "LIGHTNING"
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6F6C72D5B2867832"
+				type: "item"
+				item: "evilcraft:lightning_grenade"
+				count: 8
+			}]
+		}
+		{
+			title: "The Dark Arts"
+			icon: {
+				id: "hexerei:book_of_shadows"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: -5.0d
+			shape: "pentagon"
+			subtitle: "Meet Prof. Aaronhowser"
+			description: [""]
+			dependencies: ["63368A007664E4B5"]
+			id: "458348F2C81B8D6B"
+			tasks: [{
+				id: "35C6647AF215CE37"
+				type: "location"
+				title: "Find Prof. Aaronhowser"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "ac376b88-141f-d376-d5c9-03d57f88749f"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjMzc2Yjg4MTQxZmQzNzZkNWM5MDNkNTdmODg3NDlmNmIzNGQ3ZmNmYWUzMTRjZGVjOWVmYmMyNWY4ZjQzMmMifX19"
+								}]
+							}
+							Name: "1aaron5"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-51
+					-65
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [{
+				id: "7DAF31C641995885"
+				type: "item"
+				item: "evilcraft:origins_of_darkness"
+			}]
+		}
+		{
+			title: "A Small Prick..."
+			x: 4.0d
+			y: -5.0d
+			subtitle: "Make a Blood Extractor"
+			description: [
+				"As these are the dark arts, naturally they are &6fueled by blood&r. As blood is often found inside living things, the best way to get it is with a &bBlood Extractor&r!"
+				""
+				"While held anywhere on your person, a Blood Extractor will &6fill with Blood when certain mobs are killed&r."
+				""
+				"If sufficiently full, using a Blood Extractor will &6pour a bucket of Blood on the ground&r."
+				""
+				"Blood Extractors can be combined with themselves as well as Dark Tanks to &6increase their capacity&r."
+			]
+			dependencies: ["44C1876CB5D7E185"]
+			id: "64DB83486BDF41E0"
+			tasks: [{
+				id: "14D0D47F6A11906F"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_extractor"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 5000
+					}
+					ForgeCaps: {
+						Parent: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+							capacity: 5000
+						}
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: [
+				"Good morning Class!"
+				""
+				"To get started in Evilcraft we need a very important gem. The &bDark Gem&r."
+				""
+				"I would suggest you head over to the &5Botania Class&r and look into getting an &6Orechid&r. This nifty flower will allow you to transmute stones into ores, including &bDark Ore&r."
+			]
+			dependencies: ["458348F2C81B8D6B"]
+			id: "44C1876CB5D7E185"
+			tasks: [{
+				id: "2390FBD959A44716"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_gem"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0CFD1ACE06DB1EDB"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_ore"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16
+			}]
+		}
+	]
+	quest_links: [ ]
+}
