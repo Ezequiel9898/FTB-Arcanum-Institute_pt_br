@@ -40,13 +40,13 @@ onEvent('player.logged_in', (event) => {
         player.give(
             Item.of(
                 'minecraft:bundle',
-                '{Items:[{Count:6b,id:"forbidden_arcanus:cherry_peach"},{Count:16b,id:"cnb:apple_slice"},{Count:16b,id:"minecraft:cookie"},{Count:4b,id:"hexcasting:sub_sandwich"}],RepairCost:0,display:{Name:\'{"text":"Lunch Bag"}\'}}'
+                '{Items:[{Count:6b,id:"forbidden_arcanus:cherry_peach"},{Count:16b,id:"cnb:apple_slice"},{Count:16b,id:"minecraft:cookie"},{Count:4b,id:"hexcasting:sub_sandwich"}],RepairCost:0,display:{Name:\'{"text":"Saco de comida"}\'}}'
             )
         )
         if (Object.keys(specialPlayers).includes(player.name.text.toLowerCase())) {
             specialPlayers[player.name.text.toLowerCase()].forEach((item) => {
                 player.give(item)
-                player.tell(`Welcome ${player.name.text}! To welcome you, we've given you a special item!`)
+                player.tell(`Welcome ${player.name.text}! Para recebê-lo, nós lhe demos um item especial!`)
             })
         }
     }
@@ -255,7 +255,7 @@ function portalBlockHandler(player) {
             case 'minecraft:the_end': {
                 if(!player.stages.has('beaten_witch')){
                     Utils.server.runCommandSilent(`execute as ${player.name.text} run ftbteamislands home`)
-                    player.tell(`I feel like i'm not ready to re-seal the witch yet...`)
+                    player.tell(`Acho que ainda não estou preparado para selar a bruxa mais uma vez...`)
                     return
                 }
                 player.sendData('roll_credits', { credits: 1 })
