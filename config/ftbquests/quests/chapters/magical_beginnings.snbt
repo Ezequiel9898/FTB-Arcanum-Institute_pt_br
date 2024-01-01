@@ -10,23 +10,23 @@
 	default_min_width: 300
 	quests: [
 		{
-			title: "Welcome to Arcanum Insitute"
+			title: "Bem-vindo ao Instituto Arcanum"
 			x: 0.0d
 			y: -7.9910714285714235d
 			shape: "pentagon"
-			subtitle: "Where the realms of magic and knowledge intertwine!"
+			subtitle: "Onde os reinos da magia e do conhecimento se entrelaçam!"
 			description: [
 				"Dear New Students,"
 				""
-				"It is with great honor that we extend an invitation for you to join this exclusive cadre of students, chosen for their exceptional potential and unyielding passion for the arcane. You stand among a select few who have been entrusted with the opportunity to embark on an extraordinary journey into the realms of magic."
+				"É com grande honra que estendemos um convite para você se juntar a este seleto grupo de estudantes, escolhidos por seu potencial excepcional e paixão inabalável pelo arcano. Você está entre um seleto grupo que foi confiado com a oportunidade de embarcar em uma jornada extraordinária pelos reinos da magia."
 				""
-				"Beyond our ancient walls lies a sanctuary where the secrets of ancient arts and the very essence of magic await your presence. Here, reality and imagination intertwine, offering you a canvas upon which to weave the tapestry of your magical aspirations and explore the depths of mystical knowledge."
+				"Além de nossas muralhas antigas reside um santuário onde os segredos das artes ancestrais e a essência da magia aguardam sua presença. Aqui, realidade e imaginação se entrelaçam, proporcionando-lhe uma tela para tecer as tramas de suas aspirações mágicas e explorar os mistérios do conhecimento místico."
 				""
-				"Your enrollment at Arcanum Institute marks the beginning of an extraordinary adventure. Assemble with your peers—an elite cohort of individuals who, like you, possess a unique spark destined to illuminate the path to greatness."
+				"Sua inscrição no Instituto Arcanum marca o início de uma jornada extraordinária. Junte-se aos seus colegas - um grupo de elite de indivíduos que, assim como você, possuem uma faísca única destinada a iluminar o caminho para a grandeza."
 				""
-				"Prepare to step into a world where wonder and enchantment await."
+				"Prepare-se para adentrar um mundo onde o encanto e o encantamento aguardam."
 				""
-				"With anticipation for the magical odyssey ahead;"
+				"Com antecipação para a odisseia mágica que está por vir;"
 				""
 				"Headmaster Tazz"
 			]
@@ -902,3 +902,4 @@
 	]
 	quest_links: [ ]
 }
+
