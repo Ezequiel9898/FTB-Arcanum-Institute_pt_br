@@ -1,0 +1,39 @@
+{
+    "biome.ftbai.school": "Inst School",
+    "biome.ftbai.outerskirts": "Outside School Fields",
+    "biome.ftbai.arena": "Celestial Colosseum",
+    "biome.ftbai.dorms_biome": "Student Dorms",
+    
+
+    "block.ftbai.botania_smelter": "Botanic Smelter",
+    "sdrp.dorms.in": "In The Elmenetal Dormatory",
+    "sdrp.dorms": "Elmenetal Dormatory",
+    
+    "sdrp.overworld.in": "In The Arcanum Institute",
+    "sdrp.overworld": "The Arcanum Institute",
+
+    "sdrp.the_end.in": "In The Celestial Colosseum",
+    "sdrp.the_end": "The Celestial Colosseum",
+
+    "sdrp.dungeons.in": "In The far realms",
+    "sdrp.dungeons": "The far realms",
+
+    "sdrp.dungeon_dim.in": "In Arcane Dungeons",
+    "sdrp.dungeon_dim": "Arcane Dungeons",
+
+    
+    
+    "tip.ftbai.version": "Did you know this pack was developed on Minecraft 1.18.2. Starting a 1.19 Server will always crash",
+    "tip.ftbai.goblins": "There are 4 Goblin Shops that can be found around the school!",
+    "tip.ftbai.dialogue": "Some quests do not have visible text until they're completed! Make sure to check them after you've done the task!",
+    "tip.ftbai.university": "Many chapters were loaned from FTB University 1.19! Give it a try next!",
+    "item.ftbai.codex_arsnouveau.desc": "A tale of a librarian",
+    "item.ftbai.codex_bloodmagic.desc": "The story of a prodigy",
+    "item.ftbai.codex_botania.desc": "A love story to be better than ...",
+    "item.ftbai.codex_final.desc": "Arcanum Institute's Backstory",
+    "item.ftbai.codex_malum.desc": "Test-Subject 1",
+    "item.ftbai.codex_occultism.desc": "Master of the Occult and Worldshaping",
+    "item.ftbai.codex_evilcraft.desc": "University of Evil, a tale of a genius",
+    "item.ftbai.lexxies_charm.desc": "Wicked Witch, just misunderstood...",
+    "item.ftbai.codex_goblin.desc": "Traders of Heart, Mischief And Gold."
+}
