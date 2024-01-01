@@ -1,9 +1,9 @@
 {
     "mods":[{"fileId":299606,"name":"AutoRegLib",
-"synopsis":"A library to ease menial tasks in mod development.",
+    "synopsis":"A library to ease menial tasks in mod development.",
     "icon":"https://media.forgecdn.net/avatars/49/546/636079312327917356.png",
-"curseSlug":"autoreglib",
-"curseProject":250363,
+    "curseSlug":"autoreglib",
+    "curseProject":250363,
     "curseFile":3642382,
     "stored":1650549227,
     "filename":"AutoRegLib-1.7-53.jar"},
