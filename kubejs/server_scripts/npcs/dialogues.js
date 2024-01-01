@@ -1,6 +1,6 @@
 const dialogues = {
     TheonlyTazz: [
-        'Welcome to FTB Wizzzzurd... Uhm... I mean the Arcanum Institute',
+        'Bem-vindo ao FTB Wizzzzurd... Quero dizer, ao Instituto Arcanum.',
     ],
     Ghostipedia: [' '],
     Troxarus: [
@@ -337,11 +337,11 @@ const dialogues = {
     'Prof. Jake': [
         "Welcome to the §6Beastmaster's class§r!\nI'm Professor Jake, and I'll be your teacher for this semester. Here you can get all the various Beasts and Animals you need for all the other Class",
     ],
-    'Introduction Zora': [
-        "Hello, I'm Zora, a Pixie of the Arcanum Institute. I'm here to help you get started on your magical journey. To get to the Dining Hall, you just follow the Path here.",
+    'Introdução Zora': [
+        "Olá, eu sou Zora, uma Fada do Instituto Arcanum. Estou aqui para ajudá-lo a começar sua jornada mágica. Para chegar à Sala de Jantar, basta seguir o Caminho aqui.",
     ],
     'Luminizer Zora': [
-        'To get to the Dining Hall, you can either take the §bLuminizer§r over there, or follow this scenic route!',
+        'Para chegar à Sala de Jantar, você pode usar o §bLuminizer§r que está ali ou seguir esta rota cênica!',
     ],
     'Dininghall Zora': [
         '\n§6All important dialogue is found in your Eccentric Tome!§r\nSome tasks do not have visible text until they are completed.\n§bOpen your Tome§r to the newly-completed task to read what the Teacher has to say!',
