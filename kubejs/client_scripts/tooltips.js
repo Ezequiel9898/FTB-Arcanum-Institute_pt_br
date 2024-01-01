@@ -50,9 +50,9 @@ onEvent('item.tooltip', (event) => {
 
 function eccentricTome(item, text) {
     if (item.nbt['eccentrictome:mods'].toString() == '{}') {
-        text.add(Component.string('Craft with mod books!').gray())
+        text.add(Component.string('Crie com livros de mods!').gray())
     } else {
-        text.add(Component.string('Punch to reset from book').gray())
-        text.add(Component.string('Drop while sneaking to remove book.').gray())
+        text.add(Component.string('Dê um soco para resetar a partir do livro.').gray())
+        text.add(Component.string('Solte enquanto está agachado para remover o livro.').gray())
     }
 }
