@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 1
 	filename: "map"
-	title: "Enchanted Map"
+	title: "Mapa Encantado"
 	icon: "minecraft:map"
 	disable_toast: true
 	default_quest_shape: "pentagon"
@@ -22,7 +22,7 @@
 	}]
 	quests: [
 		{
-			title: "Blood Magic Class"
+			title: "Classe do Blood Magic"
 			icon: "bloodmagic:altar"
 			tags: [
 				"closegui"
@@ -44,14 +44,14 @@
 			rewards: [{
 				id: "234DD2F2ED0DE4D0"
 				type: "custom"
-				title: "Teleport to Blood Magic Class"
+				title: "Teleporte para a Classe do Blood Magic"
 				icon: "bloodmagic:altar"
 				tags: ["bloodmagic"]
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Botania Class"
+			title: "Classe do Botania"
 			icon: "botania:mana_pool"
 			tags: [
 				"closegui"
@@ -60,7 +60,7 @@
 			disable_toast: true
 			x: -7.166666666666657d
 			y: 0.3154761904761969d
-			subtitle: "Miss LadyMaehem"
+			subtitle: "Senhorita LadyMaehem"
 			hide: true
 			can_repeat: true
 			id: "2ED82050D1E9FDAD"
@@ -73,13 +73,13 @@
 			rewards: [{
 				id: "063439730A73836D"
 				type: "custom"
-				title: "Teleport to Botania Class"
+				title: "Teleporte para a Classe do Botania"
 				icon: "botania:mana_pool"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Ars Nouveau Class"
+			title: "Classe do Ars Nouveau"
 			icon: "ars_nouveau:apprentice_spell_book"
 			tags: [
 				"closegui"
@@ -101,13 +101,13 @@
 			rewards: [{
 				id: "4E79652C4B6DECE3"
 				type: "custom"
-				title: "Teleport to Ars Nouveau Class"
+				title: "Teleporte para a Classe do Ars Nouveau"
 				icon: "ars_nouveau:archmage_spell_book"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Occultism Class"
+			title: "Classe do Occultism"
 			icon: "occultism:spirit_fire"
 			tags: [
 				"closegui"
@@ -130,13 +130,13 @@
 			rewards: [{
 				id: "1DFC6702E5ACB0A0"
 				type: "custom"
-				title: "Teleport to Occultism Class"
+				title: "Teleporte para a Classe do Occultism"
 				icon: "occultism:spirit_fire"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Hexerei Class"
+			title: "Classe do Hexerei"
 			icon: "hexerei:mixing_cauldron"
 			tags: [
 				"closegui"
@@ -158,13 +158,13 @@
 			rewards: [{
 				id: "3C5F0C243A175FEE"
 				type: "custom"
-				title: "Teleport to Hexerei Class"
+				title: "Teleporte para a Classe do Hexerei"
 				icon: "hexerei:mixing_cauldron"
 				auto: "invisible"
 			}]
 		}
 		{
-			title: "Dorms Portal"
+			title: "Portal dos Dormitórios"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -191,7 +191,7 @@
 			rewards: [{
 				id: "29E8BBE33D242C68"
 				type: "custom"
-				title: "Teleport to Dorms Portal"
+				title: "Teleporte para o Portal dos Dormitórios"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -203,7 +203,7 @@
 			}]
 		}
 		{
-			title: "Haaznek's Emporium"
+			title: "Empório de Haaznek"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -220,7 +220,7 @@
 			y: 2.0535714285714164d
 			shape: "pentagon"
 			subtitle: "#1"
-			description: ["Haaznek's Emporium, visit to unlock fast travel."]
+			description: ["Empório de Haaznek, visite para desbloquear viagem rápida."]
 			dependencies: ["3334104FB3F58B8F"]
 			hide: false
 			can_repeat: true
@@ -234,7 +234,7 @@
 			rewards: [{
 				id: "7499F1593CB70193"
 				type: "custom"
-				title: "Teleport to Goblin Shop"
+				title: "Teleporte para a Loja Goblin"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -274,7 +274,7 @@
 			rewards: [{
 				id: "2DC35C46D8018FF8"
 				type: "custom"
-				title: "Teleport to Goblin Shop"
+				title: "Teleporte para a Loja Goblin"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -286,7 +286,7 @@
 			}]
 		}
 		{
-			title: "Brobzagz Booties"
+			title: "Botinhas Brobzagz"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -315,7 +315,7 @@
 			rewards: [{
 				id: "68E7797EEB107FF8"
 				type: "custom"
-				title: "Teleport to Goblin Shop"
+				title: "Teleporte para a Loja Goblin"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -327,7 +327,7 @@
 			}]
 		}
 		{
-			title: "Zruzz's Pickles and stuff"
+			title: "Picles e Coisas do Zruzz"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -353,7 +353,7 @@
 			rewards: [{
 				id: "47B1FFE45699706E"
 				type: "custom"
-				title: "Teleport to Goblin Shop"
+				title: "Teleporte para a Loja Goblin"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -387,14 +387,14 @@
 				{
 					id: "7E959FB1BB78BFDA"
 					type: "custom"
-					title: "Go to Spawn"
+					title: "Vá para o Spawn"
 					icon: "minecraft:grass_block"
 					auto: "enabled"
 				}
 			]
 		}
 		{
-			title: "Ancient Runes Class"
+			title: "Classe de Runas Antigas"
 			icon: "hexcasting:artifact"
 			tags: [
 				"closegui"
@@ -416,7 +416,7 @@
 			rewards: [{
 				id: "0B7D361AD5D0608A"
 				type: "custom"
-				title: "Teleport to Ancient Runes Class"
+				title: "Teleporte para a Classe de Runas Antigas"
 				icon: {
 					id: "hexcasting:artifact"
 					Count: 1b
@@ -428,7 +428,7 @@
 			}]
 		}
 		{
-			title: "Roots \\& Nature's Aura Class"
+			title: "Classe de Raízes \\& Auras da Natureza"
 			icon: "rootsclassic:runic_tablet"
 			tags: [
 				"closegui"
@@ -450,7 +450,7 @@
 			rewards: [{
 				id: "167199215C1DD543"
 				type: "custom"
-				title: "Teleport to Roots \\& Nature's Aura Class"
+				title: "Teleporte para a Classe de Raízes \\& Aura da Natureza"
 				icon: "rootsclassic:runic_tablet"
 				auto: "enabled"
 			}]
@@ -459,13 +459,13 @@
 			x: -17.5d
 			y: -10.0d
 			description: [
-				"Welcome to the interactive map of the Arcanum Institute, the renowned center of magical learning and discovery!"
+				"Bem-vindo ao mapa interativo do Instituto Arcanum, renomado centro de aprendizado e descoberta mágica!"
 				""
-				"As you explore this wondrous institution, you will uncover its major key points and unlock hidden areas of knowledge."
+				"Conforme você explora esta maravilhosa instituição, descobrirá seus principais pontos-chave e desbloqueará áreas ocultas de conhecimento."
 				""
-				"Please keep in mind that some locations may be currently unavailable or concealed until you fulfill certain conditions or progress further in your journey."
+				"Por favor, tenha em mente que algumas localidades podem estar indisponíveis no momento ou ocultas até que você cumpra certas condições ou progrida mais em sua jornada."
 				""
-				"Let's embark on this adventure together!"
+				"Vamos embarcar nesta aventura juntos!"
 			]
 			size: 5.0d
 			min_width: 275
@@ -473,7 +473,7 @@
 			tasks: [{
 				id: "7F9C4E990D72B913"
 				type: "checkmark"
-				title: "Map Information"
+				title: "Informações do Mapa"
 			}]
 			rewards: [{
 				id: "0DC5787A5F710831"
@@ -482,7 +482,7 @@
 			}]
 		}
 		{
-			title: "Beast Masters"
+			title: "Mestre das Feras"
 			icon: "iceandfire:amphithere_skull"
 			tags: [
 				"closegui"
@@ -504,7 +504,7 @@
 			rewards: [{
 				id: "0A4B41FFFB3AAC60"
 				type: "custom"
-				title: "Teleport to Beast Masters"
+				title: "Teleporte para Mestre das Feras"
 				icon: "iceandfire:amphithere_skull"
 				tags: [
 					"beastmaster"
@@ -514,7 +514,7 @@
 			}]
 		}
 		{
-			title: "Dining Hall"
+			title: "Sala de Jantar"
 			icon: "decorative_blocks:chandelier"
 			tags: [
 				"closegui"
@@ -535,13 +535,13 @@
 			rewards: [{
 				id: "68B6988C73DB4C5D"
 				type: "custom"
-				title: "Teleport to Grand Hall"
+				title: "Teleporte para o Salão Principal"
 				icon: "decorative_blocks:chandelier"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Magic Mischief Emporium"
+			title: "Empório das Travessuras Mágicas"
 			icon: {
 				id: "minecraft:firework_rocket"
 				Count: 1b
@@ -557,7 +557,7 @@
 			x: -2.5d
 			y: -2.0d
 			shape: "pentagon"
-			description: ["The Magic Mischief Emporium, visit to unlock fast travel."]
+			description: ["O Empório de Travessuras Mágicas, visite para desbloquear viagem rápida."]
 			dependencies: ["08B62DE51ADF070A"]
 			hide: false
 			can_repeat: true
@@ -571,7 +571,7 @@
 			rewards: [{
 				id: "168030B3750794A9"
 				type: "custom"
-				title: "Teleport to Magic Mischief Emporium"
+				title: "Teleporte para o Empório de Travessuras Mágicas"
 				icon: {
 					id: "minecraft:firework_rocket"
 					Count: 1b
