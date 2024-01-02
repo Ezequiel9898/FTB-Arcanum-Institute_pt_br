@@ -188,7 +188,7 @@
 				{
 					id: "0EDDA1E50BB13A8C"
 					type: "custom"
-					title: "Vista as vestes do Pyromancer"
+					title: "Vista as vestes de Pyromancer"
 					icon: {
 						id: "arsarsenal:fire_robes"
 						Count: 1b
@@ -245,7 +245,7 @@
 				{
 					id: "7A569087B047AA14"
 					type: "custom"
-					title: "Vista as vestes do Aquamancer"
+					title: "Vista as vestes de Aquamancer"
 					icon: {
 						id: "arsarsenal:aqua_robes"
 						Count: 1b
@@ -288,7 +288,7 @@
 				{
 					id: "1661298547E7C4DF"
 					type: "custom"
-					title: "Vista as vestes do Aethermancer"
+					title: "Vista as vestes de Aeromancer"
 					icon: {
 						id: "arsarsenal:air_robes"
 						Count: 1b
@@ -331,7 +331,7 @@
 				{
 					id: "37A6A28572DA2153"
 					type: "custom"
-					title: "Vista as vestes do Geomancer"
+					title: "Vista as vestes de Geomancer"
 					icon: {
 						id: "arsarsenal:earth_robes"
 						Count: 1b
