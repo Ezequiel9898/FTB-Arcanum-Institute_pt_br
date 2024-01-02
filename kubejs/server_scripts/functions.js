@@ -10,7 +10,7 @@ function checkShop(event, shop, range, stage, questId) {
 		const kuPlayer = new Ku.Player(player);
 		player.stages.remove(stage)
 		server.runCommandSilent(`ftbquests change_progress ${player.name.text} reset ${questId}`)
-		if (stage != 'foodshop' && stage != 'mme') kuPlayer.showActionBar(`Leaving Shop`, Color.YELLOW, false)
+		if (stage != 'foodshop' && stage != 'mme') kuPlayer.showActionBar(`Saindo da Loja`, Color.YELLOW, false)
 	}
 }
 
