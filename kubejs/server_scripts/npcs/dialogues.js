@@ -1,6 +1,6 @@
 const dialogues = {
     TheonlyTazz: [
-        'Bem-vindo ao FTB Wizzzzurd... Quero dizer, ao Instituto Arcanum.',
+        'Bem-vindo ao FTB Wizzzzurd... Quero dizer, ao Instituto Arcanum',
     ],
     Ghostipedia: [' '],
     Troxarus: [
@@ -66,10 +66,10 @@ const dialogues = {
         'Walk with an open heart and mind, and you shall find despair and misery at every turn, for I am evil incarnate.',
     ],
     Goblin: [
-        'Well, well, well... What do you want, little mage?',
-        "If you're here to waste my time, I've got better things to do.",
-        'Oh, great, another bunch of magic-hungry youngsters. Try not to break anything.',
-        "Don't touch that! It's delicate, and I won't be responsible for your clumsiness.",
+        'Bem, bem, bem... O que você quer, pequeno mago?',
+        "Se você está aqui para desperdiçar meu tempo, tenho coisas melhores para fazer.",
+        'Oh, ótimo, mais um grupo de jovens ávidos por magia. Tentem não quebrar nada, por favor.',
+        "Por favor, não mexa nisso! É delicado e não quero ser responsabilizado pela sua falta de jeito.",
         'Hurry up and spit it out! What potion or trinket are you after, huh?',
         'Keep your wands in check! Last time, someone almost turned my shop into a toadstool forest.',
         "I suppose you want the latest fad potion. Bah! It's overpriced and overrated, if you ask me.",
@@ -78,7 +78,7 @@ const dialogues = {
         "Careful with that crystal ball! It's been giving me nothing but headaches all week.",
         'You think you can handle the power of that spellbook? Think again, kid.',
         "The Griefer? Oh, it's clever, that one. Keep your shiny baubles hidden, or it'll snatch 'em right up.",
-        "No refunds! Once you walk out that door, it's not my problem anymore.",
+        "Sem reembolsos! Assim que sair por aquela porta, o problema já não é mais meu.",
         "I'm not running a charity here. Pay up and be done with it.",
         "What's with the long faces? You act like finding a magic wand is a matter of life or death.",
         "That Everfrost Elixir might be cold, but don't expect it to soothe your petty complaints.",
@@ -337,20 +337,20 @@ const dialogues = {
     'Prof. Jake': [
         "Welcome to the §6Beastmaster's class§r!\nI'm Professor Jake, and I'll be your teacher for this semester. Here you can get all the various Beasts and Animals you need for all the other Class",
     ],
-    'Introdução Zora': [
-        "Olá, eu sou Zora, uma Fada do Instituto Arcanum. Estou aqui para ajudá-lo a começar sua jornada mágica. Para chegar à Sala de Jantar, basta seguir o Caminho aqui.",
+    'Introduction Zora': [
+        "Olá, eu sou Zora, uma Fada do Instituto Arcanum. Estou aqui para ajudá-lo a começar sua jornada mágica. Para chegar à Sala de Jantar, basta seguir este Caminho aqui.",
     ],
     'Luminizer Zora': [
-        'Para chegar à Sala de Jantar, você pode usar o §bLuminizer§r que está ali ou seguir esta rota cênica!',
+        'Para chegar à Sala de Jantar, você pode usar o §bLuminizer§r à esquerda ou seguir em frente.',
     ],
     'Dininghall Zora': [
-        '\n§6All important dialogue is found in your Eccentric Tome!§r\nSome tasks do not have visible text until they are completed.\n§bOpen your Tome§r to the newly-completed task to read what the Teacher has to say!',
+        '\n§6Todos os diálogos importantes estão no seu Tomo Excêntrico!§r\nAlgumas tarefas não têm texto visível até serem concluídas.\n§bAbra o seu Tomo§r na tarefa recém-concluída para ler o que o Professor tem a dizer!',
     ],
     'Dorm Zora': [
-        'This is the Dorms area! Just go through any of these Portals to get to your Dorms!',
+        'Esta é a área dos dormitórios! Basta atravessar qualquer um destes portais para acessar o seu alojamento!',
     ],
     'Goblin Zora': [
-        'This is the Goblin Trader! You can buy all sorts of magical items here! Be sure to check out the Mob Gate Pearls and the raw Metal Blocks if you want to get started on your magical journey!',
+        'Este é o Comerciante Goblin! Você pode comprar todos os tipos de itens mágicos aqui! Não deixe de conferir as Pérolas de Portal de Mobs e os Blocos de Metal bruto se quiser começar sua jornada mágica!',
     ],
     'Waypoint Zora': [
         'This Waypoint will show you the ways around the Arcanum Institute! There are plenty around. Some even have §bLuminizers§r to help you get around faster!',
