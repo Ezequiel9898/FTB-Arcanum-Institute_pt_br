@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 0
 	filename: "magical_beginnings"
-	title: "Orientation"
+	title: "Orientação"
 	icon: "ftbquests:book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -16,7 +16,7 @@
 			shape: "pentagon"
 			subtitle: "Onde os reinos da magia e do conhecimento se entrelaçam!"
 			description: [
-				"Dear New Students,"
+				"Caros Novos Estudantes,"
 				""
 				"É com grande honra que estendemos um convite para você se juntar a este seleto grupo de estudantes, escolhidos por seu potencial excepcional e paixão inabalável pelo arcano. Você está entre um seleto grupo que foi confiado com a oportunidade de embarcar em uma jornada extraordinária pelos reinos da magia."
 				""
@@ -28,7 +28,7 @@
 				""
 				"Com antecipação para a odisseia mágica que está por vir;"
 				""
-				"Headmaster Tazz"
+				"Diretor Tazz"
 			]
 			size: 1.5d
 			min_width: 300
@@ -36,7 +36,7 @@
 			tasks: [{
 				id: "01B362AF193C9F7B"
 				type: "location"
-				title: "Arrive at Arcanum Institute"
+				title: "Chegue ao Instituto Arcanum"
 				icon: {
 					id: "eccentrictome:tome"
 					Count: 1b
@@ -71,7 +71,7 @@
 			}]
 		}
 		{
-			title: "The Headmaster Would Like a Word"
+			title: "O Diretor Gostaria de Falar"
 			icon: {
 				id: "hexerei:witch_helmet"
 				Count: 1b
@@ -81,24 +81,24 @@
 			}
 			x: 2.0d
 			y: -8.0d
-			subtitle: "Find him at the Dining Hall"
+			subtitle: "Encontre-o na Sala de Jantar."
 			description: [
-				"Greetings, esteemed students of the &dArcanum Institute&r!"
+				"Saudações, estimados estudantes do &dInstituto Arcanum&r!"
 				""
-				"I am &6Grandmaster Tazz&r, the headmaster of this prestigious establishment. As we commence this academic term, it is my honor to acquaint you with the esteemed houses of Arcanum Institute. These correspond with the four elements of magic; Earth, Air Fire, and Water. "
+				"Sou &6Grão-Mestre Tazz&r, o diretor desta prestigiosa instituição. Ao iniciarmos este período acadêmico, é uma honra para mim apresentar-lhes as respeitáveis casas do Instituto Arcanum. Estas correspondem aos quatro elementos da magia: Terra, Ar, Fogo e Água. "
 				""
-				"Before you embark on the path of knowledge, you must &bselect an Element&r that resonates with your very essence."
+				"Antes de você embarcar no caminho do conhecimento, você deve &bescolher um Elemento&r que ressoe com a sua própria essência."
 				""
-				"The &2House of Earth&r stands as a bastion of unwavering strength and loyalty, a sanctuary for those whose spirits echo the resolute foundations of the earth itself."
+				"A &2Casa da Terra&r se ergue como um bastião de força inabalável e lealdade, um santuário para aqueles cujos espíritos ecoam as fundações decididas da própria terra."
 				""
-				"In contrast, the &eHouse of Air&r beckons to those who soar amidst the boundless skies of intellect and creativity, fostering freedom and curious minds."
+				"Em contraste, a &eCasa do Ar&r chama aqueles que voam pelos céus infinitos da intelectualidade e criatividade, promovendo liberdade e mentes curiosas."
 				""
-				"Turn your attention to the &4House of Fire&r—a forge for fervent spirits, kindling ambition, and the relentless pursuit of greatness."
+				"Volte sua atenção para a &4Casa do Fogo&r—uma forja para espíritos ardentes, estimulando ambição e a busca incansável pela grandeza."
 				""
-				"Lastly, the &9House of Water&r embodies adaptability and harmony, flowing with grace and intuition, navigating the ebbs and flows of the arcane."
+				"Por fim, a &9Casa da Água&r personifica a adaptabilidade e harmonia, fluindo com graça e intuição, navegando nas marés do arcano."
 				""
 				""
-				"This will &6decide your dorm, and the uniform you wear&r. Let your instincts guide you!"
+				"Essa escolha &6definirá seu dormitório e o uniforme que usará&r. Deixe seus instintos guiarem você!"
 			]
 			dependencies: ["68F3DB988DCED32C"]
 			hide_text_until_complete: true
@@ -107,7 +107,7 @@
 			tasks: [{
 				id: "7327163D1C50A050"
 				type: "location"
-				title: "Dining Hall"
+				title: "Sala de Jantar"
 				icon: "hexerei:candelabra"
 				dimension: "minecraft:overworld"
 				ignore_dimension: false
@@ -135,17 +135,17 @@
 			}]
 		}
 		{
-			title: "Finding Your Element"
+			title: "Encontrando o Seu Elemento"
 			icon: "ars_nouveau:ritual_open_portal"
 			x: 3.5d
 			y: -8.0d
-			subtitle: "Reach the student dormitories"
+			subtitle: "Chegue aos dormitórios dos estudantes"
 			description: [
-				"Your next task is to &bpick your dorm&r, a place of rest and study. Head &6north from the dining hall&r, and you'll find your own personal living space."
+				"Sua próxima missão é &bescolher o seu dormitório&r, um lugar para descanso e estudo. Siga para o &6norte a partir do refeitório&r e você encontrará o seu próprio espaço pessoal de moradia."
 				""
-				"There are &bfour options to choose from&r, corresponding to the four elements. Pass through any portal, and then you can make your choice."
+				"Há &bquatro opções disponíveis&r, cada uma correspondente a um dos quatro elementos. Após passar por qualquer portal, você poderá fazer a sua escolha."
 				""
-				"Once you've done so, take a moment to &6acquaint yourself&r with your dorm. Unlike the main school grounds, you are free to &6modify this area to your liking&r."
+				"Assim que fizer isso, reserve um momento para se &6familiarizar&r com o seu dormitório. Ao contrário dos terrenos principais da escola, você tem liberdade para &6personalizar esta área ao seu gosto&r."
 				""
 				"Use this space to acquire resources for classes, build structures, etc. Your dorm is yours to use in whatever way you see fit."
 			]
@@ -156,7 +156,7 @@
 			tasks: [{
 				id: "3BFB61F63605D632"
 				type: "observation"
-				title: "Look at a Dorm Portal"
+				title: "Olhe para um Portal do Dormitório"
 				icon: "ftbai:team_island_portal"
 				timer: 0L
 				observe_type: 1
@@ -169,10 +169,10 @@
 			tags: ["fire"]
 			x: 5.5d
 			y: -7.5d
-			subtitle: "Choose the Element of &cFire"
+			subtitle: "Escolha o Elemento do &cFogo"
 			description: [
 				"{image:ftbai:textures/ftbteamislands/fire.png width:523 height:395 align:1 fit:true}"
-				"The House of Fire blazes with passion and unyielding ambition. Students here are driven by fervor and courage, akin to the dancing flames that fuel their desire for greatness. "
+				"A Casa do Fogo arde com paixão e ambição inabalável. Os estudantes aqui são impulsionados pelo fervor e coragem, semelhantes às chamas dançantes que alimentam seu desejo pela grandeza. "
 			]
 			dependencies: ["1745088EC921245F"]
 			optional: true
@@ -180,7 +180,7 @@
 			tasks: [{
 				id: "4A376F1F9A1133B1"
 				type: "gamestage"
-				title: "Choose your Element"
+				title: "Escolha seu Elemento"
 				icon: "ars_nouveau:fire_essence"
 				stage: "stage_fire"
 			}]
@@ -188,7 +188,7 @@
 				{
 					id: "0EDDA1E50BB13A8C"
 					type: "custom"
-					title: "Don the Pyromancer's garb"
+					title: "Vista as vestes do Pyromancer"
 					icon: {
 						id: "arsarsenal:fire_robes"
 						Count: 1b
@@ -225,11 +225,11 @@
 			tags: ["water"]
 			x: 5.5d
 			y: -9.5d
-			subtitle: "Choose the Element of &bWater"
+			subtitle: "Escolha o Elemento da &bÁgua"
 			description: [
 				"{image:ftbai:textures/ftbteamislands/water.png width:523 height:395 align:1 fit:true}"
 				""
-				"In the House of Water, adaptability and harmony are the guiding principles. Students flow gracefully like serene rivers, embodying the fluidity and intuitive nature of their house. "
+				"Na Casa da Água, a adaptabilidade e a harmonia são os princípios orientadores. Os estudantes fluem graciosamente como rios serenos, personificando a fluidez e a natureza intuitiva da sua casa. "
 			]
 			dependencies: ["1745088EC921245F"]
 			optional: true
@@ -237,7 +237,7 @@
 			tasks: [{
 				id: "01E31688C7A36343"
 				type: "gamestage"
-				title: "Choose your Element"
+				title: "Escolha seu Elemento"
 				icon: "ars_nouveau:water_essence"
 				stage: "stage_water"
 			}]
@@ -245,7 +245,7 @@
 				{
 					id: "7A569087B047AA14"
 					type: "custom"
-					title: "Don the Aquamancer's garb"
+					title: "Vista as vestes do Aquamancer"
 					icon: {
 						id: "arsarsenal:aqua_robes"
 						Count: 1b
@@ -269,10 +269,10 @@
 			tags: ["air"]
 			x: 5.5d
 			y: -6.5d
-			subtitle: "Choose the Element of &eAir"
+			subtitle: "Escolha o Elemento do &eAr"
 			description: [
 				"{image:ftbai:textures/ftbteamislands/air.png width:523 height:395 align:1 fit:true}"
-				"Amidst the House of Air, curiosity and intellect are nurtured like gentle winds that carry the minds of its students to new heights. "
+				"Dentro da Casa do Ar, a curiosidade e o intelecto são cultivados como brisas suaves que elevam as mentes de seus estudantes a novos patamares. "
 			]
 			dependencies: ["1745088EC921245F"]
 			optional: true
@@ -280,7 +280,7 @@
 			tasks: [{
 				id: "4819652EFF5916BE"
 				type: "gamestage"
-				title: "Choose your Element"
+				title: "Escolha o seu Elemento"
 				icon: "ars_nouveau:air_essence"
 				stage: "stage_air"
 			}]
@@ -288,7 +288,7 @@
 				{
 					id: "1661298547E7C4DF"
 					type: "custom"
-					title: "Don the Aethermancer's garb"
+					title: "Vista as vestes do Aethermancer"
 					icon: {
 						id: "arsarsenal:air_robes"
 						Count: 1b
@@ -312,10 +312,10 @@
 			tags: ["earth"]
 			x: 5.5d
 			y: -8.5d
-			subtitle: "Choose the Element of &aEarth"
+			subtitle: "Escolha o Elemento da &aTerra"
 			description: [
 				"{image:ftbai:textures/ftbteamislands/earth.png width:523 height:395 align:1 fit:true}"
-				"In the House of Earth, resilience and steadfastness are virtues upheld above all else. Students find solace in the unyielding strength of the earth, mirroring their grounded nature. "
+				"Na Casa da Terra, a resiliência e a firmeza são virtudes valorizadas acima de tudo. Os estudantes encontram conforto na força inabalável da terra, refletindo sua natureza firme. "
 			]
 			dependencies: ["1745088EC921245F"]
 			optional: true
@@ -323,7 +323,7 @@
 			tasks: [{
 				id: "51296831E488CDE4"
 				type: "gamestage"
-				title: "Choose your Element"
+				title: "Escolha seu Elemento"
 				icon: "ars_nouveau:earth_essence"
 				stage: "stage_earth"
 			}]
@@ -331,7 +331,7 @@
 				{
 					id: "37A6A28572DA2153"
 					type: "custom"
-					title: "Don the Geomancer's garb"
+					title: "Vista as vestes do Geomancer"
 					icon: {
 						id: "arsarsenal:earth_robes"
 						Count: 1b
@@ -411,7 +411,7 @@
 			}]
 		}
 		{
-			title: "Up to No Good"
+			title: "Aprontando"
 			icon: {
 				id: "minecraft:filled_map"
 				Count: 1b
@@ -421,13 +421,13 @@
 			}
 			x: 1.0d
 			y: -9.5d
-			subtitle: "The Enchanted Map"
+			subtitle: "O Mapa Encantado"
 			description: [
-				"Dear Students of the Arcanum Institute,"
+				"Queridos Estudantes do Instituto Arcanum,"
 				""
-				"After several complaints from our students and staff over the number of new students who are lost and never heard from again, we have created an Interractive Map for your convenience. It can be found within your &6Quest Book&r."
+				"Após várias reclamações de nossos estudantes e equipe sobre o número de novos alunos que se perdem e nunca mais são encontrados, criamos um Mapa Interativo para sua conveniência. Ele pode ser encontrado dentro do seu &6Livro de Quests&r."
 				""
-				"[\"\",\"Click this \",{\"text\":\"[ Interactive Map ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F717A9CBD0A686A\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me the Map\"]}},\" to take you to it directly.\"]"
+				"[\"\",\"Clique neste \",{\"text\":\"[ Mapa Interativo ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F717A9CBD0A686A\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Mostrar o Mapa\"]}},\" para acessá-lo diretamente.\"]"
 			]
 			dependencies: ["68F3DB988DCED32C"]
 			id: "5901CF4BDE06D801"
@@ -902,4 +902,3 @@
 	]
 	quest_links: [ ]
 }
-
