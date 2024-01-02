@@ -16,7 +16,7 @@ const dialogues = {
         'You know, this bottle washed up here a little ways back. And now you come on by. Exciting day for me!',
     ],
     Bo: [
-        'Squawk! Welcome, young wizards and witches, to the halls of our enchanting school!',
+        'Squawk! Bem-vindos, jovens magos e bruxas, aos corredores de nossa encantadora escola!',
         'Flutter your wings and let your imagination soar as you embark on a journey of spells and sorcery!',
         'Polly wants a potion! Remember, the key to success is diligent practice, and a pinch of pixie dust.',
         'Attention, attention! The library is a treasure trove of knowledge. Delve inside and uncover the secrets of the arcane arts.',
@@ -335,7 +335,7 @@ const dialogues = {
         'Collect as many Gold as you can to earn extra lives!',
     ],
     'Prof. Jake': [
-        "Welcome to the §6Beastmaster's class§r!\nI'm Professor Jake, and I'll be your teacher for this semester. Here you can get all the various Beasts and Animals you need for all the other Class",
+        "Bem-vindo à classe do §6Mestre das Feras§r!\nEu sou o Professor Jake e serei seu professor neste semestre. Aqui você pode conseguir todas as diferentes Feras e Animais que você precisa para todas as outras disciplinas.",
     ],
     'Introduction Zora': [
         "Olá, eu sou Zora, uma Fada do Instituto Arcanum. Estou aqui para ajudá-lo a começar sua jornada mágica. Para chegar à Sala de Jantar, basta seguir este Caminho aqui.",
