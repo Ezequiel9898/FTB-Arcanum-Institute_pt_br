@@ -1,7 +1,7 @@
 {
 	id: "43D8E212DDB15D88"
 	group: ""
-	order_index: 4
+	order_index: 3
 	filename: "alwaysinvis"
 	title: "alwaysInvis"
 	icon: "minecraft:command_block"
@@ -20,7 +20,6 @@
 			}
 			x: -4.5d
 			y: -1.0d
-			dependencies: ["68F3DB988DCED32C"]
 			dependency_requirement: "one_completed"
 			can_repeat: true
 			id: "2AFEA361E308DCA6"
@@ -56,7 +55,7 @@
 				id: "61B8FFB2A87E0A1C"
 				type: "command"
 				auto: "invisible"
-				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+				command: "/title @p actionbar [{\"text\":\"Viagem Rápida Desbloqueada\",\"color\":\"yellow\"}]"
 			}]
 		}
 		{
@@ -85,7 +84,7 @@
 				id: "1B649D67D5EF6F73"
 				type: "command"
 				auto: "invisible"
-				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+				command: "/title @p actionbar [{\"text\":\"Viagem Rápida Desbloqueada\",\"color\":\"yellow\"}]"
 			}]
 		}
 		{
@@ -114,7 +113,7 @@
 				id: "56086789A8A2724E"
 				type: "command"
 				auto: "invisible"
-				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+				command: "/title @p actionbar [{\"text\":\"Viagem Rápida Desbloqueada\",\"color\":\"yellow\"}]"
 			}]
 		}
 		{
@@ -143,7 +142,7 @@
 				id: "15BD7BCACEA9ECF4"
 				type: "command"
 				auto: "invisible"
-				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+				command: "/title @p actionbar [{\"text\":\"Viagem Rápida Desbloqueada\",\"color\":\"yellow\"}]"
 			}]
 		}
 		{
@@ -859,14 +858,9 @@
 			rewards: [{
 				id: "22C913B5AC1F448E"
 				type: "command"
-				command: "/title @p actionbar [{\"text\":\"Fast Travel Unlocked\",\"color\":\"yellow\"}]"
+				command: "/title @p actionbar [{\"text\":\"Viagem Rápida Desbloqueada\",\"color\":\"yellow\"}]"
 			}]
 		}
 	]
-	quest_links: [{
-		linked_quest: "68F3DB988DCED32C"
-		x: -4.5d
-		y: -2.5d
-		id: "7DD043221A26E8C5"
-	}]
+	quest_links: [ ]
 }
