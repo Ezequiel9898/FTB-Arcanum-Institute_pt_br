@@ -815,7 +815,7 @@
 			}]
 		}
 		{
-			title: "How to use Luminizers"
+			title: "Como usar os Luminizers"
 			x: -13.5d
 			y: -6.5d
 			id: "44251E42A1E650B8"
@@ -830,7 +830,7 @@
 			rewards: [{
 				id: "18D3855FD9397774"
 				type: "command"
-				command: "/tellraw @p [\"\",\"[Modpack] You can find \",{\"text\":\"Luminizer Relays\",\"color\":\"aqua\"},\" scattered around campus! Right-click one, and it'll take you on a ride!\"]"
+				command: "/tellraw @p [\"\",\"[Modpack] Você pode encontrar \",{\"text\":\"Receptores de Luminizers\",\"color\":\"aqua\"},\" espalhados pelo campus! Clique com o botão direito em um deles e será levado para um passeio!\"]"
 			}]
 		}
 		{
