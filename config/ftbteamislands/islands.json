@@ -1,29 +1,29 @@
 [
     {
-      "name": "Ilhas Principais",
-      "author": "Equipe FTB",
-      "desc": "A equipe por trás de todos os packs?",
+      "name": "Principais Ilhas",
+       "author": "Equipe FTB",
+       "desc": "A equipe por trás de todos os pacotes?",
       "islands": [
         {
-          "name": "Zéfiro",
+          "name": "Zephyr Heights",
           "desc": "Ar Elemental",
           "structure": "air_dorm.nbt",
           "image": "ftbai:textures/ftbteamislands/air.png"
         },
         {
-            "name": "Paraíso Aquático",
+            "name": "Aqua Haven",
             "desc": "Água Elemental",
             "structure": "water_dorm.nbt",
             "image": "ftbai:textures/ftbteamislands/water.png"
         },
         {
-            "name": "Pico Ignis",
+            "name": "Ignis Peak",
             "desc": "Fogo Elemental",
             "structure": "fire_dorm.nbt",
             "image": "ftbai:textures/ftbteamislands/fire.png"
         },
         {
-          "name": "Crista da Terra",
+          "name": "Terra Crest",
           "desc": "Terra Elemental",
           "structure": "earth_dorm.nbt",
           "image": "ftbai:textures/ftbteamislands/earth.png"
