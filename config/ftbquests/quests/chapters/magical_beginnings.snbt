@@ -351,25 +351,25 @@
 			]
 		}
 		{
-			title: "Return to Campus"
+			title: "Retorne ao Campus"
 			icon: "decorative_blocks:chandelier"
 			x: 7.5d
 			y: -8.0d
-			subtitle: "Ready yourself for lessons"
+			subtitle: "Prepare-se para as aulas"
 			description: [
-				"Once you've settled in to your dorms, return to campus by &bpassing through the portal&r once again."
+				"Após se estabelecer em seus dormitórios, retorne ao campus &bpassando pelo portal&r mais uma vez."
 				""
-				"&cClasses must be done in a certain order.&r You can't just jump headfirst into the most difficult classes! Walk before you run!"
+				"As &caulas devem ser feitas em uma ordem específica.&r Você não pode simplesmente mergulhar de cabeça nas aulas mais difíceis! Aprenda a caminhar antes de correr!"
 				""
-				"[\"\",\"You can check the \",{\"text\":\"[ Progression ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30B1C2E28BD6FFAD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Progression quest chapter\"]}},\" chapter in your Quest Book to see \",{\"text\":\"what needs to be done in what order.\",\"color\":\"gold\"}]"
+				"[\"\",\"Você pode conferir o capítulo \",{\"text\":\"[ Progressão ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30B1C2E28BD6FFAD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Missões de Progressão\"]}},\" em seu Livro de Missões para saber \",{\"text\":\"o que precisa ser feito e em que ordem.\",\"color\":\"gold\"}]"
 				""
-				"[\"\",\"If you can't find a class, take a look on the \",{\"text\":\"[ Interactive Map ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F717A9CBD0A686A\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Show me the Map\"]}},\"! It'll lead you directly towards each class! Once you've been there once, you can also spend some experience to teleport to it directly!\"]"
+				"[\"\",\"Se não conseguir encontrar uma aula, consulte o \",{\"text\":\"[ Mapa Interativo ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F717A9CBD0A686A\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Mostrar o Mapa\"]}},\"! Ele o guiará diretamente para cada aula! Depois de ter visitado uma vez, você também pode gastar experiência para se teletransportar diretamente para lá!\"]"
 				""
-				"Your teachers are not just instructors but mentors, so actively engage in your classes and seek guidance."
+				"Seus professores não são apenas instrutores, mas mentores; portanto, participe ativamente de suas aulas e busque orientação."
 				""
-				"Embrace the challenges and push your boundaries in the pursuit of magical knowledge. Trust in yourself and your abilities. "
+				"Enfrente os desafios e vá além de seus limites na busca pelo conhecimento mágico. Confie em si mesmo e em suas habilidades. "
 				""
-				"If you ever need to return to your dorm you can always use the &e/ftbteamisland home&r command to teleport from anywhere."
+				"Se precisar retornar ao seu dormitório, você sempre pode usar o comando &e/ftbteamisland home&r para se teleportar de qualquer lugar."
 				""
 			]
 			dependencies: [
@@ -386,7 +386,7 @@
 			tasks: [{
 				id: "16F1544655E10F8C"
 				type: "checkmark"
-				title: "Understood!"
+				title: "Entendido!"
 			}]
 			rewards: [{
 				id: "7FE978E7327A5AC4"
@@ -437,7 +437,7 @@
 			}]
 		}
 		{
-			title: "Nature is Beautiful"
+			title: "A Natureza é Bela"
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -449,22 +449,22 @@
 			x: 8.0d
 			y: -10.5d
 			shape: "pentagon"
-			subtitle: "Meet Prof. Loneztar"
+			subtitle: "Conheça a Prof. Loneztar"
 			description: [
-				"&bProfessor Loneztar&r teaches the magics of &dNature's Aura&r and &dRoots&r."
+				"A &bProfessora Loneztar&r ensina as magias de &dNature's Aura&r e &dRoots&r."
 				""
-				"These arts have to do with &6harnessing the magics of nature&r in various ways. "
+				"Essas artes têm a ver com &6dominar as magias da natureza&r de várias maneiras."
 				""
-				"This class is located to &6the island's far north&r. A path can be found just before the Botanic Greenhouses."
+				"Esta aula está localizada no &6extremo norte da ilha&r. Um caminho pode ser encontrado logo antes dos Jardins Botânicos."
 				""
-				"You will proceed to the &eNature's Blessing&r chapter from here to begin your coursework."
+				"Agora, você avançará para o capítulo &eBênção da Natureza&r para iniciar seu curso."
 			]
 			dependencies: ["63368A007664E4B5"]
 			id: "16DC22DAA2E8D566"
 			tasks: [{
 				id: "7F6678AA7E711958"
 				type: "location"
-				title: "Meet Prof. Loneztar at the fields to the North"
+				title: "Encontre a Prof. Loneztar nos campos ao norte."
 				icon: {
 					id: "minecraft:player_head"
 					Count: 1b
@@ -498,25 +498,25 @@
 				type: "command"
 				title: "/tell"
 				auto: "invisible"
-				command: "/tellraw @p [\"\",\"[Modpack] Unlocked the \",{\"text\":\"[ Nature's Blessing ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2D203BFFF0EB7337\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open chapter\"]}},\" quest chapter!\"]"
+				command: "/tellraw @p [\"\",\"[Modpack] Capítulo da missão \",{\"text\":\"[ Bênção da Natureza ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2D203BFFF0EB7337\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Abrir Capítulo\"]}},\" Desbloqueado!\"]"
 			}]
 		}
 		{
-			title: "Fabrication Magique"
+			title: "Fabricação Mágica"
 			icon: "arsomega:arcane_book"
 			disable_toast: true
 			x: 9.5d
 			y: -9.5d
 			shape: "pentagon"
-			subtitle: "Meet Prof. Regen"
+			subtitle: "Conheça o Prof. Regen"
 			description: [
-				"&bProfessor Regen&r teaches the magics of &dArs Nouveau&r."
+				"O &bProfessor Regen&r ensina as magias do &dArs Nouveau&r."
 				""
-				"These magics are &6unusually malleable&r, allowing the intrepid magician to &6create their own spells&r!"
+				"Essas magias são &6surpreendentemente maleáveis&r, permitindo ao mágico intrépido &6criar seus próprios feitiços&r!"
 				""
-				"This class is located &6through the library and down the staircase&r."
+				"Esta aula está localizada &6através da biblioteca e descendo a escadaria&r."
 				""
-				"Proceed to the &eFabrication Magique&r chapter to begin your coursework."
+				"Prossiga para o capítulo &eFabricação Mágica&r para iniciar seu curso."
 			]
 			dependencies: ["63368A007664E4B5"]
 			min_width: 250
@@ -524,7 +524,7 @@
 			tasks: [{
 				id: "09A3EEED88E2627F"
 				type: "location"
-				title: "Meet Prof. R3GEN under the library"
+				title: "Encontre o Prof. R3GEN sob a biblioteca."
 				icon: {
 					id: "minecraft:player_head"
 					Count: 1b
@@ -558,11 +558,11 @@
 				type: "command"
 				title: "tell"
 				auto: "invisible"
-				command: "/tellraw @p [\"\",\"[Modpack] Unlocked the \",{\"text\":\"[ Fabrication Magique ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ftbquests open_book 5DD2F65DABF3914C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Open quest\"]}},\" quest chapter!\"]"
+				command: "/tellraw @p [\"\",\"[Modpack] Capítulo da missão \",{\"text\":\"[ Fabricação Mágica ]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ftbquests open_book 5DD2F65DABF3914C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Abrir Capítulo\"]}},\" Desbloqueado!\"]"
 			}]
 		}
 		{
-			title: "The Dark Arts"
+			title: "Artes das Trevas"
 			icon: {
 				id: "hexerei:book_of_shadows"
 				Count: 1b
@@ -572,15 +572,15 @@
 			x: 10.0d
 			y: -8.0d
 			shape: "pentagon"
-			subtitle: "Meet Prof. Howser"
+			subtitle: "Conheça o Prof. Howser"
 			description: [
-				"&bProfessor Howser&r teaches the magics of &dEvilCraft&r and &dHexerei&r."
+				"O &bProfessor Howser&r ensina as magias do &dEvilCraft&r e &dHexerei&r."
 				""
-				"These dark arts have to with &6harnessing the power of blood&r, as well as the classic &6hedge witch arts&r."
+				"Essas artes sombrias estão relacionadas com o &6domínio do poder do sangue&r, assim como as clássicas &6artes da bruxaria&r."
 				""
-				"This class is located in the &6south wall of the courtyard&r."
+				"Esta aula está localizada na &6parede sul do pátio&r."
 				""
-				"Make your way to &eThe Dark Arts&r chapter to start coursework."
+				"Dirija-se ao capítulo &eArtes das Trevas&r para iniciar o curso."
 			]
 			dependencies: ["63368A007664E4B5"]
 			min_width: 250
@@ -588,7 +588,7 @@
 			tasks: [{
 				id: "55D838A6911A3351"
 				type: "location"
-				title: "Find Prof. Howser south of the courtyard"
+				title: "Encontre o Prof. Howser ao sul do pátio."
 				icon: {
 					id: "minecraft:player_head"
 					Count: 1b
@@ -619,21 +619,21 @@
 			}]
 		}
 		{
-			title: "Magical Flowers"
+			title: "Flores Mágicas"
 			icon: "botania:lexicon"
 			disable_toast: true
 			x: 9.5d
 			y: -6.5d
 			shape: "pentagon"
-			subtitle: "Meet Lady Maehem"
+			subtitle: "Conheça a Senhorita LadyMaehem"
 			description: [
-				"&bLady Maehem&r teaches the art of &dBotania&r."
+				"A &bLadyMaehem&r ensina a arte do &dBotania&r."
 				""
-				"These magics use the &6power of magic flowers&r to great effect."
+				"Essas magias utilizam o &6poder de flores mágicas&r de forma grandiosa."
 				""
-				"This class is located at the &6top of the left greenhouse&r upon approach."
+				"Esta aula está localizada no &6topo da estufa esquerda&r ao se aproximar."
 				""
-				"Head to the &eBotanical Gardens&r chapter to begin coursework."
+				"Dirija-se ao capítulo &eJardins Botânicos&r para começar o curso."
 			]
 			dependencies: ["63368A007664E4B5"]
 			min_width: 250
@@ -641,7 +641,7 @@
 			tasks: [{
 				id: "5D81152883A3063E"
 				type: "location"
-				title: "Meet Prof. LadyMayhaem in the southern greenhouse"
+				title: "Encontre a Professora LadyMayhaem na estufa sul"
 				icon: {
 					id: "minecraft:player_head"
 					Count: 1b
@@ -672,7 +672,7 @@
 			}]
 		}
 		{
-			title: "Blood and Sacrifice"
+			title: "Sangue e Sacrifício"
 			icon: {
 				id: "bloodmagic:experiencebook"
 				Count: 1b
@@ -684,15 +684,15 @@
 			x: 8.0d
 			y: -5.5d
 			shape: "pentagon"
-			subtitle: "Meet Prof. Saereth"
+			subtitle: "Conheça o Prof. Saereth"
 			description: [
-				"&bProfessor Saereth&r teaches the art of &dBlood Magic&r."
+				"O &bProfessor Saereth&r ensina a arte da &dMagia de Sangue&r."
 				""
-				"These magics take advantage of the &6innate power of sacrifice&r."
+				"Essas magias aproveitam o &6poder inato do sacrifício&r."
 				""
-				"This class is located in the &6north wall of the courtyard, on the second floor&r."
+				"Esta aula está localizada no &6muro norte do pátio, no segundo andar&r."
 				""
-				"Proceed to the &eBlood and Sacrifice&r chapter to begin coursework."
+				"Prossiga para o capítulo &eSangue e Sacrifício&r para começar o curso."
 			]
 			dependencies: ["63368A007664E4B5"]
 			min_width: 250
@@ -700,7 +700,7 @@
 			tasks: [{
 				id: "74FD8CE7E8C2109D"
 				type: "location"
-				title: "Meet Prof. Saereth on the northern courtyard wall's second floor"
+				title: "Encontre o Prof. Saereth no segundo andar da parede do pátio norte"
 				icon: {
 					id: "minecraft:player_head"
 					Count: 1b
