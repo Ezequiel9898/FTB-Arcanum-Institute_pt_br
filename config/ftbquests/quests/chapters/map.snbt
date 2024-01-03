@@ -22,7 +22,7 @@
 	}]
 	quests: [
 		{
-			title: "Classe do Blood Magic"
+			title: "Aula do Blood Magic"
 			icon: "bloodmagic:altar"
 			tags: [
 				"closegui"
@@ -44,14 +44,14 @@
 			rewards: [{
 				id: "234DD2F2ED0DE4D0"
 				type: "custom"
-				title: "Teleporte para a Classe do Blood Magic"
+				title: "Teleporte para a Aula do Blood Magic"
 				icon: "bloodmagic:altar"
 				tags: ["bloodmagic"]
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Classe do Botania"
+			title: "Aula do Botania"
 			icon: "botania:mana_pool"
 			tags: [
 				"closegui"
@@ -73,13 +73,13 @@
 			rewards: [{
 				id: "063439730A73836D"
 				type: "custom"
-				title: "Teleporte para a Classe do Botania"
+				title: "Teleporte para a Aula do Botania"
 				icon: "botania:mana_pool"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Classe do Ars Nouveau"
+			title: "Aula do Ars Nouveau"
 			icon: "ars_nouveau:apprentice_spell_book"
 			tags: [
 				"closegui"
@@ -101,13 +101,13 @@
 			rewards: [{
 				id: "4E79652C4B6DECE3"
 				type: "custom"
-				title: "Teleporte para a Classe do Ars Nouveau"
+				title: "Teleporte para a Aula do Ars Nouveau"
 				icon: "ars_nouveau:archmage_spell_book"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Classe do Occultism"
+			title: "Aula do Occultism"
 			icon: "occultism:spirit_fire"
 			tags: [
 				"closegui"
@@ -130,13 +130,13 @@
 			rewards: [{
 				id: "1DFC6702E5ACB0A0"
 				type: "custom"
-				title: "Teleporte para a Classe do Occultism"
+				title: "Teleporte para a Aula do Occultism"
 				icon: "occultism:spirit_fire"
 				auto: "enabled"
 			}]
 		}
 		{
-			title: "Classe do Hexerei"
+			title: "Aula do Hexerei"
 			icon: "hexerei:mixing_cauldron"
 			tags: [
 				"closegui"
@@ -158,7 +158,7 @@
 			rewards: [{
 				id: "3C5F0C243A175FEE"
 				type: "custom"
-				title: "Teleporte para a Classe do Hexerei"
+				title: "Teleporte para a Aula do Hexerei"
 				icon: "hexerei:mixing_cauldron"
 				auto: "invisible"
 			}]
@@ -394,7 +394,7 @@
 			]
 		}
 		{
-			title: "Classe de Runas Antigas"
+			title: "Aula de Runas Antigas"
 			icon: "hexcasting:artifact"
 			tags: [
 				"closegui"
@@ -416,7 +416,7 @@
 			rewards: [{
 				id: "0B7D361AD5D0608A"
 				type: "custom"
-				title: "Teleporte para a Classe de Runas Antigas"
+				title: "Teleporte para a Aula de Runas Antigas"
 				icon: {
 					id: "hexcasting:artifact"
 					Count: 1b
@@ -428,7 +428,7 @@
 			}]
 		}
 		{
-			title: "Classe de Raízes \\& Auras da Natureza"
+			title: "Aula do Nature's Aura \& Roots"
 			icon: "rootsclassic:runic_tablet"
 			tags: [
 				"closegui"
@@ -450,7 +450,7 @@
 			rewards: [{
 				id: "167199215C1DD543"
 				type: "custom"
-				title: "Teleporte para a Classe de Raízes \\& Aura da Natureza"
+				title: "Teleporte para a Aula do Nature's Aura \& Roots"
 				icon: "rootsclassic:runic_tablet"
 				auto: "enabled"
 			}]
@@ -482,7 +482,7 @@
 			}]
 		}
 		{
-			title: "Mestre das Feras"
+			title: "Beastmaster"
 			icon: "iceandfire:amphithere_skull"
 			tags: [
 				"closegui"
@@ -504,7 +504,7 @@
 			rewards: [{
 				id: "0A4B41FFFB3AAC60"
 				type: "custom"
-				title: "Teleporte para Mestre das Feras"
+				title: "Teleporte para Beastmaster"
 				icon: "iceandfire:amphithere_skull"
 				tags: [
 					"beastmaster"

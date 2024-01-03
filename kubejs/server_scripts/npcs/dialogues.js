@@ -335,7 +335,7 @@ const dialogues = {
         'Collect as many Gold as you can to earn extra lives!',
     ],
     'Prof. Jake': [
-        "Bem-vindo à classe do §6Mestre das Feras§r!\nEu sou o Professor Jake e serei seu professor neste semestre. Aqui você pode conseguir todas as diferentes Feras e Animais que você precisa para todas as outras disciplinas.",
+        "Bem-vindo à Aula do §6Beastmaster§r!\nEu sou o Professor Jake e serei seu professor neste semestre. Aqui você pode conseguir todas as diferentes Feras e Animais que você precisa para todas as outras disciplinas.",
     ],
     'Introduction Zora': [
         "Olá, eu sou Zora, uma Fada do Instituto Arcanum. Estou aqui para ajudá-lo a começar sua jornada mágica. Para chegar à Sala de Jantar, basta seguir este Caminho aqui.",
