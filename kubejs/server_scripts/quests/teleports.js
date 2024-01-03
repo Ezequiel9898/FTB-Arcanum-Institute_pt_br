@@ -101,7 +101,7 @@ onEvent('ftbquests.completed', (event) => {
             if (classRoom) {
                 let kuPlayer = new Ku.Player(event.player)
                 kuPlayer.showActionBar(
-                    `Entering ${classRoom} Class`,
+                    `Entrando na classe do ${classRoom}`,
                     Color.YELLOW,
                     false
                 )
