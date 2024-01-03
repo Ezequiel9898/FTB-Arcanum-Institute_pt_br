@@ -1,3 +1,7 @@
+(Discord)[https://discord.gg/N7tVmYgNsr]
+
+Como baixar:
+
 1. Instale a tradução clicando [aqui](https://github.com/Ezequiel9898/FTB-Arcanum-Institute_pt_br/archive/refs/heads/main.zip).
 
 2. Após o download, descompacte o arquivo .zip.
