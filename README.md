@@ -1,4 +1,4 @@
-[Discord](https://discord.gg/N7tVmYgNsr)
+Discord: [Aqui](https://discord.gg/N7tVmYgNsr)
 
 Como baixar:
 
