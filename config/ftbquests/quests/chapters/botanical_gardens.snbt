@@ -3,7 +3,7 @@
 	group: "0960D5B8A7FB00EA"
 	order_index: 1
 	filename: "botanical_gardens"
-	title: "Botanical Gardens"
+	title: "Jardins Botânicos"
 	icon: "botania:natura_pylon"
 	subtitle: ["Botania"]
 	default_quest_shape: ""
