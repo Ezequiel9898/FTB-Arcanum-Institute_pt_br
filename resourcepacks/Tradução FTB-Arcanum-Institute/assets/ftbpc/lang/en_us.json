@@ -1,0 +1,5 @@
+{
+  "commands.place.jigsaw.failed": "Failed to generate jigsaw",
+  "commands.place.jigsaw.invalid": "There is no template pool with type \"%s\"",
+  "commands.place.jigsaw.success": "Generated jigsaw at %s, %s, %s"
+}

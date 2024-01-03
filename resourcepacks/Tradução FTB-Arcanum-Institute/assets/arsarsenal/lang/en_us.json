@@ -1,0 +1,34 @@
+{
+  "itemGroup.arsarsenal": "Ars Arsenal",
+  "item.arsarsenal.source_steel_helmet": "Capacete de Aço de Mana",
+  "item.arsarsenal.source_steel_chestplate": "Peitoral de Aço de Mana",
+  "item.arsarsenal.source_steel_leggings": "Calças de Aço de Mana",
+  "item.arsarsenal.source_steel_boots": "Botas de Aço de Mana",
+  "item.arsarsenal.source_steel_axe": "Machado de Aço de Mana",
+  "item.arsarsenal.source_steel_pickaxe": "Picareta de Aço de Mana",
+  "item.arsarsenal.source_steel_ingot": "Barra de Aço de Mana",
+
+  "item.arsarsenal.sigil_of_pyromancy": "Signo de Pyromancia",
+  "item.arsarsenal.fire_hat": "Chapéu de Pyromancer",
+  "item.arsarsenal.fire_robes": "Túnica de Pyromancer",
+  "item.arsarsenal.fire_leggings": "Calças de Pyromancer",
+  "item.arsarsenal.fire_boots": "Botas de Pyromancer",
+
+  "item.arsarsenal.sigil_of_aquamancy": "Signo de Aquamancia",
+  "item.arsarsenal.aqua_hat": "Chapéu de Aquamancer",
+  "item.arsarsenal.aqua_robes": "Túnica de Aquamancer",
+  "item.arsarsenal.aqua_leggings": "Calças de Aquamancer",
+  "item.arsarsenal.aqua_boots": "Botas de Aquamancer",
+
+  "item.arsarsenal.sigil_of_geomancy": "Signo de Geomancia",
+  "item.arsarsenal.earth_hat": "Chapéu de Geomancer",
+  "item.arsarsenal.earth_robes": "Túnica de Geomancer",
+  "item.arsarsenal.earth_leggings": "Calças de Geomancer",
+  "item.arsarsenal.earth_boots": "Botas de Geomancer",
+
+  "item.arsarsenal.sigil_of_aethermancy": "Signo de Aeromancia",
+  "item.arsarsenal.air_hat": "Chapéu de Aeromancer",
+  "item.arsarsenal.air_robes": "Túnica de Aeromancer",
+  "item.arsarsenal.air_leggings": "Calças de Aeromancer",
+  "item.arsarsenal.air_boots": "Botas de Aeromancer"
+}

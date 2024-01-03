@@ -1,0 +1,37 @@
+Trocar com um myrmex � um neg�cio
+lucrativo. Oper�rias geralmente 
+trocam itens de baixa qualidade, mas 
+est�o dispostas a trocar alguma resina
+por sendimentos e ocasionalmente 
+gemas. Soldados ir�o trocar por 
+itens de mobs comuns, as Sentinelas 
+por itens mais raros ou venenosos. 
+Monarcas ir�o trocar por artefatos e 
+ingredientes alqu�micos. Rainhas
+exclusivamente oferecem ovos pelas 
+trocas.
+
+
+
+
+B�culos Myrmex podem ser usados
+para modificar a estrutura das
+col�nias. Ao interagir com um
+
+myrmex enquanto segura um b�culo
+ir� vincul�-lo � sua col�nia.  
+Enquanto usa-lo, voc� poder� 
+deletar certas salas da col�nia e
+interromper a reprodu��o da rainha. 
+Usando o b�culo enquanto se esgueira, 
+voc� poder� adicionar novas salas na
+sua posi��o. S� � poss�vel utilizar
+esse b�culo se sua reputa��o for
+igual ou maior que 75.
+
+Ovos de myrmex s� podem eclodir no
+subterr�neo. Um ovo de rainha, quando
+chocado no subsolo pr�ximo do jogador,
+se unir� � ele, e a col�nia que se
+formar� a seguir ter� um opini�o 
+permanente de valor 100.
