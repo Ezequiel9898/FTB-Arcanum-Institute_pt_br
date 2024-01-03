@@ -830,7 +830,7 @@
 			rewards: [{
 				id: "18D3855FD9397774"
 				type: "command"
-				command: "/tellraw @p [\"\",\"[Modpack] Você pode encontrar \",{\"text\":\"Receptores de Luminizers\",\"color\":\"aqua\"},\" espalhados pelo campus! Clique com o botão direito em um deles e será levado para um passeio!\"]"
+				command: "/tellraw @p [\"\",\"[Modpack] Você pode encontrar \",{\"text\":\"Luminizers\",\"color\":\"aqua\"},\" espalhados pelo campus! Clique com o botão direito em um deles e será levado para um passeio!\"]"
 			}]
 		}
 		{
