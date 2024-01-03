@@ -1,0 +1,209 @@
+{
+  "version": 3,
+  "location": "ftbai:botania_smelter",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "botania:glimmering_livingwood",
+          "meta": 1
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "mana_smelt",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "A@A",
+        "B B"
+      ],
+      [
+        "CGC",
+        "DEF"
+      ],
+      [
+        "ACA",
+        "B B"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "botania:livingrock_bricks"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "ftbai:botania_smelter",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "botania:floating_exoflame"
+          }
+        ],
+        "type": "blocks"
+      },
+      "item": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN",
+        "slotName": "item"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "botania:livingwood"
+          },
+          {
+            "id": "minecraft:hopper"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "multiblocked:pedestal"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 2,
+        "maxCount": 2,
+        "previewCount": 2,
+        "slotName": "item"
+      },
+      "mana": {
+        "capability": "bot_mana",
+        "type": "capability",
+        "slotName": "mana"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "botania:mana_pool"
+          },
+          {
+            "id": "botania:fabulous_pool"
+          },
+          {
+            "id": "botania:diluted_pool"
+          },                    
+          {
+            "id": "botania:creative_pool"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "slotName": "mana"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT",
+        "slotName": "item_out"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "botania:livingrock_bricks"
+          },
+          {
+            "id": "botania:alchemy_catalyst"
+          },
+          {
+            "id": "botania:conjuration_catalyst"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "item",
+        "D"
+      ],
+      "E": [
+        "mana",
+        "E"
+      ],
+      "F": [
+        "D",
+        "item_out"
+      ],
+      "G": [
+        "G"
+      ]
+    }
+  }
+}
