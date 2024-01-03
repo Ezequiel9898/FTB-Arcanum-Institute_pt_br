@@ -8,7 +8,7 @@
 
 3. Abra a pasta que foi extraída.
 
-4. Dentro dessa pasta, você encontrará outra pasta abra ela.
+4. Dentro dessa pasta, você encontrará outra pasta. abra ela.
 
 5. Selecione e copie o conteúdo.
 
