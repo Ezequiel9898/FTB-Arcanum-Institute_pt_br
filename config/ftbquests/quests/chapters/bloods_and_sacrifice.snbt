@@ -3,7 +3,7 @@
 	group: "0960D5B8A7FB00EA"
 	order_index: 2
 	filename: "bloods_and_sacrifice"
-	title: "Bloods and Sacrifice"
+	title: "Sangue e Sacrifício"
 	icon: "bloodmagic:altar"
 	subtitle: ["Blood Magic"]
 	default_quest_shape: ""
@@ -1488,7 +1488,7 @@
 			]
 		}
 		{
-			title: "Blood and Sacrifice"
+			title: "Sangue e Sacrifício"
 			icon: {
 				id: "bloodmagic:experiencebook"
 				Count: 1b
@@ -1571,7 +1571,7 @@
 					id: "217269F5B333DFF6"
 					type: "command"
 					auto: "invisible"
-					command: "/title @p title {\"text\":\"Welcome to BloodMagic, \"color\":\"red\"}"
+					command: "/title @p title {\"text\":\"Bem-vindo à BloodMagic. \"color\":\"red\"}"
 					silent: true
 				}
 				{
