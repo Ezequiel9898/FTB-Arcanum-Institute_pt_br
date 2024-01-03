@@ -3,7 +3,7 @@
 	group: "0960D5B8A7FB00EA"
 	order_index: 3
 	filename: "hexerei"
-	title: "The Dark Arts"
+	title: "Artes das Trevas"
 	icon: {
 		id: "hexerei:mahogany_broom"
 		Count: 1b
@@ -993,7 +993,7 @@
 			}]
 		}
 		{
-			title: "The Dark Arts"
+			title: "Artes das Trevas"
 			icon: {
 				id: "hexerei:book_of_shadows"
 				Count: 1b
