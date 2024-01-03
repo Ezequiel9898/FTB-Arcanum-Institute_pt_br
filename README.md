@@ -18,4 +18,4 @@
    (Open > Instance folder)
 ![Screenshot_7](https://github.com/Ezequiel9898/FTB-Arcanum-Institute_pt_br/assets/106291086/45611604-3428-4866-bf89-4cf2d58a23fd)
 
-8. Cole o conteúdo que foi copiado anteriormente dentro desta pasta(Pode substituir tudo).
+8. Cole o conteúdo que foi copiado anteriormente dentro desta pasta (Pode substituir tudo).
