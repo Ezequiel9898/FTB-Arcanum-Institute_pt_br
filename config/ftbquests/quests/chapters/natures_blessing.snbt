@@ -3,7 +3,7 @@
 	group: "0960D5B8A7FB00EA"
 	order_index: 5
 	filename: "natures_blessing"
-	title: "Nature's Blessing"
+	title: "Bênção da Natureza"
 	icon: {
 		id: "patchouli:guide_book"
 		Count: 1b
