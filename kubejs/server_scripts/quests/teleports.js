@@ -89,8 +89,8 @@ onEvent('ftbquests.completed', (event) => {
                     tp_loc = FTB_AI_CONSTS.tp.shopTiers.four
                     break
                 case 'goblin_shop':
-                    title(event.player.name.text, 'Welcome')
-                    subtitle(event.player.name.text, 'to the Goblin Shop')
+                    title(event.player.name.text, 'Bem-vindo')
+                    subtitle(event.player.name.text, 'à Loja Goblin')
                     break
                 case 'mme_tp':
                     tp_loc = FTB_AI_CONSTS.tp.mme
