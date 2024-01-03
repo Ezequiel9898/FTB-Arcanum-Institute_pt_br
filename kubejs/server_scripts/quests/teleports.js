@@ -37,7 +37,7 @@ onEvent('ftbquests.completed', (event) => {
                     classRoom = 'Occultism'
                     break
                 case 'spellcasting':
-                    classRoom = 'Spellcasting'
+                    classRoom = 'Conjuração de Feitiços'
                     break
                 //case 'elemental':       classRoom = 'Elemental';break
                 case 'beastmaster':
