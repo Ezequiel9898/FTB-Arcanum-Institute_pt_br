@@ -50,7 +50,7 @@ function fishermanDialog(event) {
     }
 
     player.tell(
-        `<Fisherman> Yo! ${player.name.text}! You seem to be in a heap of trouble, but this is all I can give you.`
+        `<Fisherman> Oi! ${player.name.text}! Você parece estar em maus lençóis, mas isso é tudo que posso te dar.`
     )
 
     player.stages.add('fairy_obtained')
