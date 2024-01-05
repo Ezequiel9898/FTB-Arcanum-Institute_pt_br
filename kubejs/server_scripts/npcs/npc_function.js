@@ -12,7 +12,7 @@ onEvent('item.entity_interact', (event) => {
         if (name == key && player.stages.has(codex_stages[key])) {
             let index = player.inventory.find(`ftbai:${codex_stages[key]}`)
             if(index != -1) return
-            player.tell(`Você perdeu seu Codex? Aqui, pegue um novo!`)
+            player.tell(`Você perdeu seu Códice? Aqui, pegue um novo!`)
             player.give(`ftbai:${codex_stages[key]}`)
             return
         }
