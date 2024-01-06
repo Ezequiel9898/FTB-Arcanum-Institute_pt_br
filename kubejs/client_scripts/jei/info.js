@@ -37,7 +37,7 @@ const mobDropShop = [
 onEvent('jei.information', (event) => {
     event.add(
         ['ftbai:soil', 'botania:pebble'],
-        'Sneak right-click Dirt or Grass with an empty hand'
+        'Pressione Shift + clique direito em Terra ou Grama estando com a mão vazia'
     )
 
     event.add('botania:twig_wand', [
