@@ -122,7 +122,7 @@ onEvent('player.tick', (event) => {
         event,
         [-233, -23, -138],
         16,
-        'Spellcasting',
+        'Conjuração de Feitiços',
         '7A8009D1B25A5A01'
     )
     checkTeacher(event, [-123, -25, 15], 16, 'Beastmaster', '5817BE8CA48724DD')
