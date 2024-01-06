@@ -124,7 +124,7 @@ onEvent('item.tooltip', (tooltip) => {
     )
     tooltip.add(
         'ftbai:wooden_bucket',
-        'Componente de fabricação para o Balde de Água de Madeira Ancestral'
+        'Componente de fabricação para o Balde de Madeira Ancestral com Água'
     )
 })
 
