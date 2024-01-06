@@ -57,17 +57,17 @@ onEvent('jei.information', (event) => {
     ])
 
     event.add(shopInfo, [
-        'This item can be obtained in one of the Goblin Shops!',
+        'Este item pode ser obtido em uma das Lojas dos Goblins!',
         ' ',
-        'Be sure to find them all!',
+        'Certifique-se de encontrar todos eles!',
     ])
 
     event.add(questRewards, 'Given as a quest reward')
 
     event.add(mobDropShop, [
-        'Goblin Shops sell Gate Pearls, which spawn waves of mobs.',
+        'As Lojas dos Goblins vendem Pérolas de Portal, que invocam ondas de mobs.',
         ' ',
-        'These mobs drop the items listed!',
+        'Esses mobs dropam os itens listados!',
     ])
 
     event.add(
@@ -81,15 +81,15 @@ onEvent('jei.information', (event) => {
 
     event.add(
         'minecraft:iron_ore',
-        'Raw Iron can be purchased from one of the Goblin Shops!'
+        'Ferro Bruto pode ser comprado em uma das Lojas dos Goblins!'
     )
     event.add(
         'minecraft:copper_ore',
-        'Raw Copper can be purchased from one of the Goblin Shops!'
+        'Cobre Bruto pode ser comprado em uma das Lojas dos Goblins!'
     )
     event.add(
         'occultism:silver_ore',
-        'Raw Silver can be purchased from one of the Goblin Shops!'
+        'Prata Bruta pode ser adquirida em uma das Lojas dos Goblins!'
     )
 
     event.add(
@@ -120,11 +120,11 @@ onEvent('jei.information', (event) => {
 onEvent('item.tooltip', (tooltip) => {
     tooltip.add(
         shopInfo,
-        'This item can be obtained in one of the Goblin Shops'
+        'Este item pode ser obtido em uma das Lojas dos Goblins'
     )
     tooltip.add(
         'ftbai:wooden_bucket',
-        'Crafting Component for Edelwood Water Bucket'
+        'Componente de fabricação para o Balde de Água de Madeira Ancestral'
     )
 })
 
